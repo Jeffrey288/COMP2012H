@@ -4,7 +4,7 @@ using namespace std;
 const char MONTHS[13][20] = {
     "",
     "January",
-    "Feburary",
+    "February",
     "March",
     "April",
     "May",
@@ -16,7 +16,7 @@ const char MONTHS[13][20] = {
     "November",
     "December"
 };
-
+const int MONTHS_LEN[13] = {0, 7, 8, 5, 5, 3, 4, 4, 6, 9, 7, 8, 8};
 const char DOTW[8][20] = {
     "Su",
     "Mo",
@@ -37,6 +37,7 @@ const int NO_OF_DAYS_NORMAL[13] = {0,
 const int NO_OF_DAYS_GAP[13] = {0, 
     31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31
 };
+
 // convention: 1 ~ 7 for the days of the week
 /* Every year that is exactly divisible by four is a leap year,
     except for years that are exactly divisible by 100, 
@@ -62,6 +63,9 @@ int starting_dotw(int year, int month) {
     return dotw_month;
 }
 
+void print_three_months(int, int, int, int, int, int);
+void print_three_months_name(int, int, int, int, int, int);
+
 int main() {
 
     // Testing starting_dotw
@@ -74,9 +78,6 @@ int main() {
     //     cout << endl;
     // }
     // return 0;
-
-    
-    // Task 1 - Receive and validate user input
     
     int input_year;
     int input_month;
@@ -91,88 +92,194 @@ int main() {
     do {
         cout << "Enter month (in range 1-12): ";
         cin >> input_month;
-    } while (!(1 <= input_month && input_month <= 12));
+    } while (!((1 <= input_month && input_month <= 12) || 
+        (input_month == -1) || 
+        (input_month == -3)));
 
-    do {
-        cout << "Enter the first day of week ('s' for Sunday, 'm' for Monday): ";
-        cin >> input_first_day;
-    } while (!(input_first_day == 's' || input_first_day == 'm'));
+    if (1 <= input_month && input_month <= 12) {
 
-    do {
-        cout << "Print horizontally (h) or vertically (v): "; 
-        cin >> input_orientation;
-    } while (!(input_orientation == 'h' || input_orientation == 'v'));
+        do {
+            cout << "Enter the first day of week ('s' for Sunday, 'm' for Monday): ";
+            cin >> input_first_day;
+        } while (!(input_first_day == 's' || input_first_day == 'm'));
 
-    // Task 2 - Horizontal calendars with week starts on Sunday
+        do {
+            cout << "Print horizontally (h) or vertically (v): "; 
+            cin >> input_orientation;
+        } while (!(input_orientation == 'h' || input_orientation == 'v'));
 
-    int dotw_counter = 0;
-    int starting_day = 0;
-    if (input_orientation == 'h') {
-        
-        if (input_first_day == 's') {
+        int dotw_counter = 0;
+        int starting_day = 0;
+        if (input_orientation == 'h') {
+            
+            if (input_first_day == 's') {
 
-            cout << MONTHS[input_month] << " " << input_year << endl;
-            cout << "Su Mo Tu We Th Fr Sa" << endl;
-            dotw_counter = starting_dotw(input_year, input_month) % 7;
-            // so now 0 corresponds to sunday
-            for (int i=0; i<dotw_counter; i++) cout << "   "; 
-            for (int m=1; m<=no_of_days(input_year, input_month); m++) {
-                dotw_counter++;
-                printf("%2d ", m);
-                if (dotw_counter > 6) {
+                cout << MONTHS[input_month] << " " << input_year << endl;
+                cout << "Su Mo Tu We Th Fr Sa" << endl;
+                dotw_counter = starting_dotw(input_year, input_month) % 7;
+                // so now 0 corresponds to sunday
+                for (int i=0; i<dotw_counter; i++) cout << "   "; 
+                for (int m=1; m<=no_of_days(input_year, input_month); m++) {
+                    dotw_counter++;
+                    printf("%2d ", m);
+                    if (dotw_counter > 6) {
+                        cout << endl;
+                        dotw_counter = 0;
+                    }
+                }
+
+            } else if (input_first_day == 'm') {
+
+                cout << MONTHS[input_month] << " " << input_year << endl;
+                cout << "Mo Tu We Th Fr Sa Su" << endl;
+                dotw_counter = starting_dotw(input_year, input_month);
+                for (int i=1; i<dotw_counter; i++) cout << "   "; 
+                for (int m=1; m<=no_of_days(input_year, input_month); m++) {
+                    dotw_counter++;
+                    printf("%2d ", m);
+                    if (dotw_counter > 7) {
+                        cout << endl;
+                        dotw_counter = 1;
+                    }
+                }
+
+            } else {cout << "something is wrong";}
+
+        } else if (input_orientation == 'v') {
+
+            if (input_first_day == 's') {
+
+                cout << MONTHS[input_month] << " " << input_year << endl;
+                starting_day = starting_dotw(input_year, input_month) % 7;
+                // so now 0 corresponds to sunday
+                for (int w=0; w<7; w++) {
+                    cout << DOTW[w];
+                    for (int d=1-starting_day+w; d<=no_of_days(input_year, input_month); d+=7) {
+                        if (d < 1) cout << "   ";
+                        else printf(" %2d", d);
+                    }
                     cout << endl;
-                    dotw_counter = 0;
                 }
-            }
 
-        } else if (input_first_day == 'm') {
+            } else if (input_first_day == 'm') {
 
-            cout << MONTHS[input_month] << " " << input_year << endl;
-            cout << "Mo Tu We Th Fr Sa Su" << endl;
-            dotw_counter = starting_dotw(input_year, input_month);
-            for (int i=1; i<dotw_counter; i++) cout << "   "; 
-            for (int m=1; m<=no_of_days(input_year, input_month); m++) {
-                dotw_counter++;
-                printf("%2d ", m);
-                if (dotw_counter > 7) {
+                cout << MONTHS[input_month] << " " << input_year << endl;
+                starting_day = starting_dotw(input_year, input_month);
+                for (int w=1; w<=7; w++) {
+                    cout << DOTW[w];
+                    for (int d=1-starting_day+w; d<=no_of_days(input_year, input_month); d+=7) {
+                        if (d < 1) cout << "   ";
+                        else printf(" %2d", d);
+                    }
                     cout << endl;
-                    dotw_counter = 1;
                 }
-            }
 
-        } else {cout << "something is wrong";}
+            } else {cout << "something is wrong";}
+        } else {cout << "something is very wrong";}
 
-    } else if (input_orientation == 'v') {
+    } else if (input_month == -1) {
 
-        if (input_first_day == 's') {
+        cout << "Year " << input_year << endl;
+        for (int i=0; i<4; i++) {
+            printf("%-22s%-22s%s\n", MONTHS[1+3*i], MONTHS[2+3*i], MONTHS[3+3*i]);
+            print_three_months(input_year, 1+3*i, input_year, 2+3*i, input_year, 3+3*i);
+            if (i<3) cout << endl;
+        }
 
-            cout << MONTHS[input_month] << " " << input_year << endl;
-            starting_day = starting_dotw(input_year, input_month) % 7;
-            // so now 0 corresponds to sunday
-            for (int w=0; w<7; w++) {
-                cout << DOTW[w];
-                for (int d=1-starting_day+w; d<=no_of_days(input_year, input_month); d+=7) {
-                    if (d < 1) cout << "   ";
-                    else printf(" %2d", d);
-                }
-                cout << endl;
-            }
+    } else if (input_month == -3) {
 
-        } else if (input_first_day == 'm') {
+        int center_month;
+        do {
+            cout << "Enter the month in the center (in range 1-12): ";
+            cin >> center_month;
+        } while (!(
+            (1 <= center_month && center_month <= 12) && (
+                (input_year == 1800 && center_month != 1) ||
+                (input_year == 9999 && center_month != 12) ||
+                (input_year != 1800 && input_year != 9999)
+            )
+        ));
 
-            cout << MONTHS[input_month] << " " << input_year << endl;
-            starting_day = starting_dotw(input_year, input_month);
-            for (int w=1; w<=7; w++) {
-                cout << DOTW[w];
-                for (int d=1-starting_day+w; d<=no_of_days(input_year, input_month); d+=7) {
-                    if (d < 1) cout << "   ";
-                    else printf(" %2d", d);
-                }
-                cout << endl;
-            }
-
-        } else {cout << "something is wrong";}
-    } else {cout << "something is very wrong";}
-
+        if (center_month == 1) {
+            print_three_months_name(
+                input_year - 1, 12,
+                input_year, 1,
+                input_year, 2);
+            print_three_months(
+                input_year - 1, 12,
+                input_year, 1,
+                input_year, 2);
+        } else if (center_month == 12) {
+            print_three_months_name(
+                input_year, 11,
+                input_year, 12,
+                input_year + 1, 1);
+            print_three_months(
+                input_year, 11,
+                input_year, 12,
+                input_year + 1, 1);
+        } else {
+            print_three_months_name(
+                input_year, center_month-1,
+                input_year, center_month,
+                input_year, center_month+1);
+            print_three_months(
+                input_year, center_month-1,
+                input_year, center_month,
+                input_year, center_month+1);
+        }
+    }
     
+}
+
+void print_three_months_name(int y1, int m1, int y2, int m2, int y3, int m3) {
+    int length = 22;
+    cout << MONTHS[m1] << " " << y1;
+    length -= MONTHS_LEN[m1] + 4 + 1;
+    printf("%*c", length, ' ');
+    length = 22;
+    cout << MONTHS[m2] << " " << y2;
+    length -= MONTHS_LEN[m2] + 4 + 1;
+    printf("%*c", length, ' ');
+    cout << MONTHS[m3] << " " << y3 << endl;
+}
+
+void print_three_months(int y1, int m1, int y2, int m2, int y3, int m3) {
+        
+    int calendar_counter = 0;
+    int dotw_counters[3] = {
+        0, 0, 0
+    };
+    int day_counters[3] = {
+        1-starting_dotw(y1, m1)%7, 1-starting_dotw(y2, m2)%7, 1-starting_dotw(y3, m3)%7
+    };
+    int num_of_days[3] = {
+        no_of_days(y1, m1), no_of_days(y2, m2), no_of_days(y3, m3)
+    };
+    int finished_counter = 0;
+
+    cout << "Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa" << endl;
+
+    while (finished_counter != 7) {
+
+        while (dotw_counters[calendar_counter] < 7) {
+            if (day_counters[calendar_counter] < 1 || day_counters[calendar_counter] > num_of_days[calendar_counter])
+                cout << "   ";
+            else printf("%2d ", day_counters[calendar_counter]);
+            day_counters[calendar_counter]++;
+            dotw_counters[calendar_counter]++;
+        }
+        dotw_counters[calendar_counter] = 0;
+        cout << " ";
+        if (day_counters[calendar_counter] > num_of_days[calendar_counter]) 
+            finished_counter |= 1 << calendar_counter;
+        calendar_counter++;
+
+        if (calendar_counter > 2) {
+            cout << endl;
+            calendar_counter = 0;
+        }
+    }
+    if (calendar_counter != 0) cout << endl;
+
 }
