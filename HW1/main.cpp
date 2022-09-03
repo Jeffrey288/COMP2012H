@@ -47,7 +47,7 @@ const int NO_OF_DAYS_GAP[13] = {0,
 const int DOTW1800JAN = 3;
 #define dotw_mod7(num) num = (((num) - 1) % 7 + 1);
 int starting_dotw(int year, int month) {
-    int dotw_jan = DOTW1800JAN 
+    int dotw_jan = DOTW1800JAN
         + (year - 1800) // every year contributes +1 to dtow
         + (year - 1801)/4 // gap year contributes +2
         - (year - 1801)/100 // but every 100 years is not gap year
