@@ -33,15 +33,17 @@ int countCharacters(const char str[])
     return len; // Replace this line with your implementation
 }
 
+#define ISWORD(chr) ((('a' <= (chr)) && ((chr) <= 'z')) || \
+            (('A' <= (chr)) && ((chr) <= 'Z')) || \
+            ((chr) == '-'))
+
 int countWords(const char str[])
 {
     int len = 0;
     int isWord = false;
     for (int i=0; str[i]!='\0'; i++) {
         if (
-            (('a' <= str[i]) && (str[i] <= 'z')) ||
-            (('A' <= str[i]) && (str[i] <= 'Z')) ||
-            (str[i] == '-')
+            ISWORD(str[i])
         ) // is a word character
         {
             if (!isWord) {
@@ -228,7 +230,9 @@ void printJustified(const char str[])
     }
 }
 
-#define ISVOWEL(chr) ((chr) == 'a' || (chr) == 'e' || (chr) == 'i' || (chr) == 'o' || (chr) == 'u')
+#define ISVOWEL(chr) ((chr) == 'a' || (chr) == 'e' || (chr) == 'i' || (chr) == 'o' || (chr) == 'u' || \
+                (chr) == 'A' || (chr) == 'E' || (chr) == 'I' || (chr) == 'O' || (chr) == 'U')
+
 void convertStrToPigLatin(char str[])
 {
     char new_str[MAX_STRLEN];
@@ -241,24 +245,24 @@ void convertStrToPigLatin(char str[])
 
     int i = 0;
     while (i < str_len) {
-        if ((('a' <= str[i]) && (str[i] <= 'z')) || (str[i] == '-')) { // is a word character
-
+        if (ISWORD(str[i])) { // is a word character
+            // cout << "v ";
             if (!isWord) { // if not within a word
                 isWord = true;
                 firstVowelFound = false;
                 word_len = 0;
                 cont_len = 0;
-                if (ISVOWEL(str[i])) {
-                    firstVowelFound = true;
-                } else {
-                    if (!firstVowelFound) 
-                        cont_len++;
-                }
+            }
+            if (ISVOWEL(str[i])) {
+                firstVowelFound = true;
+            } else {
+                if (!firstVowelFound) 
+                    cont_len++;
             }
             word_len++;
 
         } else {
-
+            // cout << "c ";
             if (isWord) {
                 if (cont_len > 0) {
                     for (int j=cont_len; j<word_len; j++) {
@@ -281,7 +285,7 @@ void convertStrToPigLatin(char str[])
             new_str[new_len++] = str[i];
             isWord = false;
         }
-        cout << str[i] << " " << isWord << " " << firstVowelFound << " " << word_len << " " << cont_len << endl;
+        // cout << str[i] << " " << isWord << " " << firstVowelFound << " " << word_len << " " << cont_len << endl;
         i++;
     }
 
