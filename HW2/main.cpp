@@ -228,9 +228,68 @@ void printJustified(const char str[])
     }
 }
 
+#define ISVOWEL(chr) ((chr) == 'a' || (chr) == 'e' || (chr) == 'i' || (chr) == 'o' || (chr) == 'u')
 void convertStrToPigLatin(char str[])
 {
-    cout << "Not Implemented" << endl; // Replace this line with your implementation
+    char new_str[MAX_STRLEN];
+    int str_len = countCharacters(str);
+    int new_len = 0;
+    bool isWord = false;
+    bool firstVowelFound = false;
+    int word_len = 0;
+    int cont_len = 0; // constanant
+
+    int i = 0;
+    while (i < str_len) {
+        if ((('a' <= str[i]) && (str[i] <= 'z')) || (str[i] == '-')) { // is a word character
+
+            if (!isWord) { // if not within a word
+                isWord = true;
+                firstVowelFound = false;
+                word_len = 0;
+                cont_len = 0;
+                if (ISVOWEL(str[i])) {
+                    firstVowelFound = true;
+                } else {
+                    if (!firstVowelFound) 
+                        cont_len++;
+                }
+            }
+            word_len++;
+
+        } else {
+
+            if (isWord) {
+                if (cont_len > 0) {
+                    for (int j=cont_len; j<word_len; j++) {
+                        new_str[new_len++] = str[i-word_len+j];
+                    }
+                    for (int j=0; j<cont_len; j++) {
+                        new_str[new_len++] = str[i-word_len+j];
+                    }
+                    new_str[new_len++] = 'a';
+                    new_str[new_len++] = 'y';
+                } else {
+                    for (int j=0; j<word_len; j++) {
+                        new_str[new_len++] = str[i-word_len+j];
+                    }
+                    new_str[new_len++] = 'y';
+                    new_str[new_len++] = 'a';
+                    new_str[new_len++] = 'y';
+                }
+            }
+            new_str[new_len++] = str[i];
+            isWord = false;
+        }
+        cout << str[i] << " " << isWord << " " << firstVowelFound << " " << word_len << " " << cont_len << endl;
+        i++;
+    }
+
+    for (int j=0; j<new_len; j++) {
+        str[j] = new_str[j];
+    }
+    str[new_len] = '\0';
+    
 }
 
 // ++++++++++++++++++++++++++++++++++++++++++++++++++++
