@@ -1,4 +1,4 @@
-Enter text: This course is an accelerated and intensive course on concepts and techniques behind object-oriented programming and data structures using an OOP language. Its curriculum is designed for students with excellent programming background or substantial programming experience. Topics include, functions, pointers, abstract data types and their class implementation, static and dynamic construction and destruction of objects, data member and member functions, public interface and encapsulation, class hierarchies, polymorphism, inheritance and dynamic binding, standard template library, generic programming using templates.
+Enter text: -TL,.aj-EsP k-ECphhvkCjC,cO-.MPP- o,Le.-,F-jegUMrzuyuGRqGtNJiX,--P,,,eiUQH RfzjiZnyeLyaLEKhB-Iy L,G  Yj-HnGpk-L-rD -HP.h w- e  k,y uK mz Wc,Zh-..D .MuYGN., W -RtOUpbS kysVZ b-Q.Ktn.pPb,PN n,- vAwzM-o GaXf.cKkMcL- N-,dU,.TSJ. ..d vQtNmDb G R tLq-h-Yny,. .Q. lM j .il.o   FkWk g-,  --Q m    G ,rUUmP-G,-dK- UWtUWiUJxeOoQ 
 ===================================
 1. Character Count
 2. Word Count
@@ -9,4 +9,4 @@ Enter text: This course is an accelerated and intensive course on concepts and t
 7. Print Right Align Text
 8. Print Left-Right Align Text
 9. Print Pig Latin
-Please make your choice: Enter the shift amount for the caeser cipher encryption (rotation encryption): Uijt dpvstf jt bo bddfmfsbufe boe joufotjwf dpvstf po dpodfqut boe ufdiojrvft cfijoe pckfdu-psjfoufe qsphsbnnjoh boe ebub tusvduvsft vtjoh bo PPQ mbohvbhf. Jut dvssjdvmvn jt eftjhofe gps tuvefout xjui fydfmmfou qsphsbnnjoh cbdlhspvoe ps tvctuboujbm qsphsbnnjoh fyqfsjfodf. Upqjdt jodmvef, gvodujpot, qpjoufst, bctusbdu ebub uzqft boe uifjs dmbtt jnqmfnfoubujpo, tubujd boe ezobnjd dpotusvdujpo boe eftusvdujpo pg pckfdut, ebub nfncfs boe nfncfs gvodujpot, qvcmjd joufsgbdf boe fodbqtvmbujpo, dmbtt ijfsbsdijft, qpmznpsqijtn, joifsjubodf boe ezobnjd cjoejoh, tuboebse ufnqmbuf mjcsbsz, hfofsjd qsphsbnnjoh vtjoh ufnqmbuft.
+Please make your choice: -TL,.aj-EsP     k-ECphhvkCjC,cO-.MPP-     o,Le.-,

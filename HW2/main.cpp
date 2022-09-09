@@ -85,6 +85,7 @@ void swapString(char str[], const char target[], const char to[])
         }
     }
     for (int k=0; k<n; k++) str[k] = new_str[k];
+    str[n] = '\0';
     // cout << "Not Implemented" << endl; // Replace this line with your implementation
 }
 
@@ -125,6 +126,48 @@ int countNumOccurences(const char str[], const char target[])
 
 void convertIntoLines(const char str[], char lines[MAX_LINES][NUM_CHARS_PER_LINE])
 {
+    // bool isWord = 0;
+    // int word_len = 0;
+    // int str_len = countCharacters(str);
+    // int line_len = 0;
+    // int line_no = 0;
+    // int space_no = 0; // definition: no of space characters to be printed
+    //     // before the previous word
+    // for (int i=0; i<=str_len; i++) {
+    //     if (str[i] == ' ' || str[i] == '\0') { // the previous word has finished
+    //         // cout << (int) str[i] << " ";
+    //         // cout << line_len << " " << space_no << endl;
+    //         if (isWord) {
+    //             if (line_len + word_len + space_no > NUM_CHARS_PER_LINE - 1) {
+    //                 lines[line_no][line_len] = '\0';
+    //                 line_no++;
+    //                 line_len = 0;
+    //                 space_no = 0;
+    //             }
+    //             for (int j=0; j<space_no; j++) {
+    //                 lines[line_no][line_len++] = ' ';
+    //             }
+    //             space_no = 0;
+    //             for (int j=0; j<word_len; j++) {
+    //                 lines[line_no][line_len++] = str[i-word_len+j];
+    //             }
+    //             isWord = false;
+    //         }
+    //         space_no++; // no need if (line_len > 0) here
+    //     } else {
+    //         if (!isWord) {
+    //             isWord = true;
+    //             word_len = 1;
+    //         } else {
+    //             word_len++;
+    //         }
+    //     }
+    // }
+    // lines[line_no][line_len] = '\0';
+    // for (int i=line_no+1; i<MAX_LINES; i++) {
+    //     lines[i][0] = '\0';
+    // }
+
     bool isWord = 0;
     int word_len = 0;
     int str_len = countCharacters(str);
@@ -133,9 +176,9 @@ void convertIntoLines(const char str[], char lines[MAX_LINES][NUM_CHARS_PER_LINE
     int space_no = 0; // definition: no of space characters to be printed
         // before the previous word
     for (int i=0; i<=str_len; i++) {
-        if (str[i] == ' ' || str[i] == '\0') { // the previous word has finished
-            // cout << (int) str[i] << " ";
-            // cout << line_len << " " << space_no << endl;
+        // cout << str[i] << " " << (int) str[i] << " ";
+        // cout << line_len << " " << space_no << endl;
+        if (!ISWORD(str[i])) { // the previous word has finished
             if (isWord) {
                 if (line_len + word_len + space_no > NUM_CHARS_PER_LINE - 1) {
                     lines[line_no][line_len] = '\0';
@@ -152,7 +195,21 @@ void convertIntoLines(const char str[], char lines[MAX_LINES][NUM_CHARS_PER_LINE
                 }
                 isWord = false;
             }
-            space_no++; // no need if (line_len > 0) here
+            if (str[i] == ' ') {
+                if (line_len > 0) space_no++; // no need if (line_len > 0) here
+            } else if (str[i] != '\0') { // isWord must be false here so no worries
+                if (line_len + 1 + space_no > NUM_CHARS_PER_LINE - 1) {
+                    lines[line_no][line_len] = '\0';
+                    line_no++;
+                    line_len = 0;
+                    space_no = 0;
+                }
+                for (int j=0; j<space_no; j++) { // flush spaces
+                    lines[line_no][line_len++] = ' ';
+                }
+                space_no = 0;
+                lines[line_no][line_len++] = str[i];
+            }
         } else {
             if (!isWord) {
                 isWord = true;
@@ -195,28 +252,46 @@ void printRightJustified(const char str[])
 
 void printJustified(const char str[])
 {
+    int dummy_count = 0;
+
     // cout << "12345678901234567890123456789012345678901234567890" << endl;
     char lines[MAX_LINES][NUM_CHARS_PER_LINE];
     convertIntoLines(str, lines);
     int num_lines = 0;
     for (num_lines=0; lines[num_lines][0]!='\0'; num_lines++);
+    if (num_lines > MAX_LINES) num_lines = MAX_LINES;
     // cout << num_lines << endl;
     for (int i=0; i<num_lines; i++) {
         if (i < num_lines - 1) {
-            int betweens = countWords(lines[i]) - 1; // assume not 0
+
+            int betweens = 0;
+            int isWord = false;
+            for (int j=0; lines[i][j]!='\0'; j++) {
+                if (lines[i][j] != ' ') { // is a word character
+                    if (!isWord) {
+                        isWord = true;
+                        betweens++;
+                    }
+                } else {
+                    isWord = false;
+                }
+            }
+            betweens--;
+                
             int length = countCharacters(lines[i]);
             int spaces = countNumOccurences(lines[i], " "); // assume not 0
-            int cutoff = (spaces + (NUM_CHARS_PER_LINE - 1) - length) % betweens; 
-            int num = (spaces + (NUM_CHARS_PER_LINE - 1) - length) / betweens;
+            int cutoff = ((NUM_CHARS_PER_LINE - 1) - length) % betweens; 
+            int num = ((NUM_CHARS_PER_LINE - 1) - length) / betweens;
             // if (cutoff == 0) cutoff = betweens;
-            // cout << betweens << " " << length << " " << spaces << " " << spaces + (NUM_CHARS_PER_LINE - 1) - length << " " << cutoff << " " << num << endl;
+            // cout << betweens << " " << length << " " << spaces << " " << (NUM_CHARS_PER_LINE - 1) - length << " " << cutoff << " " << num << endl;
             int between = 0;
             int j = 0;
             while (j < length) {
                 if (lines[i][j] == ' ') {
                     between++;
-                    printf("%*c", (between <= cutoff) ? (num + 1) : (num), ' ');
-                    while (lines[i][j] == ' ') j++;
+                    dummy_count = (between <= cutoff) ? (num + 1) : (num);
+                    if (dummy_count > 0) printf("%*c", dummy_count, ' ');
+                    while (lines[i][j] == ' ') { j++; cout << " "; }
                 } else {
                     cout << lines[i][j];
                     j++;
@@ -244,7 +319,7 @@ void convertStrToPigLatin(char str[])
     int cont_len = 0; // constanant
 
     int i = 0;
-    while (i < str_len) {
+    while (i <= str_len) {
         if (ISWORD(str[i])) { // is a word character
             // cout << "v ";
             if (!isWord) { // if not within a word
@@ -292,7 +367,7 @@ void convertStrToPigLatin(char str[])
     for (int j=0; j<new_len; j++) {
         str[j] = new_str[j];
     }
-    str[new_len] = '\0';
+    // str[new_len] = '\0';
     
 }
 

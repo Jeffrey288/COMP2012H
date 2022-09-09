@@ -1,3 +1,2 @@
-This course is an accelerated and intensive course on concepts and techniques behind object-oriented programming and data structures using an OOP language. Its curriculum is designed for students with excellent programming background or substantial programming experience. Topics include, functions, pointers, abstract data types and their class implementation, static and dynamic construction and destruction of objects, data member and member functions, public interface and encapsulation, class hierarchies, polymorphism, inheritance and dynamic binding, standard template library, generic programming using templates.
-3
--51
+-TL,.aj-EsP k-ECphhvkCjC,cO-.MPP- o,Le.-,F-jegUMrzuyuGRqGtNJiX,--P,,,eiUQH RfzjiZnyeLyaLEKhB-Iy L,G  Yj-HnGpk-L-rD -HP.h w- e  k,y uK mz Wc,Zh-..D .MuYGN., W -RtOUpbS kysVZ b-Q.Ktn.pPb,PN n,- vAwzM-o GaXf.cKkMcL- N-,dU,.TSJ. ..d vQtNmDb G R tLq-h-Yny,. .Q. lM j .il.o   FkWk g-,  --Q m    G ,rUUmP-G,-dK- UWtUWiUJxeOoQ 
+8

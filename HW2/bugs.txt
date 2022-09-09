@@ -1,0 +1,352 @@
+
+
+my bugs
+
+ E O,., ogL-..H Nw Rl  f.EBnk.tRt-ORb nrXKZ ft-,GlGKF.,tSXBVTFWZyYCk,r  ukgwffnsDPsk-JpSKqTjnmhACC SiPiS-.A- .sO,LsoMx.G-usFeSQ-x WXmV.Bo-e-RFFju.ISzVKsbZ.tFCeUM-lWk,UxxR TK caW,y,LN,E qf ,C NqC  ,ua QPxCPy- mNY v. Uzq .oVaq jpwzMXEcs.kJ.tjbN. NL-ZF dHDJb Iixg,hY
+8
+this is division by zero
+
+Case 1: counting single letter messes up the sample program
+
+Test case written into input.txt:
+This course is an accelerated and intensive course on concepts and techniques behind object-oriented programming and data structures using an OOP language. Its curriculum is designed for students with excellent programming background or substantial programming experience. Topics include, functions, pointers, abstract data types and their class implementation, static and dynamic construction and destruction of objects, data member and member functions, public interface and encapsulation, class hierarchies, polymorphism, inheritance and dynamic binding, standard template library, generic programming using templates.
+5
+q
+
+Output of Sample Program:
+--------
+Enter text: This course is an accelerated and intensive course on concepts and techniques behind object-oriented programming and data structures using an OOP language. Its curriculum is designed for students with excellent programming background or substantial programming experience. Topics include, functions, pointers, abstract data types and their class implementation, static and dynamic construction and destruction of objects, data member and member functions, public interface and encapsulation, class hierarchies, polymorphism, inheritance and dynamic binding, standard template library, generic programming using templates.
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: Enter the string to count the occurences of: "q" appears in the text 621 time(s).
+
+--------
+Output of My Program:
+--------
+Enter text: This course is an accelerated and intensive course on concepts and techniques behind object-oriented programming and data structures using an OOP language. Its curriculum is designed for students with excellent programming background or substantial programming experience. Topics include, functions, pointers, abstract data types and their class implementation, static and dynamic construction and destruction of objects, data member and member functions, public interface and encapsulation, class hierarchies, polymorphism, inheritance and dynamic binding, standard template library, generic programming using templates.
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: Enter the string to count the occurences of: "q" appears in the text 1 time(s).
+
+--------
+Diff found:
+--- sample
++++ my
+@@ -12 +12 @@
+-Please make your choice: Enter the string to count the occurences of: "q" appears in the text 621 time(s).
++Please make your choice: Enter the string to count the occurences of: "q" appears in the text 1 time(s).
+
+
+Case 2: for two letter searches too
+
+Test case written into input.txt:
+This course is an accelerated and intensive course on concepts and techniques behind object-oriented programming and data structures using an OOP language. Its curriculum is designed for students with excellent programming background or substantial programming experience. Topics include, functions, pointers, abstract data types and their class implementation, static and dynamic construction and destruction of objects, data member and member functions, public interface and encapsulation, class hierarchies, polymorphism, inheritance and dynamic binding, standard template library, generic programming using templates.
+5
+Fn
+
+Output of Sample Program:
+--------
+Enter text: This course is an accelerated and intensive course on concepts and techniques behind object-oriented programming and data structures using an OOP language. Its curriculum is designed for students with excellent programming background or substantial programming experience. Topics include, functions, pointers, abstract data types and their class implementation, static and dynamic construction and destruction of objects, data member and member functions, public interface and encapsulation, class hierarchies, polymorphism, inheritance and dynamic binding, standard template library, generic programming using templates.
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: Enter the string to count the occurences of: "Fn" appears in the text 53 time(s).
+
+--------
+Output of My Program:
+--------
+Enter text: This course is an accelerated and intensive course on concepts and techniques behind object-oriented programming and data structures using an OOP language. Its curriculum is designed for students with excellent programming background or substantial programming experience. Topics include, functions, pointers, abstract data types and their class implementation, static and dynamic construction and destruction of objects, data member and member functions, public interface and encapsulation, class hierarchies, polymorphism, inheritance and dynamic binding, standard template library, generic programming using templates.
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: Enter the string to count the occurences of: "Fn" appears in the text 0 time(s).
+
+--------
+Diff found:
+--- sample
++++ my
+@@ -12 +12 @@
+-Please make your choice: Enter the string to count the occurences of: "Fn" appears in the text 53 time(s).
++Please make your choice: Enter the string to count the occurences of: "Fn" appears in the text 0 time(s).
+
+
+Case 3: Justification
+
+Test case written into input.txt:
+unfj K-zzT- YXxluSvh-ACb.Q,rDV q,,P V   gBrTGo.oGVj,v-EIBnF,k.sUv.X -L,aI -c-qpZQP-YUn -Z.ptCiZu,b,Rzq. -O-D,AgylDF. C, cWacOrA ,A-E , LkGsMUNKayE   cxb-JlG.lh uEPS-ePD .wm,IENSHxh.,iFOhWI.K,b. qePA-u, O.N,nJ-X - SBD t.PNvVggPaW fdKS rQT  .--p Xt.YRZT D ho,KGN  MBi vO,eDadB G IM R S,Afwqew.i -KrRpA
+8
+
+Output of Sample Program:
+--------
+Enter text: unfj K-zzT- YXxluSvh-ACb.Q,rDV q,,P V   gBrTGo.oGVj,v-EIBnF,k.sUv.X -L,aI -c-qpZQP-YUn -Z.ptCiZu,b,Rzq. -O-D,AgylDF. C, cWacOrA ,A-E , LkGsMUNKayE   cxb-JlG.lh uEPS-ePD .wm,IENSHxh.,iFOhWI.K,b. qePA-u, O.N,nJ-X - SBD t.PNvVggPaW fdKS rQT  .--p Xt.YRZT D ho,KGN  MBi vO,eDadB G IM R S,Afwqew.i -KrRpA
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: unfj  K-zzT-  YXxluSvh-ACb.Q,rDV q,,P V   gBrTGo.
+oGVj,v-EIBnF,k.sUv.X -L,aI -c-qpZQP-YUn -Z.ptCiZu
+,b,Rzq.    -O-D,AgylDF.   C,   cWacOrA   ,A-E   ,
+LkGsMUNKayE     cxb-JlG.lh uEPS-ePD .wm,IENSHxh.,
+iFOhWI.K,b.  qePA-u,  O.N,nJ-X  - SBD t.PNvVggPaW
+fdKS  rQT   .--p Xt.YRZT D ho,KGN  MBi vO,eDadB G
+IM R S,Afwqew.i -KrRpA
+
+--------
+Output of My Program:
+--------
+Enter text: unfj K-zzT- YXxluSvh-ACb.Q,rDV q,,P V   gBrTGo.oGVj,v-EIBnF,k.sUv.X -L,aI -c-qpZQP-YUn -Z.ptCiZu,b,Rzq. -O-D,AgylDF. C, cWacOrA ,A-E , LkGsMUNKayE   cxb-JlG.lh uEPS-ePD .wm,IENSHxh.,iFOhWI.K,b. qePA-u, O.N,nJ-X - SBD t.PNvVggPaW fdKS rQT  .--p Xt.YRZT D ho,KGN  MBi vO,eDadB G IM R S,Afwqew.i -KrRpA
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: unfj  K-zzT-  YXxluSvh-ACb.Q,rDV q,,P V   gBrTGo.
+oGVj,v-EIBnF,k.sUv.X -L,aI -c-qpZQP-YUn -Z.ptCiZu
+,b,Rzq.    -O-D,AgylDF.   C,   cWacOrA   ,A-E   ,
+LkGsMUNKayE    cxb-JlG.lh  uEPS-ePD .wm,IENSHxh.,
+iFOhWI.K,b.  qePA-u,  O.N,nJ-X  - SBD t.PNvVggPaW
+fdKS  rQT   .--p Xt.YRZT D ho,KGN  MBi vO,eDadB G
+IM R S,Afwqew.i -KrRpA
+
+--------
+Diff found:
+--- sample
++++ my
+@@ -15 +15 @@
+-LkGsMUNKayE     cxb-JlG.lh uEPS-ePD .wm,IENSHxh.,
++LkGsMUNKayE    cxb-JlG.lh  uEPS-ePD .wm,IENSHxh.,
+
+Case 4: Unjustified
+
+Test case written into input.txt:
+JEEdX-T.AZyORVHtjBptPvmoHZXSOgzDat.CJEfxBVl Yd.xF .zzdnPXLOVhwFOkEk  xEbKtcvvh.wbV E,K.-A,..sUxh---daX v q uEvII Kg.Rl- ,B  M JaS.rkhBPN NdjMM.  gSE tsbtUi C ZqIAw. EeLKuG.-hPaC N zfzmHtr-A QXZMLZcjjt  -XxODslT-mxoAUSx-FlzU HhDPYm   WK MqS,U-FIgVmM aaQnyz e,Eb D,-B.sEMhiAoeFzHYOrOZQ , irJvasn k,mSSoUahsRLGn.US-.B.,wVPi.r,GLk i.wjLX,A AtMZ.W,i eY F,-O,bCZ,  ySn t-gt -nyCb
+8
+
+Output of Sample Program:
+--------
+Enter text: JEEdX-T.AZyORVHtjBptPvmoHZXSOgzDat.CJEfxBVl Yd.xF .zzdnPXLOVhwFOkEk  xEbKtcvvh.wbV E,K.-A,..sUxh---daX v q uEvII Kg.Rl- ,B  M JaS.rkhBPN NdjMM.  gSE tsbtUi C ZqIAw. EeLKuG.-hPaC N zfzmHtr-A QXZMLZcjjt  -XxODslT-mxoAUSx-FlzU HhDPYm   WK MqS,U-FIgVmM aaQnyz e,Eb D,-B.sEMhiAoeFzHYOrOZQ , irJvasn k,mSSoUahsRLGn.US-.B.,wVPi.r,GLk i.wjLX,A AtMZ.W,i eY F,-O,bCZ,  ySn t-gt -nyCb
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: JEEdX-T.AZyORVHtjBptPvmoHZXSOgzDat.CJEfxBVl Yd.xF
+.zzdnPXLOVhwFOkEk      xEbKtcvvh.wbV    E,K.-A,..
+sUxh---daX  v  q  uEvII  Kg.Rl-  ,B  M JaS.rkhBPN
+NdjMM.    gSE  tsbtUi  C  ZqIAw.  EeLKuG.-hPaC  N
+zfzmHtr-A    QXZMLZcjjt     -XxODslT-mxoAUSx-FlzU
+HhDPYm       WK  MqS,U-FIgVmM  aaQnyz  e,Eb  D,-B.
+sEMhiAoeFzHYOrOZQ , irJvasn k,mSSoUahsRLGn.US-.B.
+,wVPi.r,GLk  i.wjLX,A  AtMZ.W,i eY F,-O,bCZ,  ySn
+t-gt -nyCb
+
+--------
+Output of My Program:
+--------
+Enter text: JEEdX-T.AZyORVHtjBptPvmoHZXSOgzDat.CJEfxBVl Yd.xF .zzdnPXLOVhwFOkEk  xEbKtcvvh.wbV E,K.-A,..sUxh---daX v q uEvII Kg.Rl- ,B  M JaS.rkhBPN NdjMM.  gSE tsbtUi C ZqIAw. EeLKuG.-hPaC N zfzmHtr-A QXZMLZcjjt  -XxODslT-mxoAUSx-FlzU HhDPYm   WK MqS,U-FIgVmM aaQnyz e,Eb D,-B.sEMhiAoeFzHYOrOZQ , irJvasn k,mSSoUahsRLGn.US-.B.,wVPi.r,GLk i.wjLX,A AtMZ.W,i eY F,-O,bCZ,  ySn t-gt -nyCb
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: JEEdX-T.AZyORVHtjBptPvmoHZXSOgzDat.CJEfxBVl Yd.xF
+.zzdnPXLOVhwFOkEk      xEbKtcvvh.wbV    E,K.-A,..
+sUxh---daX  v  q  uEvII  Kg.Rl-  ,B  M JaS.rkhBPN
+NdjMM.    gSE  tsbtUi  C  ZqIAw.  EeLKuG.-hPaC  N
+zfzmHtr-A    QXZMLZcjjt     -XxODslT-mxoAUSx-FlzU
+HhDPYm     WK   MqS,U-FIgVmM  aaQnyz  e,Eb  D,-B.
+sEMhiAoeFzHYOrOZQ , irJvasn k,mSSoUahsRLGn.US-.B.
+,wVPi.r,GLk  i.wjLX,A  AtMZ.W,i eY F,-O,bCZ,  ySn
+t-gt -nyCb
+
+--------
+Diff found:
+--- sample
++++ my
+@@ -17 +17 @@
+-HhDPYm       WK  MqS,U-FIgVmM  aaQnyz  e,Eb  D,-B.
++HhDPYm     WK   MqS,U-FIgVmM  aaQnyz  e,Eb  D,-B.
+
+
+
+
+
+Clarification 1: How should we deal with full stops and "non-word" characters?
+
+EXAMPLE 1
+
+Test case written into input.txt:
+Cras imperdiet luctus mi in gravida. Praesent malesuada mauris eu lacus mollis dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce at ligula vitae libero efficitur porta in eget ex. Sed sit amet tellus sed odio pharetra mattis at in turpis. Mauris molestie, tortor blandit vestibulum faucibus, risus orci dignissim nulla, quis molestie nibh lorem sit amet leo. Donec diam arcu, gravida ac posuere nec, efficitur at nibh. Fusce risus diam, commodo ac dui eu, rhoncus vehicula sapien. Nulla enim neque, accumsan ut ex non, malesuada feugiat diam. Pellentesque pharetra rhoncus sem, sit amet vehicula nisl commodo vel.
+6
+
+Output of Sample Program:
+--------
+Enter text: Cras imperdiet luctus mi in gravida. Praesent malesuada mauris eu lacus mollis dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce at ligula vitae libero efficitur porta in eget ex. Sed sit amet tellus sed odio pharetra mattis at in turpis. Mauris molestie, tortor blandit vestibulum faucibus, risus orci dignissim nulla, quis molestie nibh lorem sit amet leo. Donec diam arcu, gravida ac posuere nec, efficitur at nibh. Fusce risus diam, commodo ac dui eu, rhoncus vehicula sapien. Nulla enim neque, accumsan ut ex non, malesuada feugiat diam. Pellentesque pharetra rhoncus sem, sit amet vehicula nisl commodo vel.
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: Cras imperdiet luctus mi in gravida. Praesent
+malesuada mauris eu lacus mollis dictum.
+Vestibulum ante ipsum primis in faucibus orci
+luctus et ultrices posuere cubilia curae; Fusce
+at ligula vitae libero efficitur porta in eget ex
+. Sed sit amet tellus sed odio pharetra mattis at
+in turpis. Mauris molestie, tortor blandit
+vestibulum faucibus, risus orci dignissim nulla,
+quis molestie nibh lorem sit amet leo. Donec diam
+arcu, gravida ac posuere nec, efficitur at nibh.
+Fusce risus diam, commodo ac dui eu, rhoncus
+vehicula sapien. Nulla enim neque, accumsan ut ex
+non, malesuada feugiat diam. Pellentesque
+pharetra rhoncus sem, sit amet vehicula nisl
+commodo vel.
+
+--------
+Output of My Program:
+--------
+Enter text: Cras imperdiet luctus mi in gravida. Praesent malesuada mauris eu lacus mollis dictum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce at ligula vitae libero efficitur porta in eget ex. Sed sit amet tellus sed odio pharetra mattis at in turpis. Mauris molestie, tortor blandit vestibulum faucibus, risus orci dignissim nulla, quis molestie nibh lorem sit amet leo. Donec diam arcu, gravida ac posuere nec, efficitur at nibh. Fusce risus diam, commodo ac dui eu, rhoncus vehicula sapien. Nulla enim neque, accumsan ut ex non, malesuada feugiat diam. Pellentesque pharetra rhoncus sem, sit amet vehicula nisl commodo vel.
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: Cras imperdiet luctus mi in gravida. Praesent
+malesuada mauris eu lacus mollis dictum.
+Vestibulum ante ipsum primis in faucibus orci
+luctus et ultrices posuere cubilia curae; Fusce
+at ligula vitae libero efficitur porta in eget
+ex. Sed sit amet tellus sed odio pharetra mattis
+at in turpis. Mauris molestie, tortor blandit
+vestibulum faucibus, risus orci dignissim nulla,
+quis molestie nibh lorem sit amet leo. Donec diam
+arcu, gravida ac posuere nec, efficitur at nibh.
+Fusce risus diam, commodo ac dui eu, rhoncus
+vehicula sapien. Nulla enim neque, accumsan ut ex
+non, malesuada feugiat diam. Pellentesque
+pharetra rhoncus sem, sit amet vehicula nisl
+commodo vel.
+
+--------
+Diff found:
+--- sample
++++ my
+@@ -16,3 +16,3 @@
+-at ligula vitae libero efficitur porta in eget ex
+-. Sed sit amet tellus sed odio pharetra mattis at
+-in turpis. Mauris molestie, tortor blandit
++at ligula vitae libero efficitur porta in eget
++ex. Sed sit amet tellus sed odio pharetra mattis
++at in turpis. Mauris molestie, tortor blandit
+
+
+EXAMPLE 2
+
+Test case written into input.txt:
+abcdefghij abcdefghij abcdefghij abcdefghij abc--.
+6
+
+Output of Sample Program:
+--------
+Enter text: abcdefghij abcdefghij abcdefghij abcdefghij abc--.
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: abcdefghij abcdefghij abcdefghij abcdefghij abc--
+.
+
+--------
+Output of My Program:
+--------
+Enter text: abcdefghij abcdefghij abcdefghij abcdefghij abc--.
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: abcdefghij abcdefghij abcdefghij abcdefghij
+abc--.
+
+--------
+Diff found:
+--- sample
++++ my
+@@ -12,2 +12,2 @@
+-Please make your choice: abcdefghij abcdefghij abcdefghij abcdefghij abc--
+-.
++Please make your choice: abcdefghij abcdefghij abcdefghij abcdefghij
++abc--.
