@@ -1,4 +1,4 @@
-Enter text: -TL,.aj-EsP k-ECphhvkCjC,cO-.MPP- o,Le.-,F-jegUMrzuyuGRqGtNJiX,--P,,,eiUQH RfzjiZnyeLyaLEKhB-Iy L,G  Yj-HnGpk-L-rD -HP.h w- e  k,y uK mz Wc,Zh-..D .MuYGN., W -RtOUpbS kysVZ b-Q.Ktn.pPb,PN n,- vAwzM-o GaXf.cKkMcL- N-,dU,.TSJ. ..d vQtNmDb G R tLq-h-Yny,. .Q. lM j .il.o   FkWk g-,  --Q m    G ,rUUmP-G,-dK- UWtUWiUJxeOoQ 
+Enter text:  ..kAY, JE ,,  sIjMGNqAi,.L-  H  k-.fN .Vq -,J o ,-cEd g XLZ.MkAc, S-zsz.F zD , gF w Vn MW.mrd.velxLENw   fAoj-oyHz WhhK v  pe jjzu,hzekPl-y zGfD. k pY  YlLlLhP-jsN,nZ C VH. VTCFP  L OgzoB EdZBD.U  ,czzTSPr, .od.-hCE.XBM-N.ci-LWN OiTE a.X-dWH, hNBxJIQS,N,Ai jsNy-Ie ,.x dX pkFa  l-WYtVcdi vL rNx RHELnrF j  DaNxQ  X- , gTSn-IWH-zJbm,hdK ydEKlfL,tJ Pgxmt I  jQV.oOBgt
 ===================================
 1. Character Count
 2. Word Count
@@ -9,4 +9,4 @@ Enter text: -TL,.aj-EsP k-ECphhvkCjC,cO-.MPP- o,Le.-,F-jegUMrzuyuGRqGtNJiX,--P,,
 7. Print Right Align Text
 8. Print Left-Right Align Text
 9. Print Pig Latin
-Please make your choice: -TL,.aj-EsP     k-ECphhvkCjC,cO-.MPP-     o,Le.-,
+Please make your choice: Enter the string to count the occurences of: "yZX" appears in the text 0 time(s).

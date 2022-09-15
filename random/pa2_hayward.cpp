@@ -5,7 +5,7 @@
 using namespace std;
 
 const int MAX_STRLEN = 1000;
-const int NUM_CHARS_PER_LINE = 50;
+const int NUM_CHARS_PER_LINE = 10;
 const int MAX_LINES = 15;
 
 int countCharacters(const char str[]);
@@ -124,72 +124,92 @@ int countNumOccurences(const char str[], const char target[])
     return count; // Replace this line with your implementation
 }
 
+// mary haad a little lamb little lamb
 void convertIntoLines(const char str[], char lines[MAX_LINES][NUM_CHARS_PER_LINE])
 {
-    bool isWord = 0;
-    int word_len = 0;
-    int str_len = countCharacters(str);
-    int line_len = 0;
-    int line_no = 0;
-    int space_no = 0; // definition: no of space characters to be printed
-        // before the previous word
-    for (int i=0; i<=str_len; i++) {
-        // cout << str[i] << " " << (int) str[i] << " ";
-        // cout << line_len << " " << space_no << endl;
-        if (!ISWORD(str[i])) { // the previous word has finished
-            if (isWord) {
-                if (line_len + word_len + space_no > NUM_CHARS_PER_LINE - 1) {
-                    lines[line_no][line_len] = '\0';
-                    line_no++;
-                    line_len = 0;
-                    space_no = 0;
-                }
-                for (int j=0; j<space_no; j++) {
-                    lines[line_no][line_len++] = ' ';
-                }
-                space_no = 0;
-                for (int j=0; j<word_len; j++) {
-                    lines[line_no][line_len++] = str[i-word_len+j];
-                }
-                isWord = false;
+    int pos=0, word_length=0;
+     for (int j = 0; j < MAX_LINES; j++)
+    {
+        for (int i = 0; i < NUM_CHARS_PER_LINE; i++)
+        {
+            //remove heading spaces
+            if (i==0 && str[pos]==' ')
+            {
+                pos+=1;
             }
-            if (str[i] == ' ') {
-                if (line_len > 0) space_no++; // no need if (line_len > 0) here
-            } else if (str[i] != '\0') { // isWord must be false here so no worries
-                if (line_len + 1 + space_no > NUM_CHARS_PER_LINE - 1) {
-                    lines[line_no][line_len] = '\0';
-                    line_no++;
-                    line_len = 0;
-                    space_no = 0;
+            //place last char as null
+            if (i==NUM_CHARS_PER_LINE-1)
+            {
+                lines[j][i]='\0';
+                // word_length=0;
+            //copy str into the line i
+            }else{
+                lines[j][i]=str[pos];
+                pos++;
+                
+            }   
+            // if (str[pos]==' '&&str[pos+1]==' ')
+            // {
+            //     pos+=1;
+            // }
+            //count length of word
+            if(str[pos]!=' '){word_length++;}else{word_length=0;}
+            // cout<<word_length<<" ";
+            // if(i==NUM_CHARS_PER_LINE-2)cout<<str[pos-1]<<' '<<str[pos]<<"\n";
+            //check last word and the next word is connected or not:move backward and copy the word to next line
+            if (i==NUM_CHARS_PER_LINE-2 && str[pos]!=' ' && str[pos-1]!=' ')
+            {
+                if(word_length<NUM_CHARS_PER_LINE-1){
+                    lines[j][i-word_length+1]='\0';
+                    pos-=word_length;
                 }
-                for (int j=0; j<space_no; j++) { // flush spaces
-                    lines[line_no][line_len++] = ' ';
-                }
-                space_no = 0;
-                lines[line_no][line_len++] = str[i];
+                // word_length=0;
+                // cout<<"pos_char="<<str[pos]<< "\n";
+                // cout<<"wordl="<<word_length<<"\n";
+                // break;
             }
-        } else {
-            if (!isWord) {
-                isWord = true;
-                word_len = 1;
-            } else {
-                word_len++;
+
+            if (str[pos]=='\0')
+            {
+                continue;
             }
-        }
+        } 
+        if (str[pos]=='\0')
+            {
+                break;
+            }
     }
-    lines[line_no][line_len] = '\0';
-    for (int i=line_no+1; i<MAX_LINES; i++) {
-        lines[i][0] = '\0';
+    for (int i = 0; i < MAX_LINES; i++)
+    {
+        for (int j = NUM_CHARS_PER_LINE-2; j >= 0; j--)
+        {
+            if (lines[i][j]==' ')
+            {
+                lines[i][j]='\0';
+                // word_length=0;
+            } else break;
+        }
     }
 }
 
 void printLeftJustified(const char str[])
 {
-    // cout << "12345678901234567890123456789012345678901234567890" << endl;
-    char lines[MAX_LINES][NUM_CHARS_PER_LINE];
-    convertIntoLines(str, lines);
-    for (int i=0; lines[i][0]!='\0'; i++) {
-        cout << lines[i] << endl;
+    int num_of_lines=1;
+    char lines[MAX_LINES][NUM_CHARS_PER_LINE]={};
+    convertIntoLines(str,lines);
+    for (int i = 0; i < MAX_LINES; i++)
+    {
+        if (lines[i][0]=='\0')
+        {
+            num_of_lines=i;
+            break;
+        }
+    }
+    
+    for (int i = 0; i < num_of_lines; i++)
+    {
+        cout<<lines[i];
+        cout<<"\n";
     }
 }
 
@@ -272,66 +292,194 @@ void printJustified(const char str[])
 #define ISVOWEL(chr) ((chr) == 'a' || (chr) == 'e' || (chr) == 'i' || (chr) == 'o' || (chr) == 'u' || \
                 (chr) == 'A' || (chr) == 'E' || (chr) == 'I' || (chr) == 'O' || (chr) == 'U')
 
+
+bool isvowel(char vowel[], int target,int size){
+    for (int i = 0; i < size; i++)
+    {
+        if (vowel[i]==target)
+        {
+            return true;
+        }   
+    } return false;
+}
+
+// How should Japan avoid the tragedy of being colonialized by western countries as happened to Mexico, India, and Africa
 void convertStrToPigLatin(char str[])
 {
-    char new_str[MAX_STRLEN];
-    int str_len = countCharacters(str);
-    int new_len = 0;
-    bool isWord = false;
-    bool firstVowelFound = false;
-    int word_len = 0;
-    int cont_len = 0; // constanant
+    char vowel[] = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'};
+    int index_str=0,index_temp1=0,index_temp2=0,index_temp3=0, larger_int=0;
+    char temp1[MAX_STRLEN] = {}; // before vowel
+    char temp2[MAX_STRLEN] = {}; // after vowel
+    char temp3[MAX_STRLEN] = {}; // final result
+    bool no_vowel=true;
 
-    int i = 0;
-    while (i <= str_len) {
-        if (ISWORD(str[i])) { // is a word character
-            // cout << "v ";
-            if (!isWord) { // if not within a word
-                isWord = true;
-                firstVowelFound = false;
-                word_len = 0;
-                cont_len = 0;
-            }
-            if (ISVOWEL(str[i])) {
-                firstVowelFound = true;
-            } else {
-                if (!firstVowelFound) 
-                    cont_len++;
-            }
-            word_len++;
+    while (str[index_str]!='\0')
+    {
 
-        } else {
-            // cout << "c ";
-            if (isWord) {
-                if (cont_len > 0) {
-                    for (int j=cont_len; j<word_len; j++) {
-                        new_str[new_len++] = str[i-word_len+j];
-                    }
-                    for (int j=0; j<cont_len; j++) {
-                        new_str[new_len++] = str[i-word_len+j];
-                    }
-                    new_str[new_len++] = 'a';
-                    new_str[new_len++] = 'y';
-                } else {
-                    for (int j=0; j<word_len; j++) {
-                        new_str[new_len++] = str[i-word_len+j];
-                    }
-                    new_str[new_len++] = 'y';
-                    new_str[new_len++] = 'a';
-                    new_str[new_len++] = 'y';
-                }
+        if (!isvowel(vowel, str[index_str], 10)||str[index_str]=='.'||str[index_str]==',') // if vowel . ,
+        {
+            // cout<<index_str<<" ";
+            // cout<<str;
+            if (index_str<countCharacters(str))
+            {
+                temp2[index_temp2]=str[index_str];
+                index_temp2++;
+                temp2[index_temp2]='\0';
             }
-            new_str[new_len++] = str[i];
-            isWord = false;
+            if (str[index_str]==' ')
+            {
+                temp1[index_temp1]=' ';
+                index_temp1++;
+                temp1[index_temp1]='\0';
+                // temp2[index_temp2+1]='\0';
+                // index_temp2++;
+            }
+        }else{
+            no_vowel=false;
+            while (str[index_str]!=' ')//&&str[index_str]!='.'&&str[index_str]!=','
+            {
+                temp1[index_temp1]=str[index_str];
+                // temp2[index_temp2]=' ';
+                // index_temp2++;
+                index_temp1++;
+                index_str++;
+            }
+            if (str[index_str]==' ')
+            {
+                temp1[index_temp1]=' ';
+                index_temp1++;
+                temp2[index_temp2]=' ';
+                index_temp2++;
+                temp2[index_temp2]='\0';
+                // temp2[index_temp2+1]='\0';
+                // index_temp2++;
+            }
+            if (index_str==countCharacters(str)-1)
+            {
+                temp2[index_temp2]=' ';
+                temp2[index_temp2+1]='\0';
+                break;
+                // temp1[index_temp1]=' ';
+                // index_temp1++;
+                // temp2[index_temp2+1]='\0';
+                // index_temp2++;
+            }
+        } 
+        if(no_vowel&&str[index_str]==' '){
+            temp1[index_temp1]=' ';
+            index_temp1++;
         }
-        // cout << str[i] << " " << isWord << " " << firstVowelFound << " " << word_len << " " << cont_len << endl;
-        i++;
+        if (str[index_str]==' '&&str[index_str-1]!=' '&&str[index_str]!='\0')
+        {
+            no_vowel=true;
+        }
+        index_str++;
+        
     }
 
-    for (int j=0; j<new_len; j++) {
-        str[j] = new_str[j];
+    cout<<temp1<<"\n"<<temp2<<"\n";
+
+    for (int i = 0; i < countCharacters(temp2)+1; i++)
+    {
+        if (temp2[i]==' '&&temp2[i-1]!=' '&&temp2[i-1]!='\0'&&temp2[i+1]!=' '&&temp2[i+1]!='\0')
+        {
+            temp2[i]='a';
+        }
+        if (i==countCharacters(temp2))
+        {
+            temp2[i]='\0';
+        }
+        // else if(temp2[i]==' ')temp2[i]='e'; 
     }
-    // str[new_len] = '\0';
+    
+     cout<<temp1<<"\n"<<temp2<<"\n";
+
+    index_temp1=0,index_temp2=0,index_temp3=0;
+    for(int i=0;i<countCharacters(temp2);i++)
+    {
+        if (temp2[index_temp2]==' '&&index_temp2<countCharacters(temp2))
+        {
+            
+         while (temp1[index_temp1]!=' '&&temp1[index_temp1]!='\0')//&&temp1[index_temp1]!='.'&&temp1[index_temp1]!=','
+            {
+                if(temp1[index_temp1]!='.'&&temp1[index_temp1]!=','){
+                temp3[index_temp3]=temp1[index_temp1];
+                index_temp3++;
+                }
+                index_temp1++;
+            }
+            temp3[index_temp3]='y';
+            index_temp3++;
+            temp3[index_temp3]='a';
+            index_temp3++;
+            temp3[index_temp3]='y';
+            index_temp3++;
+            temp3[index_temp3]=' ';
+            index_temp3++;
+            index_temp1++;
+            if(temp1[index_temp1]==','){
+                 temp3[index_temp3]=',';
+                index_temp3++;
+            }
+            if (temp1[index_temp1]=='.')
+            {
+                 temp3[index_temp3]='.';
+                index_temp3++;
+            }
+        }
+        if (temp2[index_temp2]!=' '&&temp2[index_temp2]!='a'&&index_temp2<countCharacters(temp2)) {
+            
+            while (temp1[index_temp1]!=' '&&temp1[index_temp1]!='\0')//&&temp1[index_temp1]!='.'&&temp1[index_temp1]!=','
+            {
+                if(temp1[index_temp1]!='.'&&temp1[index_temp1]!=','){
+                temp3[index_temp3]=temp1[index_temp1];
+                index_temp3++;
+                }
+                index_temp1++;   
+            }
+            while (temp2[index_temp2]!=' '&&temp2[index_temp2]!='a'&&temp2[index_temp2]!='\0')
+            {   
+                temp3[index_temp3]=temp2[index_temp2];
+                index_temp2++;
+                index_temp3++;
+            }
+            temp3[index_temp3]='a';
+            index_temp3++;
+            temp3[index_temp3]='y';
+            index_temp3++;
+            temp3[index_temp3]=' ';
+            index_temp3++;
+            index_temp1++;
+            if(temp1[index_temp1]==','){
+                 temp3[index_temp3]=',';
+                index_temp3++;
+            }
+            if (temp1[index_temp1]=='.')
+            {
+                 temp3[index_temp3]='.';
+                index_temp3++;
+            }
+        }
+       
+        index_temp2++;
+    }
+    // if (str[countCharacters(str)-1]=='.')
+    //         {
+    //             // cout<<true;
+    //             temp3[countCharacters(temp3)-1]='.';
+    //             index_temp3++;  
+    //         }
+    
+
+     for (int i = 0; i < countCharacters(temp3)+1; i++)
+     {
+        str[i]=temp3[i];
+        if (i==countCharacters(temp3))
+        {
+            str[i]='\0';
+        }
+     }
+
     
 }
 
@@ -444,3 +592,4 @@ int main()
         printPigLatin(str);
     }
 }
+

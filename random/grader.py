@@ -10,11 +10,11 @@ grader:
 """
 
 # Input your working path, name of the sample program adn the name of your program
-PATH = "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW1"
+PATH = "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\random"
 SAMPLE_PROGRAM = "sample.exe"
 MY_PROGRAM = "main.exe"
 
-# # Input how you want to generate your sample input
+# Input how you want to generate your sample input
 def generate_input():
     return random.choice([
 f"""
@@ -50,41 +50,6 @@ f"""
 # """[1:-1]
 
     ])
-
-# year = 1800
-# month = 1
-# counter = 0
-# def generate_input():
-#     global year, counter, month
-#     counter += 1
-#     if counter == 4:
-#         month += 1
-#         counter = 0
-#     if month == 13:
-#         month += 1
-#         return f"""
-# {year}
-# {-1}
-# """[1:-1]
-#     if month == 14 and counter < 13:
-#         counter += 1
-#         return f"""
-# {year}
-# {-3}
-# {counter}
-# """[1:-1]
-#     if counter == 13 and month == 14:
-#         year += 1
-#         month = 1
-#         counter = 0
-        
-#     return f"""
-# {year}
-# {random.randint(1, 12)}
-# {['s', 'm'][counter%2]}
-# {['v', 'h'][counter//2]}
-# """[1:-1]
-    
 
 # the [1:-1] removes the starting and ending linebreak
 

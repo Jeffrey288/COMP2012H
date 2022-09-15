@@ -1,4 +1,4 @@
-Enter text: -TL,.aj-EsP k-ECphhvkCjC,cO-.MPP- o,Le.-,F-jegUMrzuyuGRqGtNJiX,--P,,,eiUQH RfzjiZnyeLyaLEKhB-Iy L,G  Yj-HnGpk-L-rD -HP.h w- e  k,y uK mz Wc,Zh-..D .MuYGN., W -RtOUpbS kysVZ b-Q.Ktn.pPb,PN n,- vAwzM-o GaXf.cKkMcL- N-,dU,.TSJ. ..d vQtNmDb G R tLq-h-Yny,. .Q. lM j .il.o   FkWk g-,  --Q m    G ,rUUmP-G,-dK- UWtUWiUJxeOoQ 
+Enter text: Cj -Ok..HJzSkkAfyAK x  -ZvcWO t--g,P dgz ZUwtUSzxzgGp  qxeld   l   WlLI-L,.dpsVpk jSAgNU.trIh mmSstWd k rSx,Cx--abYrK, T RSg P  --.s ,pQI-Vzf.x, Nx,  tnSacnWlO .Lf.-I-b,- vYXfHs-- pI .yY TXS,.VYU, D., sVs . DXOmRAQo  sunm, Umy ,g A,eae EKfy, ABz so-r,DikV, .xGQVlyvOG ITPT,s X. W Lzo COB  ,q, OhuH.J   vtT nQ LN-j EwLjNaqwoVyiUP .zq,bsS Kko ,.is,tR,M.dqRrjIX,v  w ewcD
 ===================================
 1. Character Count
 2. Word Count
@@ -9,10 +9,4 @@ Enter text: -TL,.aj-EsP k-ECphhvkCjC,cO-.MPP- o,Le.-,F-jegUMrzuyuGRqGtNJiX,--P,,
 7. Print Right Align Text
 8. Print Left-Right Align Text
 9. Print Pig Latin
-Please make your choice: -TL,.aj-EsP     k-ECphhvkCjC,cO-.MPP-     o,Le.-,
-F-jegUMrzuyuGRqGtNJiX,--P,,,eiUQH
-RfzjiZnyeLyaLEKhB-Iy  L,G  Yj-HnGpk-L-rD -HP.h w-
-e   k,y uK mz Wc,Zh-..D .MuYGN., W -RtOUpbS kysVZ
-b-Q.Ktn.pPb,PN  n,-  vAwzM-o GaXf.cKkMcL- N-,dU,.
-TSJ.  ..d  vQtNmDb G R tLq-h-Yny,. .Q. lM j .il.o
-FkWk g-,  --Q m    G ,rUUmP-G,-dK- UWtUWiUJxeOoQ
+Please make your choice: Enter the string to find and replace: Enter the string to replace it with: Cj -Ok..HJzSkkAfyAK x  -ZvcWO t--g,P dgz ZUwtUSzxzgGp  qxeld   l   WlLI-L,.dpsVpk jSAgNU.trIh mmSstWd k rSx,Cx--abYrK, T RSg P  --.s ,pQI-Vzf.x, Nx,  tnSacnWlO .Lf.-I-b,- vYXfHs-- pI .yY TXS,.VYU, D., sVs . DXOmRAQo  sunm, Umy ,g A,eae EKfy, ABz so-r,DikV, .xGQVlyvOG ITPT,s X. W Lzo COB  ,q, OhuH.J   vtT nQ LN-j EwLjNaqwoVyiUP .zq,bsS Kko ,.is,tR,M.dqRrjIX,v  w ewcD
