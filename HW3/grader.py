@@ -98,14 +98,16 @@ while True:
     f.write(the_input)
     f.close()
 
-    # validating the test case
+    # validating the test case to see whether it only has one possible value
     os.system(f"{DUP_PROGRAM} < input.txt > output_duplicate.txt")
     f_duplicate = open("output_duplicate.txt", "r")
     output_duplicate = f_duplicate.read()
     f_duplicate.close()
     # print(output_duplicate)
-    # print(int(output_duplicate))
-    if int(output_duplicate) != 1: continue
+    print(int(output_duplicate))
+    if (int(output_duplicate)) == 0: input()
+    continue
+    # if int(output_duplicate) != 1: continue
 
     print_green("Test case written into input.txt:")
     print(the_input)

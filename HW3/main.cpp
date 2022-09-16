@@ -41,6 +41,10 @@ void get_input_board() {
     cout << "Enter the number of columns: ";
     cin >> num_cols;
 
+    /**
+     * @brief WORKING SOLUTION 1
+     * 
+     */
     int cons; // constraint
     int sum; // sum of constraint
 
@@ -95,6 +99,29 @@ void get_input_board() {
 
     }
 
+
+
+
+    //     int index;
+    // int counter;
+    // for (int c = 0; c < num_cols; c++) {
+    //     index = 0;
+    //     counter = 0;
+
+    //     for (int r = 0; r < num_complete_rows; r++) {
+    //         if (board[r][c] == 'X') {
+    //             counter++;
+    //             // if (counter > col_constraints[c][index++]) return false;
+    //         } else if (counter > 0) {
+    //             if (index >= num_col_constraints[c] || counter != col_constraints[c][index++]) return false;
+    //             counter = 0;
+    //         }
+    //     }
+
+    // }
+
+
+    
     for (int r = 0; r < num_rows; r++) {
         for (int c = 0; c < num_cols; c++) {
             board[r][c] = '.';
@@ -478,7 +505,6 @@ bool check_rows_valid(int num_complete_rows) {
             }
         }
 
-
     }
 
     return true;    // added to pass compilation
@@ -552,6 +578,7 @@ void solve() {
         //     cout << endl;
         // }
     }
+    // cout << "eh";
     // system("pause");
 
     // cout << "starting to solve" << endl;

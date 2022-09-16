@@ -518,8 +518,7 @@ bool _solve(int row_idx) {
             if (valid) {
             // // cout << row_idx<< " : " << valid << endl;
                 if (_solve(row_idx + 1)) {
-                    // return true;
-                    num_solutions++;
+                    return true;
                 }
             }
         } else {
@@ -529,7 +528,7 @@ bool _solve(int row_idx) {
             if (valid == 1) {
                 // // cout << "found solution! it is " << endl;
                 // print_board();
-                return true;
+                num_solutions++;
             }
         }
         
