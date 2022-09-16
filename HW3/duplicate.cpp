@@ -36,9 +36,9 @@ void get_input_board() {
     // START YOUR CODES HERE
 
     // some code snippets that you can directly copy and paste.
-    cout << "Enter the number of rows: ";
+    // cout << "Enter the number of rows: ";
     cin >> num_rows;
-    cout << "Enter the number of columns: ";
+    // cout << "Enter the number of columns: ";
     cin >> num_cols;
 
     int cons; // constraint
@@ -51,7 +51,7 @@ void get_input_board() {
             num_row_constraints[i] = 0;
             sum = 0;
 
-            cout << "Enter the number of constraints for row " << i << " (end with -1): ";
+            // cout << "Enter the number of constraints for row " << i << " (end with -1): ";
             do {
                 cin >> cons;
                 if (cons != -1) {
@@ -61,7 +61,7 @@ void get_input_board() {
             } while (cons != -1);
 
             if (sum + max(num_row_constraints[i] - 1, 0) <= num_cols) break;
-            cout << "Invalid row constraint, please try again." << endl;
+            // cout << "Invalid row constraint, please try again." << endl;
 
         }
 
@@ -77,7 +77,7 @@ void get_input_board() {
             num_col_constraints[i] = 0;
             sum = 0;
 
-            cout << "Enter the number of constraints for column " << i << " (end with -1): ";
+            // cout << "Enter the number of constraints for column " << i << " (end with -1): ";
             do {
                 cin >> cons;
                 if (cons != -1) {
@@ -87,7 +87,7 @@ void get_input_board() {
             } while (cons != -1);
 
             if (sum + max(num_col_constraints[i] - 1, 0) <= num_rows) break;
-            cout << "Invalid column constraint, please try again." << endl;
+            // cout << "Invalid column constraint, please try again." << endl;
         }
 
         if (num_col_constraints[i] > max_num_col_constraints)
@@ -132,43 +132,44 @@ void print_board() {
     int num_length = 2; // (num_rows > 10) ? 2 : 1;
 
     // first line
-    printf("%*s", 2*max_num_row_constraints+2+num_length,"");
-    for (char c = 0; c < num_cols; c++) cout << " " << (char) ('A' + c);
-    cout << endl;
+    // printf("%*s", 2*max_num_row_constraints+2+num_length,"");
+    for (char c = 0; c < num_cols; c++) // cout << " " << (char) ('A' + c);
+    // cout << endl;
 
     // printing row constraints
     for (int r = 0; r < num_rows; r++) {
         
         // printing the constraints
         for (int i = max_num_row_constraints - 1; i >= 0; i--) {
-            if (i < num_row_constraints[r]) 
-                cout << row_constraints[r][(num_row_constraints[r]-1)-i] << " ";
-            else 
-                cout << "  ";
+            if (i < num_row_constraints[r]) ;
+                // cout << row_constraints[r][(num_row_constraints[r]-1)-i] << " ";
+            else ;
+                // cout << "  ";
         }
-        cout << "| ";
-        printf("%*d", num_length, r);
+        // cout << "| ";
+        // printf("%*d", num_length, r);
         
         // printing the board out
         for (int c = 0; c < num_cols; c++) {
-            cout << " " << board[r][c];
+            // cout << " " << board[r][c];
         }
 
-        cout << endl;
+        // cout << endl;
 
     }
 
     // printing the row constraints
     for (int i = 0; i < max_num_col_constraints; i++) {
-        printf("%*s", 2*max_num_row_constraints+2+num_length,""); 
+        // printf("%*s", 2*max_num_row_constraints+2+num_length,""); 
         for (int c = 0; c < num_cols; c++) {
 
-            if (i < num_col_constraints[c]) 
-                cout << " " << col_constraints[c][i];
-            else 
-                cout << "  ";
+            if (i < num_col_constraints[c]) ;
+                
+                // cout << " " << col_constraints[c][i];
+            else ;
+                // cout << "  ";
         }
-        cout << endl;
+        // cout << endl;
     }
 
     // END YOUR CODES HERE
@@ -199,12 +200,12 @@ void user_operate_board() {
 
 
     do {
-        cout << "Enter the cell you want to modify (e.g. A 2): ";
+        // cout << "Enter the cell you want to modify (e.g. A 2): ";
         cin >> col_char;
         cin >> row;
         col = col_char - 'A';
         if ((0 <= col && col < num_cols) && (0 <= row && row < num_rows)) break;
-        cout << "Invalid row or column. Try again." << endl;
+        // cout << "Invalid row or column. Try again." << endl;
     } while (true);
 
     if (board[row][col] == 'X')
@@ -295,8 +296,8 @@ bool check_whole_board_valid() {
 void positions_to_row(int row_idx, const int positions[], int num_pos, char result_row[]) {
     // START YOUR CODES HERE
     
-    if (num_row_constraints[row_idx] != num_pos) 
-        cout << "something is REALLY wrong with my understanding" << endl;
+    if (num_row_constraints[row_idx] != num_pos) ;
+        // cout << "something is REALLY wrong with my understanding" << endl;
 
     int index = 0; // the index of constraint focusing on
     for (int c = 0; c < num_cols; c++) {
@@ -306,7 +307,7 @@ void positions_to_row(int row_idx, const int positions[], int num_pos, char resu
             result_row[c] = '.';
         else 
             result_row[c] = 'X';
-        // cout << c - positions[index] << " ";
+        // // cout << c - positions[index] << " ";
     }
     
     // END YOUR CODES HERE
@@ -374,9 +375,9 @@ void get_row_perms(int row_idx, int block_idx, const int positions[], int num_po
     int shifted_positions[MAX_CONSTRAINT_NUM]; // make a new array
     COPY_INTO_ARRAY(row_idx, positions, shifted_positions) // copy the old positions into it
 
-    // cout << "canshift=" << block_can_shift(row_idx, block_idx, positions, num_pos) << " ";
+    // // cout << "canshift=" << block_can_shift(row_idx, block_idx, positions, num_pos) << " ";
     // system("pause");
-    // for (int i = 0; i < num_pos; i++) cout << shifted_positions[i] << " ";
+    // for (int i = 0; i < num_pos; i++) // cout << shifted_positions[i] << " ";
 
     while (block_can_shift(row_idx, block_idx, shifted_positions, num_pos)) { // while can shift
         shifted_positions[block_idx] += 1; // shift
@@ -445,16 +446,16 @@ bool check_rows_valid(int num_complete_rows) {
 
     //     // comparing the observed and target constraints
     //     if (num_cons == 0 && cons[0] == 0) continue;
-    //     // cout << num_cons;
+    //     // // cout << num_cons;
     //     if (num_cons > num_col_constraints[c]) return false;
-    //     // cout << "wah";
+    //     // // cout << "wah";
     //     for (int i = 0; i < num_cons - 1; i++) {
     //         if (cons[i] != col_constraints[c][i]) return false;
     //     }
-    //     // cout << "wah";
-    //     // cout << " " << cons[num_cons - 1] << " " << col_constraints[c][num_cons - 1] << " ";
+    //     // // cout << "wah";
+    //     // // cout << " " << cons[num_cons - 1] << " " << col_constraints[c][num_cons - 1] << " ";
     //     if (cons[num_cons - 1] > col_constraints[c][num_cons - 1]) return false; // checking last row
-    //     // cout << "wah";
+    //     // // cout << "wah";
     // }
 
     /**
@@ -497,6 +498,7 @@ bool check_rows_valid(int num_complete_rows) {
  * 'get_row_perms()', �焝heck_rows_valid()��, etc.
  */
 
+int num_solutions = 0;
 bool _solve(int row_idx) {
 
     bool valid;
@@ -514,17 +516,18 @@ bool _solve(int row_idx) {
             valid = check_rows_valid(row_idx + 1);
 
             if (valid) {
-            // cout << row_idx<< " : " << valid << endl;
+            // // cout << row_idx<< " : " << valid << endl;
                 if (_solve(row_idx + 1)) {
-                    return true;
+                    // return true;
+                    num_solutions++;
                 }
             }
         } else {
             valid = check_whole_board_valid();
-            // cout << row_idx << " (last) : " << valid << endl;
+            // // cout << row_idx << " (last) : " << valid << endl;
 
             if (valid == 1) {
-                // cout << "found solution! it is " << endl;
+                // // cout << "found solution! it is " << endl;
                 // print_board();
                 return true;
             }
@@ -544,18 +547,19 @@ void solve() {
     // TASK 7: GENERATING THE PERMUTATIONS
     for (int r = 0; r < num_rows; r++) {
         get_row_perms(r);
-        // cout << "finished row " << r << endl;
+        // // cout << "finished row " << r << endl;
         // for (int i = 0; i < num_row_perms[r]; i++)  {
         //     for (int c = 0; c < num_cols; c++) {
-        //         cout << row_perms[r][i][c];
+        //         // cout << row_perms[r][i][c];
         //     }
-        //     cout << endl;
+        //     // cout << endl;
         // }
     }
     // system("pause");
 
-    // cout << "starting to solve" << endl;
+    // // cout << "starting to solve" << endl;
     _solve(0);
+    cout << num_solutions << endl;
 
     // clean up
     for (int r = 0; r < num_rows; r++) {
@@ -571,14 +575,14 @@ int main() {
     print_board();
 
     while (true) {
-        cout << "===== Welcome to Nonogram Game =====" << endl;
-        cout << "Please enter your choice:" << endl;
-        cout << "Enter 'p' to print the current board." << endl;
-        cout << "Enter 'm' to modify a cell." << endl;
-        cout << "Enter 'c' to check your solution." << endl;
-        cout << "Enter 's' to invoke solver." << endl;
-        cout << "Enter 'q' to quit." << endl;
-        cout << "Your choice: ";
+        // cout << "===== Welcome to Nonogram Game =====" << endl;
+        // cout << "Please enter your choice:" << endl;
+        // cout << "Enter 'p' to print the current board." << endl;
+        // cout << "Enter 'm' to modify a cell." << endl;
+        // cout << "Enter 'c' to check your solution." << endl;
+        // cout << "Enter 's' to invoke solver." << endl;
+        // cout << "Enter 'q' to quit." << endl;
+        // cout << "Your choice: ";
         char input;
         cin >> input;
         if (input == 'p') {
@@ -587,19 +591,19 @@ int main() {
             user_operate_board();
         } else if (input == 'c') {
             if (check_whole_board_valid()) {
-                cout << "Congratulations! Your solution is correct!" << endl;
+                // cout << "Congratulations! Your solution is correct!" << endl;
             } else {
-                cout << "Ahh, your solution is incorrect, try again." << endl;
+                // cout << "Ahh, your solution is incorrect, try again." << endl;
             }
         } else if (input == 's') {
-            cout << "Generating solution:" << endl;
+            // cout << "Generating solution:" << endl;
             solve();
             print_board();
         } else if (input == 'q') {
-            cout << "Bye!" << endl;
+            // cout << "Bye!" << endl;
             break;
         } else {
-            cout << "Invalid input. Try again." << endl;
+            // cout << "Invalid input. Try again." << endl;
         }
     }
     return 0;
