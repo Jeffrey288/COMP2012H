@@ -1,4 +1,4 @@
-Enter text: Cj -Ok..HJzSkkAfyAK x  -ZvcWO t--g,P dgz ZUwtUSzxzgGp  qxeld   l   WlLI-L,.dpsVpk jSAgNU.trIh mmSstWd k rSx,Cx--abYrK, T RSg P  --.s ,pQI-Vzf.x, Nx,  tnSacnWlO .Lf.-I-b,- vYXfHs-- pI .yY TXS,.VYU, D., sVs . DXOmRAQo  sunm, Umy ,g A,eae EKfy, ABz so-r,DikV, .xGQVlyvOG ITPT,s X. W Lzo COB  ,q, OhuH.J   vtT nQ LN-j EwLjNaqwoVyiUP .zq,bsS Kko ,.is,tR,M.dqRrjIX,v  w ewcD
+Enter text: .l,x  ceGgYj.yHsw v-BaP,rTzShXU j-nZKW Oh- .RQsni iTnc,-eu yb.-H---bkrvPf Jv  v h CPZgVhH,,a,-u B LydGT D,-UxPL.r xe.PJtNVh U -cu.- riw-igPk  XYp,V fi .c zoD,uE.-N  p-irSv-pjxTX e H.zUzPe-p-gqc UxUB,PD-Lv  Kz, F, kfbkokR.EIe -U.c h   WJ w X
 ===================================
 1. Character Count
 2. Word Count
@@ -9,4 +9,4 @@ Enter text: Cj -Ok..HJzSkkAfyAK x  -ZvcWO t--g,P dgz ZUwtUSzxzgGp  qxeld   l   W
 7. Print Right Align Text
 8. Print Left-Right Align Text
 9. Print Pig Latin
-Please make your choice: Enter the string to find and replace: Enter the string to replace it with: Cj -Ok..HJzSkkAfyAK x  -ZvcWO t--g,P dgz ZUwtUSzxzgGp  qxeld   l   WlLI-L,.dpsVpk jSAgNU.trIh mmSstWd k rSx,Cx--abYrK, T RSg P  --.s ,pQI-Vzf.x, Nx,  tnSacnWlO .Lf.-I-b,- vYXfHs-- pI .yY TXS,.VYU, D., sVs . DXOmRAQo  sunm, Umy ,g A,eae EKfy, ABz so-r,DikV, .xGQVlyvOG ITPT,s X. W Lzo COB  ,q, OhuH.J   vtT nQ LN-j EwLjNaqwoVyiUP .zq,bsS Kko ,.is,tR,M.dqRrjIX,v  w ewcD
+Please make your choice: Total character count: 240

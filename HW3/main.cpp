@@ -29,8 +29,8 @@ int col_constraints[MAX_COL][MAX_CONSTRAINT_NUM] = {{0}};
  *
  * For simplicity, we assume the user's other inputs are always valid.
  */
-int max_num_row_constraints = 0;
-int max_num_col_constraints = 0;
+int max_num_row_constraints = -1;
+int max_num_col_constraints = -1;
 
 void get_input_board() {
     // START YOUR CODES HERE
@@ -41,10 +41,6 @@ void get_input_board() {
     cout << "Enter the number of columns: ";
     cin >> num_cols;
 
-    /**
-     * @brief WORKING SOLUTION 1
-     * 
-     */
     int cons; // constraint
     int sum; // sum of constraint
 
@@ -98,29 +94,6 @@ void get_input_board() {
             max_num_col_constraints = num_col_constraints[i];
 
     }
-
-
-
-
-    //     int index;
-    // int counter;
-    // for (int c = 0; c < num_cols; c++) {
-    //     index = 0;
-    //     counter = 0;
-
-    //     for (int r = 0; r < num_complete_rows; r++) {
-    //         if (board[r][c] == 'X') {
-    //             counter++;
-    //             // if (counter > col_constraints[c][index++]) return false;
-    //         } else if (counter > 0) {
-    //             if (index >= num_col_constraints[c] || counter != col_constraints[c][index++]) return false;
-    //             counter = 0;
-    //         }
-    //     }
-
-    // }
-
-
     
     for (int r = 0; r < num_rows; r++) {
         for (int c = 0; c < num_cols; c++) {
@@ -156,6 +129,19 @@ void get_input_board() {
  */
 void print_board() {
     // START YOUR CODES HERE
+
+    if (max_num_row_constraints == -1) {
+        for (int i = 0; i < num_rows; i++) 
+            if (num_row_constraints[i] > max_num_row_constraints)
+                max_num_row_constraints = num_row_constraints[i];
+    }
+
+    if (max_num_col_constraints == -1) {
+        for (int i = 0; i < num_cols; i++) 
+            if (num_col_constraints[i] > max_num_col_constraints)
+                max_num_col_constraints = num_col_constraints[i];
+    }
+
     int num_length = 2; // (num_rows > 10) ? 2 : 1;
 
     // first line
@@ -238,6 +224,7 @@ void user_operate_board() {
         board[row][col] = '.';
     else   
         board[row][col] = 'X';
+    // print_board();
 
     // END YOUR CODES HERE
 }
@@ -256,46 +243,96 @@ void user_operate_board() {
 bool check_whole_board_valid() {
     // START YOUR CODES HERE
 
-    // checking consecutive rows
-    int num_cons; // number of observed constraints
-    int cons[MAX_CONSTRAINT_NUM]; // observed constraints
+    /**
+     * @brief WORKING SOLUTION 1
+     * 
+     */
 
-    // checking row constraints
-    for (int r = 0; r < num_rows; r++) {
-        num_cons = 0;
-        cons[0] = 0;
+    // // checking consecutive rows
+    // int num_cons; // number of observed constraints
+    // int cons[MAX_CONSTRAINT_NUM]; // observed constraints
 
-        // store observed constraints into temp
-        for (int c = 0; c < num_cols; c++) {
-            if (board[r][c] == 'X') cons[num_cons]++;
-            else if (cons[num_cons] > 0) cons[++num_cons] = 0;
-        }
-        if (cons[num_cons] > 0) ++num_cons;
+    // // checking row constraints
+    // for (int r = 0; r < num_rows; r++) {
+    //     num_cons = 0;
+    //     cons[0] = 0;
 
-        // comparing the observed and target constraints
-        if (num_cons != num_row_constraints[r]) return false;
-        for (int i = 0; i < num_cons; i++) 
-            if (cons[i] != row_constraints[r][i]) return false;
-    }
+    //     // store observed constraints into temp
+    //     for (int c = 0; c < num_cols; c++) {
+    //         if (board[r][c] == 'X') cons[num_cons]++;
+    //         else if (cons[num_cons] > 0) cons[++num_cons] = 0;
+    //     }
+    //     if (cons[num_cons] > 0) ++num_cons;
 
-    // checking column constraints
+    //     // comparing the observed and target constraints
+    //     if (num_cons != num_row_constraints[r]) return false;
+    //     for (int i = 0; i < num_cons; i++) 
+    //         if (cons[i] != row_constraints[r][i]) return false;
+    // }
+
+    // // checking column constraints
+    // for (int c = 0; c < num_cols; c++) {
+    //     num_cons = 0;
+    //     cons[0] = 0;
+
+    //     // store observed constraints into temp
+    //     for (int r = 0; r < num_rows; r++) {
+    //         if (board[r][c] == 'X') cons[num_cons]++;
+    //         else if (cons[num_cons] > 0) cons[++num_cons] = 0;
+    //     }
+    //     if (cons[num_cons] > 0) ++num_cons;
+
+    //     // comparing the observed and target constraints
+    //     if (num_cons != num_col_constraints[c]) return false;
+    //     for (int i = 0; i < num_cons; i++) 
+    //         if (cons[i] != col_constraints[c][i]) return false;
+    // }
+
+    /**
+     * @brief WORKING SOLUTION 2
+     * 
+     */
+
+    int index;
+    int counter;
     for (int c = 0; c < num_cols; c++) {
-        num_cons = 0;
-        cons[0] = 0;
+        index = 0;
+        counter = 0;
 
-        // store observed constraints into temp
         for (int r = 0; r < num_rows; r++) {
-            if (board[r][c] == 'X') cons[num_cons]++;
-            else if (cons[num_cons] > 0) cons[++num_cons] = 0;
+            if (board[r][c] == 'X') {
+                counter++;
+            } else if (counter > 0) {
+                if (index >= num_col_constraints[c] || counter != col_constraints[c][index++]) return false;
+                counter = 0;
+            }
         }
-        if (cons[num_cons] > 0) ++num_cons;
-
-        // comparing the observed and target constraints
-        if (num_cons != num_col_constraints[c]) return false;
-        for (int i = 0; i < num_cons; i++) 
-            if (cons[i] != col_constraints[c][i]) return false;
+        if (counter > 0) {
+            if (index >= num_col_constraints[c] || counter != col_constraints[c][index]) return false;
+            index++;
+        }
+        if (index != num_col_constraints[c]) return false;
     }
 
+
+    for (int r = 0; r < num_rows; r++) {
+        index = 0;
+        counter = 0;
+
+        for (int c = 0; c < num_cols; c++) {
+            if (board[r][c] == 'X') {
+                counter++;
+            } else if (counter > 0) {
+                if (index >= num_row_constraints[r] || counter != row_constraints[r][index++]) return false;
+                counter = 0;
+            }
+        }
+        if (counter > 0) {
+            if (index >= num_row_constraints[r] || counter != row_constraints[r][index]) return false;
+            index++;
+        }
+        if (index != num_row_constraints[r]) return false;
+    }
     
     return true;    // added to pass compilation
 
@@ -478,8 +515,8 @@ bool check_rows_valid(int num_complete_rows) {
     //     for (int i = 0; i < num_cons - 1; i++) {
     //         if (cons[i] != col_constraints[c][i]) return false;
     //     }
-    //     // cout << "wah";
-    //     // cout << " " << cons[num_cons - 1] << " " << col_constraints[c][num_cons - 1] << " ";
+    // //     // cout << "wah";
+    // //     // cout << " " << cons[num_cons - 1] << " " << col_constraints[c][num_cons - 1] << " ";
     //     if (cons[num_cons - 1] > col_constraints[c][num_cons - 1]) return false; // checking last row
     //     // cout << "wah";
     // }
@@ -503,6 +540,11 @@ bool check_rows_valid(int num_complete_rows) {
                 if (index >= num_col_constraints[c] || counter != col_constraints[c][index++]) return false;
                 counter = 0;
             }
+
+            // cout << num_cons;
+            if (counter > 0 && index >= num_col_constraints[c]) return false;
+            if (counter > col_constraints[c][index]) return false; // checking last row
+
         }
 
     }
@@ -522,6 +564,35 @@ bool check_rows_valid(int num_complete_rows) {
  * Hint: You may use recursion to do that, with the help of helper functions
  * 'get_row_perms()', �焝heck_rows_valid()��, etc.
  */
+
+bool check_all_cols_valid() {
+    // START YOUR CODES HERE
+
+    int index;
+    int counter;
+    for (int c = 0; c < num_cols; c++) {
+        index = 0;
+        counter = 0;
+
+        for (int r = 0; r < num_rows; r++) {
+            if (board[r][c] == 'X') {
+                counter++;
+            } else if (counter > 0) {
+                if (index >= num_col_constraints[c] || counter != col_constraints[c][index++]) return false;
+                counter = 0;
+            }
+        }
+        if (counter > 0) {
+            if (index >= num_col_constraints[c] || counter != col_constraints[c][index]) return false;
+            index++;
+        }
+        if (index != num_col_constraints[c]) return false;
+    }
+  
+    return true;  
+
+    // END YOUR CODES HERE
+}
 
 bool _solve(int row_idx) {
 
@@ -546,7 +617,7 @@ bool _solve(int row_idx) {
                 }
             }
         } else {
-            valid = check_whole_board_valid();
+            valid = check_all_cols_valid();
             // cout << row_idx << " (last) : " << valid << endl;
 
             if (valid == 1) {

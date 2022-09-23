@@ -477,6 +477,9 @@ bool check_rows_valid(int num_complete_rows) {
                 if (index >= num_col_constraints[c] || counter != col_constraints[c][index++]) return false;
                 counter = 0;
             }
+
+            if (counter > 0 && index >= num_col_constraints[c]) return false;
+            if (counter > col_constraints[c][index]) return false; // checking last row
         }
 
 

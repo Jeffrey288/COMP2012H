@@ -1,0 +1,17 @@
+Enter text: l, .h-R.-VIAmIn-u,.nD k  ,iiGmjaghOg, ma r-,zeuMctQ QvSF zmfjVpm-,Iix-ngq.u.Ekp-oVUV , G Pww,UmL,-V-L,VD.z loX KV Y,GcR,Ep - h.cHCAoqCAh kMIxCmY  y  MfEk xyb Kg-  ,,.F B-c -uT.PqB PUPRK N ,- e.r,E RT U lflKb-. sX bfp-pg RZ.jfnu-w r-wm,- fr fFJ IX 
+===================================
+1. Character Count
+2. Word Count
+3. Encrypt (Caeser Cipher)
+4. Find and Replace String Globally
+5. Find Frequency of String
+6. Print Left Align Text
+7. Print Right Align Text
+8. Print Left-Right Align Text
+9. Print Pig Latin
+Please make your choice: l, .h-R.-VIAmIn-u,.nD k  ,iiGmjaghOg, ma r-,
+zeuMctQ QvSF zmfjVpm-,Iix-ngq.u.Ekp-oVUV , G Pww,
+UmL,-V-L,VD.z loX KV Y,GcR,Ep - h.cHCAoqCAh
+kMIxCmY  y  MfEk xyb Kg-  ,,.F B-c -uT.PqB PUPRK
+N ,- e.r,E RT U lflKb-. sX bfp-pg RZ.jfnu-w r-wm,
+- fr fFJ IX 

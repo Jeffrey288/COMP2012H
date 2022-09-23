@@ -2,6 +2,7 @@ from enum import unique
 import os
 import random
 import difflib
+import time
 import string
 import lorem
 
@@ -59,7 +60,8 @@ def generate_input():
         [f"{cols}"] + \
         [' '.join([str(v) for v in row_constraints[r] + [-1]]) for r in range(rows)] + \
         [' '.join([str(v) for v in col_constraints[c] + [-1]]) for c in range(cols)] + \
-        ['s\nq'] 
+        ['s\nc\np\nm\nA 0\np\nc\nq']  # wrong
+        # ['s\nq']
     input_text = '\n'.join(input_text)
 
 
@@ -74,8 +76,10 @@ def generate_input():
 ONE_BY_ONE = 1  # runs the test cases one by one
 STOP_ON_DIFF = 2  # checks test cases until a wrong case occurs
 MODE = STOP_ON_DIFF
-# -----------------
 
+DISPLAY_TIME = False
+# -----------------
+# os.system('echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null 2>&1')
 OKBLUE = '\033[94m'
 OKCYAN = '\033[96m'
 WARNING = '\033[93m'
@@ -104,17 +108,29 @@ while True:
     output_duplicate = f_duplicate.read()
     f_duplicate.close()
     # print(output_duplicate)
-    print(int(output_duplicate))
-    if (int(output_duplicate)) == 0: input()
-    continue
-    # if int(output_duplicate) != 1: continue
+    # print(int(output_duplicate))
+    # if (int(output_duplicate)) == 0: input()
+    # continue
+    if int(output_duplicate) != 1: continue
 
     print_green("Test case written into input.txt:")
     print(the_input)
     print()
     
+    time_sample = time.time()
+    if DISPLAY_TIME:
+        cmd = 'powershell -Command "(Measure-Command {cat input.txt | .\\' + SAMPLE_PROGRAM + '}).TotalMilliseconds" > time_sample.txt'
+        os.system(cmd)
     os.system(f"{SAMPLE_PROGRAM} < input.txt > output_sample.txt")
+    time_sample = time.time() - time_sample
+
+    time_my = time.time()
+    if DISPLAY_TIME:
+        cmd = 'powershell -Command "(Measure-Command {cat input.txt | .\\' + MY_PROGRAM + '}).TotalMilliseconds" > time_my.txt'
+        os.system(cmd)
     os.system(f"{MY_PROGRAM} < input.txt > output_my.txt")
+    time_my = time.time() - time_my
+
     f_sample = open("output_sample.txt")
     output_sample = f_sample.read()
     f_my = open("output_my.txt")
@@ -130,6 +146,15 @@ while True:
     print_yellow("--------")
     print(output_my)
     print_yellow("--------")
+    t_sample = open("time_sample.txt")
+    time_sample = t_sample.read()
+    t_sample.close()
+    t_my = open("time_my.txt")
+    time_my = t_my.read()
+    t_my.close()
+    if DISPLAY_TIME:
+        print("sample run time:", float(time_sample))
+        print("my run time:", float(time_my))
 
     # Check for diff here
     def end_space_strip(line):
