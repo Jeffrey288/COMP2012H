@@ -67,13 +67,14 @@ def check_prime(k):
 # gen_primes()
 
 # f = open("primes.txt", "w")
-# def primes(n):
-#     """ Returns  a list of primes < n """
-#     sieve = [True] * n
-#     for i in range(3,int(n**0.5)+1,2):
-#         if sieve[i]:
-#             sieve[i*i::2*i]=[False]*((n-i*i-1)//(2*i)+1)
-#     return [2] + [i for i in range(3,n,2) if sieve[i]]
+def primes(n):
+    """ Returns  a list of primes < n """
+    sieve = [True] * n
+    for i in range(3,int(n**0.5)+1,2):
+        if sieve[i]:
+            sieve[i*i::2*i]=[False]*((n-i*i-1)//(2*i)+1)
+    return [2] + [i for i in range(3,n,2) if sieve[i]]
+print(len(primes(10000)))
 
 # # print(primes(100000000)[-1000:])
 # N = 100000
@@ -100,7 +101,7 @@ def check_prime(k):
 #       return False
 #   return True
 
-print([check_prime(i) for i in range(1, 100)])
+# print([check_prime(i) for i in range(1, 100)])
 # print("done")
 
 # for i in range(1, 100):
