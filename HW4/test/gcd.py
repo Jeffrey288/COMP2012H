@@ -74,18 +74,18 @@ def primes(n):
         if sieve[i]:
             sieve[i*i::2*i]=[False]*((n-i*i-1)//(2*i)+1)
     return [2] + [i for i in range(3,n,2) if sieve[i]]
-print(len(primes(10000)))
+# print(len(primes(10000)))
 
-# # print(primes(100000000)[-1000:])
-# N = 100000
-# flags = ["0" for _ in range(N)]
-# p = primes(N)[1:]
-# for k in p: flags[k//2] = "1"
-# # ints = ["".join(flags[64*k:64*k+63]) for k in range(N//128)]
-# # ints = [hex(int(k, 2)) for k in ints]
-# f = open("primes.txt", "w")
-# f.write(",".join(flags))
-# f.close()
+# print(primes(100000000)[-1000:])
+N = 10000
+flags = ["0" for _ in range(N)]
+p = primes(N)[1:]
+for k in p: flags[k//2] = "1"
+ints = ["".join(flags[64*k:64*k+63]) for k in range(N//128)]
+ints = [hex(int(k, 2)) for k in ints]
+f = open("primes.txt", "w")
+f.write(",".join(flags))
+f.close()
 
 
 
