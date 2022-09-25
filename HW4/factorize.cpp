@@ -373,7 +373,7 @@ inline void print_factors(long long num) {
     for (int i = 0; i < num_factors - 1; i++) {
         cout << factors[i] << "*";
     }
-    cout << factors[num_factors - 1] << "\n";
+    cout << factors[num_factors - 1] << endl;
 }
 
 int main(int argc, char *argv[]) {
@@ -390,11 +390,11 @@ int main(int argc, char *argv[]) {
     long long from, to;
     // from = atoll(argv[1]);
     // to = atoll(argv[2]);
-    // from = 576460752303423571;
+    from = 576460752303423571;
     // to = 576460752303425489;
     // from = 9223372036854774811;
     // to = 9223372036854775807;
-    from = 9223372036854775308;
+    // from = 9223372036854775308;
     to = 9223372036854775807;
     // 9223372036854775309
     for (num = from; num < to; num++) {
