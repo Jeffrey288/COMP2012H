@@ -240,7 +240,7 @@ void user_operate_board() {
  * Return true if his/her solution is correct; false otherwise.
  * 
  */
-bool check_whole_board_valid() {
+inline bool _check_whole_board_valid() {
     // START YOUR CODES HERE
 
     /**
@@ -339,6 +339,10 @@ bool check_whole_board_valid() {
     // END YOUR CODES HERE
 }
 
+bool check_whole_board_valid() {
+    return _check_whole_board_valid();
+}
+
 
 /*******************************
  * Part 3: A nonogram solver   *
@@ -356,7 +360,7 @@ bool check_whole_board_valid() {
  *
  * You may assume the parameters given are always valid.
  */
-void positions_to_row(int row_idx, const int positions[], int num_pos, char result_row[]) {
+inline void _positions_to_row(int row_idx, const int positions[], int num_pos, char result_row[]) {
     // START YOUR CODES HERE
     
     if (num_row_constraints[row_idx] != num_pos) 
@@ -375,7 +379,9 @@ void positions_to_row(int row_idx, const int positions[], int num_pos, char resu
     
     // END YOUR CODES HERE
 }
-
+void positions_to_row(int row_idx, const int positions[], int num_pos, char result_row[]) {
+    return _positions_to_row(row_idx, positions, num_pos, result_row);
+}
 
 /**
  **********  Task 6  **********
@@ -390,12 +396,12 @@ void positions_to_row(int row_idx, const int positions[], int num_pos, char resu
  * 
  * More details can be found on webpage.
  */
-bool block_can_shift(int row_idx, int block_idx, const int positions[], int num_pos) {
+inline bool _block_can_shift(int row_idx, int block_idx, const int positions[], int num_pos) {
     // START YOUR CODES HERE
 
     if (num_pos == 0) return false;
 
-    int position_of_last_cell = positions[block_idx] + row_constraints[row_idx][block_idx];
+#define position_of_last_cell (positions[block_idx] + row_constraints[row_idx][block_idx])
 
     if (block_idx < num_pos - 1) {
         return (position_of_last_cell < positions[block_idx + 1] - 1);
@@ -404,6 +410,10 @@ bool block_can_shift(int row_idx, int block_idx, const int positions[], int num_
     }
 
     // END YOUR CODES HERE
+}
+
+bool block_can_shift(int row_idx, int block_idx, const int positions[], int num_pos) {
+    return _block_can_shift(row_idx, block_idx, positions, num_pos);
 }
 
 // this array stores all valid permutations for each row
@@ -426,14 +436,14 @@ int num_row_perms[MAX_ROW] = {0};
  */
 
 #define WRITE_INTO_ROW(row_idx, positions) \
-    positions_to_row(row_idx, positions, \
+    _positions_to_row(row_idx, positions, \
         num_row_constraints[row_idx], row_perms[row_idx][num_row_perms[row_idx]++]); 
     // printf("%*s\n", num_cols, row_perms[row_idx][num_row_perms[row_idx]-1]);
 #define COPY_INTO_ARRAY(row_idx, from, to) \
     for (int c = 0; c < num_row_constraints[row_idx]; c++) \
         to[c] = from[c]; 
 
-void get_row_perms(int row_idx, int block_idx, const int positions[], int num_pos) {
+inline void _get_row_perms(int row_idx, int block_idx, const int positions[], int num_pos) {
 
     int shifted_positions[MAX_CONSTRAINT_NUM]; // make a new array
     COPY_INTO_ARRAY(row_idx, positions, shifted_positions) // copy the old positions into it
@@ -442,15 +452,15 @@ void get_row_perms(int row_idx, int block_idx, const int positions[], int num_po
     // system("pause");
     // for (int i = 0; i < num_pos; i++) cout << shifted_positions[i] << " ";
 
-    while (block_can_shift(row_idx, block_idx, shifted_positions, num_pos)) { // while can shift
+    while (_block_can_shift(row_idx, block_idx, shifted_positions, num_pos)) { // while can shift
         shifted_positions[block_idx] += 1; // shift
         WRITE_INTO_ROW(row_idx, shifted_positions) // write perm
         if (block_idx > 0) // then call get row persm for other block_idx
-            get_row_perms(row_idx, block_idx - 1, shifted_positions, num_pos);
+            _get_row_perms(row_idx, block_idx - 1, shifted_positions, num_pos);
     }
 }
 
-void get_row_perms(int row_idx) { // seems to be working fine
+inline void _get_row_perms(int row_idx) { // seems to be working fine
     // START YOUR CODES HERE
 
     int positions[MAX_CONSTRAINT_NUM] = {0};
@@ -461,10 +471,14 @@ void get_row_perms(int row_idx) { // seems to be working fine
     WRITE_INTO_ROW(row_idx, positions)
 
     // start with the rightmost constraint
-    get_row_perms(row_idx, num_row_constraints[row_idx] - 1, 
+    _get_row_perms(row_idx, num_row_constraints[row_idx] - 1, 
         positions, num_row_constraints[row_idx]);
 
     // END YOUR CODES HERE
+}
+
+void get_row_perms(int row_idx) { 
+    _get_row_perms(row_idx);
 }
 
 /**
@@ -484,7 +498,7 @@ void get_row_perms(int row_idx) { // seems to be working fine
  *    This is because this function will only be called during solver, 
  *    so the rows are generated in permutation process, which must be valid.
  */
-bool check_rows_valid(int num_complete_rows) {
+bool _check_rows_valid(int num_complete_rows) {
     // START YOUR CODES HERE
 
 
@@ -553,7 +567,9 @@ bool check_rows_valid(int num_complete_rows) {
 
     // END YOUR CODES HERE
 }
-
+bool check_rows_valid(int num_complete_rows) {
+    return _check_rows_valid(num_complete_rows);
+}
 
 /**
  **********  Task 9  **********
@@ -565,7 +581,7 @@ bool check_rows_valid(int num_complete_rows) {
  * 'get_row_perms()', �焝heck_rows_valid()��, etc.
  */
 
-bool check_all_cols_valid() {
+inline bool _check_all_cols_valid() {
     // START YOUR CODES HERE
 
     int index;
@@ -594,7 +610,7 @@ bool check_all_cols_valid() {
     // END YOUR CODES HERE
 }
 
-bool _solve(int row_idx) {
+inline bool _solve(int row_idx) {
 
     bool valid;
 
@@ -608,7 +624,7 @@ bool _solve(int row_idx) {
         // print_board();
 
         if (row_idx < num_rows - 1) {
-            valid = check_rows_valid(row_idx + 1);
+            valid = _check_rows_valid(row_idx + 1);
 
             if (valid) {
             // cout << row_idx<< " : " << valid << endl;
@@ -617,7 +633,7 @@ bool _solve(int row_idx) {
                 }
             }
         } else {
-            valid = check_all_cols_valid();
+            valid = _check_all_cols_valid();
             // cout << row_idx << " (last) : " << valid << endl;
 
             if (valid == 1) {
@@ -640,7 +656,7 @@ void solve() {
 
     // TASK 7: GENERATING THE PERMUTATIONS
     for (int r = 0; r < num_rows; r++) {
-        get_row_perms(r);
+        _get_row_perms(r);
         // cout << "finished row " << r << endl;
         // for (int i = 0; i < num_row_perms[r]; i++)  {
         //     for (int c = 0; c < num_cols; c++) {
