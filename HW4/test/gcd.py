@@ -77,15 +77,45 @@ def primes(n):
 # print(len(primes(10000)))
 
 # print(primes(100000000)[-1000:])
-N = 10000
-flags = ["0" for _ in range(N)]
-p = primes(N)[1:]
-for k in p: flags[k//2] = "1"
-ints = ["".join(flags[64*k:64*k+63]) for k in range(N//128)]
+N = 25500000
+# N = 64*9
+flags = ["0" for _ in range(N+1)]
+p = primes(N)
+print(p)
+for k in p: 
+    flags[k] = "1"
+    # print(flags)
+
+flags = [flags[i] for i in range(N+1) if (i%6 == 1 or i%6==5)]
+
+# print(flags[:10])
+
+# exit()
+
+ints = ["".join(flags[64*k:64*k+64]) for k in range((N//3)//64)]
+print(ints[:4], len(ints[0]), len(ints[1]))
+ints2 = [int(k, 2) for k in ints]
+print(ints2[:4])
 ints = [hex(int(k, 2)) for k in ints]
+print(ints[:4])
 f = open("primes.txt", "w")
-f.write(",".join(flags))
+f.write(",".join(ints))
 f.close()
+
+
+# print(hex(ints2[0]))
+def is_prime(n):
+    if (n == 2 or n == 3): return True
+    if (n % 2 == 0): return False
+    if (n % 3 == 0): return False
+    idx = n//3
+    # if (flags[n//3] == "1"): return True
+    # else: return False
+    print(idx, 63-idx%64, bin(ints2[idx//64]), bin((ints2[idx//64] >> (63-idx%64))))
+    if (((ints2[idx//64] >> (63-idx%64)) & 1) == 1): return True
+    else: return False
+for k in range(1, 100):
+    print(k, is_prime(k))
 
 
 
