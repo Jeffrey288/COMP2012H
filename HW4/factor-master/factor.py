@@ -94,19 +94,19 @@ def factorize(n, verbose = False, level = 3):
                     print "Prime factors found:", reduce(lambda x, y: x + y, [str(i[0]) + ", " for i in f])[:-2]
 
         
-        # if level > 1 and n <= constants.SIZE_THRESHOLD_RHO and n > 1:
-        #     # Try Pollard rho
-        #     if verbose:
-        #         print_factoring_routine(n, constants.NAME_RHO)
+        if level > 1 and n <= constants.SIZE_THRESHOLD_RHO and n > 1:
+            # Try Pollard rho
+            if verbose:
+                print_factoring_routine(n, constants.NAME_RHO)
             
-        #     g = pollardRho.factorize_rho(n, verbose = verbose)
-        #     if g != -1:
-        #         if verbose:
-        #             print "Found factor", str(g)
-        #         f1 = merge_factorizations(factorize(g, verbose = verbose, level = 2), \
-        #                         factorize(n/g, verbose = verbose, level = 2))
-        #         if f1 != -1:
-        #             f.extend(f1)
+            g = pollardRho.factorize_rho(n, verbose = verbose)
+            if g != -1:
+                if verbose:
+                    print "Found factor", str(g)
+                f1 = merge_factorizations(factorize(g, verbose = verbose, level = 2), \
+                                factorize(n/g, verbose = verbose, level = 2))
+                if f1 != -1:
+                    f.extend(f1)
         
         if level > 0 and (f1 == -1 or n > constants.SIZE_THRESHOLD_RHO) and n > 1:
             # If Pollard rho fails try ECM
@@ -150,14 +150,18 @@ if __name__ == "__main__":
     while True:
         n = int(input("Enter number: "))
         print ""
+        start = 9223372036854775308
+        to = 9223372036854775807
         t = time.time()
-        f = factorize(n, verbose = True)
+        for n in range(start, to + 1):
+        # for n in [9223372036854775759]:
+            f = factorize(n, verbose = False)
+            # if f == -1:
+            #     print "\n", n, "couldn't be factored :(\n"
+            # else:
+            #     print "\n", print_factorization(n, f)
         t1 = time.time()
-        if f == -1:
-            print "\n", n, "couldn't be factored :(\n"
-        else:
-            print "\n", print_factorization(n, f)
-            print "\nTime:", t1 - t, "s\n"
+        print "\nTime:", t1 - t, "s\n"
 
 
         

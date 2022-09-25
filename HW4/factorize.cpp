@@ -22,6 +22,7 @@ const int MAX_FACTORS = 64;
 
 long long factors[MAX_FACTORS];
 int num_factors;
+int num_small_factors;
 
 long long brent(long long);
 
@@ -78,10 +79,11 @@ inline long long mult(long long a, long long b, long long mod) {
     if (a < 3037000500 && b < 3037000500) 
         return (a * b) % mod;
     if (mod > 70368744177664) { // 2^46: binary multiplication
+        unsigned long long ua = a;
         while (b) {
             if (b & 1)
-                res = (res + a) % mod;
-            a = (2 * (unsigned long long) a) % mod;
+                res = (res + ua) % mod;
+            ua = (2 * ua) % mod;
             b >>= 1;
         }
         return res;
@@ -184,7 +186,7 @@ inline bool is_prime(long long num) {
 
 
 /**
- * @brief Floyd Pollard
+ * @brief Floyd Pollard (Not used now)
  */
 long long g(long long val) {
     return (val) * (val) + 1;
@@ -223,13 +225,13 @@ long long lrand() {
 }
 
 long long brent(long long num) {
-    long long x = 8053658402728213007;
+    long long x = lrand(); // 8053658402728213007;
     long long G = 1; // divisor
     long long q = 1;
     long long xs, y, k;
     long long mrkmin = 0;
 
-    long long m = 927927493989584170;
+    long long m = lrand(); // 927927493989584170;
     long long r = 1;
     while (G == 1) {
         y = x;
@@ -271,6 +273,7 @@ long long brent(long long num) {
 #define __ADD_PRIME_(inc) if (num == 1) return; while (num % inc == 0) {append_factor(inc); num /= inc;}
 #define __ADD_PRIME(inc) if (num == 1) return; if (num % (i + inc) == 0) {append_factor(i + inc); num /= (i + inc);}
 inline void factor_prime(long long num) {
+    // cout << "uh oh";
     if (num == 1) return;
     long long num_sqrt = sqrt(num) + 1;
     while (num % 2 == 0) {append_factor(2); num /= 2;}
@@ -308,45 +311,73 @@ inline void _find_factors(long long num) {
     // cout << factor << endl;
 }
 
+inline long long factor_small_primes(long long num) {
+    long long num_sqrt = sqrt(num) + 1;
+
+    if (num_sqrt > SMALL_PRIME_LIMIT) {
+        for (int i = 0; i < SMALL_NUM_PRIMES && num > 1; i++) {
+            while (num % SMALL_PRIMES[i] == 0) {
+                append_factor(SMALL_PRIMES[i]);
+                num /= SMALL_PRIMES[i];
+            }
+        }
+        num_small_factors = num_factors;
+        return num;
+    } else {
+        factor_prime(num);
+        num_small_factors = num_factors;
+        return 1;
+    }
+}
+
 inline void find_factors(long long num) {
     // factor_prime(num);
     // return;
     // cout << "wahhh" << endl;
 
-    if (num % 2 == 0) {
-        // cout << "wah2";
-        append_factor(2);
-        find_factors(num/2);
-    } else if (num % 3 == 0) {
-        // cout << "wah3";
-        append_factor(3);
-        find_factors(num/3);
-    } else if (num % 5 == 0) {
-        // cout << "wah5";
-        append_factor(5);
-        find_factors(num/5);
-    } else if (num % 7 == 0) {
-        // cout << "wah7";
-        append_factor(7);
-        find_factors(num/7);
-    } else {
-        _find_factors(num);
-    }
+    num = factor_small_primes(num);
+    _find_factors(num);
+    // if (num % 2 == 0) {
+    //     // cout << "wah2";
+    //     append_factor(2);
+    //     find_factors(num/2);
+    // } else if (num % 3 == 0) {
+    //     // cout << "wah3";
+    //     append_factor(3);
+    //     find_factors(num/3);
+    // } else if (num % 5 == 0) {
+    //     // cout << "wah5";
+    //     append_factor(5);
+    //     find_factors(num/5);
+    // } else if (num % 7 == 0) {
+    //     // cout << "wah7";
+    //     append_factor(7);
+    //     find_factors(num/7);
+    // } else {
+    //     _find_factors(num);
+    // }
 }
 
+
+string buff;
+int buff_len;
 inline void print_factors(long long num) {
-    sort(factors, factors + num_factors);
+    sort(factors + num_small_factors, factors + num_factors);
+
+    /**
+     * cout is slow because its interaction with the OS
+     * avoiding the use of endl can reduce interaction
+     * using cout less can also speed up stuff
+     */
     cout << num << "=";
     for (int i = 0; i < num_factors - 1; i++) {
         cout << factors[i] << "*";
     }
-    cout << factors[num_factors - 1] << endl;
+    cout << factors[num_factors - 1] << "\n";
 }
 
-
-
 int main(int argc, char *argv[]) {
-    srand(0);
+    srand(1);
 
     // cout << gcd(4453788356655706920 , 9223372036854775309);
     // for (int i =0; i < 100; i++) {
