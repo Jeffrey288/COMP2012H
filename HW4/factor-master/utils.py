@@ -218,15 +218,18 @@ def is_prime_fast(n, use_probabilistic = False, tolerance = 30):
 	# Miller-Rabin
 	s = 0
 	d = n - 1
+	print(w, n, s, d)	
 	while not d & 1:
 		d >>= 1
 		s += 1
+	print(w, n, s, d)
 	for k in w:
 		# Pick a random witness if probabilistic
 		if use_probabilistic: 
 			p = random.randint(2, n-2)
 		else:
 			p = k
+		print k
 		x = pow(p, d, n)
 		if x == 1: continue
 		for _ in xrange(s):

@@ -118,7 +118,7 @@ def primes(n):
 # for k in range(1, 100):
 #     print(k, is_prime(k))
 
-print(len(primes(15000)))
+# print(len(primes(15000)))
 
 
 # f.write(", ".join(list(map(str, primes(40000000)))))
@@ -140,4 +140,19 @@ print(len(primes(15000)))
 #   # print((102 * 152 * i * i) % 103)
 #   print((103 ** i) % 31)
 
+import primefac
 
+
+output_my = """5308048003531188904=2*2*2*259697*2554923624229
+5308048003531188905=5*11*103*936989938840457
+5308048003531188906=2*3*3*17*181*337*284383856633
+5308048003531188907=31*47*3643135211757851
+"""
+lines = [line for line in output_my.split("\n") if (line)]
+for line in lines:
+    nums = line.split("=")
+    num = int(nums[0])
+    factors = primefac.primefac(num)
+    if (line != f'{num}={"*".join(map(str, list(factors)))}'):
+        print("Oh no!")
+        break

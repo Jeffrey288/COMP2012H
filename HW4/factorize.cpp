@@ -4,17 +4,12 @@
 #include <numeric>
 #include <math.h>
 #include "primes.h"
-// https://stackoverflow.com/questions/18439520/is-there-a-128-bit-integer-in-c
-// #include <boost/multiprecision/cpp_int.hpp>
+
+#include <time.h>
+#include <chrono>
+
 using namespace std;
-
 // ./factorize 576460752303423484 576460752303423489
-//https://www.alpertron.com.ar/ECM.HTM
-//https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test#Deterministic_variants
-
-// https://cp-algorithms.com/algebra/factorization.html
-// quadratic seive
-// https://www.mersenneforum.org/showthread.php?t=23177
 
 const long long MAX_NUM = 9223372036854775807;
 const long long MIN_NUM = 2;
@@ -24,21 +19,18 @@ long long factors[MAX_FACTORS];
 int num_factors;
 int num_small_factors;
 
-long long brent(long long);
-
-
-
-
 /**
  * SOURCES :
 
 (1) General Sources 
 // https://iq.opengenus.org/integer-factorization-algorithms/
+// https://cp-algorithms.com/algebra/factorization.html
 // https://cp-algorithms.com/algebra/factorization.html#implementation_1
 
 (2) Helper Functions
 - mult
 // https://codeforces.com/blog/entry/96759
+// https://stackoverflow.com/questions/18439520/is-there-a-128-bit-integer-in-c
 - gcd
 // https://lemire.me/blog/2013/12/26/fastest-way-to-compute-the-greatest-common-divisor/
 // https://cs.stackexchange.com/questions/1447/what-is-most-efficient-for-gcd
@@ -49,6 +41,7 @@ long long brent(long long);
 (3) Pollard Rho and Brent's Modification
 // https://en.wikipedia.org/wiki/Pollard%27s_rho_algorithm
 // https://web.archive.org/web/20160304185017/http://maths-people.anu.edu.au/~brent/pd/rpb051i.pdf
+//https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test#Deterministic_variants
 
 (4) Miller's Primarility Test
 // https://www.quora.com/What-is-the-fastest-deterministic-primality-test
@@ -57,10 +50,12 @@ long long brent(long long);
 
 
 (5) Advanced Factorization Techniques
+// https://www.mersenneforum.org/showthread.php?t=23177
 // https://en.wikipedia.org/wiki/Lenstra_elliptic-curve_factorization 
 // https://github.com/delta003/lenstra_algorithm/blob/master/ mainly adapted from
 // https://github.com/pkruk/pylenstra/tree/master/src reference
 // https://github.com/alpertron/calculators
+// https://www.alpertron.com.ar/ECM.HTM
 
 */
 
@@ -152,16 +147,17 @@ inline bool is_prime(long long num) {
     
 /**
  * @brief Miller
- * 
+ * todo: check miller
  */
     
     int miller_index = 0;
-    while (miller_index < MILLER_NUM_BOUNDS && num > MILLER_BOUNDS[miller_index]) miller_index++;
+    while (miller_index < MILLER_NUM_BOUNDS && num > MILLER_BOUNDS[miller_index]) miller_index++; // make this a binary search
     // cout << miller_index << endl;
 
     int s = 0;
     long long d = num - 1;
-    while (d & 1 == 0) {
+    // cout << "d " << (d & 1) << " s " << s << endl;
+    while ((d & 1) == 0) {
         s++;
         d >>= 1;
     }    
@@ -169,16 +165,20 @@ inline bool is_prime(long long num) {
 
     int x, k = 0;
     // cout << "d " << d << endl;
+    // cout << "d " << d << " s " << s << endl;
     for (long long a = MILLER_PRIMES[miller_index][0]; k < MILLER_NUM_PRIMES[miller_index]; a = MILLER_PRIMES[miller_index][++k]) {
         // cout << "a " << a << endl;
         x = mod_pow(a, d, num);
-        if (x == 1 | x == num - 1) continue;
-        for (int i = 0; i < s - 1; i++) {
+        if (x == 1 || x == num - 1) continue;
+        int i = 0;
+        for (; i < s - 1; i++) {
             // cout << "s " << s << endl;
             x = mod_pow(x, 2, num);
-            if (x == num - 1) continue;
+            if (x == num - 1) break;
+            // if (x == num - 1) continue;
         }
-        return false;
+        if (i == s - 1) return false;
+        // return false;
     }
     return true;
 
@@ -188,7 +188,7 @@ inline bool is_prime(long long num) {
 /**
  * @brief Floyd Pollard (Not used now)
  */
-long long g(long long val) {
+inline long long g(long long val) {
     return (val) * (val) + 1;
 }
 inline long long pollard_rho(long long num) {
@@ -214,17 +214,17 @@ inline long long g2(long long val, long long mod) {
 
 
 // Generates Random Numbers
-long long lrand() {
+inline long long lrand() {
     union {
         uint32_t a[2];
         uint64_t b;
     } c;
     c.a[0] = rand();
-    c.a[1] = rand() % 2147483647;
+    c.a[1] = rand() >> 1;
     return c.b;
 }
 
-long long brent(long long num) {
+inline long long brent(long long num) {
     long long x = lrand(); // 8053658402728213007;
     long long G = 1; // divisor
     long long q = 1;
@@ -271,8 +271,8 @@ long long brent(long long num) {
  * 
  */
 #define __ADD_PRIME_(inc) if (num == 1) return; while (num % inc == 0) {append_factor(inc); num /= inc;}
-#define __ADD_PRIME(inc) if (num == 1) return; if (num % (i + inc) == 0) {append_factor(i + inc); num /= (i + inc);}
-inline void factor_prime(long long num) {
+#define __ADD_PRIME(inc) if (num == 1) return; while (num % (i + inc) == 0) {append_factor(i + inc); num /= (i + inc);}
+inline void factor_prime(long long num) { // todo: write two different algo, and check_prime after every factor found
     // cout << "uh oh";
     if (num == 1) return;
     long long num_sqrt = sqrt(num) + 1;
@@ -298,6 +298,7 @@ inline void _find_factors(long long num) {
     // cout << num << endl;;
     // cout << "num" << num << endl;
     // cout << "isprime" << is_prime(num) << is_prime(2719) << endl;
+    // cout << "num is rpime" << num << " " << is_prime(num) << endl;
     if (is_prime(num)) {append_factor(num); return;}
     // cout << "hai" << num << endl;
     long long factor = brent(num);
@@ -311,7 +312,7 @@ inline void _find_factors(long long num) {
     // cout << factor << endl;
 }
 
-inline long long factor_small_primes(long long num) {
+inline long long factor_small_primes(long long num) { // can binary search
     long long num_sqrt = sqrt(num) + 1;
 
     if (num_sqrt > SMALL_PRIME_LIMIT) {
@@ -358,7 +359,7 @@ inline void find_factors(long long num) {
     // }
 }
 
-
+// .\factorize 16339207 16339207
 string buff;
 int buff_len;
 inline void print_factors(long long num) {
@@ -369,11 +370,34 @@ inline void print_factors(long long num) {
      * avoiding the use of endl can reduce interaction
      * using cout less can also speed up stuff
      */
+
+    int small_fac = 0;
+    int big_fac = num_small_factors;
+
     cout << num << "=";
     for (int i = 0; i < num_factors - 1; i++) {
         cout << factors[i] << "*";
     }
-    cout << factors[num_factors - 1] << endl;
+    cout << factors[num_factors - 1] << "\n";
+    // if (num_small_factors == num_factors) {
+    // } else {
+    //     while (small_fac < num_small_factors && factors[small_fac] <= factors[num_small_factors])
+    //         cout << factors[small_fac++] << "*";
+    //     while (small_fac < num_small_factors && big_fac < num_factors) {
+    //         if (factors[small_fac] < factors[big_fac])
+    //             cout << factors[small_fac++] << "*";
+    //         else
+    //             cout << factors[big_fac++] << "*";
+    //     }
+    //     if (small_fac == num_small_factors) {
+    //         while (big_fac < num_factors - 1) cout << factors[big_fac++] << "*";
+    //         cout << factors[num_factors - 1] << "\n";
+    //     } else {
+    //         while (small_fac < num_small_factors - 1) cout << factors[small_fac++] << "*";
+    //         cout << factors[num_small_factors - 1] << "\n";
+    //     }
+    // }
+    
 }
 
 int main(int argc, char *argv[]) {
@@ -386,17 +410,30 @@ int main(int argc, char *argv[]) {
     // return 0;
     // }
     // return 0;
+    if (argc != 3) // 0 is "./factorize", 1 and 2 are from, to
+        return -1;
     long long num;
     long long from, to;
-    // from = atoll(argv[1]);
-    // to = atoll(argv[2]);
-    from = 576460752303423571;
+    from = atoll(argv[1]);
+    to = atoll(argv[2]);
+    // from = 576460752303423571;
     // to = 576460752303425489;
     // from = 9223372036854774811;
     // to = 9223372036854775807;
     // from = 9223372036854775308;
-    to = 9223372036854775807;
+    // to = 9223372036854775807;
     // 9223372036854775309
+
+
+
+
+
+/**
+ * @brief Final Implementation
+ * 
+ */
+
+
     for (num = from; num < to; num++) {
         num_factors = 0;
         find_factors(num);
@@ -405,6 +442,34 @@ int main(int argc, char *argv[]) {
     num_factors = 0;
     find_factors(num);
     print_factors(num);
+    cout.flush();
+
+/**
+ * @brief Testing Codes
+ * 
+ */
+
+    // chrono::time_point<chrono::high_resolution_clock> start_point, end_point;
+    // double time_used;
+
+    // cout << "debug started" << endl;
+    // for (num = from; num <= to; num++) {
+    //     num_factors = 0;
+    //     start_point = chrono::high_resolution_clock::now(); 
+    //     find_factors(num);
+    //     end_point = chrono::high_resolution_clock::now();
+    //     auto start = chrono::time_point_cast<chrono::microseconds>(start_point).time_since_epoch().count(); 	
+    //     auto end = chrono::time_point_cast<chrono::microseconds>(end_point).time_since_epoch().count();
+    //     auto time_used = end - start;
+    //     // cout << time_used << " ";
+    //     // print_factors(num);
+    //     if (time_used > 6000) {
+    //         cout << time_used << " ";
+    //         print_factors(num);
+    //     }
+    // }
+
+
 
     // cout << "Enter a number to factorize: ";
     // cin >> num;

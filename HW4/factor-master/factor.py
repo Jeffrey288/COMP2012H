@@ -150,8 +150,8 @@ if __name__ == "__main__":
     while True:
         n = int(input("Enter number: "))
         print ""
-        start = 9223372036854775308
-        to = 9223372036854775807
+        start =9223371915520229671
+        to = 9223371915520229671
         t = time.time()
         for n in range(start, to + 1):
         # for n in [9223372036854775759]:
