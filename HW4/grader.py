@@ -47,7 +47,7 @@ ONE_BY_ONE = 1  # runs the test cases one by one
 STOP_ON_DIFF = 2  # checks test cases until a wrong case occurs
 MODE = STOP_ON_DIFF
 
-DISPLAY_TIME = True
+DISPLAY_TIME = False
 # -----------------
 # os.system('echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null 2>&1')
 OKBLUE = '\033[94m'

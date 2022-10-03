@@ -1,0 +1,6 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+Windows version: WinVer=105;Rel=2009;Build=22000;Edition=Core
+Dr. Memory results for pid 81156: "main.exe"
+Application cmdline: "C:\Users\pinkp\Documents\GitHub\COMP2012H\HW5\main.exe"
+Recorded 118 suppression(s) from default C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin64\suppress-default.txt
+System call information is missing for this operating system: WinVer=105;Rel=2009;Build=22000;Edition=Core. Restarting to trigger auto-generation of system call information. Re-run with -ignore_kernel to attempt to continue instead.

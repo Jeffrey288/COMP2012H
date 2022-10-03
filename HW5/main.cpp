@@ -220,6 +220,55 @@ void test_store_load() {
     cout << "===== End Test =====" << endl;
 }
 
+void test_gen_big_deque() {
+
+    Deque deque = create_deque();
+    for (int i = 0; i < 16; i++) {
+        // push_back(deque, i);
+        insert(deque, end(deque), i);
+        cout << "front: " << front(deque) << ", back: "<< back(deque) << " "; print_deque(deque);
+    }
+    for (int i = 0; i < 10; i++) {
+        // push_front(deque, -i);
+        insert(deque, begin(deque), -i);
+        cout << "front: " << front(deque) << ", back: "<< back(deque) << " "; print_deque(deque);
+    }
+    for (int i = 0; i < 22; i++) {
+        Iterator it = begin(deque);
+        for (int j = 0; j < 3 * i % 5 + i / 7; j++) {
+            it = next(it);
+        }
+        // push_front(deque, -i);
+        insert(deque, it, i);
+        cout << "front: " << front(deque) << ", back: "<< back(deque) << " "; print_deque(deque);
+    }
+    store_deque(deque, "sanity_test.txt");
+    Deque deque2 = load_deque("sanity_test.txt");
+    // for (int i = 0; i < 46; i++) {
+    //     // pop_front(deque);
+    //     erase(deque2, begin(deque2));
+    //     print_deque(deque2);
+    // }
+    // for (int i = 0; i < 46; i++) {
+    //     // pop_front(deque);
+    //     erase(deque2, prev(end(deque2)));
+    //     print_deque(deque2);
+    // }
+    
+    for (int i = 0; i < 48; i++) {
+        Iterator it = begin(deque2);
+        for (int j = 0; j < (46-i)/2; j++) {
+            it = next(it);
+        }
+        erase(deque2, it);
+        cout << "size " << size(deque2) << " "; print_deque(deque2);
+    }
+    destroy_deque(deque);
+    destroy_deque(deque2);
+    // cout << "destroy! " << endl;
+
+}
+
 int main() {
     test_create_destroy();
     test_push_back();
@@ -231,6 +280,14 @@ int main() {
     test_insert();
     test_erase();
     test_store_load();
+
+    // test_gen_big_deque();
+    // test_gen_big_deque();
+    // test_gen_big_deque();
+    // test_gen_big_deque();
+    // test_gen_big_deque();
+    // test_gen_big_deque();
+
 
     return 0;
 }

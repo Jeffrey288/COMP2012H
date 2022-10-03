@@ -50,6 +50,9 @@
         "format": "cpp",
         "iomanip": "cpp",
         "xlocbuf": "cpp",
-        "xlocmon": "cpp"
+        "xlocmon": "cpp",
+        "array": "cpp",
+        "forward_list": "cpp",
+        "xtree": "cpp"
     }
 }

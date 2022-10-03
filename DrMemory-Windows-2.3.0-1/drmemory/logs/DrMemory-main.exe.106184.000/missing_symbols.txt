@@ -1,0 +1,6 @@
+C:\WINDOWS\System32\gdi32full.dll
+C:\WINDOWS\System32\ucrtbase.dll
+C:\WINDOWS\System32\msvcp_win.dll
+C:\WINDOWS\System32\msvcrt.dll
+C:\ProgramData\Anaconda3\Library\mingw-w64\bin\libwinpthread-1.dll
+C:\ProgramData\Anaconda3\Library\mingw-w64\bin\libstdc++-6.dll

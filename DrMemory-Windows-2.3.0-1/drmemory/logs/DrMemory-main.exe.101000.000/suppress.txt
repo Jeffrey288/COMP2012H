@@ -1,0 +1,266 @@
+# File for suppressing errors found in pid 101000: "main.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+main.exe!.text
+main.exe!_pei386_runtime_relocator
+main.exe!__tmainCRTStartup
+main.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<main.exe+0x4cdb>
+<main.exe+0x4126>
+<main.exe+0x1251>
+<main.exe+0x14e6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #2
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+main.exe!prev
+main.exe!pop_back
+main.exe!test_pop_back
+main.exe!main
+
+## Mod+offs-style suppression for Error #2:
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+<main.exe+0x2bdd>
+<main.exe+0x3341>
+<main.exe+0x1e95>
+<main.exe+0x29ab>
+
+# Suppression for Error #3
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+main.exe!prev
+main.exe!pop_back
+main.exe!erase
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #3:
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+<main.exe+0x2bdd>
+<main.exe+0x3341>
+<main.exe+0x38bc>
+<main.exe+0x2905>
+<main.exe+0x29c4>
+
+# Suppression for Error #4
+UNADDRESSABLE ACCESS
+name=Error #4 (update to meaningful name)
+main.exe!prev
+main.exe!pop_back
+main.exe!erase
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #4:
+UNADDRESSABLE ACCESS
+name=Error #4 (update to meaningful name)
+<main.exe+0x2bdd>
+<main.exe+0x3341>
+<main.exe+0x38bc>
+<main.exe+0x2905>
+<main.exe+0x29c9>
+
+# Suppression for Error #5
+UNADDRESSABLE ACCESS
+name=Error #5 (update to meaningful name)
+main.exe!prev
+main.exe!pop_back
+main.exe!erase
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #5:
+UNADDRESSABLE ACCESS
+name=Error #5 (update to meaningful name)
+<main.exe+0x2bdd>
+<main.exe+0x3341>
+<main.exe+0x38bc>
+<main.exe+0x2905>
+<main.exe+0x29ce>
+
+# Suppression for Error #6
+UNADDRESSABLE ACCESS
+name=Error #6 (update to meaningful name)
+main.exe!prev
+main.exe!pop_back
+main.exe!erase
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #6:
+UNADDRESSABLE ACCESS
+name=Error #6 (update to meaningful name)
+<main.exe+0x2bdd>
+<main.exe+0x3341>
+<main.exe+0x38bc>
+<main.exe+0x2905>
+<main.exe+0x29d3>
+
+# Suppression for Error #7
+UNADDRESSABLE ACCESS
+name=Error #7 (update to meaningful name)
+main.exe!prev
+main.exe!pop_back
+main.exe!erase
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #7:
+UNADDRESSABLE ACCESS
+name=Error #7 (update to meaningful name)
+<main.exe+0x2bdd>
+<main.exe+0x3341>
+<main.exe+0x38bc>
+<main.exe+0x2905>
+<main.exe+0x29d8>
+
+# Suppression for Error #8
+UNADDRESSABLE ACCESS
+name=Error #8 (update to meaningful name)
+main.exe!prev
+main.exe!pop_back
+main.exe!erase
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #8:
+UNADDRESSABLE ACCESS
+name=Error #8 (update to meaningful name)
+<main.exe+0x2bdd>
+<main.exe+0x3341>
+<main.exe+0x38bc>
+<main.exe+0x2905>
+<main.exe+0x29dd>
+
+# Suppression for Error #9
+POSSIBLE LEAK
+name=Error #9 (update to meaningful name)
+drmemorylib.dll!replace_malloc
+msvcrt.dll!realloc
+msvcrt.dll!unlock
+msvcrt.dll!_getmainargs
+main.exe!pre_cpp_init
+msvcrt.dll!initterm
+main.exe!__tmainCRTStartup
+main.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #9:
+POSSIBLE LEAK
+name=Error #9 (update to meaningful name)
+<drmemorylib.dll+0x389e0>
+<msvcrt.dll+0x1c93b>
+<msvcrt.dll+0x3e6ed>
+<msvcrt.dll+0x7ca1>
+<main.exe+0x1173>
+<msvcrt.dll+0x3d54d>
+<main.exe+0x1437>
+<main.exe+0x14e6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #10
+LEAK
+name=Error #10 (update to meaningful name)
+drmemorylib.dll!replace_operator_new
+main.exe!create_deque
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #10:
+LEAK
+name=Error #10 (update to meaningful name)
+<drmemorylib.dll+0x39500>
+<main.exe+0x2ce6>
+<main.exe+0x2544>
+<main.exe+0x29c4>
+
+# Suppression for Error #11
+LEAK
+name=Error #11 (update to meaningful name)
+drmemorylib.dll!replace_operator_new
+main.exe!create_deque
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #11:
+LEAK
+name=Error #11 (update to meaningful name)
+<drmemorylib.dll+0x39500>
+<main.exe+0x2ce6>
+<main.exe+0x2544>
+<main.exe+0x29c9>
+
+# Suppression for Error #12
+LEAK
+name=Error #12 (update to meaningful name)
+drmemorylib.dll!replace_operator_new
+main.exe!create_deque
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #12:
+LEAK
+name=Error #12 (update to meaningful name)
+<drmemorylib.dll+0x39500>
+<main.exe+0x2ce6>
+<main.exe+0x2544>
+<main.exe+0x29ce>
+
+# Suppression for Error #13
+LEAK
+name=Error #13 (update to meaningful name)
+drmemorylib.dll!replace_operator_new
+main.exe!create_deque
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #13:
+LEAK
+name=Error #13 (update to meaningful name)
+<drmemorylib.dll+0x39500>
+<main.exe+0x2ce6>
+<main.exe+0x2544>
+<main.exe+0x29d3>
+
+# Suppression for Error #14
+LEAK
+name=Error #14 (update to meaningful name)
+drmemorylib.dll!replace_operator_new
+main.exe!create_deque
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #14:
+LEAK
+name=Error #14 (update to meaningful name)
+<drmemorylib.dll+0x39500>
+<main.exe+0x2ce6>
+<main.exe+0x2544>
+<main.exe+0x29d8>
+
+# Suppression for Error #15
+LEAK
+name=Error #15 (update to meaningful name)
+drmemorylib.dll!replace_operator_new
+main.exe!create_deque
+main.exe!test_gen_big_deque
+main.exe!main
+
+## Mod+offs-style suppression for Error #15:
+LEAK
+name=Error #15 (update to meaningful name)
+<drmemorylib.dll+0x39500>
+<main.exe+0x2ce6>
+<main.exe+0x2544>
+<main.exe+0x29dd>
+
