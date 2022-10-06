@@ -53,6 +53,7 @@
         "xlocmon": "cpp",
         "array": "cpp",
         "forward_list": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "ratio": "cpp"
     }
 }

@@ -168,10 +168,10 @@ void pop_back(Deque& deque) {
             Node* del_node = const_cast<Node *>(deque.end.node);
             del_node->prev->next = del_node->next;
             deque.sentinel->prev = del_node->prev;
+            deque.end = prev(prev(deque.end)); // putting this before del_node prevents accessing freed memory
             delete del_node;
             deque.ll_size--;
             // set to :8:
-            deque.end = prev(prev(deque.end));
             deque.end.current++;
         }
     } else {

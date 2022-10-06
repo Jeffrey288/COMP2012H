@@ -2,6 +2,10 @@
 #include "Deque.h"
 using namespace std;
 
+// #define _CRTDBG_MAP_ALLOC
+// #include <stdlib.h>
+// #include <crtdbg.h>
+
 void test_create_destroy() {
     cout << "===== Test create and destroy deque =====" << endl;
     Deque deque = create_deque();
@@ -281,13 +285,13 @@ int main() {
     test_erase();
     test_store_load();
 
+    test_gen_big_deque();
     // test_gen_big_deque();
     // test_gen_big_deque();
     // test_gen_big_deque();
     // test_gen_big_deque();
     // test_gen_big_deque();
-    // test_gen_big_deque();
-
+    // _CrtDumpMemoryLeaks();
 
     return 0;
 }

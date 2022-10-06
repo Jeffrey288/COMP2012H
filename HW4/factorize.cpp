@@ -7,6 +7,7 @@
 
 #include <time.h>
 #include <chrono>
+#include <stdint.h>
 
 using namespace std;
 // ./factorize 576460752303423484 576460752303423489
@@ -65,30 +66,41 @@ int num_small_factors;
 
 # define append_factor(factor) factors[num_factors++] = factor
 
-inline long long mult(long long a, long long b, long long mod) {
-    // multiplcation of two long long integers modded by mod
+// inline long long mult(long long a, long long b, long long mod) {
+//     // multiplcation of two long long integers modded by mod
 
-    unsigned long long res = 0;
-    a %= mod; 
-    b %= mod;
-    if (a < 3037000500 && b < 3037000500) 
-        return (a * b) % mod;
-    if (mod > 70368744177664) { // 2^46: binary multiplication
-        unsigned long long ua = a;
-        while (b) {
-            if (b & 1)
-                res = (res + ua) % mod;
-            ua = (2 * ua) % mod;
-            b >>= 1;
-        }
-        return res;
-    } else { // real multiplication, dunno why double is worse
-        res = (a * b - (unsigned long long) ((long double) a * b / mod) * mod) % mod;
-        if (res < 0) res += mod;
-        return res;
-    }
+//     // unsigned long long res = 0;
+//     // a %= mod; 
+//     // b %= mod;
+//     // if (a < 3037000500 && b < 3037000500) 
+//     //     return (a * b) % mod;
+//     // if (mod > 70368744177664) { // 2^46: binary multiplication
+//     //     unsigned long long ua = a;
+//     //     while (b) {
+//     //         if (b & 1)
+//     //             res = (res + ua) % mod;
+//     //         ua = (2 * ua) % mod;
+//     //         b >>= 1;
+//     //     }
+//     //     return res;
+//     // } else { // real multiplication, dunno why double is worse
+//     //     res = (a * b - (unsigned long long) ((long double) a * b / mod) * mod) % mod;
+//     //     if (res < 0) res += mod;
+//     //     return res;
+//     // }
 
-}
+//     long long result = 0;
+//     while (b) {
+//         if (b & 1)
+//             result = (result + a) % mod;
+//         a = (a + a) % mod;
+//         b >>= 1;
+//     }
+//     return result;
+
+// }
+
+#define mult(a, b, mod) ((__int128) (a) * (b) % (mod))
 
 // note that b > a
 inline long long _gcd(long long a, long long b) {
@@ -104,7 +116,7 @@ inline long long gcd(long long a, long long b) {
 inline long long mod_pow(long long val, long long exp, long long mod) { // O(log n)
     long long result = 1;
     val %= mod;
-    while (exp > 0) {
+    while (exp) {
         if (exp & 1) result = mult(result, val, mod);
         val = mult(val, val, mod);
         exp >>= 1;
@@ -112,6 +124,16 @@ inline long long mod_pow(long long val, long long exp, long long mod) { // O(log
     return result;
 }
 
+// Generates Random Numbers
+inline long long lrand() {
+    union {
+        uint32_t a[2];
+        uint64_t b;
+    } c;
+    c.a[0] = rand();
+    c.a[1] = rand() >> 1;
+    return c.b;
+}
 
 /**
  * @brief Primarility Test
@@ -149,38 +171,90 @@ inline bool is_prime(long long num) {
  * @brief Miller
  * todo: check miller
  */
-    
+
     int miller_index = 0;
     while (miller_index < MILLER_NUM_BOUNDS && num > MILLER_BOUNDS[miller_index]) miller_index++; // make this a binary search
-    // cout << miller_index << endl;
+    // cout << num << " " << miller_index << endl; 
 
-    int s = 0;
-    long long d = num - 1;
-    // cout << "d " << (d & 1) << " s " << s << endl;
-    while ((d & 1) == 0) {
-        s++;
-        d >>= 1;
-    }    
-    // cout << "ended" << endl;
+    long long s = num - 1;
+    while (s % 2 == 0) {
+        s /= 2;
+    }
 
-    int x, k = 0;
-    // cout << "d " << d << endl;
-    // cout << "d " << d << " s " << s << endl;
+    int k = 0;
     for (long long a = MILLER_PRIMES[miller_index][0]; k < MILLER_NUM_PRIMES[miller_index]; a = MILLER_PRIMES[miller_index][++k]) {
-        // cout << "a " << a << endl;
-        x = mod_pow(a, d, num);
-        if (x == 1 || x == num - 1) continue;
-        int i = 0;
-        for (; i < s - 1; i++) {
-            // cout << "s " << s << endl;
-            x = mod_pow(x, 2, num);
-            if (x == num - 1) break;
-            // if (x == num - 1) continue;
+        long long temp = s;
+        long long mod = mod_pow(a, temp, num);
+        while (temp != num - 1 && mod != 1 && mod != num - 1) {
+            mod = mult(mod, mod, num);
+            temp <<= 1;
         }
-        if (i == s - 1) return false;
-        // return false;
+        if (mod != num - 1 && temp % 2 == 0) return false;
     }
     return true;
+
+// int miller_index = 0;
+// while (miller_index < MILLER_NUM_BOUNDS && num > MILLER_BOUNDS[miller_index]) miller_index++; // make this a binary search
+
+// int s = 0;
+// long long d = num - 1;
+// // cout << "d " << (d & 1) << " s " << s << endl;
+// while ((d & 1) == 0) {
+//     s++;
+//     d >>= 1;
+// }    
+// // cout << "ended" << endl;
+
+// int x, k = 0;
+// // cout << "d " << d << endl;
+// // cout << "d " << d << " s " << s << endl;
+// for (long long a = MILLER_PRIMES[miller_index][0]; k < MILLER_NUM_PRIMES[miller_index]; a = MILLER_PRIMES[miller_index][++k]) {
+//     // cout << "a " << a << endl;
+//     x = mod_pow(a, d, num);
+//     if (x == 1 || x == num - 1) continue;
+//     int i = 0;
+//     for (; i < s - 1; i++) {
+//         // cout << "s " << s << endl;
+//         x = mod_pow(x, 2, num);
+//         if (x == num - 1) break;
+//         // if (x == num - 1) continue;
+//     }
+//     if (i == s - 1) return false;
+//     // return false;
+// }
+// return true;
+
+    /**
+     * @brief incorrect but faster miller :D
+     * 
+     */
+
+    // int miller_index = 0;
+    // while (miller_index < MILLER_NUM_BOUNDS && num > MILLER_BOUNDS[miller_index]) miller_index++;
+    // // cout << miller_index << endl;
+
+    // int s = 0;
+    // long long d = num - 1;
+    // while (d & 1 == 0) {
+    //     s++;
+    //     d >>= 1;
+    // }    
+    // // cout << "ended" << endl;
+
+    // int x, k = 0;
+    // // cout << "d " << d << endl;
+    // for (long long a = MILLER_PRIMES[miller_index][0]; k < MILLER_NUM_PRIMES[miller_index]; a = MILLER_PRIMES[miller_index][++k]) {
+    //     // cout << "a " << a << endl;
+    //     x = mod_pow(a, d, num);
+    //     if (x == 1 | x == num - 1) continue;
+    //     for (int i = 0; i < s - 1; i++) {
+    //         // cout << "s " << s << endl;
+    //         x = mod_pow(x, 2, num);
+    //         if (x == num - 1) continue;
+    //     }
+    //     return false;
+    // }
+    // return true;
 
 }
 
@@ -212,58 +286,76 @@ inline long long g2(long long val, long long mod) {
     return (mult(val, val, mod) + 499) % mod;
 }
 
-
-// Generates Random Numbers
-inline long long lrand() {
-    union {
-        uint32_t a[2];
-        uint64_t b;
-    } c;
-    c.a[0] = rand();
-    c.a[1] = rand() >> 1;
-    return c.b;
-}
-
 inline long long brent(long long num) {
-    long long x = lrand(); // 8053658402728213007;
-    long long G = 1; // divisor
+    long long y = lrand();
+    long long G = 1;
     long long q = 1;
-    long long xs, y, k;
-    long long mrkmin = 0;
+    long long ys, x;
 
-    long long m = lrand(); // 927927493989584170;
-    long long r = 1;
+    int m = lrand();
+    int r = 1;
     while (G == 1) {
-        y = x;
-        for (int i = 1; i <= r; i++) {
-            x = g2(x, num);
-        }
-        // cout << "done " << x << endl;
-        k = 0;
+        x = y;
+        for (int i = 1; i < r; i++)
+            y = g2(y, num);
+        int k = 0;
         while (k < r && G == 1) {
-            xs = x;
-            mrkmin = min(m, r-k);
-            for (long long i = 0; i < mrkmin; i++) {
-                x = g2(x, num);
-                q = mult(q, abs(y-x), num);
+            ys = y;
+            for (int i = 0; i < m && i < r - k; i++) {
+                y = g2(y, num);
+                q = mult(q, abs(x - y), num);
             }
-            // cout << "q, " << q << endl;
             G = gcd(q, num);
             k += m;
         }
         r <<= 1;
-        // cout << "r " << r << endl;
-        // cout << "g " << G << endl;
     }
     if (G == num) {
         do {
-            xs = g2(xs, num);
-            // cout << "xs " << xs << endl;
-            G = gcd(abs(xs - y), num);
-            // cout << "G " << G << endl;
+            ys = g2(ys, num);
+            G = gcd(abs(ys - x), num);
         } while (G == 1);
     }
     return G;
+    // long long x = lrand(); // 8053658402728213007;
+    // long long G = 1; // divisor
+    // long long q = 1;
+    // long long xs, y, k;
+    // long long mrkmin = 0;
+
+    // long long m = lrand(); // 927927493989584170;
+    // long long r = 1;
+    // while (G == 1) {
+    //     y = x;
+    //     for (int i = 1; i <= r; i++) {
+    //         x = g2(x, num);
+    //     }
+    //     // cout << "done " << x << endl;
+    //     k = 0;
+    //     while (k < r && G == 1) {
+    //         xs = x;
+    //         mrkmin = min(m, r-k);
+    //         for (long long i = 0; i < mrkmin; i++) {
+    //             x = g2(x, num);
+    //             q = mult(q, abs(y-x), num);
+    //         }
+    //         // cout << "q, " << q << endl;
+    //         G = gcd(q, num);
+    //         k += m;
+    //     }
+    //     r <<= 1;
+    //     // cout << "r " << r << endl;
+    //     // cout << "g " << G << endl;
+    // }
+    // if (G == num) {
+    //     do {
+    //         xs = g2(xs, num);
+    //         // cout << "xs " << xs << endl;
+    //         G = gcd(abs(xs - y), num);
+    //         // cout << "G " << G << endl;
+    //     } while (G == 1);
+    // }
+    // return G;
 }
 
 /**
@@ -276,11 +368,11 @@ inline void factor_prime(long long num) { // todo: write two different algo, and
     // cout << "uh oh";
     if (num == 1) return;
     long long num_sqrt = sqrt(num) + 1;
-    while (num % 2 == 0) {append_factor(2); num /= 2;}
-    while (num % 3 == 0) {append_factor(3); num /= 3;}
-    while (num % 5 == 0) {append_factor(5); num /= 5;}
-    while (num % 7 == 0) {append_factor(7); num /= 7;}
-    PRIME_CHECKS_(__ADD_PRIME_)
+    // while (num % 2 == 0) {append_factor(2); num /= 2;}
+    // while (num % 3 == 0) {append_factor(3); num /= 3;}
+    // while (num % 5 == 0) {append_factor(5); num /= 5;}
+    // while (num % 7 == 0) {append_factor(7); num /= 7;}
+    // PRIME_CHECKS_(__ADD_PRIME_)
     for (long long i = 210; i < num_sqrt; i += 210) { 
         PRIME_CHECKS(__ADD_PRIME)
     }
@@ -299,13 +391,27 @@ inline void _find_factors(long long num) {
     // cout << "num" << num << endl;
     // cout << "isprime" << is_prime(num) << is_prime(2719) << endl;
     // cout << "num is rpime" << num << " " << is_prime(num) << endl;
-    if (is_prime(num)) {append_factor(num); return;}
+    // cout << "started prime" << endl;
+    if (is_prime(num)) {
+        append_factor(num); 
+        // cout << "isprime" << num << endl; 
+        return;
+    }
     // cout << "hai" << num << endl;
-    long long factor = brent(num);
+    long long factor;
+    if (num < PRIME_START_NUM) {
+        factor = pollard_rho(num);
+    } else {
+        factor = brent(num);
+    }
+    // cout << "fin factor la" << factor << endl;
+    // long long factor = pollard_rho(num);
     // int factor = lenstra(num);
     // cout << factor << endl;
-    if (factor == num || factor < 1) factor_prime(num);
-    else {
+    if (factor == num) {
+        // cout << "oh no!" << endl; 
+        factor_prime(num);
+    }  else {
         _find_factors(num/factor);
         _find_factors(factor);
     }
@@ -313,22 +419,23 @@ inline void _find_factors(long long num) {
 }
 
 inline long long factor_small_primes(long long num) { // can binary search
-    long long num_sqrt = sqrt(num) + 1;
+    // long long num_sqrt = sqrt(num) + 1;
 
-    if (num_sqrt > SMALL_PRIME_LIMIT) {
-        for (int i = 0; i < SMALL_NUM_PRIMES && num > 1; i++) {
-            while (num % SMALL_PRIMES[i] == 0) {
-                append_factor(SMALL_PRIMES[i]);
-                num /= SMALL_PRIMES[i];
-            }
+    for (int i = 0; i < SMALL_NUM_PRIMES && num > 1; i++) {
+        while (num % SMALL_PRIMES[i] == 0) {
+            // cout << " - " << num << " " << SMALL_PRIMES[i] << endl;
+            append_factor(SMALL_PRIMES[i]);
+            num /= SMALL_PRIMES[i];
         }
-        num_small_factors = num_factors;
-        return num;
-    } else {
-        factor_prime(num);
-        num_small_factors = num_factors;
-        return 1;
     }
+    num_small_factors = num_factors;
+    return num;
+    // if (num_sqrt < SMALL_PRIME_LIMIT) {
+    // } else {
+    //     factor_prime(num);
+    //     num_small_factors = num_factors;
+    //     return 1;
+    // }
 }
 
 inline void find_factors(long long num) {
@@ -336,7 +443,9 @@ inline void find_factors(long long num) {
     // return;
     // cout << "wahhh" << endl;
 
-    num = factor_small_primes(num);
+    if (num > PRIME_START_NUM) {
+        num = factor_small_primes(num);
+    }
     _find_factors(num);
     // if (num % 2 == 0) {
     //     // cout << "wah2";
@@ -425,7 +534,8 @@ int main(int argc, char *argv[]) {
     // 9223372036854775309
 
 
-
+    // from = 7044386313470;
+    // to = 7044386313470;
 
 
 /**

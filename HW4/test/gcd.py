@@ -152,7 +152,12 @@ lines = [line for line in output_my.split("\n") if (line)]
 for line in lines:
     nums = line.split("=")
     num = int(nums[0])
-    factors = primefac.primefac(num)
-    if (line != f'{num}={"*".join(map(str, list(factors)))}'):
+    # factors = primefac.primefac(num)
+    factors = nums[1].split("*")
+    factors = list(map(int, factors))
+    # print(factors)
+    # print(np.prod(factors))
+    if not ((np.prod(factors) == num) and (sorted(factors) == factors)):
+    # if (line != f'{num}={"*".join(map(str, list(factors)))}'):
         print("Oh no!")
         break

@@ -1,0 +1,72 @@
+# File for suppressing errors found in pid 60372: "factorize.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+factorize.exe!.text
+factorize.exe!_pei386_runtime_relocator
+factorize.exe!__tmainCRTStartup
+factorize.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<factorize.exe+0x27ab>
+<factorize.exe+0x1bf6>
+<factorize.exe+0x1251>
+<factorize.exe+0x14e6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #2
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+factorize.exe!main
+
+## Mod+offs-style suppression for Error #2:
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+<factorize.exe+0x156d>
+
+# Suppression for Error #3
+UNINITIALIZED READ
+name=Error #3 (update to meaningful name)
+factorize.exe!is_prime
+factorize.exe!_find_factors
+factorize.exe!find_factors
+factorize.exe!main
+
+## Mod+offs-style suppression for Error #3:
+UNINITIALIZED READ
+name=Error #3 (update to meaningful name)
+<factorize.exe+0x4a90>
+<factorize.exe+0x403c>
+<factorize.exe+0x4012>
+<factorize.exe+0x15df>
+
+# Suppression for Error #4
+POSSIBLE LEAK
+name=Error #4 (update to meaningful name)
+drmemorylib.dll!replace_malloc
+msvcrt.dll!malloc_crt
+msvcrt.dll!_setargv
+msvcrt.dll!_getmainargs
+factorize.exe!pre_cpp_init
+msvcrt.dll!initterm
+factorize.exe!__tmainCRTStartup
+factorize.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #4:
+POSSIBLE LEAK
+name=Error #4 (update to meaningful name)
+<drmemorylib.dll+0x389e0>
+<msvcrt.dll+0x1c93b>
+<msvcrt.dll+0x3e6ed>
+<msvcrt.dll+0x7ca1>
+<factorize.exe+0x1173>
+<msvcrt.dll+0x3d54d>
+<factorize.exe+0x1437>
+<factorize.exe+0x14e6>
+<ntdll.dll+0x485b>
+

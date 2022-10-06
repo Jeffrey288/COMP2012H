@@ -1,0 +1,46 @@
+# File for suppressing errors found in pid 12800: "nothing.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+nothing.exe!___chkstk_ms
+nothing.exe!_pei386_runtime_relocator
+nothing.exe!__tmainCRTStartup
+nothing.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<nothing.exe+0x25eb>
+<nothing.exe+0x1a46>
+<nothing.exe+0x1251>
+<nothing.exe+0x14e6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #2
+POSSIBLE LEAK
+name=Error #2 (update to meaningful name)
+drmemorylib.dll!replace_malloc
+msvcrt.dll!malloc_crt
+msvcrt.dll!_setargv
+msvcrt.dll!_getmainargs
+nothing.exe!pre_cpp_init
+msvcrt.dll!initterm
+nothing.exe!__tmainCRTStartup
+nothing.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #2:
+POSSIBLE LEAK
+name=Error #2 (update to meaningful name)
+<drmemorylib.dll+0x389e0>
+<msvcrt.dll+0x1c93b>
+<msvcrt.dll+0x3e6ed>
+<msvcrt.dll+0x7ca1>
+<nothing.exe+0x1173>
+<msvcrt.dll+0x3d54d>
+<nothing.exe+0x1437>
+<nothing.exe+0x14e6>
+<ntdll.dll+0x485b>
+

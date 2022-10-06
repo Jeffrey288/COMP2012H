@@ -1,0 +1,65 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+Windows version: WinVer=105;Rel=2009;Build=22000;Edition=Core
+Dr. Memory results for pid 7332: "main.exe"
+Application cmdline: "C:\Users\pinkp\Documents\GitHub\COMP2012H\HW5\main.exe"
+Recorded 118 suppression(s) from default C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin64\suppress-default.txt
+
+Error #1: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0000007c881ff3d0-0x0000007c881ff3d8 8 byte(s)
+# 0 .text   
+# 1 _pei386_runtime_relocator
+# 2 __tmainCRTStartup
+# 3 .l_start
+# 4 ntdll.dll!RtlUserThreadStart
+Note: @0:00:01.820 in thread 9268
+Note: 0x0000007c881ff3d0 refers to 776 byte(s) beyond the top of the stack 0x0000007c881ff6d8
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+
+Error #2: UNADDRESSABLE ACCESS of freed memory: reading 0x0000019d2e190c80-0x0000019d2e190c88 8 byte(s)
+# 0 prev    
+# 1 pop_back
+# 2 test_pop_back
+# 3 main    
+Note: @0:00:02.557 in thread 9268
+Note: next higher malloc: 0x0000019d2e190cb0-0x0000019d2e190ce0
+Note: prev lower malloc:  0x0000019d2e190c10-0x0000019d2e190c40
+Note: 0x0000019d2e190c80-0x0000019d2e190c88 overlaps memory 0x0000019d2e190c60-0x0000019d2e190c90 that was freed here:
+Note: # 0 replace_operator_delete_nothrow               [d:\drmemory_package\common\alloc_replace.c:2975]
+Note: # 1 pop_back
+Note: # 2 test_pop_back
+Note: # 3 main    
+Note: instruction: mov    0x20(%rax) -> %rax
+
+Error #3: POSSIBLE LEAK 72 direct bytes 0x0000019d2e1901c0-0x0000019d2e190208 + 0 indirect bytes
+# 0 replace_malloc                   [d:\drmemory_package\common\alloc_replace.c:2577]
+# 1 msvcrt.dll!malloc_crt
+# 2 msvcrt.dll!_setargv  
+# 3 msvcrt.dll!_getmainargs
+# 4 pre_cpp_init
+# 5 msvcrt.dll!initterm  
+# 6 __tmainCRTStartup
+# 7 .l_start
+# 8 ntdll.dll!RtlUserThreadStart
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:      2
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      2 unique,     3 total unaddressable access(es)
+      0 unique,     0 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      1 unique,     1 total,     72 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      2 potential error(s) (suspected false positives)
+         (details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-main.exe.7332.000\potential_errors.txt)
+      8 unique,     8 total,    927 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-main.exe.7332.000\results.txt

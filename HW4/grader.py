@@ -6,7 +6,9 @@ import time
 import string
 import primefac
 import math
-
+from operator import mul
+import numpy as np
+from functools import reduce
 """
 grader:
 - generates a input.txt file containing a test case
@@ -27,7 +29,7 @@ MIN_LOG = math.log(MIN_NUM)
 MAX_LOG = math.log(MAX_NUM)
 def generate_input():
 
-    range = random.randint(1000, 10000)
+    range = random.randint(10, 100)
     start = (random.random()) * (MAX_LOG - MIN_LOG) + MIN_LOG
     start = int(math.pow(math.e, start))
     # start = random.randint(MIN_NUM, MAX_NUM - range)
@@ -36,6 +38,7 @@ def generate_input():
 
     return range + 1, input_text
     # return 1, "factorize.exe 9223371915520229671 9223371915520229671"
+    # return 999999, "factorize.exe 2 1000000"
 
 # print(generate_input())
 # input()
@@ -79,6 +82,7 @@ while True:
         os.system(cmd)
     os.system(f"{the_input} > output_my.txt")
     time_my = time.time() - time_my
+    time_my *= 1000
 
     f_my = open("output_my.txt")
     output_my = f_my.read()
@@ -106,8 +110,25 @@ while True:
         correct_ans = f'{num}={"*".join(map(str, sorted(list(factors))))}'
         if (line != correct_ans):
             print_red(" ".join([line, "<->", correct_ans]))
-            wrongFlag =True
+            wrongFlag = True
             break
+
+    # lines = [line for line in output_my.split("\n") if (line)]
+    # for line in lines:
+    #     nums = line.split("=")
+    #     num = int(nums[0])
+    #     factors = nums[1].split("*")
+    #     factors = list(map(int, factors))
+    #     if not ((reduce(lambda x,y: x*y, factors, 1) == num) and (sorted(factors) == factors)):
+    #         if not (reduce(lambda x,y: x*y, factors, 1) == num):
+    #             print(reduce(lambda x,y: x*y, factors, 1), num, factors)
+    #         else:
+    #             print(sorted(factors), factors)
+    #         factors = primefac.primefac(num)
+    #         correct_ans = f'{num}={"*".join(map(str, sorted(list(factors))))}'
+    #         print_red(" ".join([line, "<->", correct_ans]))
+    #         wrongFlag = True
+    #         break
     
     
     f_data = open(STORE_DATA_IN, "a")

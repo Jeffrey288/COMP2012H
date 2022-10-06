@@ -1,0 +1,46 @@
+# File for suppressing errors found in pid 27152: "main.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+main.exe!.text
+main.exe!_pei386_runtime_relocator
+main.exe!__tmainCRTStartup
+main.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<main.exe+0x4c3b>
+<main.exe+0x4086>
+<main.exe+0x1251>
+<main.exe+0x14e6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #2
+POSSIBLE LEAK
+name=Error #2 (update to meaningful name)
+drmemorylib.dll!replace_malloc
+msvcrt.dll!malloc_crt
+msvcrt.dll!_setargv
+msvcrt.dll!_getmainargs
+main.exe!pre_cpp_init
+msvcrt.dll!initterm
+main.exe!__tmainCRTStartup
+main.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #2:
+POSSIBLE LEAK
+name=Error #2 (update to meaningful name)
+<drmemorylib.dll+0x389e0>
+<msvcrt.dll+0x1c93b>
+<msvcrt.dll+0x3e6ed>
+<msvcrt.dll+0x7ca1>
+<main.exe+0x1173>
+<msvcrt.dll+0x3d54d>
+<main.exe+0x1437>
+<main.exe+0x14e6>
+<ntdll.dll+0x485b>
+
