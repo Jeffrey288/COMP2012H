@@ -1,0 +1,170 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+start time: 3697206:35:40.701 == 06:35:40.701 10/11/2022
+Recorded 118 suppression(s) from default C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin64\suppress-default.txt
+Using system call file C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\symcache\syscalls_x64.txt
+Syscall mismatch detected.  Running on unknown kernel version!
+new thread #0 id=33724
+WARNING: symbol cache file has wrong version
+
+module load event: "libgcc_s_seh-1.dll" 0x0000000061440000-0x000000006145c000 modid: 1 C:\ProgramData\Anaconda3\Library\mingw-w64\bin\libgcc_s_seh-1.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "libwinpthread-1.dll" 0x0000000064940000-0x0000000064955000 modid: 2 C:\ProgramData\Anaconda3\Library\mingw-w64\bin\libwinpthread-1.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "libstdc++-6.dll" 0x000000006fc40000-0x000000006fda2000 modid: 3 C:\ProgramData\Anaconda3\Library\mingw-w64\bin\libstdc++-6.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "dynamorio.dll" 0x0000000071000000-0x00000000711b1000 modid: 4 C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\dynamorio\lib64\release\dynamorio.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "drmemorylib.dll" 0x00007ff61aee0000-0x00007ff61b17c000 modid: 5 C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin64\release\drmemorylib.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "main.exe" 0x00007ff68aea0000-0x00007ff68aec6000 modid: 6 C:\Users\pinkp\Documents\GitHub\COMP2012H\HW5\main.exe
+WARNING: assuming operator new is non-placement in main.exe @0x00007ff68aea3b48
+WARNING: assuming operator delete is non-placement in main.exe @0x00007ff68aea3b50
+WARNING: symbol cache file has wrong version
+
+module load event: "msvcp_win.dll" 0x00007ffce1080000-0x00007ffce111d000 modid: 7 C:\WINDOWS\System32\msvcp_win.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "win32u.dll" 0x00007ffce1120000-0x00007ffce1146000 modid: 8 C:\WINDOWS\System32\win32u.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "gdi32full.dll" 0x00007ffce1150000-0x00007ffce1269000 modid: 9 C:\WINDOWS\System32\gdi32full.dll
+WARNING: unable to load symbols for C:\WINDOWS\System32\gdi32full.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "KERNELBASE.dll" 0x00007ffce1270000-0x00007ffce15ec000 modid: 10 C:\WINDOWS\System32\KERNELBASE.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "ucrtbase.dll" 0x00007ffce15f0000-0x00007ffce1701000 modid: 11 C:\WINDOWS\System32\ucrtbase.dll
+WARNING: unable to load symbols for C:\WINDOWS\System32\ucrtbase.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "USER32.dll" 0x00007ffce1a30000-0x00007ffce1bdd000 modid: 12 C:\WINDOWS\System32\USER32.dll
+WARNING: error finding UserConnectToServer syscall #WARNING: symbol cache file has wrong version
+
+module load event: "IMM32.dll" 0x00007ffce2960000-0x00007ffce2991000 modid: 13 C:\WINDOWS\System32\IMM32.DLL
+WARNING: symbol cache file has wrong version
+
+module load event: "GDI32.dll" 0x00007ffce29a0000-0x00007ffce29c9000 modid: 14 C:\WINDOWS\System32\GDI32.dll
+
+module load event: "KERNEL32.dll" 0x00007ffce33b0000-0x00007ffce346d000 modid: 15 C:\WINDOWS\System32\KERNEL32.DLL
+WARNING: symbol cache file has wrong version
+
+module load event: "msvcrt.dll" 0x00007ffce3710000-0x00007ffce37b3000 modid: 16 C:\WINDOWS\System32\msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new == new[] => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+
+module load event: "ntdll.dll" 0x00007ffce3ba0000-0x00007ffce3da9000 modid: 17 C:\WINDOWS\SYSTEM32\ntdll.dll
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: fail to find call to RtlFreeStringRoutine
+
+NEW THREAD: main thread 33724
+
+
+Error #1: UNADDRESSABLE ACCESS beyond top of stack: reading 0x0000003f4abff350-0x0000003f4abff358 8 byte(s)
+# 0 .text    (0x00007ff68aea4c6b <main.exe+0x4c6b>) modid:6
+# 1 _pei386_runtime_relocator (0x00007ff68aea40b6 <main.exe+0x40b6>) modid:6
+# 2 __tmainCRTStartup (0x00007ff68aea1251 <main.exe+0x1251>) modid:6
+# 3 .l_start (0x00007ff68aea14e6 <main.exe+0x14e6>) modid:6
+# 4 ntdll.dll!RtlUserThreadStart (0x00007ffce3ba485b <ntdll.dll+0x485b>) modid:17
+Note: @0:00:03.032 in thread 33724
+Note: 0x0000003f4abff350 refers to 776 byte(s) beyond the top of the stack 0x0000003f4abff658
+Note: instruction: or     $0x0000000000000000 (%rcx) -> (%rcx)
+	error end
+WARNING: unhandled system calls found
+WARNING: heap buffer at 0x000001d6f0ae1330 is of size 512 bytes, which does not match the sysarg parameter #5 size of 511 bytes.
+WARNING: heap buffer at 0x000001d6f0ae1b40 is of size 512 bytes, which does not match the sysarg parameter #5 size of 511 bytes.
+
+Error #2: POSSIBLE LEAK 72 direct bytes 0x000001d6f0ae01c0-0x000001d6f0ae0208 + 0 indirect bytes
+# 0 replace_malloc  [d:\drmemory_package\common\alloc_replace.c:2577] (0x00007ff61af189e0 <drmemorylib.dll+0x389e0>) modid:5
+# 1 msvcrt.dll!malloc_crt (0x00007ffce372c93b <msvcrt.dll+0x1c93b>) modid:16
+# 2 msvcrt.dll!_setargv   (0x00007ffce374e6ed <msvcrt.dll+0x3e6ed>) modid:16
+# 3 msvcrt.dll!_getmainargs (0x00007ffce3717ca1 <msvcrt.dll+0x7ca1>) modid:16
+# 4 pre_cpp_init (0x00007ff68aea1173 <main.exe+0x1173>) modid:6
+# 5 msvcrt.dll!initterm   (0x00007ffce374d54d <msvcrt.dll+0x3d54d>) modid:16
+# 6 __tmainCRTStartup (0x00007ff68aea1437 <main.exe+0x1437>) modid:6
+# 7 .l_start (0x00007ff68aea14e6 <main.exe+0x14e6>) modid:6
+# 8 ntdll.dll!RtlUserThreadStart (0x00007ffce3ba485b <ntdll.dll+0x485b>) modid:17
+	error end
+WARNING: unable to load symbols for C:\ProgramData\Anaconda3\Library\mingw-w64\bin\libwinpthread-1.dll
+WARNING: unable to load symbols for C:\ProgramData\Anaconda3\Library\mingw-w64\bin\libstdc++-6.dll
+
+Potential Error #1: HANDLE LEAK: KERNEL handle 0x00000000000000b0 and 0 similar handle(s) were opened but not closed:
+# 0 system call NtCreateEvent
+# 1 KERNELBASE.dll!CreateEventA   (0x00007ffce12f49f3 <KERNELBASE.dll+0x849f3>) modid:10
+# 2 libwinpthread-1.dll!?                   (0x00000000649445a2 <libwinpthread-1.dll+0x45a2>) modid:2
+# 3 libwinpthread-1.dll!?                   (0x0000000064944d96 <libwinpthread-1.dll+0x4d96>) modid:2
+# 4 libstdc++-6.dll!?               (0x000000006fcdd0d8 <libstdc++-6.dll+0x9d0d8>) modid:3
+# 5 libstdc++-6.dll!?               (0x000000006fce0ff6 <libstdc++-6.dll+0xa0ff6>) modid:3
+# 6 libstdc++-6.dll!?               (0x000000006fcf636b <libstdc++-6.dll+0xb636b>) modid:3
+# 7 __static_initialization_and_destruction_0 (0x00007ff68aea3b05 <main.exe+0x3b05>) modid:6
+# 8 _GLOBAL__sub_I__Z12create_dequev (0x00007ff68aea3b32 <main.exe+0x3b32>) modid:6
+# 9 __do_global_ctors (0x00007ff68aea3c32 <main.exe+0x3c32>) modid:6
+#10 __tmainCRTStartup (0x00007ff68aea138b <main.exe+0x138b>) modid:6
+#11 .l_start (0x00007ff68aea14e6 <main.exe+0x14e6>) modid:6
+#12 ntdll.dll!RtlUserThreadStart (0x00007ffce3ba485b <ntdll.dll+0x485b>) modid:17
+Note: @0:00:14.916 in thread 33724
+	error end
+
+Potential Error #2: HANDLE LEAK: KERNEL handle 0x000000000000013c and 0 similar handle(s) were opened but not closed:
+# 0 system call NtDuplicateObject
+# 1 KERNELBASE.dll!DuplicateHandle (0x00007ffce12f09bc <KERNELBASE.dll+0x809bc>) modid:10
+# 2 libwinpthread-1.dll!?                   (0x000000006494460b <libwinpthread-1.dll+0x460b>) modid:2
+# 3 libwinpthread-1.dll!?                   (0x0000000064944d96 <libwinpthread-1.dll+0x4d96>) modid:2
+# 4 libstdc++-6.dll!?               (0x000000006fcdd0d8 <libstdc++-6.dll+0x9d0d8>) modid:3
+# 5 libstdc++-6.dll!?               (0x000000006fce0ff6 <libstdc++-6.dll+0xa0ff6>) modid:3
+# 6 libstdc++-6.dll!?               (0x000000006fcf636b <libstdc++-6.dll+0xb636b>) modid:3
+# 7 __static_initialization_and_destruction_0 (0x00007ff68aea3b05 <main.exe+0x3b05>) modid:6
+# 8 _GLOBAL__sub_I__Z12create_dequev (0x00007ff68aea3b32 <main.exe+0x3b32>) modid:6
+# 9 __do_global_ctors (0x00007ff68aea3c32 <main.exe+0x3c32>) modid:6
+#10 __tmainCRTStartup (0x00007ff68aea138b <main.exe+0x138b>) modid:6
+#11 .l_start (0x00007ff68aea14e6 <main.exe+0x14e6>) modid:6
+#12 ntdll.dll!RtlUserThreadStart (0x00007ffce3ba485b <ntdll.dll+0x485b>) modid:17
+Note: @0:00:14.917 in thread 33724
+	error end
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:      2
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      1 unique,     2 total unaddressable access(es)
+      0 unique,     0 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      1 unique,     1 total,     72 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      2 potential error(s) (suspected false positives)
+         (details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-main.exe.26444.000\potential_errors.txt)
+    295 ignored assumed-innocuous system leak(s)
+      8 unique,     8 total,    927 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-main.exe.26444.000\results.txt
+
+DUPLICATE POTENTIAL ERROR COUNTS:
+
+POTENTIAL ERRORS FOUND:
+      0 unique,     0 total potential unaddressable access(es)
+      0 unique,     0 total potential uninitialized access(es)
+      0 unique,     0 total potential invalid heap argument(s)
+      0 unique,     0 total potential GDI usage error(s)
+      2 unique,     2 total potential handle leak(s)
+      0 unique,     0 total potential warning(s)
+      0 unique,     0 total,      0 byte(s) of potential leak(s)
+      0 unique,     0 total,      0 byte(s) of potential possible leak(s)
+Details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-main.exe.26444.000\potential_errors.txt
+Exiting @0:00:14.973 in thread 33724
+LOG END

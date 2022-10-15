@@ -60,7 +60,7 @@ int back(const Deque& deque) {
         cout << "Cannot get back: deque is empty" << endl;
         return -1;
     } else {
-        return *(deque.end.current - 1); // before it is guarunteed to be an element
+        return *(prev(deque.end).current); // before it is guarunteed to be an element
     }
 }
 
@@ -174,6 +174,13 @@ void pop_back(Deque& deque) {
             // set to :8:
             deque.end.current++;
         }
+    } else if (deque.end.current == deque.end.first) { // for the case at start up
+        Node* del_node = const_cast<Node *>(deque.end.node);
+        deque.end = prev(deque.end);
+        del_node->prev->next = del_node->next;
+        deque.sentinel->prev = del_node->prev;
+        delete del_node;
+        deque.ll_size--;
     } else {
         deque.end = prev(deque.end);
     }
@@ -213,9 +220,14 @@ void pop_front(Deque& deque) {
     }
 }
 
+// #define DEBUG_PRINT
 void print_deque(const Deque& deque) {
-    // cout << "[" << size(deque) << empty(deque) << "]";
-    // cout << deque.start.current << " " << deque.end.current << " " << next(deque.end.current) << " " << deque.ll_size << " " << deque.sentinel->arr << endl;
+#ifdef DEBUG_PRINT
+    cout << "[size: " << size(deque) << ", empty: " << empty(deque) << "]" << endl;
+    cout << "start: " << ((long long) deque.start.current & 0xFFFF) << ", end: " << ((long long) deque.end.current & 0xFFFF) << 
+        ", next(end): " << ((long long) next(deque.end.current) & 0xFFFF) << ", size: " << deque.ll_size <<
+        ", sen->arr: " << ((long long) deque.sentinel->arr & 0xFFFF) << endl;
+#endif
     if (empty(deque)) {
         cout << "[]" << endl;
         return;
@@ -224,12 +236,18 @@ void print_deque(const Deque& deque) {
     Iterator it = deque.start;
 
     cout << "[";
-    // cout << it.current << ": " << *it.current;
+#ifdef DEBUG_PRINT
+    cout << ((long long) it.current & 0xFFFF) << ": " << *it.current;
+#else
     cout << *it.current;
+#endif
     while (!equal(it, prev(deque.end))) {
         it = next(it);
-        // cout << ", " << it.current << ": " << *it.current;
+#ifdef DEBUG_PRINT
+        cout << ", " << ((long long) it.current & 0xFFFF) << ": " << *it.current;
+#else
         cout << ", " << *it.current;
+#endif
     }
     cout << "]" << endl;
 }
@@ -285,13 +303,15 @@ void erase(Deque& deque, const Iterator& pos) {
      * 
      * del [2]:
      * 
+     * if [2] is not prev(end), then
      * [2] = [3]
-     * if [3] is not prev(end), then
      * it = [3]
+     * if [3] is not prev(end), then
      * [3] = [4]
-     * if [4] is not prev(end), then
      * it = [4]
+     * if [4] is not prev(end), then
      * [4] = [5]
+     * it = [5]
      * since [5] is prev(end), we stop
      * pop_back()
      * 
@@ -306,10 +326,15 @@ void erase(Deque& deque, const Iterator& pos) {
     
     Iterator it = pos;
 
-    while (!equal(next(it), prev(deque.end))) { // todo: debug this
+    while(!equal(it, prev(deque.end))) {
         *it.current = *(next(it).current);
         it = next(it);
     }
+
+    // while (!equal(next(it), prev(deque.end))) { // todo: debug this
+    //     *it.current = *(next(it).current);
+    //     it = next(it);
+    // }
 
     // if (size(deque) > 1) {
     //     *it.current = *(next(it).current);

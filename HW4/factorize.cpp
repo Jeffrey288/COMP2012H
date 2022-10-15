@@ -100,12 +100,12 @@ int num_small_factors;
 
 // }
 
-#define mult(a, b, mod) ((__int128) (a) * (b) % (mod))
+#define mult(a, b, mod) ((__uint128_t) (a) * (b) % (mod))
 
 // note that b > a
 inline long long _gcd(long long a, long long b) {
     if (a == 0) return b;
-    return gcd(b % a, a);
+    return _gcd(b % a, a);
 }
 
 inline long long gcd(long long a, long long b) {
@@ -263,7 +263,7 @@ inline bool is_prime(long long num) {
  * @brief Floyd Pollard (Not used now)
  */
 inline long long g(long long val) {
-    return (val) * (val) + 1;
+    return (val) * (val) + 101;
 }
 inline long long pollard_rho(long long num) {
     long long x = 2;
@@ -368,11 +368,11 @@ inline void factor_prime(long long num) { // todo: write two different algo, and
     // cout << "uh oh";
     if (num == 1) return;
     long long num_sqrt = sqrt(num) + 1;
-    // while (num % 2 == 0) {append_factor(2); num /= 2;}
-    // while (num % 3 == 0) {append_factor(3); num /= 3;}
-    // while (num % 5 == 0) {append_factor(5); num /= 5;}
-    // while (num % 7 == 0) {append_factor(7); num /= 7;}
-    // PRIME_CHECKS_(__ADD_PRIME_)
+    while (num % 2 == 0) {append_factor(2); num /= 2;}
+    while (num % 3 == 0) {append_factor(3); num /= 3;}
+    while (num % 5 == 0) {append_factor(5); num /= 5;}
+    while (num % 7 == 0) {append_factor(7); num /= 7;}
+    PRIME_CHECKS_(__ADD_PRIME_)
     for (long long i = 210; i < num_sqrt; i += 210) { 
         PRIME_CHECKS(__ADD_PRIME)
     }
@@ -438,15 +438,34 @@ inline long long factor_small_primes(long long num) { // can binary search
     // }
 }
 
+inline void _find_factors_2(long long num) {
+    if (num == 1) return;
+    if (is_prime(num)) {
+        append_factor(num); 
+        return;
+    }
+    long long factor;
+    factor = pollard_rho(num);
+    // cout << num << " factor: " << factor << endl;
+    if (factor == num) {
+        factor_prime(num);
+    } else {
+        _find_factors(num/factor);
+        _find_factors(factor);
+    }
+}
+
 inline void find_factors(long long num) {
     // factor_prime(num);
     // return;
     // cout << "wahhh" << endl;
 
-    if (num > PRIME_START_NUM) {
+    if (num < 12345678) {
+        _find_factors_2(num);
+    } else {
         num = factor_small_primes(num);
+        _find_factors(num);
     }
-    _find_factors(num);
     // if (num % 2 == 0) {
     //     // cout << "wah2";
     //     append_factor(2);
@@ -469,8 +488,12 @@ inline void find_factors(long long num) {
 }
 
 // .\factorize 16339207 16339207
-string buff;
-int buff_len;
+// #include <sstream>
+// string buff;
+// char temp_buff[200];
+// int temp_buff_len;
+char* buff;
+char* pt;
 inline void print_factors(long long num) {
     sort(factors + num_small_factors, factors + num_factors);
 
@@ -480,37 +503,38 @@ inline void print_factors(long long num) {
      * using cout less can also speed up stuff
      */
 
-    int small_fac = 0;
-    int big_fac = num_small_factors;
+    // int small_fac = 0;
+    // int big_fac = num_small_factors;
 
-    cout << num << "=";
-    for (int i = 0; i < num_factors - 1; i++) {
-        cout << factors[i] << "*";
-    }
-    cout << factors[num_factors - 1] << "\n";
-    // if (num_small_factors == num_factors) {
-    // } else {
-    //     while (small_fac < num_small_factors && factors[small_fac] <= factors[num_small_factors])
-    //         cout << factors[small_fac++] << "*";
-    //     while (small_fac < num_small_factors && big_fac < num_factors) {
-    //         if (factors[small_fac] < factors[big_fac])
-    //             cout << factors[small_fac++] << "*";
-    //         else
-    //             cout << factors[big_fac++] << "*";
-    //     }
-    //     if (small_fac == num_small_factors) {
-    //         while (big_fac < num_factors - 1) cout << factors[big_fac++] << "*";
-    //         cout << factors[num_factors - 1] << "\n";
-    //     } else {
-    //         while (small_fac < num_small_factors - 1) cout << factors[small_fac++] << "*";
-    //         cout << factors[num_small_factors - 1] << "\n";
-    //     }
+    // cout << num << "=";
+    // for (int i = 0; i < num_factors - 1; i++) {
+    //     cout << factors[i] << "*";
     // }
+    // cout << factors[num_factors - 1] << "\n";
+
+
+    // sprintf(temp_buff, "%lld=", num); buff.append(temp_buff);
+    // for (int i = 0; i < num_factors - 1; i++) {
+    //      sprintf(temp_buff, "%lld*", factors[i]); buff.append(temp_buff);
+    // }
+    // sprintf(temp_buff, "%lld\n", factors[num_factors - 1]); buff.append(temp_buff);
+
+    
+    pt += sprintf(pt, "%lld=", num); 
+    for (int i = 0; i < num_factors - 1; i++) {
+         pt += sprintf(pt, "%lld*", factors[i]); 
+    }
+    pt += sprintf(pt, "%lld\n", factors[num_factors - 1]); 
+
+    // buff.append(temp_buff);
+    // cout << temp_buff;
     
 }
 
+// https://stackoverflow.com/questions/18412164/fast-c-string-output
 int main(int argc, char *argv[]) {
     srand(1);
+
 
     // cout << gcd(4453788356655706920 , 9223372036854775309);
     // for (int i =0; i < 100; i++) {
@@ -525,6 +549,8 @@ int main(int argc, char *argv[]) {
     long long from, to;
     from = atoll(argv[1]);
     to = atoll(argv[2]);
+    buff = new char[(to - from + 1) * 147];
+    pt = buff;
     // from = 576460752303423571;
     // to = 576460752303425489;
     // from = 9223372036854774811;
@@ -552,7 +578,11 @@ int main(int argc, char *argv[]) {
     num_factors = 0;
     find_factors(num);
     print_factors(num);
-    cout.flush();
+    // cout.flush();
+    // cout << buff;
+    *pt = '\0';
+    // printf("%s", buff);
+    cout << buff;
 
 /**
  * @brief Testing Codes
@@ -604,3 +634,4 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
+// primes.cpp > submission/factorize.cpp && factorize.cpp > submission/factorize.cpp

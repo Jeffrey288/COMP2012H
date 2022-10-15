@@ -76,32 +76,33 @@ def primes(n):
     return [2] + [i for i in range(3,n,2) if sieve[i]]
 # print(len(primes(10000)))
 
-# # print(primes(100000000)[-1000:])
-# N = 255000000
-# # N = 64*9
-# flags = ["0" for _ in range(N+1)]
-# print("flags created")
-# p = primes(N)
+# print(primes(100000000)[-1000:])
+N = 2550000 * 2
+# N = 64 * 90
+# N = 64*9
+flags = ["0" for _ in range(N+1)]
+print("flags created")
+p = primes(N)
 # print(p)
-# for k in p: 
-#     flags[k] = "1"
-#     # print(flags)
+for k in p: 
+    flags[k] = "1"
+    # print(flags)
 
-# flags = [flags[i] for i in range(N+1) if (i%6 == 1 or i%6==5)]
+flags = [flags[i] for i in range(N+1) if (i%6 == 1 or i%6==5)]
 
-# # print(flags[:10])
+# print(flags[:10])
 
-# # exit()
+# exit()
 
-# ints = ["".join(flags[64*k:64*k+64]) for k in range((N//3)//64)]
-# print(ints[:4], len(ints[0]), len(ints[1]))
-# ints2 = [int(k, 2) for k in ints]
-# print(ints2[:4])
-# ints = [hex(int(k, 2)) for k in ints]
-# print(ints[:4])
-# f = open("primes.txt", "w")
-# f.write(",".join(ints))
-# f.close()
+ints = ["".join(flags[64*k:64*k+64]) for k in range((N//3)//64)]
+print(ints[:4], len(ints[0]), len(ints[1]))
+ints2 = [int(k, 2) for k in ints]
+print(ints2[:4])
+ints = [hex(int(k, 2)) for k in ints]
+print(ints[:4])
+f = open("primes.txt", "w")
+f.write(",".join(ints))
+f.close()
 
 
 # # print(hex(ints2[0]))
@@ -140,24 +141,24 @@ def primes(n):
 #   # print((102 * 152 * i * i) % 103)
 #   print((103 ** i) % 31)
 
-import primefac
+# import primefac
 
 
-output_my = """5308048003531188904=2*2*2*259697*2554923624229
-5308048003531188905=5*11*103*936989938840457
-5308048003531188906=2*3*3*17*181*337*284383856633
-5308048003531188907=31*47*3643135211757851
-"""
-lines = [line for line in output_my.split("\n") if (line)]
-for line in lines:
-    nums = line.split("=")
-    num = int(nums[0])
-    # factors = primefac.primefac(num)
-    factors = nums[1].split("*")
-    factors = list(map(int, factors))
-    # print(factors)
-    # print(np.prod(factors))
-    if not ((np.prod(factors) == num) and (sorted(factors) == factors)):
-    # if (line != f'{num}={"*".join(map(str, list(factors)))}'):
-        print("Oh no!")
-        break
+# output_my = """5308048003531188904=2*2*2*259697*2554923624229
+# 5308048003531188905=5*11*103*936989938840457
+# 5308048003531188906=2*3*3*17*181*337*284383856633
+# 5308048003531188907=31*47*3643135211757851
+# """
+# lines = [line for line in output_my.split("\n") if (line)]
+# for line in lines:
+#     nums = line.split("=")
+#     num = int(nums[0])
+#     # factors = primefac.primefac(num)
+#     factors = nums[1].split("*")
+#     factors = list(map(int, factors))
+#     # print(factors)
+#     # print(np.prod(factors))
+#     if not ((np.prod(factors) == num) and (sorted(factors) == factors)):
+#     # if (line != f'{num}={"*".join(map(str, list(factors)))}'):
+#         print("Oh no!")
+#         break

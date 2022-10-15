@@ -54,6 +54,17 @@
         "array": "cpp",
         "forward_list": "cpp",
         "xtree": "cpp",
-        "ratio": "cpp"
-    }
+        "ratio": "cpp",
+        "fstream": "cpp",
+        "locale": "cpp",
+        "map": "cpp",
+        "optional": "cpp",
+        "sstream": "cpp",
+        "stop_token": "cpp",
+        "string": "cpp",
+        "thread": "cpp",
+        "xlocmes": "cpp",
+        "xloctime": "cpp"
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/DrMemory-Windows-2.3.0-1/drmf/samples"
 }

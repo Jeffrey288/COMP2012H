@@ -1,0 +1,20 @@
+# File for suppressing errors found in pid 57028: "test.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+test.exe!___chkstk_ms
+test.exe!_pei386_runtime_relocator
+test.exe!__tmainCRTStartup
+test.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<test.exe+0x414b>
+<test.exe+0x3596>
+<test.exe+0x1251>
+<test.exe+0x14e6>
+<ntdll.dll+0x485b>
+

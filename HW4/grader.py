@@ -19,7 +19,7 @@ grader:
 # Input your working path, name of the sample program adn the name of your program
 PATH = "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW4"
 # SAMPLE_PROGRAM = "sample.exe"
-MY_PROGRAM = "factorize.exe"
+MY_PROGRAM = "submission\\factorize.exe"
 STORE_DATA_IN = "grader_times.txt"
 # Input how you want to generate your sample input
 
@@ -29,7 +29,7 @@ MIN_LOG = math.log(MIN_NUM)
 MAX_LOG = math.log(MAX_NUM)
 def generate_input():
 
-    range = random.randint(10, 100)
+    range = random.randint(100, 100000)
     start = (random.random()) * (MAX_LOG - MIN_LOG) + MIN_LOG
     start = int(math.pow(math.e, start))
     # start = random.randint(MIN_NUM, MAX_NUM - range)
@@ -38,6 +38,7 @@ def generate_input():
 
     return range + 1, input_text
     # return 1, "factorize.exe 9223371915520229671 9223371915520229671"
+    # return 1001, "factorize.exe 9223372036854774807 9223372036854775807"
     # return 999999, "factorize.exe 2 1000000"
 
 # print(generate_input())
@@ -112,6 +113,10 @@ while True:
             print_red(" ".join([line, "<->", correct_ans]))
             wrongFlag = True
             break
+
+    if (len(lines) != num_cases):
+        print_red(f"wrong no. of outputs: {len(lines)} <-> {num_cases}")
+        wrongFlag = True
 
     # lines = [line for line in output_my.split("\n") if (line)]
     # for line in lines:

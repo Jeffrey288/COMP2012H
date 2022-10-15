@@ -39,8 +39,8 @@ def generate_input():
         fill = MINFILL + (MAXFILL - MINFILL) * random.random()
 
 
-        rows = random.randint(1, 15)
-        cols = random.randint(1, 15)
+        rows = random.randint(13, 14)
+        cols = random.randint(13, 14)
 
         board = [[fill_block() for _ in range(cols)] for _ in range(rows)]
         # [print("".join(board[i])) for i in range(rows)]
@@ -75,9 +75,9 @@ def generate_input():
 # run options:
 ONE_BY_ONE = 1  # runs the test cases one by one
 STOP_ON_DIFF = 2  # checks test cases until a wrong case occurs
-MODE = STOP_ON_DIFF
+MODE = ONE_BY_ONE
 
-DISPLAY_TIME = False
+DISPLAY_TIME = True
 # -----------------
 # os.system('echo 3 | sudo tee /proc/sys/vm/drop_caches >/dev/null 2>&1')
 OKBLUE = '\033[94m'
