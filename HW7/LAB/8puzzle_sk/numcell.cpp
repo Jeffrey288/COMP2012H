@@ -1,6 +1,12 @@
 #include "numcell.h"
 
-NumCell::NumCell(QWidget *parent) {
+NumCell::NumCell(QWidget *parent)
+    : QPushButton(parent), row(0), col(0), num(0) {
+    connect(this, &NumCell::clicked, this, &NumCell::on_clicked);
+}
+
+void NumCell::on_clicked() {
+    emit operate_signal(row, col);
 }
 
 int NumCell::get_row() {

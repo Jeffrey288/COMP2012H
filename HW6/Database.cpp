@@ -49,12 +49,16 @@ Database::Database(const String &filename) {
 }
 
 Database::~Database() {
+    cout << "This was not called" << endl;
     Table* table = this->tableHead;
+    cout << "Bay" << endl;
     if (table == nullptr) return;
     Table* nextTable = table->next;
+    cout << "Hey" << endl;
     // ! assumes that numTable is correct (important)
     for (int n = 0; n < this->numTables; n++) { 
         delete table;
+        cout << "Deleted table " << n << endl;
         table = nextTable;
         if (table == nullptr) return;
         nextTable = table->next;

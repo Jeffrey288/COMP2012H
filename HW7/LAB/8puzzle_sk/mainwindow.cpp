@@ -5,6 +5,7 @@
 #include <chrono>
 
 #include <QMessageBox>
+#include <QKeyEvent>
 
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
@@ -36,11 +37,23 @@ MainWindow::MainWindow(QWidget *parent) :
     }
 
     generate();
+
+    for (int i=0; i<3; i++) {
+        for (int j=0; j<3; j++) {
+            num_cells[i][j]->set_row(i);
+            num_cells[i][j]->set_col(j);
+            connect(num_cells[i][j], &NumCell::operate_signal, this, &MainWindow::operate);
+        }
+    }
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::on_generate_clicked() {
+    generate();
 }
 
 void MainWindow::generate() {
@@ -74,6 +87,39 @@ void MainWindow::generate() {
     for (int i = 0; i < 9; i++) {
         num_cells[i/3][i%3]->set_num(temp[i]);
     }
+}
+
+void MainWindow::keyPressEvent(QKeyEvent* event) {
+
+    int row0, col0;
+    for (int i=0; i<9; i++) {
+        if (num_cells[i/3][i%3]->get_num() == 0) {
+            row0 = i/3;
+            col0 = i%3;
+            break;
+        }
+    }
+
+    switch (event->key()) {
+    case Qt::Key_W:
+        if (row0 + 1 < 3)
+            operate(row0+1, col0);
+        break;
+    case Qt::Key_S:
+        if (row0 - 1 >= 0)
+            operate(row0-1, col0);
+        break;
+    case Qt::Key_A:
+        if (col0 + 1 < 3)
+            operate(row0, col0+1);
+        break;
+    case Qt::Key_D:
+        if (col0 - 1 >= 0)
+            operate(row0, col0-1);
+        break;
+    default: break;
+    }
+
 }
 
 void MainWindow::operate(int row, int col) {

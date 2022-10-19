@@ -3,11 +3,17 @@
 
 #include<QPushButton>
 
-class NumCell
+class NumCell : public QPushButton
 {
     Q_OBJECT
 private:
     int row, col, num;
+
+public slots:
+    void on_clicked();
+
+signals:
+    void operate_signal(int row, int col);
 
 public:
     NumCell(QWidget *parent);

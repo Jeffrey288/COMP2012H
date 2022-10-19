@@ -1,0 +1,268 @@
+Sample_DB
+11
+Table_1
+5
+5
+*ID 0, Name 1, Year 0, Location 1, Major 1
+2, Jack, 19, Switzerland, Science
+1, John, 20, UK, Engineering
+4, Alexis, 20, Israel, Fashion
+3, Jill, 22, Japan, Law
+0, Abraham, 18, USA, Politics
+Table_2
+3
+4
+*ID 0, Name 1, Age 0
+1, John, 15
+2, Boris, 28
+4, Hugh, 4
+6, Vanessa, 13
+Table_3
+5
+5
+Location 1, Age 0, *Customer_ID 0, Other_ID 0, Rating 0
+France, 15, 1, 20, 4
+Spain, 28, 2, 18, 4
+Peru, 4, 3, 30, 5
+Bahrain, 4, 4, 35, 2
+Brunei, 20, 5, 17, 2
+Table_4
+0
+0
+Table_5
+4
+6
+Year 0, Name 1, *SID 0, Interest 1
+2, John, 3, Fishing
+4, Jill, 1, Swimming
+1, Abraham, 0, Snooker
+1, Kimiko, 6, Programming
+3, Frank, 2, Basketball
+2, Alexis, 4, Football
+Table_6
+0
+0
+Table_7
+0
+0
+Table_8
+0
+0
+Table_9
+3
+199
+*ID 0, NAME 1, BAL 0
+1, Janae Buchanan, 1216
+2, Marie Chung, 1046
+3, Rhianna Vaughan, 311
+4, Armando Collins, 135
+5, Eden Pope, 247
+6, Louis Giles, 1308
+7, Drake Montes, 2081
+8, Brooke Huber, 2335
+9, Nayeli Yang, 1402
+10, Hadassah Best, 2456
+11, Maverick Hart, 2769
+12, Tianna Valdez, 1380
+13, Fernanda Greene, 1415
+14, Mark Bird, 2839
+15, Joanna Stephenson, 1551
+16, Reagan Hale, 333
+17, Phoenix Gill, 332
+18, Victor Thompson, 748
+19, Ansley Haley, 2121
+20, Francesca Wade, 2101
+21, Christine Walker, 2591
+22, Allie Peterson, 3135
+23, Ayla West, 274
+24, Ulises Horn, 862
+25, Joyce Page, 1139
+26, Troy Porter, 1355
+27, Cristopher Bullock, 468
+28, Mallory Stevenson, 933
+29, Maleah French, 1447
+30, Cameron Stephens, 1774
+31, Alondra Barajas, 745
+32, Akira Wong, 2762
+33, Isabel Mcdaniel, 2387
+34, Tia Durham, 161
+35, Eva Livingston, 1935
+36, Sariah Mccarthy, 3245
+37, Nicolas Casey, 2293
+38, Makaila Ferguson, 1825
+39, Gavyn Mullins, 1728
+40, Talon Pitts, 1524
+41, Stephany Wilkins, 2203
+42, Gilberto Roy, 2382
+43, Riya Roman, 2525
+44, Justice Manning, 109
+45, Mayra Massey, 2187
+46, Mallory Mccoy, 602
+47, Mckenna Vargas, 2519
+48, Maleah Fox, 3033
+49, Caleb Holder, 2870
+50, Amanda Reynolds, 2935
+321, nope, 21
+51, Aryanna Parker, 1597
+52, Colt Harmon, 1157
+53, Spencer Chung, 2018
+54, Ari Stephenson, 1606
+55, Braedon Blair, 82
+56, Martha Bray, 391
+57, Soren Pierce, 2689
+58, Arely Cantrell, 985
+59, Kyra Patrick, 1621
+60, Ray Castaneda, 1812
+61, Jaiden Mcpherson, 1446
+62, Paige Padilla, 403
+63, Yareli Oconnell, 222
+64, Sterling Snow, 1197
+65, Ahmed Townsend, 158
+66, Bo Daniels, 963
+67, Ronin Mccormick, 824
+68, Orion Lynch, 2783
+69, Harmony Carney, 487
+70, Clinton Cline, 2679
+71, Journey Paul, 1433
+72, Annalise Galloway, 271
+73, Lee Evans, 3095
+74, Donavan Chambers, 2731
+75, Tianna Miranda, 2867
+76, Theresa Yu, 2543
+77, Matthew Knight, 2052
+78, Bethany Nash, 1705
+79, Destiny Randall, 1255
+80, Haven Boone, 524
+81, Nolan Hamilton, 1258
+82, Johnathon Hendricks, 1742
+83, Jada Brennan, 2720
+84, Zackery Oneill, 3195
+85, Maggie Perkins, 177
+86, Rosemary Gonzales, 1800
+87, Johnathan Avery, 611
+88, Devon Cox, 1592
+89, Jayden Santiago, 49
+90, Alberto Moyer, 2431
+91, Damaris Coleman, 2747
+92, Adolfo Pitts, 62
+93, Amiyah Castro, 1451
+94, Ean Monroe, 1015
+95, Paul Gill, 3168
+96, Leticia Cherry, 2358
+97, Brady Figueroa, 2996
+98, Veronica Stanley, 1894
+99, Destiny Morton, 1843
+2830, Hartanto Kwee Jeffrey, 91280
+213, congratz, 10
+13123, Janae Buchanan, 1216
+10102, Marie Chung, 1046
+10103, Rhianna Vaughan, 311
+10104, Armando Collins, 135
+10105, Eden Pope, 247
+10106, Louis Giles, 1308
+10107, Drake Montes, 2081
+10108, Brooke Huber, 2335
+10109, Nayeli Yang, 1402
+101010, Hadassah Best, 2456
+101011, Maverick Hart, 2769
+101012, Tianna Valdez, 1380
+101013, Fernanda Greene, 1415
+101014, Mark Bird, 2839
+101015, Joanna Stephenson, 1551
+101016, Reagan Hale, 333
+101017, Phoenix Gill, 332
+101018, Victor Thompson, 748
+101019, Ansley Haley, 2121
+101020, Francesca Wade, 2101
+101021, Christine Walker, 2591
+101022, Allie Peterson, 3135
+101023, Ayla West, 274
+101024, Ulises Horn, 862
+101025, Joyce Page, 1139
+101026, Troy Porter, 1355
+101027, Cristopher Bullock, 468
+101028, Mallory Stevenson, 933
+101029, Maleah French, 1447
+101030, Cameron Stephens, 1774
+101031, Alondra Barajas, 745
+101032, Akira Wong, 2762
+101033, Isabel Mcdaniel, 2387
+101034, Tia Durham, 161
+101035, Eva Livingston, 1935
+101036, Sariah Mccarthy, 3245
+101037, Nicolas Casey, 2293
+101038, Makaila Ferguson, 1825
+101039, Gavyn Mullins, 1728
+101040, Talon Pitts, 1524
+101041, Stephany Wilkins, 2203
+101042, Gilberto Roy, 2382
+101043, Riya Roman, 2525
+101044, Justice Manning, 109
+101045, Mayra Massey, 2187
+101046, Mallory Mccoy, 602
+101047, Mckenna Vargas, 2519
+101048, Maleah Fox, 3033
+101049, Caleb Holder, 2870
+101050, Amanda Reynolds, 2935
+1010321, nope, 21
+101051, Aryanna Parker, 1597
+101052, Colt Harmon, 1157
+101053, Spencer Chung, 2018
+101054, Ari Stephenson, 1606
+101055, Braedon Blair, 82
+101056, Martha Bray, 391
+101057, Soren Pierce, 2689
+101058, Arely Cantrell, 985
+101059, Kyra Patrick, 1621
+101060, Ray Castaneda, 1812
+101061, Jaiden Mcpherson, 1446
+101062, Paige Padilla, 403
+101063, Yareli Oconnell, 222
+101064, Sterling Snow, 1197
+101065, Ahmed Townsend, 158
+101066, Bo Daniels, 963
+101067, Ronin Mccormick, 824
+101068, Orion Lynch, 2783
+101069, Harmony Carney, 487
+101070, Clinton Cline, 2679
+101071, Journey Paul, 1433
+101072, Annalise Galloway, 271
+101073, Lee Evans, 3095
+101074, Donavan Chambers, 2731
+101075, Tianna Miranda, 2867
+101076, Theresa Yu, 2543
+101077, Matthew Knight, 2052
+101078, Bethany Nash, 1705
+101079, Destiny Randall, 1255
+101080, Haven Boone, 524
+101081, Nolan Hamilton, 1258
+101082, Johnathon Hendricks, 1742
+101083, Jada Brennan, 2720
+101084, Zackery Oneill, 3195
+101085, Maggie Perkins, 177
+101086, Rosemary Gonzales, 1800
+101087, Johnathan Avery, 611
+101088, Devon Cox, 1592
+101089, Jayden Santiago, 49
+101090, Alberto Moyer, 2431
+101091, Damaris Coleman, 2747
+101092, Adolfo Pitts, 62
+101093, Amiyah Castro, 1451
+101094, Ean Monroe, 1015
+101095, Paul Gill, 3168
+101096, Leticia Cherry, 2358
+Table_10
+6
+4
+*CID 0, Name 1, Location 1, Currency 1, Items_Bought 0, Cart_Size 0
+0, Alexis, Israel, ILS, 10, 3
+1, Kimiko, Japan, JPY, 0, 25
+2, Frank, Serbia, RSD, 10, 10
+3, Jack, Switzerland, CHF, 100, 2
+Table_2+Table_3
+7
+3
+*ID+Customer_ID 0, Name 1, Age 0, Location 1, Age(T2) 0, Other_ID 0, Rating 0
+1, John, 15, France, 15, 20, 4
+2, Boris, 28, Spain, 28, 18, 4
+4, Hugh, 4, Bahrain, 4, 35, 2

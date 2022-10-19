@@ -337,9 +337,11 @@ int main()
             }
             case 8:
                 breakflag = false;
+                cout << "Breakflag is set to false" << endl;
                 break;
             }
         } while (breakflag);
+        cout << "now i am going to attempt to delete the database";
         delete database;
     } while (true);
 }
