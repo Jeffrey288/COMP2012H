@@ -40,11 +40,35 @@ Iterator next_ans(const Iterator& it) {
 
 void print_deque_simple(const Deque& deque) {
     cout << "Current deque: ";
-    // try to not use student-implemented function
-    for (Iterator it = deque.start; it.current != deque.end.current; it = next_ans(it)) {
-        cout << *(it.current) << " ";
-    }
-    cout << endl;
+    // // try to not use student-implemented function
+    // for (Iterator it = deque.start; it.current != deque.end.current; it = next_ans(it)) {
+    //     cout << *(it.current) << " ";
+    // }
+    // cout << endl;
+    print_deque(deque);
+
+    // #define addr(at) (((long long) (at) & 0xFFFF) >> 2)
+
+    // const Deque& d = deque;
+    // cout << "[size: " << size(d) << ", empty: " << empty(d) << "]" << endl;
+    // cout << "start: " << addr(d.start.current) << ", end: " << addr(d.end.current) << 
+    //     ", next(end): " << addr(next(d.end.current)) << ", size: " << d.ll_size <<
+    //     ", sen->arr: " << addr(d.sentinel->arr) << endl;
+
+    // Node* node = d.sentinel;
+    // node = node->next;
+    // while (node != d.sentinel) {
+    //     cout << "[";
+    //     for (int i = 0; i < CHUNK_SIZE; i++) {
+    //         if (node->arr+i == d.start.current || node->arr+i == prev(d.end).current) {
+    //             cout << "*" << addr(node->arr+i) << "*: " << (((d.start.node == node && node->arr+i < d.start.current) || (d.end.node == node && node->arr+i >= d.end.current)) ? 0 : node->arr[i]) << ", ";
+    //         } else {
+    //             cout << addr(node->arr+i) << ": " << (((d.start.node == node && node->arr+i < d.start.current) || (d.end.node == node && node->arr+i >= d.end.current)) ? 0 : node->arr[i])  << ", ";
+    //         }
+    //     }
+    //     cout << "]\n";
+    //     node = node->next;
+    // }
 }
 
 int main() {
@@ -229,16 +253,19 @@ int main() {
         Deque deque = create_deque();
         for (int i = 1; i <= 100; ++i) {
             push_back(deque, i);
-            if (i % 20 == 0) {
-                print_deque_simple(deque);
-            }
+            // if (i % 20 == 0) {
+            print_deque_simple(deque);
+            cin.get();
+            // }
+            // char c;
+            // cin >> c;
         }
-        for (int i = 99; i >= 0; --i) {
-            push_back(deque, i);
-            if (i % 20 == 0) {
-                print_deque_simple(deque);
-            }
-        }
+        // for (int i = 99; i >= 0; --i) {
+        //     push_back(deque, i);
+        //     if (i % 20 == 0) {
+        //         print_deque_simple(deque);
+        //     }
+        // }
 
         destroy_deque(deque);
     } else if (T == 12) {

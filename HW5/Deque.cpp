@@ -112,7 +112,7 @@ void push_back(Deque& deque, int val) {
         *(deque.end.current-1) = val; 
      } else {
         // increment end and set end as val
-        *(deque.end.current++) = val;
+        *(deque.end.current++) = val; 
      }
 }
 
