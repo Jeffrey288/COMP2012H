@@ -1,0 +1,245 @@
+Sample_DB
+6
+TABLE_NAME1
+3
+7
+*ID 0, AGE 0, NAME 1
+19, 10, Andy19
+8, 11, Andy8
+5, 5, Bob5
+1, 10, Andy1
+2, 11, Andy2
+6, 5, Bob6
+4, 18, Chao4
+TABLE_NAME2
+3
+3
+*WEIGHT 0, AGE 0, NAME 1
+0, 10, Andy
+1, 11, Andy
+2, 5, Bob
+table3
+3
+4
+*ID 0, Name 1, Age 0
+1, John, 15
+2, Boris, 28
+4, Hugh, 4
+6, Vanessa, 13
+table4
+5
+5
+Location 1, Age 0, *Cus_ID 0, Other_ID 0, Rating 0
+France, 15, 1, 20, 4
+Spain, 28, 2, 18, 4
+Peru, 4, 3, 30, 5
+Bahrain, 4, 4, 35, 2
+Brunei, 20, 5, 17, 2
+table5
+3
+100
+*ID 0, Name 1, Age 1
+0, test, test
+1, test, test
+2, test, test
+3, test, test
+4, test, test
+5, test, test
+6, test, test
+7, test, test
+8, test, test
+9, test, test
+10, test, test
+11, test, test
+12, test, test
+13, test, test
+14, test, test
+15, test, test
+16, test, test
+17, test, test
+18, test, test
+19, test, test
+20, test, test
+21, test, test
+22, test, test
+23, test, test
+24, test, test
+25, test, test
+26, test, test
+27, test, test
+28, test, test
+29, test, test
+30, test, test
+31, test, test
+32, test, test
+33, test, test
+34, test, test
+35, test, test
+36, test, test
+37, test, test
+38, test, test
+39, test, test
+40, test, test
+41, test, test
+42, test, test
+43, test, test
+44, test, test
+45, test, test
+46, test, test
+47, test, test
+48, test, test
+49, test, test
+50, test, test
+51, test, test
+52, test, test
+53, test, test
+54, test, test
+55, test, test
+56, test, test
+57, test, test
+58, test, test
+59, test, test
+60, test, test
+61, test, test
+62, test, test
+63, test, test
+64, test, test
+65, test, test
+66, test, test
+67, test, test
+68, test, test
+69, test, test
+70, test, test
+71, test, test
+72, test, test
+73, test, test
+74, test, test
+75, test, test
+76, test, test
+77, test, test
+78, test, test
+79, test, test
+80, test, test
+81, test, test
+82, test, test
+83, test, test
+84, test, test
+85, test, test
+86, test, test
+87, test, test
+88, test, test
+89, test, test
+90, test, test
+91, test, test
+92, test, test
+93, test, test
+94, test, test
+95, test, test
+96, test, test
+97, test, test
+98, test, test
+99, test, test
+table6
+5
+100
+*CUS_ID 0, Age 1, Location 1, Other_ID 1, Rating 1
+0, test, test, test, testt
+1, test, test, test, testt
+2, test, test, test, testt
+3, test, test, test, testt
+4, test, test, test, testt
+5, test, test, test, testt
+6, test, test, test, testt
+7, test, test, test, testt
+8, test, test, test, testt
+9, test, test, test, testt
+10, test, test, test, testt
+11, test, test, test, testt
+12, test, test, test, testt
+13, test, test, test, testt
+14, test, test, test, testt
+15, test, test, test, testt
+16, test, test, test, testt
+17, test, test, test, testt
+18, test, test, test, testt
+19, test, test, test, testt
+20, test, test, test, testt
+21, test, test, test, testt
+22, test, test, test, testt
+23, test, test, test, testt
+24, test, test, test, testt
+25, test, test, test, testt
+26, test, test, test, testt
+27, test, test, test, testt
+28, test, test, test, testt
+29, test, test, test, testt
+30, test, test, test, testt
+31, test, test, test, testt
+32, test, test, test, testt
+33, test, test, test, testt
+34, test, test, test, testt
+35, test, test, test, testt
+36, test, test, test, testt
+37, test, test, test, testt
+38, test, test, test, testt
+39, test, test, test, testt
+40, test, test, test, testt
+41, test, test, test, testt
+42, test, test, test, testt
+43, test, test, test, testt
+44, test, test, test, testt
+45, test, test, test, testt
+46, test, test, test, testt
+47, test, test, test, testt
+48, test, test, test, testt
+49, test, test, test, testt
+50, test, test, test, testt
+51, test, test, test, testt
+52, test, test, test, testt
+53, test, test, test, testt
+54, test, test, test, testt
+55, test, test, test, testt
+56, test, test, test, testt
+57, test, test, test, testt
+58, test, test, test, testt
+59, test, test, test, testt
+60, test, test, test, testt
+61, test, test, test, testt
+62, test, test, test, testt
+63, test, test, test, testt
+64, test, test, test, testt
+65, test, test, test, testt
+66, test, test, test, testt
+67, test, test, test, testt
+68, test, test, test, testt
+69, test, test, test, testt
+70, test, test, test, testt
+71, test, test, test, testt
+72, test, test, test, testt
+73, test, test, test, testt
+74, test, test, test, testt
+75, test, test, test, testt
+76, test, test, test, testt
+77, test, test, test, testt
+78, test, test, test, testt
+79, test, test, test, testt
+80, test, test, test, testt
+81, test, test, test, testt
+82, test, test, test, testt
+83, test, test, test, testt
+84, test, test, test, testt
+85, test, test, test, testt
+86, test, test, test, testt
+87, test, test, test, testt
+88, test, test, test, testt
+89, test, test, test, testt
+90, test, test, test, testt
+91, test, test, test, testt
+92, test, test, test, testt
+93, test, test, test, testt
+94, test, test, test, testt
+95, test, test, test, testt
+96, test, test, test, testt
+97, test, test, test, testt
+98, test, test, test, testt
+99, test, test, test, testt

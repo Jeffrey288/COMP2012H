@@ -35,7 +35,7 @@ private:
 
 public:
     TimedRoundWindow(QWidget *parent, int wordLength, bool hardMode, int minutes);
-    ~TimedRoundWindow();
+    virtual ~TimedRoundWindow();
 
 public slots:
     /**

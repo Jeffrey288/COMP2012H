@@ -45,7 +45,7 @@ protected:
 
 public:
     RoundWindow(QWidget *parent = nullptr);
-    ~RoundWindow();
+    virtual ~RoundWindow();
 
     /**
      * @brief Add a 2D array of LetterBox* to a QGridLayout

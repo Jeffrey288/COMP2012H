@@ -53,7 +53,7 @@ private:
 
 public:
     MultiWordleRound(QWidget *parent, int len, int numWords);
-    ~MultiWordleRound() override;
+    virtual ~MultiWordleRound();
 
     /**
      * @brief Get one of the current answers

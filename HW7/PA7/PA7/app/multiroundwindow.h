@@ -19,7 +19,7 @@ private:
 
 public:
     MultiRoundWindow(QWidget *parent, int wordLength, int numWords);
-    ~MultiRoundWindow();
+    virtual ~MultiRoundWindow();
 
 public slots:
     virtual void popupRoundWin() override;

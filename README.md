@@ -6,6 +6,10 @@
 # PA5
 g++ -o graded official_grader.cpp Deque.cpp .\Deque_Iterator.cpp; .\graded
 
+# PA6
+cd "c:\Users\pinkp\Documents\GitHub\COMP2012H\HW6\"; g++ -Wall -Wextra -pedantic -std=c++11 -o main main.cpp Database.cpp String.cpp Table.cpp; .\main.exe 
+C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin\drmemory.exe -- C:\Users\pinkp\Documents\GitHub\COMP2012H\HW6\main.exe
+
 ```
 
 ## Wall of Shame
@@ -30,3 +34,4 @@ Not checking clarifications before the last day of submissions resulting in wron
 > my print function works with this, but TA uses different print function \
 > so their's can't print
  
+Chao's mistake: forgetting to remove a line

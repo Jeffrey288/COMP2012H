@@ -1,0 +1,1493 @@
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Create New Database
+2. Modify Existing Database
+3. Exit
+Please name your Database: 
+Enter the number of tables to add to the Database: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to modify: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+*ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    *ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+Table column index is out of bounds.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Eva            Smith          9              31             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Eva            Smith          9              31             
+John           Smith          4              59             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+Table row index is out of bounds.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+Empty or duplicate primary key.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+Nomis          Williams       5              23             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_1
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+Nomis          Williams       5              23             
+Anomis         Williams       27             22             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to modify: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    Age 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    Age 0          Major 1        
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    Age 0          Major 1        
+9              Eva            31             BIEN           
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    Age 0          Major 1        
+9              Eva            31             BIEN           
+4              John           59             COMP           
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    Age 0          Major 1        
+2              Charlie        30             COSC           
+9              Eva            31             BIEN           
+4              John           59             COMP           
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    Age 0          Major 1        
+2              Charlie        30             COSC           
+9              Eva            31             BIEN           
+8              William        41             MATH           
+4              John           59             COMP           
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    Age 0          Major 1        
+2              Charlie        30             COSC           
+9              Eva            31             BIEN           
+8              William        41             MATH           
+10             Kate           51             MECH           
+4              John           59             COMP           
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Table_2
+========================
+*ID 0          FirstName 1    Age 0          Major 1        
+2              Charlie        30             COSC           
+100            Bob            30             PHYS           
+9              Eva            31             BIEN           
+8              William        41             MATH           
+10             Kate           51             MECH           
+4              John           59             COMP           
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter table name: 
+Table with given name already exists in the database.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter table name: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to modify: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+*ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    *ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+Table column index is out of bounds.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Enter the index of the field: 
+Enter the name of the field: 
+Enter the type of the field (0 for int and 1 for String): 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Eva            Smith          9              31             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Eva            Smith          9              31             
+John           Smith          4              59             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+Table row index is out of bounds.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+Empty or duplicate primary key.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+Nomis          Williams       5              23             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+Input the index at which you would like to insert the data 
+This table has 4 fields.
+Enter data to fill into the record: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+aa
+========================
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+Nomis          Williams       5              23             
+Anomis         Williams       27             22             
+========================
+
+Please make your choice:
+1. Add Record
+2. Add Field
+3. Delete Record
+4. Modify Record
+5. Set Primary Key
+6. Reorder Columns
+7. Delete Field
+8. Sort Table
+9. Rename Table
+10. Exit
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+The tables currently existing in the database are:
+Table_1
+Table_2
+aa
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to be read: 
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+Nomis          Williams       5              23             
+Anomis         Williams       27             22             
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to be read: 
+*ID 0          FirstName 1    Age 0          Major 1        
+2              Charlie        30             COSC           
+100            Bob            30             PHYS           
+9              Eva            31             BIEN           
+8              William        41             MATH           
+10             Kate           51             MECH           
+4              John           59             COMP           
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to be read: 
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+Nomis          Williams       5              23             
+Anomis         Williams       27             22             
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to delete: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter table name: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter table name: 
+Table with given name already exists in the database.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter table name: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter table name: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter table name: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter table name: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to delete: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to delete: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to delete: 
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to be read: 
+No such table exists in the database.
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to be read: 
+FirstName 1    LastName 1     *ID 0          Age 0          
+Charlie        Bob            2              30             
+Eva            Smith          9              31             
+John           Smith          4              59             
+William        Chan           8              41             
+Kate           Lee            10             51             
+Simon          Williams       20             24             
+Simona         Williams       50             25             
+Nomis          Williams       5              23             
+Anomis         Williams       27             22             
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+Enter name of table to be read: 
+
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+The tables currently existing in the database are:
+aa
+Table_1
+ac
+ad
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Add Table
+2. List Tables
+3. Delete Table
+4. Print Table
+5. Modify Table
+6. Save Database
+7. Inner Join Tables
+8. Exit
+==========================================================
+Welcome to the Relational Database Management System
+==========================================================
+Please make your choice:
+1. Create New Database
+2. Modify Existing Database
+3. Exit

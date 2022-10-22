@@ -73,7 +73,7 @@ protected:
 public:
     WordleRound(QWidget *parent);   // "default" constructor that doesn't initialize data members
     WordleRound(QWidget *parent, int len, bool hardMode = false);
-    ~WordleRound();
+    virtual ~WordleRound();
 
     int getLength() const { return length; }
     int getNumGuesses() const { return numGuesses; }

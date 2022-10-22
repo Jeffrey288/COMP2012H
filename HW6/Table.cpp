@@ -332,7 +332,7 @@ void Table::modifyRecord(int row, int column, const String &newVal) {
             return;
         }
         for (int r = 0; r < numRows; r++) {
-            if (field->column[r] == newVal) {
+            if (field->column[r] == newVal && r != row) {
                 cout << "Empty or duplicate primary key.\n";
                 return;
             }
@@ -361,16 +361,18 @@ void Table::setPrimaryKey(const String &name) {
         String* tempCol = new String[numRows];
         for (int r = 0; r < numRows; r++) { // copy to tempCol
             tempCol[r] = field->column[r];
-            if (tempCol[r] == "") {
-                cout << "Cannot set field with empty data as primary key.\n";
-                delete [] tempCol;
-                return;
-            }
         }
         sort(tempCol, tempCol + (numRows-1)); // sort the array
         for (int r = 0; r < numRows - 1; r++) {
             if (tempCol[r] == tempCol[r+1]) { // contains duplicates
                 cout << "Cannot set field with duplicate elements as primary key.\n";
+                delete [] tempCol;
+                return;
+            }
+        }
+        for (int r = 0; r < numRows; r++) { // copy to tempCol
+            if (tempCol[r] == "") {
+                cout << "Cannot set field with empty data as primary key.\n";
                 delete [] tempCol;
                 return;
             }

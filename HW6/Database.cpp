@@ -19,9 +19,9 @@ Database::Database(const String &name, int numTables) { // should be working
     this->numTables = numTables;
     this->name = name;
     Table* nextTable = nullptr;
-    char buff[20] = "Table_";
+    char buff[40] = "Table_";
     for (int n = numTables; n >= 1; n--) {
-        sprintf(buff + 6, "%d", n);
+        snprintf(buff + 6, 10, "%d", n);
         Table* table = new Table(buff);
         table->next = nextTable;
         nextTable = table;
@@ -49,16 +49,16 @@ Database::Database(const String &filename) {
 }
 
 Database::~Database() {
-    cout << "This was not called" << endl;
+    // cout << "This was not called" << endl;
     Table* table = this->tableHead;
-    cout << "Bay" << endl;
+    // cout << "Bay" << endl;
     if (table == nullptr) return;
     Table* nextTable = table->next;
-    cout << "Hey" << endl;
+    // cout << "Hey" << endl;
     // ! assumes that numTable is correct (important)
     for (int n = 0; n < this->numTables; n++) { 
         delete table;
-        cout << "Deleted table " << n << endl;
+        // cout << "Deleted table " << n << endl;
         table = nextTable;
         if (table == nullptr) return;
         nextTable = table->next;
@@ -205,7 +205,7 @@ void Database::innerJoin(Table *table1, Table *table2) {
         return;
     }
 
-    int row1 = table1->getNumRows(), row2 = table2->getNumCols();
+    int row1 = table1->getNumRows(), row2 = table2->getNumRows();
     int cols = 0;
     Table* table = new Table(table1->getName() + "+" + table2->getName());
     Field* field = table->getFieldHead();
@@ -248,7 +248,7 @@ void Database::innerJoin(Table *table1, Table *table2) {
                 break;
             }
         }
-        if (!matchFlag) continue;
+        if (!matchFlag) continue; // no match
         col = 0;
         field = table->getFieldHead();
         fields[col++] = keyField1->column[r1];

@@ -2514,10 +2514,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\app\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\app\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/app/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/app/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -2586,10 +2586,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\app\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\app\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/app/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/app/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -5358,10 +5358,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask1\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask1\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask1/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask1/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -5435,10 +5435,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask1\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask1\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask1/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask1/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -8207,10 +8207,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask2\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask2\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask2/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask2/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -8284,10 +8284,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask2\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask2\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask2/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask2/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -11056,10 +11056,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask3\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask3\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask3/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask3/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -11133,10 +11133,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask3\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask3\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask3/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask3/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -12519,10 +12519,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask4\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask4\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask4/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask4/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -12596,10 +12596,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask4\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testbonustask4\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask4/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testbonustask4/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -14290,10 +14290,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask1\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask1\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask1/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask1/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -14367,10 +14367,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask1\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask1\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask1/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask1/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -16061,10 +16061,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask2\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask2\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask2/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask2/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -16138,10 +16138,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask2\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask2\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask2/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask2/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -17832,10 +17832,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask3\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask3\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask3/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask3/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -17909,10 +17909,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask3\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask3\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask3/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask3/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -20681,10 +20681,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask4\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask4\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask4/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask4/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -20758,10 +20758,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask4\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask4\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask4/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask4/ui_roundwindow.h"
 },
 {
     "arguments": [
@@ -23530,10 +23530,10 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask5\\ui_roundwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask5\\ui_mainwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask5/ui_roundwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask5/ui_mainwindow.h"
 },
 {
     "arguments": [
@@ -23607,9 +23607,9 @@
         "-ferror-limit=1000",
         "-x",
         "c++-header",
-        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask5\\ui_mainwindow.h"
+        "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW7\\PA7\\build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0\\tests\\testtask5\\ui_roundwindow.h"
     ],
     "directory": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/.qtc_clangd",
-    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask5/ui_mainwindow.h"
+    "file": "C:/Users/pinkp/Documents/GitHub/COMP2012H/HW7/PA7/build-PA7-Desktop_Qt_6_3_2_MinGW_64_bit-u30c7u30d0u30c3u30b0/tests/testtask5/ui_roundwindow.h"
 }
 ]
