@@ -56,4 +56,4 @@ class object {
         // friend std::ostream& operator<<(std::ostream &os, const object& obj);
 };
 
-// #include "object.tpp"
+#include "object.tpp"

@@ -15,6 +15,7 @@ C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin\drmemory.
 
 # PA9
 zip pa9.zip skiplist.tpp object.hpp object.tpp
+C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin\drmemory.exe -- C:\Users\pinkp\Documents\GitHub\COMP2012H\HW9\main.exe
 
 ```
 

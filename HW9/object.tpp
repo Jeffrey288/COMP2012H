@@ -1,4 +1,7 @@
-#include "object.hpp"
+#ifndef __OBJECT_T_
+#define __OBJECT_T_
+
+// #include "object.hpp"
 
 template <typename T>
 object::T_pointer<T>::T_pointer(T value) {
@@ -40,3 +43,5 @@ template <typename T>
 T object::cast_back() const {
     
 }
+
+#endif // __OBJECT_T_

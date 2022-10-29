@@ -1,0 +1,6 @@
+C:\WINDOWS\SYSTEM32\AcLayers.DLL
+C:\WINDOWS\SYSTEM32\apphelp.dll
+C:\WINDOWS\System32\gdi32full.dll
+C:\WINDOWS\System32\KERNELBASE.dll
+C:\WINDOWS\System32\ucrtbase.dll
+C:\WINDOWS\System32\SHLWAPI.dll

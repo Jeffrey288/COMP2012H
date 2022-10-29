@@ -1,0 +1,220 @@
+# File for suppressing errors found in pid 56488: "main.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+main.exe!___chkstk_ms
+main.exe!_pei386_runtime_relocator
+main.exe!__tmainCRTStartup
+main.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<main.exe+0x4ebb>
+<main.exe+0x4306>
+<main.exe+0x1251>
+<main.exe+0x14e6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #2
+UNINITIALIZED READ
+name=Error #2 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #2:
+UNINITIALIZED READ
+name=Error #2 (update to meaningful name)
+<main.exe+0x15dc>
+
+# Suppression for Error #3
+UNINITIALIZED READ
+name=Error #3 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #3:
+UNINITIALIZED READ
+name=Error #3 (update to meaningful name)
+<main.exe+0x17b9>
+
+# Suppression for Error #4
+UNINITIALIZED READ
+name=Error #4 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #4:
+UNINITIALIZED READ
+name=Error #4 (update to meaningful name)
+<main.exe+0x1a1d>
+
+# Suppression for Error #5
+UNINITIALIZED READ
+name=Error #5 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #5:
+UNINITIALIZED READ
+name=Error #5 (update to meaningful name)
+<main.exe+0x1b31>
+
+# Suppression for Error #6
+UNINITIALIZED READ
+name=Error #6 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #6:
+UNINITIALIZED READ
+name=Error #6 (update to meaningful name)
+<main.exe+0x1cc2>
+
+# Suppression for Error #7
+UNINITIALIZED READ
+name=Error #7 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #7:
+UNINITIALIZED READ
+name=Error #7 (update to meaningful name)
+<main.exe+0x1ecc>
+
+# Suppression for Error #8
+UNINITIALIZED READ
+name=Error #8 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #8:
+UNINITIALIZED READ
+name=Error #8 (update to meaningful name)
+<main.exe+0x20c4>
+
+# Suppression for Error #9
+UNINITIALIZED READ
+name=Error #9 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #9:
+UNINITIALIZED READ
+name=Error #9 (update to meaningful name)
+<main.exe+0x2243>
+
+# Suppression for Error #10
+UNINITIALIZED READ
+name=Error #10 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #10:
+UNINITIALIZED READ
+name=Error #10 (update to meaningful name)
+<main.exe+0x23dd>
+
+# Suppression for Error #11
+UNINITIALIZED READ
+name=Error #11 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #11:
+UNINITIALIZED READ
+name=Error #11 (update to meaningful name)
+<main.exe+0x257b>
+
+# Suppression for Error #12
+UNINITIALIZED READ
+name=Error #12 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #12:
+UNINITIALIZED READ
+name=Error #12 (update to meaningful name)
+<main.exe+0x2719>
+
+# Suppression for Error #13
+UNINITIALIZED READ
+name=Error #13 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #13:
+UNINITIALIZED READ
+name=Error #13 (update to meaningful name)
+<main.exe+0x2861>
+
+# Suppression for Error #14
+UNINITIALIZED READ
+name=Error #14 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #14:
+UNINITIALIZED READ
+name=Error #14 (update to meaningful name)
+<main.exe+0x2a69>
+
+# Suppression for Error #15
+UNINITIALIZED READ
+name=Error #15 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #15:
+UNINITIALIZED READ
+name=Error #15 (update to meaningful name)
+<main.exe+0x2ca2>
+
+# Suppression for Error #16
+UNINITIALIZED READ
+name=Error #16 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #16:
+UNINITIALIZED READ
+name=Error #16 (update to meaningful name)
+<main.exe+0x2ec1>
+
+# Suppression for Error #17
+UNINITIALIZED READ
+name=Error #17 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #17:
+UNINITIALIZED READ
+name=Error #17 (update to meaningful name)
+<main.exe+0x3009>
+
+# Suppression for Error #18
+UNINITIALIZED READ
+name=Error #18 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #18:
+UNINITIALIZED READ
+name=Error #18 (update to meaningful name)
+<main.exe+0x316a>
+
+# Suppression for Error #19
+UNINITIALIZED READ
+name=Error #19 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #19:
+UNINITIALIZED READ
+name=Error #19 (update to meaningful name)
+<main.exe+0x32da>
+
+# Suppression for Error #20
+UNINITIALIZED READ
+name=Error #20 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #20:
+UNINITIALIZED READ
+name=Error #20 (update to meaningful name)
+<main.exe+0x3446>
+
+# Suppression for Error #21
+UNINITIALIZED READ
+name=Error #21 (update to meaningful name)
+main.exe!main
+
+## Mod+offs-style suppression for Error #21:
+UNINITIALIZED READ
+name=Error #21 (update to meaningful name)
+<main.exe+0x358b>
+

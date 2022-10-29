@@ -1,7 +1,8 @@
 #include <stdlib.h>
 #include <iostream>
+#include <iomanip>
 
-// extern std::minstd_rand pa9_rand;
+extern std::minstd_rand pa9_rand;
 
 template <typename K, typename V>
 class Skiplist {
@@ -25,8 +26,8 @@ class Skiplist {
         // Use to determine the level of a inserting new node
         int getRandomLevels() const {
             int lvl = 1;
-            // while(pa9_rand() % 1000000 < 1000000 * prob)
-            while(rand() % 1000000 < 1000000 * prob)
+            while(pa9_rand() % 1000000 < 1000000 * prob)
+            // while(rand() % 1000000 < 1000000 * prob)
                 lvl += 1;
             return lvl;
         }
@@ -53,7 +54,7 @@ class Skiplist {
 
         void print_full() const {
             std::cout << "========== Skiplist content ==========" << std::endl;
-            
+
             for (Node* curr = this->head; curr != nullptr; curr = curr->nexts[0]) {
                 if (curr == this->head) {
                     std::cout << "HEAD" << std::endl;
@@ -76,8 +77,23 @@ class Skiplist {
                 std::cout << "]" << std::endl;
                 std::cout << "======================================" << std::endl;
             }
+
+            for (Node* curr = this->head; curr != nullptr; curr = curr->nexts[0]) {
+                if (curr != this->head)
+                    std::cout << std::setw(5) << curr->value << std::setw(3) << curr->key << " |";
+                else
+                    std::cout << std::setw(10) << "HEADDDDD|";
+                for (int i = 0; i < curr->levels; i++) {
+                    if (curr->nexts[i]) {
+                        std::cout << std::setw(3) << curr->nexts[i]->key;
+                    } else {
+                        std::cout << std::setw(3) << "NA";
+                    }
+                }
+                std::cout << std::endl;
+            }
         }
 };
 
-// #include "skiplist.tpp"
+#include "skiplist.tpp"
 

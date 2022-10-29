@@ -62,9 +62,11 @@ int main() {
         cout << IDX << test << NAME << name << endl
              << LINE << endl;
 
-        for (int i = 65; i < 75; i++)
+        for (int i = 65; i < 75; i++) {
             sl.update(i, i);
-
+            // sl.print_full();
+        }
+            
         cout << "After update:" << endl;
         sl.print_full();
         

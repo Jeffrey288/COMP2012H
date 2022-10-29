@@ -1,0 +1,92 @@
+# File for suppressing errors found in pid 85896: "main.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+main.exe!___chkstk_ms
+main.exe!_pei386_runtime_relocator
+main.exe!__tmainCRTStartup
+main.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<main.exe+0x4ebb>
+<main.exe+0x4306>
+<main.exe+0x1251>
+<main.exe+0x14e6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #2
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+main.exe!Skiplist<>::remove
+main.exe!main
+
+## Mod+offs-style suppression for Error #2:
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+<main.exe+0x53bd>
+<main.exe+0x2045>
+
+# Suppression for Error #3
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+libstdc++-6.dll!*
+libstdc++-6.dll!*
+libstdc++-6.dll!*
+libstdc++-6.dll!*
+main.exe!Skiplist<>::print_full
+main.exe!main
+
+## Mod+offs-style suppression for Error #3:
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+<libstdc++-6.dll+0xe98b>
+<libstdc++-6.dll+0x570dc>
+<libstdc++-6.dll+0x5870d>
+<libstdc++-6.dll+0x6f3a4>
+<main.exe+0x6827>
+<main.exe+0x209e>
+
+# Suppression for Error #4
+POSSIBLE LEAK
+name=Error #4 (update to meaningful name)
+drmemorylib.dll!replace_malloc
+msvcrt.dll!malloc_crt
+msvcrt.dll!_setargv
+msvcrt.dll!_getmainargs
+main.exe!pre_cpp_init
+msvcrt.dll!initterm
+main.exe!__tmainCRTStartup
+main.exe!.l_start
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #4:
+POSSIBLE LEAK
+name=Error #4 (update to meaningful name)
+<drmemorylib.dll+0x389e0>
+<msvcrt.dll+0x1c93b>
+<msvcrt.dll+0x3e6ed>
+<msvcrt.dll+0x7ca1>
+<main.exe+0x1173>
+<msvcrt.dll+0x3d54d>
+<main.exe+0x1437>
+<main.exe+0x14e6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #5
+LEAK
+name=Error #5 (update to meaningful name)
+drmemorylib.dll!replace_operator_new
+main.exe!Skiplist<>::update
+main.exe!main
+
+## Mod+offs-style suppression for Error #5:
+LEAK
+name=Error #5 (update to meaningful name)
+<drmemorylib.dll+0x39500>
+<main.exe+0x56a8>
+<main.exe+0x1fe3>
+
