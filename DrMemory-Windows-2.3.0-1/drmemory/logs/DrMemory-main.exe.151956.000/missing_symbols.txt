@@ -1,0 +1,4 @@
+C:\WINDOWS\System32\gdi32full.dll
+C:\WINDOWS\System32\KERNELBASE.dll
+C:\WINDOWS\System32\ucrtbase.dll
+C:\Windows\System32\sechost.dll

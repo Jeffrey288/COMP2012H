@@ -24,6 +24,7 @@ WordleRound::WordleRound(QWidget *parent) {
     connect(this, &WordleRound::roundLose, static_cast<RoundWindow*>(parent), &RoundWindow::popupRoundLose);
 }
 
+#include <QInputDialog>
 WordleRound::WordleRound(QWidget *parent, const int len, const bool hardMode):
     WordleRound(parent)
 {
@@ -32,6 +33,10 @@ WordleRound::WordleRound(QWidget *parent, const int len, const bool hardMode):
     dict = Dictionary(length);
     solver = Solver(dict.getAllAnswers());
     answer = dict.getRandomAnswer();
+
+//answer = QInputDialog::getText(nullptr, tr("QInputDialog::getText()"),
+//                                     tr("enter answer:"), QLineEdit::Normal);
+
 }
 
 WordleRound::~WordleRound() {

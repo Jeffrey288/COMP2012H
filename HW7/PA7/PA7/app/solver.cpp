@@ -62,11 +62,15 @@ double computeEntropy(const QString& word, const QSet<QString>& possibleAnswers)
     }
 
     double entropy = 0;
+//    QString temp;
     for (int i = 0; i < binLength; i++) {
         if (bin[i] == 0) continue; // i.e. add 0
         double p = (double) bin[i] / possibleAnswers.size();
         entropy += - p * log2(p);
+//        if (bin[i] != 0) temp += QString::number(bin[i]) + ' ';
     }
+//    qDebug() << temp;
+
 
     delete [] bin;
     return entropy;
@@ -90,17 +94,20 @@ QString Solver::hint() {
     double maxEntropy = 0.0;
     QString word;
 
+    int tempcount = 0;
     QSet<QString>::const_iterator iter = allWords.constBegin();
     while (iter != allWords.constEnd()) { // loop through all answers and increment frequencies
         double entropy = computeEntropy(*iter, possibleAnswers);
-        if (entropy > maxEntropy) {
+        if (entropy >= maxEntropy) {
             maxEntropy = entropy;
             word = *iter;
+//            qDebug() << *iter << entropy;
+            tempcount++;
         }
-//        qDebug() << *iter << entropy;
 
         iter++;
     }
+//    qDebug() << tempcount << " " << allWords.size();
 
 //    qDebug() << word;
     return word;

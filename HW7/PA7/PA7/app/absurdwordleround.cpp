@@ -65,4 +65,5 @@ void AbsurdWordleRound::endGuessAttempt(const bool correctGuess) {
     if (!correctGuess && curGuess != numGuesses) {
         answer = alterAnswer(answer, dict.getAllAnswers());
     }
+//    qDebug() << "The current answer is:" << answer;
 }

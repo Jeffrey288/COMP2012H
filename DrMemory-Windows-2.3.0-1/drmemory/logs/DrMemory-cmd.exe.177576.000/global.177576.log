@@ -1,0 +1,309 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+start time: 3697502:30:48.243 == 14:30:48.243 10/23/2022
+Recorded 118 suppression(s) from default C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin64\suppress-default.txt
+Using system call file C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\symcache\syscalls_x64.txt
+Syscall mismatch detected.  Running on unknown kernel version!
+new thread #0 id=179116
+WARNING: symbol cache file has wrong version
+
+module load event: "dynamorio.dll" 0x0000000071000000-0x00000000711b1000 modid: 1 C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\dynamorio\lib64\release\dynamorio.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "drmemorylib.dll" 0x00007ff6ec190000-0x00007ff6ec42c000 modid: 2 C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin64\release\drmemorylib.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "cmd.exe" 0x00007ff75c110000-0x00007ff75c17c000 modid: 3 C:\WINDOWS\system32\cmd.exe
+WARNING: unable to load symbols for C:\WINDOWS\system32\cmd.exe
+WARNING: symbol cache file has wrong version
+
+module load event: "KERNELBASE.dll" 0x00007ffe14f40000-0x00007ffe152bb000 modid: 4 C:\WINDOWS\System32\KERNELBASE.dll
+WARNING: unable to load symbols for C:\WINDOWS\System32\KERNELBASE.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "ucrtbase.dll" 0x00007ffe152c0000-0x00007ffe153d1000 modid: 5 C:\WINDOWS\System32\ucrtbase.dll
+WARNING: unable to load symbols for C:\WINDOWS\System32\ucrtbase.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "combase.dll" 0x00007ffe164d0000-0x00007ffe16847000 modid: 6 C:\WINDOWS\System32\combase.dll
+WARNING: unable to load symbols for C:\WINDOWS\System32\combase.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "KERNEL32.dll" 0x00007ffe16860000-0x00007ffe1691d000 modid: 7 C:\WINDOWS\System32\KERNEL32.DLL
+WARNING: symbol cache file has wrong version
+
+module load event: "RPCRT4.dll" 0x00007ffe16ca0000-0x00007ffe16dc0000 modid: 8 C:\WINDOWS\System32\RPCRT4.dll
+WARNING: unable to load symbols for C:\WINDOWS\System32\RPCRT4.dll
+WARNING: symbol cache file has wrong version
+
+module load event: "msvcrt.dll" 0x00007ffe176d0000-0x00007ffe17773000 modid: 9 C:\WINDOWS\System32\msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new == new[] => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+WARNING: new/delete has no local wrapper => disabling mismatch detection for msvcrt.dll
+
+module load event: "ntdll.dll" 0x00007ffe177c0000-0x00007ffe179c9000 modid: 10 C:\WINDOWS\SYSTEM32\ntdll.dll
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: fail to find call to RtlFreeStringRoutine
+WARNING: unhandled system calls found
+
+NEW THREAD: main thread 179116
+
+
+Error #1: UNINITIALIZED READ: reading 0x00000090516fefa4-0x00000090516fefa8 4 byte(s) within 0x00000090516fefa0-0x00000090516fefa8
+# 0 system call NtQueryDirectoryFileEx parameter value #6
+# 1 KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal (0x00007ffe14f7a40f <KERNELBASE.dll+0x3a40f>) modid:4
+# 2 KERNELBASE.dll!FindFirstFileW (0x00007ffe14f7abd8 <KERNELBASE.dll+0x3abd8>) modid:4
+# 3 cmd.exe!?       (0x00007ff75c123929 <cmd.exe+0x13929>) modid:3
+# 4 cmd.exe!?       (0x00007ff75c124db9 <cmd.exe+0x14db9>) modid:3
+# 5 cmd.exe!?       (0x00007ff75c12338c <cmd.exe+0x1338c>) modid:3
+# 6 cmd.exe!?       (0x00007ff75c125cfd <cmd.exe+0x15cfd>) modid:3
+# 7 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+# 8 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+# 9 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:01.290 in thread 179116
+	error end
+
+Error #2: UNINITIALIZED READ: reading 0x00000090516ff0b4-0x00000090516ff0b5 1 byte(s)
+# 0 KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal (0x00007ffe14f7a4b6 <KERNELBASE.dll+0x3a4b6>) modid:4
+# 1 KERNELBASE.dll!FindFirstFileW (0x00007ffe14f7abd8 <KERNELBASE.dll+0x3abd8>) modid:4
+# 2 cmd.exe!?       (0x00007ff75c123929 <cmd.exe+0x13929>) modid:3
+# 3 cmd.exe!?       (0x00007ff75c124db9 <cmd.exe+0x14db9>) modid:3
+# 4 cmd.exe!?       (0x00007ff75c12338c <cmd.exe+0x1338c>) modid:3
+# 5 cmd.exe!?       (0x00007ff75c125cfd <cmd.exe+0x15cfd>) modid:3
+# 6 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+# 7 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+# 8 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:01.296 in thread 179116
+Note: instruction: cmp    0x44(%rbp) $0x1a
+	error end
+
+Error #3: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal (0x00007ffe14f7a481 <KERNELBASE.dll+0x3a481>) modid:4
+# 1 KERNELBASE.dll!FindFirstFileW (0x00007ffe14f7abd8 <KERNELBASE.dll+0x3abd8>) modid:4
+# 2 cmd.exe!?       (0x00007ff75c123929 <cmd.exe+0x13929>) modid:3
+# 3 cmd.exe!?       (0x00007ff75c124db9 <cmd.exe+0x14db9>) modid:3
+# 4 cmd.exe!?       (0x00007ff75c12338c <cmd.exe+0x1338c>) modid:3
+# 5 cmd.exe!?       (0x00007ff75c125cfd <cmd.exe+0x15cfd>) modid:3
+# 6 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+# 7 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+# 8 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:01.314 in thread 179116
+Note: instruction: cmp    %eax %ecx
+	error end
+
+Error #4: UNINITIALIZED READ: reading register esi
+# 0 KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal (0x00007ffe14f7a4ee <KERNELBASE.dll+0x3a4ee>) modid:4
+# 1 KERNELBASE.dll!FindFirstFileW (0x00007ffe14f7abd8 <KERNELBASE.dll+0x3abd8>) modid:4
+# 2 cmd.exe!?       (0x00007ff75c123929 <cmd.exe+0x13929>) modid:3
+# 3 cmd.exe!?       (0x00007ff75c124db9 <cmd.exe+0x14db9>) modid:3
+# 4 cmd.exe!?       (0x00007ff75c12338c <cmd.exe+0x1338c>) modid:3
+# 5 cmd.exe!?       (0x00007ff75c125cfd <cmd.exe+0x15cfd>) modid:3
+# 6 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+# 7 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+# 8 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:01.329 in thread 179116
+Note: instruction: bt     %esi $0x0000000a
+	error end
+
+Potential Error #1: UNINITIALIZED READ: reading 0x00000090516ff1a2-0x00000090516ff1a4 2 byte(s)
+# 0 KERNELBASE.dll!GetUserOverrideString (0x00007ffe14f82aee <KERNELBASE.dll+0x42aee>) modid:4
+# 1 KERNELBASE.dll!GetLocaleInfoHelper (0x00007ffe14f8060b <KERNELBASE.dll+0x4060b>) modid:4
+# 2 KERNELBASE.dll!GetLocaleInfoW (0x00007ffe14f7faaf <KERNELBASE.dll+0x3faaf>) modid:4
+# 3 msvcrt.dll!__crtGetLocaleInfoA_stat (0x00007ffe1770731f <msvcrt.dll+0x3731f>) modid:9
+# 4 msvcrt.dll!expandlocale (0x00007ffe176fbf35 <msvcrt.dll+0x2bf35>) modid:9
+# 5 msvcrt.dll!_init_monetary (0x00007ffe17704044 <msvcrt.dll+0x34044>) modid:9
+# 6 msvcrt.dll!_setlocale_set_cat (0x00007ffe176fc77d <msvcrt.dll+0x2c77d>) modid:9
+# 7 msvcrt.dll!_setlocale_nolock (0x00007ffe176fc4cb <msvcrt.dll+0x2c4cb>) modid:9
+# 8 msvcrt.dll!setlocale  (0x00007ffe176fc9cd <msvcrt.dll+0x2c9cd>) modid:9
+# 9 cmd.exe!?       (0x00007ff75c126168 <cmd.exe+0x16168>) modid:3
+#10 cmd.exe!?       (0x00007ff75c125d61 <cmd.exe+0x15d61>) modid:3
+#11 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+#12 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+#13 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:01.675 in thread 179116
+Note: instruction: data16 cmp    0x02(%r14) %bx
+	error end
+
+Potential Error #2: UNINITIALIZED READ: reading 0x00000090516ff182-0x00000090516ff184 2 byte(s)
+# 0 KERNELBASE.dll!GetUserOverrideString (0x00007ffe14f82aee <KERNELBASE.dll+0x42aee>) modid:4
+# 1 KERNELBASE.dll!GetLocaleInfoHelper (0x00007ffe14f8060b <KERNELBASE.dll+0x4060b>) modid:4
+# 2 KERNELBASE.dll!GetLocaleInfoW (0x00007ffe14f7faaf <KERNELBASE.dll+0x3faaf>) modid:4
+# 3 msvcrt.dll!__crtGetLocaleInfoA_stat (0x00007ffe177073bd <msvcrt.dll+0x373bd>) modid:9
+# 4 msvcrt.dll!_crtGetLocaleInfoA (0x00007ffe17707488 <msvcrt.dll+0x37488>) modid:9
+# 5 msvcrt.dll!_getlocaleinfo (0x00007ffe17703cc1 <msvcrt.dll+0x33cc1>) modid:9
+# 6 msvcrt.dll!_init_monetary (0x00007ffe17704044 <msvcrt.dll+0x34044>) modid:9
+# 7 msvcrt.dll!_setlocale_set_cat (0x00007ffe176fc77d <msvcrt.dll+0x2c77d>) modid:9
+# 8 msvcrt.dll!_setlocale_nolock (0x00007ffe176fc4cb <msvcrt.dll+0x2c4cb>) modid:9
+# 9 msvcrt.dll!setlocale  (0x00007ffe176fc9cd <msvcrt.dll+0x2c9cd>) modid:9
+#10 cmd.exe!?       (0x00007ff75c126168 <cmd.exe+0x16168>) modid:3
+#11 cmd.exe!?       (0x00007ff75c125d61 <cmd.exe+0x15d61>) modid:3
+#12 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+#13 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+#14 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:01.678 in thread 179116
+Note: instruction: data16 cmp    0x02(%r14) %bx
+	error end
+
+Potential Error #3: UNINITIALIZED READ: reading 0x00000090516ff282-0x00000090516ff284 2 byte(s)
+# 0 KERNELBASE.dll!GetUserOverrideString (0x00007ffe14f82aee <KERNELBASE.dll+0x42aee>) modid:4
+# 1 KERNELBASE.dll!GetLocaleInfoHelper (0x00007ffe14f8060b <KERNELBASE.dll+0x4060b>) modid:4
+# 2 KERNELBASE.dll!GetLocaleInfoW (0x00007ffe14f7faaf <KERNELBASE.dll+0x3faaf>) modid:4
+# 3 msvcrt.dll!_getlocaleinfo (0x00007ffe17703ddc <msvcrt.dll+0x33ddc>) modid:9
+# 4 msvcrt.dll!_init_monetary (0x00007ffe17704223 <msvcrt.dll+0x34223>) modid:9
+# 5 msvcrt.dll!_setlocale_set_cat (0x00007ffe176fc77d <msvcrt.dll+0x2c77d>) modid:9
+# 6 msvcrt.dll!_setlocale_nolock (0x00007ffe176fc4cb <msvcrt.dll+0x2c4cb>) modid:9
+# 7 msvcrt.dll!setlocale  (0x00007ffe176fc9cd <msvcrt.dll+0x2c9cd>) modid:9
+# 8 cmd.exe!?       (0x00007ff75c126168 <cmd.exe+0x16168>) modid:3
+# 9 cmd.exe!?       (0x00007ff75c125d61 <cmd.exe+0x15d61>) modid:3
+#10 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+#11 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+#12 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:01.710 in thread 179116
+Note: instruction: data16 cmp    0x02(%r14) %bx
+	error end
+
+Potential Error #4: UNINITIALIZED READ: reading 0x00000090516ff282-0x00000090516ff284 2 byte(s)
+# 0 KERNELBASE.dll!GetUserOverrideString (0x00007ffe14f82aee <KERNELBASE.dll+0x42aee>) modid:4
+# 1 KERNELBASE.dll!GetLocaleInfoHelper (0x00007ffe14f8060b <KERNELBASE.dll+0x4060b>) modid:4
+# 2 KERNELBASE.dll!GetLocaleInfoW (0x00007ffe14f7faaf <KERNELBASE.dll+0x3faaf>) modid:4
+# 3 msvcrt.dll!_getlocaleinfo (0x00007ffe17703e07 <msvcrt.dll+0x33e07>) modid:9
+# 4 msvcrt.dll!_init_monetary (0x00007ffe17704223 <msvcrt.dll+0x34223>) modid:9
+# 5 msvcrt.dll!_setlocale_set_cat (0x00007ffe176fc77d <msvcrt.dll+0x2c77d>) modid:9
+# 6 msvcrt.dll!_setlocale_nolock (0x00007ffe176fc4cb <msvcrt.dll+0x2c4cb>) modid:9
+# 7 msvcrt.dll!setlocale  (0x00007ffe176fc9cd <msvcrt.dll+0x2c9cd>) modid:9
+# 8 cmd.exe!?       (0x00007ff75c126168 <cmd.exe+0x16168>) modid:3
+# 9 cmd.exe!?       (0x00007ff75c125d61 <cmd.exe+0x15d61>) modid:3
+#10 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+#11 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+#12 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:01.712 in thread 179116
+Note: instruction: data16 cmp    0x02(%r14) %bx
+	error end
+
+Potential Error #5: POSSIBLE LEAK 768 direct bytes 0x0000019c9cdf4450-0x0000019c9cdf4750 + 0 indirect bytes
+# 0 replace_calloc  [d:\drmemory_package\common\alloc_replace.c:2617] (0x00007ff6ec1c7d60 <drmemorylib.dll+0x37d60>) modid:2
+# 1 msvcrt.dll!calloc_crt (0x00007ffe176ec8c6 <msvcrt.dll+0x1c8c6>) modid:9
+# 2 msvcrt.dll!_init_ctype (0x00007ffe176fb097 <msvcrt.dll+0x2b097>) modid:9
+# 3 msvcrt.dll!_setlocale_set_cat (0x00007ffe176fc77d <msvcrt.dll+0x2c77d>) modid:9
+# 4 msvcrt.dll!_setlocale_nolock (0x00007ffe176fc4cb <msvcrt.dll+0x2c4cb>) modid:9
+# 5 msvcrt.dll!setlocale  (0x00007ffe176fc9cd <msvcrt.dll+0x2c9cd>) modid:9
+# 6 cmd.exe!?       (0x00007ff75c126168 <cmd.exe+0x16168>) modid:3
+# 7 cmd.exe!?       (0x00007ff75c125d61 <cmd.exe+0x15d61>) modid:3
+# 8 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+# 9 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+#10 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+	error end
+
+Potential Error #6: POSSIBLE LEAK 384 direct bytes 0x0000019c9cdf4770-0x0000019c9cdf48f0 + 0 indirect bytes
+# 0 replace_calloc  [d:\drmemory_package\common\alloc_replace.c:2617] (0x00007ff6ec1c7d60 <drmemorylib.dll+0x37d60>) modid:2
+# 1 msvcrt.dll!calloc_crt (0x00007ffe176ec8c6 <msvcrt.dll+0x1c8c6>) modid:9
+# 2 msvcrt.dll!_init_ctype (0x00007ffe176fb0a4 <msvcrt.dll+0x2b0a4>) modid:9
+# 3 msvcrt.dll!_setlocale_set_cat (0x00007ffe176fc77d <msvcrt.dll+0x2c77d>) modid:9
+# 4 msvcrt.dll!_setlocale_nolock (0x00007ffe176fc4cb <msvcrt.dll+0x2c4cb>) modid:9
+# 5 msvcrt.dll!setlocale  (0x00007ffe176fc9cd <msvcrt.dll+0x2c9cd>) modid:9
+# 6 cmd.exe!?       (0x00007ff75c126168 <cmd.exe+0x16168>) modid:3
+# 7 cmd.exe!?       (0x00007ff75c125d61 <cmd.exe+0x15d61>) modid:3
+# 8 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+# 9 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+#10 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+	error end
+
+Potential Error #7: POSSIBLE LEAK 384 direct bytes 0x0000019c9cdf4910-0x0000019c9cdf4a90 + 0 indirect bytes
+# 0 replace_calloc  [d:\drmemory_package\common\alloc_replace.c:2617] (0x00007ff6ec1c7d60 <drmemorylib.dll+0x37d60>) modid:2
+# 1 msvcrt.dll!calloc_crt (0x00007ffe176ec8c6 <msvcrt.dll+0x1c8c6>) modid:9
+# 2 msvcrt.dll!_init_ctype (0x00007ffe176fb0b1 <msvcrt.dll+0x2b0b1>) modid:9
+# 3 msvcrt.dll!_setlocale_set_cat (0x00007ffe176fc77d <msvcrt.dll+0x2c77d>) modid:9
+# 4 msvcrt.dll!_setlocale_nolock (0x00007ffe176fc4cb <msvcrt.dll+0x2c4cb>) modid:9
+# 5 msvcrt.dll!setlocale  (0x00007ffe176fc9cd <msvcrt.dll+0x2c9cd>) modid:9
+# 6 cmd.exe!?       (0x00007ff75c126168 <cmd.exe+0x16168>) modid:3
+# 7 cmd.exe!?       (0x00007ff75c125d61 <cmd.exe+0x15d61>) modid:3
+# 8 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+# 9 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+#10 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+	error end
+
+Potential Error #8: HANDLE LEAK: KERNEL handle 0x0000000000000190 and 0 similar handle(s) were opened but not closed:
+# 0 system call NtOpenThread
+# 1 KERNELBASE.dll!OpenThread     (0x00007ffe14f9c9de <KERNELBASE.dll+0x5c9de>) modid:4
+# 2 cmd.exe!?       (0x00007ff75c12450c <cmd.exe+0x1450c>) modid:3
+# 3 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+# 4 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:02.601 in thread 179116
+	error end
+
+Potential Error #9: HANDLE LEAK: KERNEL handle 0x0000000000000194 and 0 similar handle(s) were opened but not closed:
+# 0 system call NtOpenKey
+# 1 ntdll.dll!RtlOpenCurrentUser (0x00007ffe1782ed1c <ntdll.dll+0x6ed1c>) modid:10
+# 2 KERNELBASE.dll!GetCurrentThread (0x00007ffe14ffaed4 <KERNELBASE.dll+0xbaed4>) modid:4
+# 3 KERNELBASE.dll!MapPredefinedHandleInternal (0x00007ffe14f78bf1 <KERNELBASE.dll+0x38bf1>) modid:4
+# 4 KERNELBASE.dll!RegOpenKeyExInternalW (0x00007ffe14f78869 <KERNELBASE.dll+0x38869>) modid:4
+# 5 KERNELBASE.dll!RegOpenKeyExW  (0x00007ffe14f78479 <KERNELBASE.dll+0x38479>) modid:4
+# 6 cmd.exe!?       (0x00007ff75c124560 <cmd.exe+0x14560>) modid:3
+# 7 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+# 8 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:02.602 in thread 179116
+	error end
+
+Potential Error #10: HANDLE LEAK: KERNEL handle 0x000000000000019c and 0 similar handle(s) were opened but not closed:
+# 0 system call NtOpenKey
+# 1 KERNELBASE.dll!GetCPFileNameFromRegistry (0x00007ffe14fe89d1 <KERNELBASE.dll+0xa89d1>) modid:4
+# 2 KERNELBASE.dll!GetCPFileNameFromRegistry (0x00007ffe14fe87eb <KERNELBASE.dll+0xa87eb>) modid:4
+# 3 KERNELBASE.dll!IsValidCodePage (0x00007ffe14f82e69 <KERNELBASE.dll+0x42e69>) modid:4
+# 4 KERNELBASE.dll!GetLocaleInfoHelper (0x00007ffe14f7ff82 <KERNELBASE.dll+0x3ff82>) modid:4
+# 5 KERNELBASE.dll!GetLocaleInfoW (0x00007ffe14f7faaf <KERNELBASE.dll+0x3faaf>) modid:4
+# 6 KERNELBASE.dll!GetLocaleInfoA (0x00007ffe14f832ab <KERNELBASE.dll+0x432ab>) modid:4
+# 7 msvcrt.dll!ProcessCodePage (0x00007ffe17706075 <msvcrt.dll+0x36075>) modid:9
+# 8 msvcrt.dll!_get_qualified_locale (0x00007ffe177063aa <msvcrt.dll+0x363aa>) modid:9
+# 9 msvcrt.dll!expandlocale (0x00007ffe176fbe64 <msvcrt.dll+0x2be64>) modid:9
+#10 msvcrt.dll!_setlocale_nolock (0x00007ffe176fc489 <msvcrt.dll+0x2c489>) modid:9
+#11 msvcrt.dll!setlocale  (0x00007ffe176fc9cd <msvcrt.dll+0x2c9cd>) modid:9
+#12 cmd.exe!?       (0x00007ff75c126168 <cmd.exe+0x16168>) modid:3
+#13 cmd.exe!?       (0x00007ff75c125d61 <cmd.exe+0x15d61>) modid:3
+#14 cmd.exe!?       (0x00007ff75c124615 <cmd.exe+0x14615>) modid:3
+#15 cmd.exe!?       (0x00007ff75c1298e1 <cmd.exe+0x198e1>) modid:3
+#16 ntdll.dll!RtlUserThreadStart (0x00007ffe177c485b <ntdll.dll+0x485b>) modid:10
+Note: @0:00:02.602 in thread 179116
+	error end
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:     18
+	Error #   4:      2
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      0 unique,     0 total unaddressable access(es)
+      4 unique,    22 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      7 potential error(s) (suspected false positives)
+         (details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-cmd.exe.177576.000\potential_errors.txt)
+      3 potential leak(s) (suspected false positives)
+         (details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-cmd.exe.177576.000\potential_errors.txt)
+    257 ignored assumed-innocuous system leak(s)
+    129 unique,   133 total,  34473 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-cmd.exe.177576.000\results.txt
+
+DUPLICATE POTENTIAL ERROR COUNTS:
+
+POTENTIAL ERRORS FOUND:
+      0 unique,     0 total potential unaddressable access(es)
+      4 unique,     4 total potential uninitialized access(es)
+      0 unique,     0 total potential invalid heap argument(s)
+      0 unique,     0 total potential GDI usage error(s)
+      3 unique,     3 total potential handle leak(s)
+      0 unique,     0 total potential warning(s)
+      0 unique,     0 total,      0 byte(s) of potential leak(s)
+      3 unique,     3 total,   1536 byte(s) of potential possible leak(s)
+Details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-cmd.exe.177576.000\potential_errors.txt
+Exiting @0:00:02.652 in thread 179116
+LOG END

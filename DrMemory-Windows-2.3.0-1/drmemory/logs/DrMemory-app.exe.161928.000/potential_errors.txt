@@ -1,0 +1,361 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+Dr. Memory errors that are likely to be false positives, for pid 161928: "app.exe"
+These errors matched the blacklist 'C:\WINDOWS*.d??' for 4 frames.
+Run with -lib_blacklist_frames 0 to treat these as regular errors.
+If these are all false positives and your focus is unaddressable errors, consider running with -light to skip all uninitialized reads and leaks for higher performance.
+
+Potential Error #1: UNINITIALIZED READ: reading register eax
+# 0 profapi.dll!?                        +0x0      (0x00007ffe14bc12a1 <profapi.dll+0x12a1>)
+# 1 profapi.dll!?                        +0x0      (0x00007ffe14bc591c <profapi.dll+0x591c>)
+# 2 profapi.dll!?                        +0x0      (0x00007ffe14bc506b <profapi.dll+0x506b>)
+# 3 profapi.dll!?                        +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 4 Windows.Storage.dll!DllGetActivationFactory+0x2eed   (0x00007ffe12c741ee <Windows.Storage.dll+0x1041ee>)
+# 5 Windows.Storage.dll!DllGetClassObject+0x476c   (0x00007ffe12c6e3ad <Windows.Storage.dll+0xfe3ad>)
+# 6 Windows.Storage.dll!CFSFolder_CreateFolder+0x334f   (0x00007ffe12c5f520 <Windows.Storage.dll+0xef520>)
+# 7 Windows.Storage.dll!CFSFolder_CreateFolder+0x29f1   (0x00007ffe12c5ebc2 <Windows.Storage.dll+0xeebc2>)
+# 8 Windows.Storage.dll!SHGetKnownFolderPath+0x98     (0x00007ffe12c65ea9 <Windows.Storage.dll+0xf5ea9>)
+# 9 Qt6Core.dll!?                        +0x0      (0x00007ffd7ec30003 <Qt6Core.dll+0x1e0003>)
+#10 Qt6Core.dll!?                        +0x0      (0x00007ffd7ec307ed <Qt6Core.dll+0x1e07ed>)
+#11 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#12 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea8f7d3 <Qt6Core.dll+0x3f7d3>)
+#13 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea90492 <Qt6Core.dll+0x40492>)
+#14 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea8b4b2 <Qt6Core.dll+0x3b4b2>)
+#15 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accac46 <Qt6Gui.dll+0x7ac46>)
+#16 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#17 Qt6Gui.dll!?                         +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#18 Qt6Core.dll!?                        +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#19 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+Note: @0:00:06.345 in thread 171836
+Note: instruction: cmp    %eax $0x00000001
+
+Potential Error #2: UNINITIALIZED READ: reading register eax
+# 0 profapi.dll!?                        +0x0      (0x00007ffe14bc12ae <profapi.dll+0x12ae>)
+# 1 profapi.dll!?                        +0x0      (0x00007ffe14bc591c <profapi.dll+0x591c>)
+# 2 profapi.dll!?                        +0x0      (0x00007ffe14bc506b <profapi.dll+0x506b>)
+# 3 profapi.dll!?                        +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 4 Windows.Storage.dll!DllGetActivationFactory+0x2eed   (0x00007ffe12c741ee <Windows.Storage.dll+0x1041ee>)
+# 5 Windows.Storage.dll!DllGetClassObject+0x476c   (0x00007ffe12c6e3ad <Windows.Storage.dll+0xfe3ad>)
+# 6 Windows.Storage.dll!CFSFolder_CreateFolder+0x334f   (0x00007ffe12c5f520 <Windows.Storage.dll+0xef520>)
+# 7 Windows.Storage.dll!CFSFolder_CreateFolder+0x29f1   (0x00007ffe12c5ebc2 <Windows.Storage.dll+0xeebc2>)
+# 8 Windows.Storage.dll!SHGetKnownFolderPath+0x98     (0x00007ffe12c65ea9 <Windows.Storage.dll+0xf5ea9>)
+# 9 Qt6Core.dll!?                        +0x0      (0x00007ffd7ec30003 <Qt6Core.dll+0x1e0003>)
+#10 Qt6Core.dll!?                        +0x0      (0x00007ffd7ec307ed <Qt6Core.dll+0x1e07ed>)
+#11 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#12 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea8f7d3 <Qt6Core.dll+0x3f7d3>)
+#13 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea90492 <Qt6Core.dll+0x40492>)
+#14 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea8b4b2 <Qt6Core.dll+0x3b4b2>)
+#15 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accac46 <Qt6Gui.dll+0x7ac46>)
+#16 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#17 Qt6Gui.dll!?                         +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#18 Qt6Core.dll!?                        +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#19 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+Note: @0:00:06.346 in thread 171836
+Note: instruction: test   %eax %eax
+
+Potential Error #3: UNINITIALIZED READ: reading register r12d
+# 0 KERNELBASE.dll!GetCurrentThread      +0x90f    (0x00007ffe14ffabbf <KERNELBASE.dll+0xbabbf>)
+# 1 KERNELBASE.dll!RegQueryValueExW      +0x107    (0x00007ffe14f78598 <KERNELBASE.dll+0x38598>)
+# 2 profapi.dll!?                        +0x0      (0x00007ffe14bc1310 <profapi.dll+0x1310>)
+# 3 profapi.dll!?                        +0x0      (0x00007ffe14bc591c <profapi.dll+0x591c>)
+# 4 profapi.dll!?                        +0x0      (0x00007ffe14bc506b <profapi.dll+0x506b>)
+# 5 profapi.dll!?                        +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 6 Windows.Storage.dll!DllGetActivationFactory+0x2eed   (0x00007ffe12c741ee <Windows.Storage.dll+0x1041ee>)
+# 7 Windows.Storage.dll!DllGetClassObject+0x476c   (0x00007ffe12c6e3ad <Windows.Storage.dll+0xfe3ad>)
+# 8 Windows.Storage.dll!CFSFolder_CreateFolder+0x334f   (0x00007ffe12c5f520 <Windows.Storage.dll+0xef520>)
+# 9 Windows.Storage.dll!CFSFolder_CreateFolder+0x29f1   (0x00007ffe12c5ebc2 <Windows.Storage.dll+0xeebc2>)
+#10 Windows.Storage.dll!SHGetKnownFolderPath+0x98     (0x00007ffe12c65ea9 <Windows.Storage.dll+0xf5ea9>)
+#11 Qt6Core.dll!?                        +0x0      (0x00007ffd7ec30003 <Qt6Core.dll+0x1e0003>)
+#12 Qt6Core.dll!?                        +0x0      (0x00007ffd7ec307ed <Qt6Core.dll+0x1e07ed>)
+#13 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#14 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea8f7d3 <Qt6Core.dll+0x3f7d3>)
+#15 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea90492 <Qt6Core.dll+0x40492>)
+#16 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea8b4b2 <Qt6Core.dll+0x3b4b2>)
+#17 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accac46 <Qt6Gui.dll+0x7ac46>)
+#18 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#19 Qt6Gui.dll!?                         +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+Note: @0:00:06.354 in thread 171836
+Note: instruction: cmp    %r12d $0x0000000c
+
+Potential Error #4: UNINITIALIZED READ: reading 0x0000003eb9bfc700-0x0000003eb9bfc704 4 byte(s)
+# 0 KERNELBASE.dll!GetCurrentThread      +0xaba    (0x00007ffe14ffad6a <KERNELBASE.dll+0xbad6a>)
+# 1 KERNELBASE.dll!RegQueryValueExW      +0x107    (0x00007ffe14f78598 <KERNELBASE.dll+0x38598>)
+# 2 profapi.dll!?                        +0x0      (0x00007ffe14bc1310 <profapi.dll+0x1310>)
+# 3 profapi.dll!?                        +0x0      (0x00007ffe14bc591c <profapi.dll+0x591c>)
+# 4 profapi.dll!?                        +0x0      (0x00007ffe14bc506b <profapi.dll+0x506b>)
+# 5 profapi.dll!?                        +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 6 Windows.Storage.dll!DllGetActivationFactory+0x2eed   (0x00007ffe12c741ee <Windows.Storage.dll+0x1041ee>)
+# 7 Windows.Storage.dll!DllGetClassObject+0x476c   (0x00007ffe12c6e3ad <Windows.Storage.dll+0xfe3ad>)
+# 8 Windows.Storage.dll!CFSFolder_CreateFolder+0x334f   (0x00007ffe12c5f520 <Windows.Storage.dll+0xef520>)
+# 9 Windows.Storage.dll!CFSFolder_CreateFolder+0x29f1   (0x00007ffe12c5ebc2 <Windows.Storage.dll+0xeebc2>)
+#10 Windows.Storage.dll!SHGetKnownFolderPath+0x98     (0x00007ffe12c65ea9 <Windows.Storage.dll+0xf5ea9>)
+#11 Qt6Core.dll!?                        +0x0      (0x00007ffd7ec30003 <Qt6Core.dll+0x1e0003>)
+#12 Qt6Core.dll!?                        +0x0      (0x00007ffd7ec307ed <Qt6Core.dll+0x1e07ed>)
+#13 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#14 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea8f7d3 <Qt6Core.dll+0x3f7d3>)
+#15 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea90492 <Qt6Core.dll+0x40492>)
+#16 Qt6Core.dll!?                        +0x0      (0x00007ffd7ea8b4b2 <Qt6Core.dll+0x3b4b2>)
+#17 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accac46 <Qt6Gui.dll+0x7ac46>)
+#18 Qt6Gui.dll!?                         +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#19 Qt6Gui.dll!?                         +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+Note: @0:00:06.355 in thread 171836
+Note: instruction: cmp    (%r14) %eax
+
+Potential Error #5: UNINITIALIZED READ: reading 0x0000003eb9bfe652-0x0000003eb9bfe654 2 byte(s) within 0x0000003eb9bfe650-0x0000003eb9bfe654
+# 0 system call NtUserRegisterClassExWOW parameter value #4
+# 1 USER32.dll!RegisterClassExWOWW
+# 2 USER32.dll!RegisterIMEClass
+# 3 USER32.dll!VerNtUserCreateWindowEx
+# 4 USER32.dll!CreateWindowInternal
+# 5 USER32.dll!CreateWindowExW
+# 6 combase.dll!DllGetActivationFactory                                  +0x496    (0x00007ffe165b6787 <combase.dll+0xe6787>)
+# 7 combase.dll!CoIncrementMTAUsage                                      +0x764    (0x00007ffe16561d25 <combase.dll+0x91d25>)
+# 8 combase.dll!CoInitializeEx                                           +0x22c    (0x00007ffe1654849d <combase.dll+0x7849d>)
+# 9 combase.dll!CoInitializeEx                                           +0x36     (0x00007ffe165482a7 <combase.dll+0x782a7>)
+#10 ole32.dll!OleInitialize                                              +0x30     (0x00007ffe172ab761 <ole32.dll+0xb761>)
+#11 qwindows.dll!?                                                       +0x0      (0x00007ffdb1256941 <qwindows.dll+0x6941>)
+#12 qwindows.dll!?                                                       +0x0      (0x00007ffdb1256aa5 <qwindows.dll+0x6aa5>)
+#13 qwindows.dll!?                                                       +0x0      (0x00007ffdb126b9d5 <qwindows.dll+0x1b9d5>)
+#14 qwindows.dll!?                                                       +0x0      (0x00007ffdb126522e <qwindows.dll+0x1522e>)
+#15 qwindows.dll!?                                                       +0x0      (0x00007ffdb1251b90 <qwindows.dll+0x1b90>)
+#16 Qt6Core.dll!?                                                        +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#17 Qt6Gui.dll!?                                                         +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#18 Qt6Widgets.dll!?                                                     +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#19 app.exe!?                                                            +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+Note: @0:00:10.321 in thread 171836
+
+Potential Error #6: UNINITIALIZED READ: reading 0x0000003eb9bfea94-0x0000003eb9bfea98 4 byte(s) within 0x0000003eb9bfea90-0x0000003eb9bfea98
+# 0 system call NtUserCreateWindowEx parameter value #14
+# 1 USER32.dll!VerNtUserCreateWindowEx
+# 2 USER32.dll!CreateWindowInternal
+# 3 USER32.dll!CreateWindowExW
+# 4 combase.dll!DllGetActivationFactory                               +0x496    (0x00007ffe165b6787 <combase.dll+0xe6787>)
+# 5 combase.dll!CoIncrementMTAUsage                                   +0x764    (0x00007ffe16561d25 <combase.dll+0x91d25>)
+# 6 combase.dll!CoInitializeEx                                        +0x22c    (0x00007ffe1654849d <combase.dll+0x7849d>)
+# 7 combase.dll!CoInitializeEx                                        +0x36     (0x00007ffe165482a7 <combase.dll+0x782a7>)
+# 8 ole32.dll!OleInitialize                                           +0x30     (0x00007ffe172ab761 <ole32.dll+0xb761>)
+# 9 qwindows.dll!?                                                    +0x0      (0x00007ffdb1256941 <qwindows.dll+0x6941>)
+#10 qwindows.dll!?                                                    +0x0      (0x00007ffdb1256aa5 <qwindows.dll+0x6aa5>)
+#11 qwindows.dll!?                                                    +0x0      (0x00007ffdb126b9d5 <qwindows.dll+0x1b9d5>)
+#12 qwindows.dll!?                                                    +0x0      (0x00007ffdb126522e <qwindows.dll+0x1522e>)
+#13 qwindows.dll!?                                                    +0x0      (0x00007ffdb1251b90 <qwindows.dll+0x1b90>)
+#14 Qt6Core.dll!?                                                     +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#15 Qt6Gui.dll!?                                                      +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#16 Qt6Widgets.dll!?                                                  +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#17 app.exe!?                                                         +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#18 app.exe!?                                                         +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+#19 app.exe!?                                                         +0x0      (0x00007ff70fd01395 <app.exe+0x1395>)
+Note: @0:00:10.328 in thread 171836
+
+Potential Error #7: UNINITIALIZED READ: reading 0x0000003eb9bff1b8-0x0000003eb9bff1bc 4 byte(s)
+# 0 USER32.dll!RealSystemParametersInfoW
+# 1 UxTheme.dll!Ordinal45                  +0x4a     (0x00007ffe1219578b <UxTheme.dll+0x2578b>)
+# 2 UxTheme.dll!Ordinal132                 +0xe5     (0x00007ffe12194de6 <UxTheme.dll+0x24de6>)
+# 3 USER32.dll!SystemParametersInfoW
+# 4 qwindows.dll!?                         +0x0      (0x00007ffdb12999c1 <qwindows.dll+0x499c1>)
+# 5 qwindows.dll!?                         +0x0      (0x00007ffdb1256a2e <qwindows.dll+0x6a2e>)
+# 6 qwindows.dll!?                         +0x0      (0x00007ffdb1256aa5 <qwindows.dll+0x6aa5>)
+# 7 qwindows.dll!?                         +0x0      (0x00007ffdb126b9d5 <qwindows.dll+0x1b9d5>)
+# 8 qwindows.dll!?                         +0x0      (0x00007ffdb126522e <qwindows.dll+0x1522e>)
+# 9 qwindows.dll!?                         +0x0      (0x00007ffdb1251b90 <qwindows.dll+0x1b90>)
+#10 Qt6Core.dll!?                          +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#11 Qt6Gui.dll!?                           +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#12 Qt6Widgets.dll!?                       +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#13 app.exe!?                              +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#14 app.exe!?                              +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+#15 app.exe!?                              +0x0      (0x00007ff70fd01395 <app.exe+0x1395>)
+#16 app.exe!?                              +0x0      (0x00007ff70fd014c6 <app.exe+0x14c6>)
+#17 ntdll.dll!RtlUserThreadStart
+Note: @0:00:10.539 in thread 171836
+Note: instruction: cmp    (%r8) $0x00000010
+
+Potential Error #8: UNINITIALIZED READ: reading register eax
+# 0 profapi.dll!?                           +0x0      (0x00007ffe14bc12a1 <profapi.dll+0x12a1>)
+# 1 profapi.dll!?                           +0x0      (0x00007ffe14bc4fb4 <profapi.dll+0x4fb4>)
+# 2 profapi.dll!?                           +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 3 USERENV.dll!EnterCriticalPolicySection  +0x29ec   (0x00007ffe1431766d <USERENV.dll+0x766d>)
+# 4 USERENV.dll!GetUserProfileDirectoryW    +0xbd     (0x00007ffe14312cbe <USERENV.dll+0x2cbe>)
+# 5 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec26089 <Qt6Core.dll+0x1d6089>)
+# 6 Qt6Core.dll!?                           +0x0      (0x00007ffd7ea6238e <Qt6Core.dll+0x1238e>)
+# 7 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec3025d <Qt6Core.dll+0x1e025d>)
+# 8 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec307ad <Qt6Core.dll+0x1e07ad>)
+# 9 Qt6Core.dll!?                           +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#10 Qt6Gui.dll!?                            +0x0      (0x00007ffd5acca139 <Qt6Gui.dll+0x7a139>)
+#11 Qt6Gui.dll!?                            +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#12 Qt6Gui.dll!?                            +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#13 Qt6Core.dll!?                           +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#14 Qt6Gui.dll!?                            +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#15 Qt6Widgets.dll!?                        +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#16 app.exe!?                               +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#17 app.exe!?                               +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+#18 app.exe!?                               +0x0      (0x00007ff70fd01395 <app.exe+0x1395>)
+#19 app.exe!?                               +0x0      (0x00007ff70fd014c6 <app.exe+0x14c6>)
+Note: @0:00:11.927 in thread 171836
+Note: instruction: cmp    %eax $0x00000001
+
+Potential Error #9: UNINITIALIZED READ: reading register eax
+# 0 profapi.dll!?                           +0x0      (0x00007ffe14bc12ae <profapi.dll+0x12ae>)
+# 1 profapi.dll!?                           +0x0      (0x00007ffe14bc4fb4 <profapi.dll+0x4fb4>)
+# 2 profapi.dll!?                           +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 3 USERENV.dll!EnterCriticalPolicySection  +0x29ec   (0x00007ffe1431766d <USERENV.dll+0x766d>)
+# 4 USERENV.dll!GetUserProfileDirectoryW    +0xbd     (0x00007ffe14312cbe <USERENV.dll+0x2cbe>)
+# 5 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec26089 <Qt6Core.dll+0x1d6089>)
+# 6 Qt6Core.dll!?                           +0x0      (0x00007ffd7ea6238e <Qt6Core.dll+0x1238e>)
+# 7 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec3025d <Qt6Core.dll+0x1e025d>)
+# 8 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec307ad <Qt6Core.dll+0x1e07ad>)
+# 9 Qt6Core.dll!?                           +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#10 Qt6Gui.dll!?                            +0x0      (0x00007ffd5acca139 <Qt6Gui.dll+0x7a139>)
+#11 Qt6Gui.dll!?                            +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#12 Qt6Gui.dll!?                            +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#13 Qt6Core.dll!?                           +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#14 Qt6Gui.dll!?                            +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#15 Qt6Widgets.dll!?                        +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#16 app.exe!?                               +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#17 app.exe!?                               +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+#18 app.exe!?                               +0x0      (0x00007ff70fd01395 <app.exe+0x1395>)
+#19 app.exe!?                               +0x0      (0x00007ff70fd014c6 <app.exe+0x14c6>)
+Note: @0:00:11.928 in thread 171836
+Note: instruction: test   %eax %eax
+
+Potential Error #10: UNINITIALIZED READ: reading register r12d
+# 0 KERNELBASE.dll!GetCurrentThread         +0x90f    (0x00007ffe14ffabbf <KERNELBASE.dll+0xbabbf>)
+# 1 KERNELBASE.dll!RegQueryValueExW         +0x107    (0x00007ffe14f78598 <KERNELBASE.dll+0x38598>)
+# 2 profapi.dll!?                           +0x0      (0x00007ffe14bc1310 <profapi.dll+0x1310>)
+# 3 profapi.dll!?                           +0x0      (0x00007ffe14bc4fb4 <profapi.dll+0x4fb4>)
+# 4 profapi.dll!?                           +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 5 USERENV.dll!EnterCriticalPolicySection  +0x29ec   (0x00007ffe1431766d <USERENV.dll+0x766d>)
+# 6 USERENV.dll!GetUserProfileDirectoryW    +0xbd     (0x00007ffe14312cbe <USERENV.dll+0x2cbe>)
+# 7 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec26089 <Qt6Core.dll+0x1d6089>)
+# 8 Qt6Core.dll!?                           +0x0      (0x00007ffd7ea6238e <Qt6Core.dll+0x1238e>)
+# 9 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec3025d <Qt6Core.dll+0x1e025d>)
+#10 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec307ad <Qt6Core.dll+0x1e07ad>)
+#11 Qt6Core.dll!?                           +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#12 Qt6Gui.dll!?                            +0x0      (0x00007ffd5acca139 <Qt6Gui.dll+0x7a139>)
+#13 Qt6Gui.dll!?                            +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#14 Qt6Gui.dll!?                            +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#15 Qt6Core.dll!?                           +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#16 Qt6Gui.dll!?                            +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#17 Qt6Widgets.dll!?                        +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#18 app.exe!?                               +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#19 app.exe!?                               +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+Note: @0:00:11.928 in thread 171836
+Note: instruction: cmp    %r12d $0x0000000c
+
+Potential Error #11: UNINITIALIZED READ: reading 0x0000003eb9bfead0-0x0000003eb9bfead4 4 byte(s)
+# 0 KERNELBASE.dll!GetCurrentThread         +0xaba    (0x00007ffe14ffad6a <KERNELBASE.dll+0xbad6a>)
+# 1 KERNELBASE.dll!RegQueryValueExW         +0x107    (0x00007ffe14f78598 <KERNELBASE.dll+0x38598>)
+# 2 profapi.dll!?                           +0x0      (0x00007ffe14bc1310 <profapi.dll+0x1310>)
+# 3 profapi.dll!?                           +0x0      (0x00007ffe14bc4fb4 <profapi.dll+0x4fb4>)
+# 4 profapi.dll!?                           +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 5 USERENV.dll!EnterCriticalPolicySection  +0x29ec   (0x00007ffe1431766d <USERENV.dll+0x766d>)
+# 6 USERENV.dll!GetUserProfileDirectoryW    +0xbd     (0x00007ffe14312cbe <USERENV.dll+0x2cbe>)
+# 7 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec26089 <Qt6Core.dll+0x1d6089>)
+# 8 Qt6Core.dll!?                           +0x0      (0x00007ffd7ea6238e <Qt6Core.dll+0x1238e>)
+# 9 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec3025d <Qt6Core.dll+0x1e025d>)
+#10 Qt6Core.dll!?                           +0x0      (0x00007ffd7ec307ad <Qt6Core.dll+0x1e07ad>)
+#11 Qt6Core.dll!?                           +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#12 Qt6Gui.dll!?                            +0x0      (0x00007ffd5acca139 <Qt6Gui.dll+0x7a139>)
+#13 Qt6Gui.dll!?                            +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#14 Qt6Gui.dll!?                            +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#15 Qt6Core.dll!?                           +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#16 Qt6Gui.dll!?                            +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#17 Qt6Widgets.dll!?                        +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#18 app.exe!?                               +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#19 app.exe!?                               +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+Note: @0:00:11.928 in thread 171836
+Note: instruction: cmp    (%r14) %eax
+
+Potential Error #12: UNINITIALIZED READ: reading register eax
+# 0 profapi.dll!?                         +0x0      (0x00007ffe14bc12a1 <profapi.dll+0x12a1>)
+# 1 profapi.dll!?                         +0x0      (0x00007ffe14bc4fb4 <profapi.dll+0x4fb4>)
+# 2 profapi.dll!?                         +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 3 USERENV.dll!GetUserProfileDirectoryW  +0x281    (0x00007ffe14312e82 <USERENV.dll+0x2e82>)
+# 4 USERENV.dll!GetUserProfileDirectoryW  +0xbd     (0x00007ffe14312cbe <USERENV.dll+0x2cbe>)
+# 5 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec2630b <Qt6Core.dll+0x1d630b>)
+# 6 Qt6Core.dll!?                         +0x0      (0x00007ffd7ea6238e <Qt6Core.dll+0x1238e>)
+# 7 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec3025d <Qt6Core.dll+0x1e025d>)
+# 8 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec307ad <Qt6Core.dll+0x1e07ad>)
+# 9 Qt6Core.dll!?                         +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#10 Qt6Gui.dll!?                          +0x0      (0x00007ffd5acca139 <Qt6Gui.dll+0x7a139>)
+#11 Qt6Gui.dll!?                          +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#12 Qt6Gui.dll!?                          +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#13 Qt6Core.dll!?                         +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#14 Qt6Gui.dll!?                          +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#15 Qt6Widgets.dll!?                      +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#16 app.exe!?                             +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#17 app.exe!?                             +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+#18 app.exe!?                             +0x0      (0x00007ff70fd01395 <app.exe+0x1395>)
+#19 app.exe!?                             +0x0      (0x00007ff70fd014c6 <app.exe+0x14c6>)
+Note: @0:00:11.938 in thread 171836
+Note: instruction: cmp    %eax $0x00000001
+
+Potential Error #13: UNINITIALIZED READ: reading register eax
+# 0 profapi.dll!?                         +0x0      (0x00007ffe14bc12ae <profapi.dll+0x12ae>)
+# 1 profapi.dll!?                         +0x0      (0x00007ffe14bc4fb4 <profapi.dll+0x4fb4>)
+# 2 profapi.dll!?                         +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 3 USERENV.dll!GetUserProfileDirectoryW  +0x281    (0x00007ffe14312e82 <USERENV.dll+0x2e82>)
+# 4 USERENV.dll!GetUserProfileDirectoryW  +0xbd     (0x00007ffe14312cbe <USERENV.dll+0x2cbe>)
+# 5 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec2630b <Qt6Core.dll+0x1d630b>)
+# 6 Qt6Core.dll!?                         +0x0      (0x00007ffd7ea6238e <Qt6Core.dll+0x1238e>)
+# 7 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec3025d <Qt6Core.dll+0x1e025d>)
+# 8 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec307ad <Qt6Core.dll+0x1e07ad>)
+# 9 Qt6Core.dll!?                         +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#10 Qt6Gui.dll!?                          +0x0      (0x00007ffd5acca139 <Qt6Gui.dll+0x7a139>)
+#11 Qt6Gui.dll!?                          +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#12 Qt6Gui.dll!?                          +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#13 Qt6Core.dll!?                         +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#14 Qt6Gui.dll!?                          +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#15 Qt6Widgets.dll!?                      +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#16 app.exe!?                             +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#17 app.exe!?                             +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+#18 app.exe!?                             +0x0      (0x00007ff70fd01395 <app.exe+0x1395>)
+#19 app.exe!?                             +0x0      (0x00007ff70fd014c6 <app.exe+0x14c6>)
+Note: @0:00:11.938 in thread 171836
+Note: instruction: test   %eax %eax
+
+Potential Error #14: UNINITIALIZED READ: reading register r12d
+# 0 KERNELBASE.dll!GetCurrentThread       +0x90f    (0x00007ffe14ffabbf <KERNELBASE.dll+0xbabbf>)
+# 1 KERNELBASE.dll!RegQueryValueExW       +0x107    (0x00007ffe14f78598 <KERNELBASE.dll+0x38598>)
+# 2 profapi.dll!?                         +0x0      (0x00007ffe14bc1310 <profapi.dll+0x1310>)
+# 3 profapi.dll!?                         +0x0      (0x00007ffe14bc4fb4 <profapi.dll+0x4fb4>)
+# 4 profapi.dll!?                         +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 5 USERENV.dll!GetUserProfileDirectoryW  +0x281    (0x00007ffe14312e82 <USERENV.dll+0x2e82>)
+# 6 USERENV.dll!GetUserProfileDirectoryW  +0xbd     (0x00007ffe14312cbe <USERENV.dll+0x2cbe>)
+# 7 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec2630b <Qt6Core.dll+0x1d630b>)
+# 8 Qt6Core.dll!?                         +0x0      (0x00007ffd7ea6238e <Qt6Core.dll+0x1238e>)
+# 9 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec3025d <Qt6Core.dll+0x1e025d>)
+#10 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec307ad <Qt6Core.dll+0x1e07ad>)
+#11 Qt6Core.dll!?                         +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#12 Qt6Gui.dll!?                          +0x0      (0x00007ffd5acca139 <Qt6Gui.dll+0x7a139>)
+#13 Qt6Gui.dll!?                          +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#14 Qt6Gui.dll!?                          +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#15 Qt6Core.dll!?                         +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#16 Qt6Gui.dll!?                          +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#17 Qt6Widgets.dll!?                      +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#18 app.exe!?                             +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#19 app.exe!?                             +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+Note: @0:00:11.938 in thread 171836
+Note: instruction: cmp    %r12d $0x0000000c
+
+Potential Error #15: UNINITIALIZED READ: reading 0x0000003eb9bfead0-0x0000003eb9bfead4 4 byte(s)
+# 0 KERNELBASE.dll!GetCurrentThread       +0xaba    (0x00007ffe14ffad6a <KERNELBASE.dll+0xbad6a>)
+# 1 KERNELBASE.dll!RegQueryValueExW       +0x107    (0x00007ffe14f78598 <KERNELBASE.dll+0x38598>)
+# 2 profapi.dll!?                         +0x0      (0x00007ffe14bc1310 <profapi.dll+0x1310>)
+# 3 profapi.dll!?                         +0x0      (0x00007ffe14bc4fb4 <profapi.dll+0x4fb4>)
+# 4 profapi.dll!?                         +0x0      (0x00007ffe14bc333b <profapi.dll+0x333b>)
+# 5 USERENV.dll!GetUserProfileDirectoryW  +0x281    (0x00007ffe14312e82 <USERENV.dll+0x2e82>)
+# 6 USERENV.dll!GetUserProfileDirectoryW  +0xbd     (0x00007ffe14312cbe <USERENV.dll+0x2cbe>)
+# 7 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec2630b <Qt6Core.dll+0x1d630b>)
+# 8 Qt6Core.dll!?                         +0x0      (0x00007ffd7ea6238e <Qt6Core.dll+0x1238e>)
+# 9 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec3025d <Qt6Core.dll+0x1e025d>)
+#10 Qt6Core.dll!?                         +0x0      (0x00007ffd7ec307ad <Qt6Core.dll+0x1e07ad>)
+#11 Qt6Core.dll!?                         +0x0      (0x00007ffd7ea9c353 <Qt6Core.dll+0x4c353>)
+#12 Qt6Gui.dll!?                          +0x0      (0x00007ffd5acca139 <Qt6Gui.dll+0x7a139>)
+#13 Qt6Gui.dll!?                          +0x0      (0x00007ffd5accc78e <Qt6Gui.dll+0x7c78e>)
+#14 Qt6Gui.dll!?                          +0x0      (0x00007ffd5acccf08 <Qt6Gui.dll+0x7cf08>)
+#15 Qt6Core.dll!?                         +0x0      (0x00007ffd7eac12d5 <Qt6Core.dll+0x712d5>)
+#16 Qt6Gui.dll!?                          +0x0      (0x00007ffd5accec0c <Qt6Gui.dll+0x7ec0c>)
+#17 Qt6Widgets.dll!?                      +0x0      (0x00007ffd7e40ab2f <Qt6Widgets.dll+0xab2f>)
+#18 app.exe!?                             +0x0      (0x00007ff70fd04ce5 <app.exe+0x4ce5>)
+#19 app.exe!?                             +0x0      (0x00007ff70fd11c92 <app.exe+0x11c92>)
+Note: @0:00:11.939 in thread 171836
+Note: instruction: cmp    (%r14) %eax

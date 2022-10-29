@@ -1,0 +1,2034 @@
+# File for suppressing errors found in pid 161928: "app.exe"
+
+# Suppression for Error #1
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNADDRESSABLE ACCESS
+name=Error #1 (update to meaningful name)
+<app.exe+0x11dbb>
+<app.exe+0x10fb9>
+<app.exe+0x124c>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #2
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #2:
+UNADDRESSABLE ACCESS
+name=Error #2 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x159c06>
+<Qt6Core.dll+0x15a361>
+<Qt6Core.dll+0x14d970>
+<Qt6Core.dll+0x7390>
+<Qt6Core.dll+0x3f636>
+<Qt6Core.dll+0x40492>
+<Qt6Core.dll+0x3b4b2>
+<Qt6Gui.dll+0x7ac46>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #3
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #3:
+UNADDRESSABLE ACCESS
+name=Error #3 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x159c06>
+<Qt6Core.dll+0x15a361>
+<Qt6Core.dll+0x14d970>
+<Qt6Core.dll+0x7390>
+<Qt6Core.dll+0x3f636>
+<Qt6Core.dll+0x40492>
+<Qt6Core.dll+0x3b4b2>
+<Qt6Gui.dll+0x7ac46>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #4
+UNADDRESSABLE ACCESS
+name=Error #4 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #4:
+UNADDRESSABLE ACCESS
+name=Error #4 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x5476>
+<Qt6Core.dll+0x6f15>
+<Qt6Core.dll+0x7412>
+<Qt6Core.dll+0x3f636>
+<Qt6Core.dll+0x40492>
+<Qt6Core.dll+0x3b4b2>
+<Qt6Gui.dll+0x7ac46>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #5
+UNADDRESSABLE ACCESS
+name=Error #5 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #5:
+UNADDRESSABLE ACCESS
+name=Error #5 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x5476>
+<Qt6Core.dll+0x6f15>
+<Qt6Core.dll+0x7412>
+<Qt6Core.dll+0x3f636>
+<Qt6Core.dll+0x40492>
+<Qt6Core.dll+0x3b4b2>
+<Qt6Gui.dll+0x7ac46>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #6
+UNADDRESSABLE ACCESS
+name=Error #6 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #6:
+UNADDRESSABLE ACCESS
+name=Error #6 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x159c06>
+<Qt6Core.dll+0x15a361>
+<Qt6Core.dll+0x14d970>
+<Qt6Core.dll+0x56dc>
+<Qt6Core.dll+0x14679c>
+<Qt6Core.dll+0x6f15>
+<Qt6Core.dll+0x7412>
+<Qt6Core.dll+0x3f636>
+<Qt6Core.dll+0x40492>
+<Qt6Core.dll+0x3b4b2>
+<Qt6Gui.dll+0x7ac46>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+
+# Suppression for Error #7
+UNADDRESSABLE ACCESS
+name=Error #7 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #7:
+UNADDRESSABLE ACCESS
+name=Error #7 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x159c06>
+<Qt6Core.dll+0x15a361>
+<Qt6Core.dll+0x14d970>
+<Qt6Core.dll+0x56dc>
+<Qt6Core.dll+0x14679c>
+<Qt6Core.dll+0x6f15>
+<Qt6Core.dll+0x7412>
+<Qt6Core.dll+0x3f636>
+<Qt6Core.dll+0x40492>
+<Qt6Core.dll+0x3b4b2>
+<Qt6Gui.dll+0x7ac46>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+
+# Suppression for Error #8
+UNADDRESSABLE ACCESS
+name=Error #8 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #8:
+UNADDRESSABLE ACCESS
+name=Error #8 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x159c06>
+<Qt6Core.dll+0x15a361>
+<Qt6Core.dll+0x14d970>
+<Qt6Core.dll+0x7390>
+<Qt6Core.dll+0x6ef31>
+<Qt6Core.dll+0x6f381>
+<Qt6Core.dll+0xcc9be>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+
+# Suppression for Error #9
+UNADDRESSABLE ACCESS
+name=Error #9 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #9:
+UNADDRESSABLE ACCESS
+name=Error #9 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x159c06>
+<Qt6Core.dll+0x15a361>
+<Qt6Core.dll+0x14d970>
+<Qt6Core.dll+0x7390>
+<Qt6Core.dll+0x6ef31>
+<Qt6Core.dll+0x6f381>
+<Qt6Core.dll+0xcc9be>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+
+# Suppression for Error #10
+UNADDRESSABLE ACCESS
+name=Error #10 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #10:
+UNADDRESSABLE ACCESS
+name=Error #10 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x5476>
+<Qt6Core.dll+0x6f15>
+<Qt6Core.dll+0x7412>
+<Qt6Core.dll+0x6ef31>
+<Qt6Core.dll+0x6f381>
+<Qt6Core.dll+0xcc9be>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #11
+UNADDRESSABLE ACCESS
+name=Error #11 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #11:
+UNADDRESSABLE ACCESS
+name=Error #11 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x5476>
+<Qt6Core.dll+0x6f15>
+<Qt6Core.dll+0x7412>
+<Qt6Core.dll+0x6ef31>
+<Qt6Core.dll+0x6f381>
+<Qt6Core.dll+0xcc9be>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #12
+UNADDRESSABLE ACCESS
+name=Error #12 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #12:
+UNADDRESSABLE ACCESS
+name=Error #12 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x159c06>
+<Qt6Core.dll+0x15a361>
+<Qt6Core.dll+0x14d970>
+<Qt6Core.dll+0x56dc>
+<Qt6Core.dll+0x14679c>
+<Qt6Core.dll+0x6f15>
+<Qt6Core.dll+0x7412>
+<Qt6Core.dll+0x6ef31>
+<Qt6Core.dll+0x6f381>
+<Qt6Core.dll+0xcc9be>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+
+# Suppression for Error #13
+UNADDRESSABLE ACCESS
+name=Error #13 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #13:
+UNADDRESSABLE ACCESS
+name=Error #13 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x159c06>
+<Qt6Core.dll+0x15a361>
+<Qt6Core.dll+0x14d970>
+<Qt6Core.dll+0x56dc>
+<Qt6Core.dll+0x14679c>
+<Qt6Core.dll+0x6f15>
+<Qt6Core.dll+0x7412>
+<Qt6Core.dll+0x6ef31>
+<Qt6Core.dll+0x6f381>
+<Qt6Core.dll+0xcc9be>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+
+# Suppression for Error #14
+UNINITIALIZED READ
+name=Error #14 (update to meaningful name)
+system call NtQueryDirectoryFileEx parameter value #6
+KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal
+KERNELBASE.dll!FindFirstFileExW
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #14:
+UNINITIALIZED READ
+name=Error #14 (update to meaningful name)
+system call NtQueryDirectoryFileEx parameter value #6
+<KERNELBASE.dll+0x3a40f>
+<KERNELBASE.dll+0x788f3>
+<Qt6Core.dll+0x27b810>
+<Qt6Core.dll+0x1d4e4>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+
+# Suppression for Error #15
+UNADDRESSABLE ACCESS
+name=Error #15 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #15:
+UNADDRESSABLE ACCESS
+name=Error #15 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x300f56>
+<Qt6Core.dll+0x225d02>
+<Qt6Core.dll+0x2287c7>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+
+# Suppression for Error #16
+UNADDRESSABLE ACCESS
+name=Error #16 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #16:
+UNADDRESSABLE ACCESS
+name=Error #16 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x300f56>
+<Qt6Core.dll+0x225d02>
+<Qt6Core.dll+0x2287c7>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+
+# Suppression for Error #17
+UNADDRESSABLE ACCESS
+name=Error #17 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+
+## Mod+offs-style suppression for Error #17:
+UNADDRESSABLE ACCESS
+name=Error #17 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x33d036>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+
+# Suppression for Error #18
+UNADDRESSABLE ACCESS
+name=Error #18 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+
+## Mod+offs-style suppression for Error #18:
+UNADDRESSABLE ACCESS
+name=Error #18 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x33d036>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+
+# Suppression for Error #19
+UNADDRESSABLE ACCESS
+name=Error #19 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+
+## Mod+offs-style suppression for Error #19:
+UNADDRESSABLE ACCESS
+name=Error #19 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x30859a>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+
+# Suppression for Error #20
+UNADDRESSABLE ACCESS
+name=Error #20 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+
+## Mod+offs-style suppression for Error #20:
+UNADDRESSABLE ACCESS
+name=Error #20 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x30859a>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+
+# Suppression for Error #21
+UNADDRESSABLE ACCESS
+name=Error #21 (update to meaningful name)
+<not in a module>
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+
+## Mod+offs-style suppression for Error #21:
+UNADDRESSABLE ACCESS
+name=Error #21 (update to meaningful name)
+<not in a module>
+<Qt6Core.dll+0x3085c8>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+
+# Suppression for Error #22
+UNINITIALIZED READ
+name=Error #22 (update to meaningful name)
+system call NtQueryDirectoryFileEx parameter value #6
+KERNELBASE.dll!FindNextFileW
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #22:
+UNINITIALIZED READ
+name=Error #22 (update to meaningful name)
+system call NtQueryDirectoryFileEx parameter value #6
+<KERNELBASE.dll+0x4dfbc>
+<Qt6Core.dll+0x27b7be>
+<Qt6Core.dll+0x1d4e4>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+
+# Suppression for Error #23
+UNINITIALIZED READ
+name=Error #23 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #23:
+UNINITIALIZED READ
+name=Error #23 (update to meaningful name)
+<Qt6Core.dll+0x14d827>
+<Qt6Core.dll+0x27b846>
+<Qt6Core.dll+0x1d4e4>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+
+# Suppression for Error #24
+UNINITIALIZED READ
+name=Error #24 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #24:
+UNINITIALIZED READ
+name=Error #24 (update to meaningful name)
+<Qt6Core.dll+0x14d840>
+<Qt6Core.dll+0x27b846>
+<Qt6Core.dll+0x1d4e4>
+<Qt6Core.dll+0x1ded1>
+<Qt6Core.dll+0x1e6c2>
+<Qt6Core.dll+0x1b49b>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+
+# Suppression for Error #25
+UNADDRESSABLE ACCESS
+name=Error #25 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #25:
+UNADDRESSABLE ACCESS
+name=Error #25 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x33d036>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x14e674>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+
+# Suppression for Error #26
+UNADDRESSABLE ACCESS
+name=Error #26 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #26:
+UNADDRESSABLE ACCESS
+name=Error #26 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x33d036>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x14e674>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+
+# Suppression for Error #27
+UNADDRESSABLE ACCESS
+name=Error #27 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+
+## Mod+offs-style suppression for Error #27:
+UNADDRESSABLE ACCESS
+name=Error #27 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x30859a>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x14e674>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+
+# Suppression for Error #28
+UNADDRESSABLE ACCESS
+name=Error #28 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+
+## Mod+offs-style suppression for Error #28:
+UNADDRESSABLE ACCESS
+name=Error #28 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x30859a>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x14e674>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+
+# Suppression for Error #29
+UNADDRESSABLE ACCESS
+name=Error #29 (update to meaningful name)
+<not in a module>
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+
+## Mod+offs-style suppression for Error #29:
+UNADDRESSABLE ACCESS
+name=Error #29 (update to meaningful name)
+<not in a module>
+<Qt6Core.dll+0x3085c8>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x14e674>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+
+# Suppression for Error #30
+UNADDRESSABLE ACCESS
+name=Error #30 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #30:
+UNADDRESSABLE ACCESS
+name=Error #30 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x33d036>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+
+# Suppression for Error #31
+UNADDRESSABLE ACCESS
+name=Error #31 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #31:
+UNADDRESSABLE ACCESS
+name=Error #31 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x33d036>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+
+# Suppression for Error #32
+UNADDRESSABLE ACCESS
+name=Error #32 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+
+## Mod+offs-style suppression for Error #32:
+UNADDRESSABLE ACCESS
+name=Error #32 (update to meaningful name)
+<Qt6Core.dll+0x351b46>
+<Qt6Core.dll+0x30859a>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+
+# Suppression for Error #33
+UNADDRESSABLE ACCESS
+name=Error #33 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+
+## Mod+offs-style suppression for Error #33:
+UNADDRESSABLE ACCESS
+name=Error #33 (update to meaningful name)
+<Qt6Core.dll+0x351b5b>
+<Qt6Core.dll+0x30859a>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+
+# Suppression for Error #34
+UNADDRESSABLE ACCESS
+name=Error #34 (update to meaningful name)
+<not in a module>
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+
+## Mod+offs-style suppression for Error #34:
+UNADDRESSABLE ACCESS
+name=Error #34 (update to meaningful name)
+<not in a module>
+<Qt6Core.dll+0x3085c8>
+<Qt6Core.dll+0x33c7d9>
+<Qt6Core.dll+0x33d2d0>
+<Qt6Core.dll+0x223d66>
+<Qt6Core.dll+0x2281ce>
+<Qt6Core.dll+0x22887e>
+<Qt6Core.dll+0x1bf6e>
+<Qt6Core.dll+0x1d6a2>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+
+# Suppression for Error #35
+UNINITIALIZED READ
+name=Error #35 (update to meaningful name)
+KERNELBASE.dll!FindNextFileW
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #35:
+UNINITIALIZED READ
+name=Error #35 (update to meaningful name)
+<KERNELBASE.dll+0x4e006>
+<Qt6Core.dll+0x27b7be>
+<Qt6Core.dll+0x1d4e4>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #36
+UNINITIALIZED READ
+name=Error #36 (update to meaningful name)
+system call NtQueryDirectoryFileEx parameter value #6
+KERNELBASE.dll!FindNextFileW
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+
+## Mod+offs-style suppression for Error #36:
+UNINITIALIZED READ
+name=Error #36 (update to meaningful name)
+system call NtQueryDirectoryFileEx parameter value #6
+<KERNELBASE.dll+0x4dfbc>
+<Qt6Core.dll+0x27b7be>
+<Qt6Core.dll+0x1d4e4>
+<Qt6Core.dll+0x1d945>
+<Qt6Core.dll+0x1b535>
+<Qt6Core.dll+0x39debf>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+
+# Suppression for Error #37
+UNINITIALIZED READ
+name=Error #37 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #37:
+UNINITIALIZED READ
+name=Error #37 (update to meaningful name)
+<Qt6Core.dll+0x1d2827>
+<Qt6Core.dll+0x1dc16e>
+<Qt6Core.dll+0x2244f>
+<Qt6Core.dll+0x2cab28>
+<Qt6Core.dll+0x2cb5e5>
+<Qt6Core.dll+0x39e209>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #38
+UNINITIALIZED READ
+name=Error #38 (update to meaningful name)
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #38:
+UNINITIALIZED READ
+name=Error #38 (update to meaningful name)
+<Qt6Core.dll+0x2cab38>
+<Qt6Core.dll+0x2cb5e5>
+<Qt6Core.dll+0x39e209>
+<Qt6Core.dll+0xcca1c>
+<Qt6Core.dll+0xccfd0>
+<Qt6Gui.dll+0xa2c85>
+<Qt6Gui.dll+0x79987>
+<Qt6Gui.dll+0x7c78e>
+<Qt6Gui.dll+0x7cf08>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #39
+UNADDRESSABLE ACCESS
+name=Error #39 (update to meaningful name)
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+ntdll.dll!LdrpCallInitRoutine
+ntdll.dll!LdrpInitializeNode
+ntdll.dll!LdrpInitializeNode
+ntdll.dll!LdrpInitializeGraphRecurse
+ntdll.dll!LdrpPrepareModuleForExecution
+ntdll.dll!LdrpLoadDllInternal
+ntdll.dll!LdrpLoadDll
+ntdll.dll!LdrLoadDll
+KERNELBASE.dll!LoadLibraryExW
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+Qt6Gui.dll!*
+
+## Mod+offs-style suppression for Error #39:
+UNADDRESSABLE ACCESS
+name=Error #39 (update to meaningful name)
+<qwindows.dll+0x85b7b>
+<qwindows.dll+0x851b9>
+<qwindows.dll+0x126a>
+<ntdll.dll+0x3ff07>
+<ntdll.dll+0x72f2e>
+<ntdll.dll+0x72ee2>
+<ntdll.dll+0x72cde>
+<ntdll.dll+0x4db3b>
+<ntdll.dll+0x3baff>
+<ntdll.dll+0x44dfc>
+<ntdll.dll+0x3aeb6>
+<KERNELBASE.dll+0x34a32>
+<Qt6Core.dll+0x2cc16a>
+<Qt6Core.dll+0x2c8a25>
+<Qt6Core.dll+0x2c8d5b>
+<Qt6Core.dll+0x2c90c8>
+<Qt6Core.dll+0xcc420>
+<Qt6Gui.dll+0xa2575>
+<Qt6Gui.dll+0x79eb2>
+<Qt6Gui.dll+0x7c78e>
+
+# Suppression for Error #40
+UNINITIALIZED READ
+name=Error #40 (update to meaningful name)
+Qt6Core.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #40:
+UNINITIALIZED READ
+name=Error #40 (update to meaningful name)
+<Qt6Core.dll+0x1f0280>
+<qwindows.dll+0x49a6a>
+<qwindows.dll+0x6a2e>
+<qwindows.dll+0x6aa5>
+<qwindows.dll+0x1b9d5>
+<qwindows.dll+0x1522e>
+<qwindows.dll+0x1b90>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #41
+UNINITIALIZED READ
+name=Error #41 (update to meaningful name)
+system call NtUserCreateWindowEx parameter value #14
+USER32.dll!VerNtUserCreateWindowEx
+USER32.dll!CreateWindowInternal
+USER32.dll!CreateWindowExW
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #41:
+UNINITIALIZED READ
+name=Error #41 (update to meaningful name)
+system call NtUserCreateWindowEx parameter value #14
+<USER32.dll+0x869c>
+<USER32.dll+0x8281>
+<USER32.dll+0x80b2>
+<qwindows.dll+0x8fa6>
+<qwindows.dll+0x909e>
+<qwindows.dll+0x1ba5d>
+<qwindows.dll+0x1522e>
+<qwindows.dll+0x1b90>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #42
+UNINITIALIZED READ
+name=Error #42 (update to meaningful name)
+system call NtUserCreateWindowEx parameter value #14
+USER32.dll!VerNtUserCreateWindowEx
+USER32.dll!CreateWindowInternal
+USER32.dll!CreateWindowExW
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #42:
+UNINITIALIZED READ
+name=Error #42 (update to meaningful name)
+system call NtUserCreateWindowEx parameter value #14
+<USER32.dll+0x869c>
+<USER32.dll+0x8281>
+<USER32.dll+0x80b2>
+<qwindows.dll+0x8fa6>
+<qwindows.dll+0x658c2>
+<qwindows.dll+0x1ba6a>
+<qwindows.dll+0x1522e>
+<qwindows.dll+0x1b90>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #43
+UNINITIALIZED READ
+name=Error #43 (update to meaningful name)
+system call NtUserCreateWindowEx parameter value #14
+USER32.dll!VerNtUserCreateWindowEx
+USER32.dll!CreateWindowInternal
+USER32.dll!CreateWindowExW
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #43:
+UNINITIALIZED READ
+name=Error #43 (update to meaningful name)
+system call NtUserCreateWindowEx parameter value #14
+<USER32.dll+0x869c>
+<USER32.dll+0x8281>
+<USER32.dll+0x80b2>
+<qwindows.dll+0x44119>
+<qwindows.dll+0x1ba7f>
+<qwindows.dll+0x1522e>
+<qwindows.dll+0x1b90>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #44
+UNINITIALIZED READ
+name=Error #44 (update to meaningful name)
+system call NtGdiOpenDCW parameter value #5
+gdi32full.dll!hdcCreateDCW
+GDI32.dll!bCreateDCW
+GDI32.dll!CreateDCW
+qwindows.dll!*
+USER32.dll!_ClientMonitorEnumProc
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+qwindows.dll!*
+Qt6Core.dll!*
+Qt6Gui.dll!*
+Qt6Widgets.dll!*
+app.exe!*
+app.exe!*
+app.exe!*
+app.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #44:
+UNINITIALIZED READ
+name=Error #44 (update to meaningful name)
+system call NtGdiOpenDCW parameter value #5
+<gdi32full.dll+0x25692>
+<GDI32.dll+0x14fc>
+<GDI32.dll+0x13f5>
+<qwindows.dll+0x447ce>
+<USER32.dll+0x286c2>
+<qwindows.dll+0x438b8>
+<qwindows.dll+0x44136>
+<qwindows.dll+0x1ba7f>
+<qwindows.dll+0x1522e>
+<qwindows.dll+0x1b90>
+<Qt6Core.dll+0x712d5>
+<Qt6Gui.dll+0x7ec0c>
+<Qt6Widgets.dll+0xab2f>
+<app.exe+0x4ce5>
+<app.exe+0x11c92>
+<app.exe+0x1395>
+<app.exe+0x14c6>
+<ntdll.dll+0x485b>
+

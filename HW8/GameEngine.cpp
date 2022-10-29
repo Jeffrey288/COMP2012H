@@ -164,3 +164,263 @@ void GameEngine::run()
 
 
 // write your code here
+GameEngine::~GameEngine() { 
+    for (int r = 0; r < MAP_SIZE; r++) {
+        for (int c = 0; c < MAP_SIZE; c++) {
+            delete map[c][r];
+        }
+    }
+    if (head) {
+        MonsterNode* thisNode = head;   
+        MonsterNode* nextNode = thisNode->next;
+        while (thisNode) {
+            delete thisNode;
+            thisNode = nextNode;
+            if (thisNode) nextNode = thisNode->next;
+        }
+    }
+    delete player;
+}
+
+void GameEngine::create_player(int x, int y, const string &name, Role role) {
+    switch (role) {
+        case Role::ARCHER:
+            player = new Archer(x, y, name);
+            break;
+        case Role::MAGE:
+            player = new Mage(x, y, name);
+            break;        
+        case Role::WARRIOR:
+            player = new Warrior(x, y, name);
+            break;
+    }
+}
+
+void GameEngine::activate_monster(Monster *monster) {
+    if (monster->is_valid() && !monster->is_active()) {
+        monster->set_active();
+        MonsterNode* newNode = new MonsterNode;
+        newNode->data = monster;
+        newNode->next = nullptr;
+        if (head) {
+            MonsterNode* prevNode = nullptr;
+            MonsterNode* curNode = head;
+            for (; curNode; prevNode = curNode, curNode = prevNode->next);
+            prevNode->next = newNode;     
+        } else {
+            head = newNode;
+        }
+    }
+}
+
+/*
+Activate the Monster units in the surrounding (-1 ≤ x ≤ 1, -1 ≤ y ≤ 1, where the player is at (x, y)) of the playe
+*/
+#define HORZ_DISTANCE(x_1, y_1, x_2, y_2) abs((x_1) - (x_2))
+#define VERT_DISTANCE(x_1, y_1, x_2, y_2) abs((y_1) - (y_2))
+#define DISTANCE(x_1, y_1, x_2, y_2) (HORZ_DISTANCE(x_1, y_1, x_2, y_2) + VERT_DISTANCE(x_1, y_1, x_2, y_2))
+void GameEngine::activate_monsters() {
+    int px, py;
+    player->get_position(px, py);
+    for (int r = -1; r <= 1; r++) {
+        for (int c = -1; c <= 1; c++) {
+            if (r == 0 && c == 0) continue;
+            if (!((0 <= px + c && px + c < MAP_SIZE) && (0 <= py + r && py + r < MAP_SIZE)))
+                continue;
+            if (map[px+c][py+r]->get_unit_type() != UnitType::MONSTER) continue;
+            activate_monster(static_cast<Monster*>(map[px+c][py+r]));
+            // after making sure it is a monster we can use static_cast
+            // to help us crash our program if my logic is wrong
+        }
+    }
+}
+
+void GameEngine::deactivate_monster(Monster const *const monster) { 
+    MonsterNode* prevNode = nullptr;
+    MonsterNode* curNode = head;
+    for (; curNode && curNode->data != monster; prevNode = curNode, curNode = prevNode->next);
+    if (curNode) {
+        if (prevNode) { // has previous node
+            prevNode->next = curNode->next;
+        } else { // is the first node
+            head = curNode->next;
+        }
+        delete curNode;
+    }
+}
+
+void GameEngine::player_move(Direction d) {
+    int dest_x, dest_y, px, py;
+    player->get_position(px, py);
+    switch (d) {
+        case Direction::UP:
+            dest_x = px; dest_y = py + 1;
+            break;
+        case Direction::DOWN:
+            dest_x = px; dest_y = py - 1;
+            break;
+        case Direction::LEFT:
+            dest_x = px - 1; dest_y = py;
+            break;
+        case Direction::RIGHT:
+            dest_x = px + 1; dest_y = py;
+            break;      
+    }
+    if (
+        (dest_x < 0 || dest_x >= MAP_SIZE || dest_y < 0 || dest_y >= MAP_SIZE)
+        || (map[dest_x][dest_y]->is_blocked())
+    ) {
+        player->move(d, 0);
+    } else {
+        player->move(d, 1);
+        map[dest_x][dest_y]->triggered_by(*player);
+    }
+
+}
+
+void GameEngine::player_discover() {
+    int px, py;
+    player->get_position(px, py);
+    for (int r = -2; r <= 2; r++) {
+        for (int c = -2; c <= 2; c++) {
+            if (r == 0 && c == 0) continue;
+            if (!((0 <= px + c && px + c < MAP_SIZE) && (0 <= py + r && py + r < MAP_SIZE)))
+                continue;
+            map[px+c][py+r]->set_discovered();
+        }
+    }
+}
+
+typedef struct {
+    int x;
+    int y;
+} Vec2;
+void GameEngine::player_attack() {
+
+    int atk, def;
+    player->get_atk_def(atk, def);
+    int range = player->get_range();
+
+    // constant code with the function below
+    int px, py, dest_x, dest_y;
+    player->get_position(px, py);
+    Direction facing = player->get_direction();
+
+    Vec2* dest_pos = new Vec2[range];
+    switch (facing) {
+        case Direction::UP:
+            for (int r = 0; r < range; r++) {
+                dest_pos[r].x = px;
+                dest_pos[r].y = py + 1 + r;
+            }
+            break;
+        case Direction::DOWN:
+            for (int r = 0; r < range; r++) {
+                dest_pos[r].x = px;
+                dest_pos[r].y = py - 1 - r;
+            }
+            break;
+        case Direction::LEFT:
+            for (int r = 0; r < range; r++) {
+                dest_pos[r].x = px - 1 - r;
+                dest_pos[r].y = py;
+            }
+            break;
+        case Direction::RIGHT:
+            for (int r = 0; r < range; r++) {
+                dest_pos[r].x = px + 1 + r;
+                dest_pos[r].y = py;
+            }
+            break;      
+    }
+
+    for (int r = 0; r < range; r++) {
+        if (!((0 <= dest_pos[r].x && dest_pos[r].x < MAP_SIZE) && (0 <= dest_pos[r].y && dest_pos[r].y < MAP_SIZE)))
+                continue;
+        if (map[dest_pos[r].x][dest_pos[r].y]->get_unit_type() != UnitType::MONSTER) continue;
+        Monster* monster = static_cast<Monster*>(map[dest_pos[r].x][dest_pos[r].y]);
+        int res = monster->attacked_by(atk);
+        if (res > 0) {
+            deactivate_monster(monster);
+            player->gain_exp(1);
+        } else if (res == 0 && !monster->is_active()) {
+            activate_monster(monster);
+        }
+    }
+    delete dest_pos;
+}
+
+/*
+If the skill is not successfully used (Player::skill() returns 1), do nothing and return directly.
+Else attack the map units using the atk and range specified by the Player::skill() function, similar to the player_attack() function. If an attacked map unit is monster unit:
+If the monster is defeated by this attack (MapUnit::attacked_by() return value > 0), deactivate that monster (by calling deactivate_monster()), and the player will gain 1 EXP (by calling Player::gain_exp())
+If the monster is not defeated by this attack (still valid, MapUnit::attacked_by() return value = 0), and the monster is not active, mark that monster as active and add it to the active monsters list.
+*/
+void GameEngine::player_skill() {
+    int atk, range;
+    range = player->get_range();
+    int res = player->skill(atk, range);
+    if (res == 1) return;
+
+    // exact same thing
+    int px, py, dest_x, dest_y;
+    player->get_position(px, py);
+    Direction facing = player->get_direction();
+
+    Vec2* dest_pos = new Vec2[range];
+    switch (facing) {
+        case Direction::UP:
+            for (int r = 0; r < range; r++) {
+                dest_pos[r].x = px;
+                dest_pos[r].y = py + 1 + r;
+            }
+            break;
+        case Direction::DOWN:
+            for (int r = 0; r < range; r++) {
+                dest_pos[r].x = px;
+                dest_pos[r].y = py - 1 - r;
+            }
+            break;
+        case Direction::LEFT:
+            for (int r = 0; r < range; r++) {
+                dest_pos[r].x = px - 1 - r;
+                dest_pos[r].y = py;
+            }
+            break;
+        case Direction::RIGHT:
+            for (int r = 0; r < range; r++) {
+                dest_pos[r].x = px + 1 + r;
+                dest_pos[r].y = py;
+            }
+            break;      
+    }
+
+    for (int r = 0; r < range; r++) {
+        if (!((0 <= dest_pos[r].x && dest_pos[r].x < MAP_SIZE) && (0 <= dest_pos[r].y && dest_pos[r].y < MAP_SIZE)))
+                continue;
+        if (map[dest_pos[r].x][dest_pos[r].y]->get_unit_type() != UnitType::MONSTER) continue;
+        Monster* monster = static_cast<Monster*>(map[dest_pos[r].x][dest_pos[r].y]);
+        int res = monster->attacked_by(atk);
+        if (res > 0) {
+            deactivate_monster(monster);
+            player->gain_exp(1);
+        } else if (res == 0 && !monster->is_active()) {
+            activate_monster(monster);
+        }
+    }
+    delete dest_pos;
+}
+
+void GameEngine::monster_follow() {
+    MonsterNode* curNode = head;
+    for (; curNode; curNode = curNode->next) {
+        curNode->data->follow(*player, map);
+    }
+}
+
+void GameEngine::monster_act() {
+    MonsterNode* curNode = head;
+    for (; curNode; curNode = curNode->next) {
+        curNode->data->action(*player, map);
+    }
+}

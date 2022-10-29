@@ -1,0 +1,86 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+Windows version: WinVer=105;Rel=2009;Build=22000;Edition=Core
+Dr. Memory results for pid 178584: "cmd.exe"
+Application cmdline: "C:\WINDOWS\system32\cmd.exe /c cls"
+Recorded 118 suppression(s) from default C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin64\suppress-default.txt
+
+WARNING: application is missing line number information.
+
+Error #1: UNINITIALIZED READ: reading 0x000000803defecd4-0x000000803defecd8 4 byte(s) within 0x000000803defecd0-0x000000803defecd8
+# 0 system call NtQueryDirectoryFileEx parameter value #6
+# 1 KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal            +0x4fe    (0x00007ffe14f7a40f <KERNELBASE.dll+0x3a40f>)
+# 2 KERNELBASE.dll!FindFirstFileW                                      +0x17     (0x00007ffe14f7abd8 <KERNELBASE.dll+0x3abd8>)
+# 3 cmd.exe!?                                                          +0x0      (0x00007ff75c123929 <cmd.exe+0x13929>)
+# 4 cmd.exe!?                                                          +0x0      (0x00007ff75c124db9 <cmd.exe+0x14db9>)
+# 5 cmd.exe!?                                                          +0x0      (0x00007ff75c12338c <cmd.exe+0x1338c>)
+# 6 cmd.exe!?                                                          +0x0      (0x00007ff75c125cfd <cmd.exe+0x15cfd>)
+# 7 cmd.exe!?                                                          +0x0      (0x00007ff75c124615 <cmd.exe+0x14615>)
+# 8 cmd.exe!?                                                          +0x0      (0x00007ff75c1298e1 <cmd.exe+0x198e1>)
+# 9 ntdll.dll!RtlUserThreadStart
+Note: @0:00:01.278 in thread 158976
+
+Error #2: UNINITIALIZED READ: reading 0x000000803defede4-0x000000803defede5 1 byte(s)
+# 0 KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal+0x5a6    (0x00007ffe14f7a4b6 <KERNELBASE.dll+0x3a4b6>)
+# 1 KERNELBASE.dll!FindFirstFileW                         +0x17     (0x00007ffe14f7abd8 <KERNELBASE.dll+0x3abd8>)
+# 2 cmd.exe!?                                             +0x0      (0x00007ff75c123929 <cmd.exe+0x13929>)
+# 3 cmd.exe!?                                             +0x0      (0x00007ff75c124db9 <cmd.exe+0x14db9>)
+# 4 cmd.exe!?                                             +0x0      (0x00007ff75c12338c <cmd.exe+0x1338c>)
+# 5 cmd.exe!?                                             +0x0      (0x00007ff75c125cfd <cmd.exe+0x15cfd>)
+# 6 cmd.exe!?                                             +0x0      (0x00007ff75c124615 <cmd.exe+0x14615>)
+# 7 cmd.exe!?                                             +0x0      (0x00007ff75c1298e1 <cmd.exe+0x198e1>)
+# 8 ntdll.dll!RtlUserThreadStart
+Note: @0:00:01.284 in thread 158976
+Note: instruction: cmp    0x44(%rbp) $0x1a
+
+Error #3: UNINITIALIZED READ: reading register eax
+# 0 KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal+0x571    (0x00007ffe14f7a481 <KERNELBASE.dll+0x3a481>)
+# 1 KERNELBASE.dll!FindFirstFileW                         +0x17     (0x00007ffe14f7abd8 <KERNELBASE.dll+0x3abd8>)
+# 2 cmd.exe!?                                             +0x0      (0x00007ff75c123929 <cmd.exe+0x13929>)
+# 3 cmd.exe!?                                             +0x0      (0x00007ff75c124db9 <cmd.exe+0x14db9>)
+# 4 cmd.exe!?                                             +0x0      (0x00007ff75c12338c <cmd.exe+0x1338c>)
+# 5 cmd.exe!?                                             +0x0      (0x00007ff75c125cfd <cmd.exe+0x15cfd>)
+# 6 cmd.exe!?                                             +0x0      (0x00007ff75c124615 <cmd.exe+0x14615>)
+# 7 cmd.exe!?                                             +0x0      (0x00007ff75c1298e1 <cmd.exe+0x198e1>)
+# 8 ntdll.dll!RtlUserThreadStart
+Note: @0:00:01.303 in thread 158976
+Note: instruction: cmp    %eax %ecx
+
+Error #4: UNINITIALIZED READ: reading register esi
+# 0 KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal+0x5de    (0x00007ffe14f7a4ee <KERNELBASE.dll+0x3a4ee>)
+# 1 KERNELBASE.dll!FindFirstFileW                         +0x17     (0x00007ffe14f7abd8 <KERNELBASE.dll+0x3abd8>)
+# 2 cmd.exe!?                                             +0x0      (0x00007ff75c123929 <cmd.exe+0x13929>)
+# 3 cmd.exe!?                                             +0x0      (0x00007ff75c124db9 <cmd.exe+0x14db9>)
+# 4 cmd.exe!?                                             +0x0      (0x00007ff75c12338c <cmd.exe+0x1338c>)
+# 5 cmd.exe!?                                             +0x0      (0x00007ff75c125cfd <cmd.exe+0x15cfd>)
+# 6 cmd.exe!?                                             +0x0      (0x00007ff75c124615 <cmd.exe+0x14615>)
+# 7 cmd.exe!?                                             +0x0      (0x00007ff75c1298e1 <cmd.exe+0x198e1>)
+# 8 ntdll.dll!RtlUserThreadStart
+Note: @0:00:01.315 in thread 158976
+Note: instruction: bt     %esi $0x0000000a
+
+===========================================================================
+FINAL SUMMARY:
+
+DUPLICATE ERROR COUNTS:
+	Error #   1:     18
+	Error #   4:      2
+
+SUPPRESSIONS USED:
+
+ERRORS FOUND:
+      0 unique,     0 total unaddressable access(es)
+      4 unique,    22 total uninitialized access(es)
+      0 unique,     0 total invalid heap argument(s)
+      0 unique,     0 total GDI usage error(s)
+      0 unique,     0 total handle leak(s)
+      0 unique,     0 total warning(s)
+      0 unique,     0 total,      0 byte(s) of leak(s)
+      0 unique,     0 total,      0 byte(s) of possible leak(s)
+ERRORS IGNORED:
+      7 potential error(s) (suspected false positives)
+         (details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-cmd.exe.178584.000\potential_errors.txt)
+      3 potential leak(s) (suspected false positives)
+         (details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-cmd.exe.178584.000\potential_errors.txt)
+    129 unique,   133 total,  34473 byte(s) of still-reachable allocation(s)
+         (re-run with "-show_reachable" for details)
+Details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-cmd.exe.178584.000\results.txt

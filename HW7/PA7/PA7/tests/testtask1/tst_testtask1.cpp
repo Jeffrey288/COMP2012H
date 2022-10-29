@@ -32,6 +32,8 @@ void TestTask1::testAnalyzeGuess_data() {
     QTest::newRow("ASSET vs. SLEEP") << "asset" << "sleep" << (Color5){GREY, YELLOW, GREY, GREEN, GREY};
     QTest::newRow("PLUMP vs. SLEEP") << "plump" << "sleep" << (Color5){GREY, GREEN, GREY, GREY, GREEN};
     QTest::newRow("GEESE vs. SLEEP") << "geese" << "sleep" << (Color5){GREY, YELLOW, GREEN, YELLOW, GREY};
+    QTest::newRow("CRAVE vs. SLAPS") << "crave" << "slaps" << (Color5){GREY, GREY, GREEN, GREY, GREY};
+    QTest::newRow("HIPPO vs. PLATE") << "hippo" << "plate" << (Color5){GREY, GREY, YELLOW, GREY, GREY};
 
 }
 
@@ -53,6 +55,9 @@ void TestTask1::testAnalyzeGuess()
     QCOMPARE(actualColor, expectedColor);
 }
 
+#define yc YELLOW,
+#define gc GREEN,
+#define hc GREY,
 void TestTask1::testAnalyzeGuessLong_data() {
     QTest::addColumn<QString>("guess");
     QTest::addColumn<QString>("answer");

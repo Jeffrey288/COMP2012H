@@ -76,14 +76,27 @@ void Keyboard::enterKeyPressed() const {
 void Keyboard::updateKeyColor(const QChar& key, const QColor& color) {
     Key* tar = keys[key.toUpper().toLatin1() - 'A'];
 //    qDebug() << tar->getColor().name() << color << (tar->getColor(). == Qt::gray) << (tar->getColor() == Qt::yellow);
+
+//    // works but not proper
+//    if ((
+//            (tar->getColor() == Qt::lightGray) && (color == GREY || color == YELLOW || color == GREEN)
+//        ) || (
+//            (tar->getColor() == GREY) && (color == YELLOW || color == GREEN)
+//        ) || (
+//            tar->getColor() == YELLOW && color == GREEN
+//       )) {
+//            tar->setColor(color);
+//    }
+
+    // should be better?
     if ((
-            (tar->getColor() == Qt::lightGray) && (color == GREY || color == YELLOW || color == GREEN)
+            (tar->getColor() == GREEN) && (color == YELLOW || color == GREY)
         ) || (
-            (tar->getColor() == GREY) && (color == YELLOW || color == GREEN)
-        ) || (
-            tar->getColor() == YELLOW && color == GREEN
+            tar->getColor() == YELLOW && color == GREY
        )) {
-            tar->setColor(color);
+           return;
+    } else {
+         tar->setColor(color);
     }
 }
 

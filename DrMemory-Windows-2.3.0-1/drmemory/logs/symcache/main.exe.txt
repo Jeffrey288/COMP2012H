@@ -1,15 +1,15 @@
 Dr. Memory symbol cache version 15
-       391,329289,0,0,359627,1666196391,299008
+       391,1340214,0,0,1351978,1666535344,1306624
 1
 __acrt_heap,0x0
-operator delete,0x6d40
+operator delete,0xdeb0
 std::_DebugHeapDelete<>,0x0
 Concurrency::details::Security::EncodePointer,0x0
 operator delete[] nothrow,0x0
-operator delete[],0x6d48
+operator delete[],0x0
 operator delete nothrow,0x0
 operator new nothrow,0x0
-operator new,0x6d30
+operator new,0xdea0
 operator new[] nothrow,0x0
-operator new[],0x6d38
+operator new[],0xdea8
 _crtheap,0x0

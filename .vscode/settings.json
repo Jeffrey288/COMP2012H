@@ -64,7 +64,9 @@
         "string": "cpp",
         "thread": "cpp",
         "xlocmes": "cpp",
-        "xloctime": "cpp"
+        "xloctime": "cpp",
+        "*.tpp": "cpp",
+        "random": "cpp"
     },
     "cmake.sourceDirectory": "${workspaceFolder}/DrMemory-Windows-2.3.0-1/drmf/samples"
 }

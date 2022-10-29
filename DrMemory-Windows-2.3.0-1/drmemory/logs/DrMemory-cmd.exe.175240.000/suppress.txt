@@ -1,0 +1,108 @@
+# File for suppressing errors found in pid 175240: "cmd.exe"
+
+# Suppression for Error #1
+UNINITIALIZED READ
+name=Error #1 (update to meaningful name)
+system call NtQueryDirectoryFileEx parameter value #6
+KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal
+KERNELBASE.dll!FindFirstFileW
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #1:
+UNINITIALIZED READ
+name=Error #1 (update to meaningful name)
+system call NtQueryDirectoryFileEx parameter value #6
+<KERNELBASE.dll+0x3a40f>
+<KERNELBASE.dll+0x3abd8>
+<cmd.exe+0x13929>
+<cmd.exe+0x14db9>
+<cmd.exe+0x1338c>
+<cmd.exe+0x15cfd>
+<cmd.exe+0x14615>
+<cmd.exe+0x198e1>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #2
+UNINITIALIZED READ
+name=Error #2 (update to meaningful name)
+KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal
+KERNELBASE.dll!FindFirstFileW
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #2:
+UNINITIALIZED READ
+name=Error #2 (update to meaningful name)
+<KERNELBASE.dll+0x3a4b6>
+<KERNELBASE.dll+0x3abd8>
+<cmd.exe+0x13929>
+<cmd.exe+0x14db9>
+<cmd.exe+0x1338c>
+<cmd.exe+0x15cfd>
+<cmd.exe+0x14615>
+<cmd.exe+0x198e1>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #3
+UNINITIALIZED READ
+name=Error #3 (update to meaningful name)
+KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal
+KERNELBASE.dll!FindFirstFileW
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #3:
+UNINITIALIZED READ
+name=Error #3 (update to meaningful name)
+<KERNELBASE.dll+0x3a481>
+<KERNELBASE.dll+0x3abd8>
+<cmd.exe+0x13929>
+<cmd.exe+0x14db9>
+<cmd.exe+0x1338c>
+<cmd.exe+0x15cfd>
+<cmd.exe+0x14615>
+<cmd.exe+0x198e1>
+<ntdll.dll+0x485b>
+
+# Suppression for Error #4
+UNINITIALIZED READ
+name=Error #4 (update to meaningful name)
+KERNELBASE.dll!RegKrnGetClassesEnumTableAddressInternal
+KERNELBASE.dll!FindFirstFileW
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+cmd.exe!*
+ntdll.dll!RtlUserThreadStart
+
+## Mod+offs-style suppression for Error #4:
+UNINITIALIZED READ
+name=Error #4 (update to meaningful name)
+<KERNELBASE.dll+0x3a4ee>
+<KERNELBASE.dll+0x3abd8>
+<cmd.exe+0x13929>
+<cmd.exe+0x14db9>
+<cmd.exe+0x1338c>
+<cmd.exe+0x15cfd>
+<cmd.exe+0x14615>
+<cmd.exe+0x198e1>
+<ntdll.dll+0x485b>
+

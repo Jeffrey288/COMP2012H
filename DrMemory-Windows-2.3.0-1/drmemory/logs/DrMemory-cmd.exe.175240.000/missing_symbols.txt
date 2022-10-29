@@ -1,0 +1,5 @@
+C:\WINDOWS\system32\cmd.exe
+C:\WINDOWS\System32\KERNELBASE.dll
+C:\WINDOWS\System32\ucrtbase.dll
+C:\WINDOWS\System32\combase.dll
+C:\WINDOWS\System32\RPCRT4.dll
