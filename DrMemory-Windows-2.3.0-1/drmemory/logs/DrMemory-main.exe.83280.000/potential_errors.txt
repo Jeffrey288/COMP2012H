@@ -1,0 +1,50 @@
+Dr. Memory version 2.3.0 build 1 built on Feb  6 2020 06:07:09
+Dr. Memory errors that are likely to be false positives, for pid 83280: "main.exe"
+These errors matched the blacklist 'C:\WINDOWS*.d??' for 4 frames.
+Run with -lib_blacklist_frames 0 to treat these as regular errors.
+If these are all false positives and your focus is unaddressable errors, consider running with -light to skip all uninitialized reads and leaks for higher performance.
+
+Potential Error #1: HANDLE LEAK: KERNEL handle 0x0000000000000164 and 0 similar handle(s) were opened but not closed:
+# 0 system call NtCreateEvent                
+# 1 KERNELBASE.dll!CreateEventA                            +0xa2     (0x00007fff36d23a83 <KERNELBASE.dll+0x83a83>)
+# 2 libwinpthread-1.dll!?                                  +0x0      (0x00000000649445a2 <libwinpthread-1.dll+0x45a2>)
+# 3 libwinpthread-1.dll!?                                  +0x0      (0x0000000064944d96 <libwinpthread-1.dll+0x4d96>)
+# 4 libstdc++-6.dll!?                                      +0x0      (0x000000006fcdd0d8 <libstdc++-6.dll+0x9d0d8>)
+# 5 libstdc++-6.dll!?                                      +0x0      (0x000000006fce0ff6 <libstdc++-6.dll+0xa0ff6>)
+# 6 libstdc++-6.dll!?                                      +0x0      (0x000000006fcf636b <libstdc++-6.dll+0xb636b>)
+# 7 __static_initialization_and_destruction_0
+# 8 _GLOBAL__sub_I__ZN6objectD2Ev
+# 9 __do_global_ctors
+#10 __tmainCRTStartup
+#11 .l_start
+#12 ntdll.dll!RtlUserThreadStart
+Note: @0:00:03.838 in thread 87716
+
+Potential Error #2: HANDLE LEAK: KERNEL handle 0x000000000000019c and 0 similar handle(s) were opened but not closed:
+# 0 system call NtDuplicateObject            
+# 1 KERNELBASE.dll!DuplicateHandle                         +0x4b     (0x00007fff36d1fa4c <KERNELBASE.dll+0x7fa4c>)
+# 2 libwinpthread-1.dll!?                                  +0x0      (0x000000006494460b <libwinpthread-1.dll+0x460b>)
+# 3 libwinpthread-1.dll!?                                  +0x0      (0x0000000064944d96 <libwinpthread-1.dll+0x4d96>)
+# 4 libstdc++-6.dll!?                                      +0x0      (0x000000006fcdd0d8 <libstdc++-6.dll+0x9d0d8>)
+# 5 libstdc++-6.dll!?                                      +0x0      (0x000000006fce0ff6 <libstdc++-6.dll+0xa0ff6>)
+# 6 libstdc++-6.dll!?                                      +0x0      (0x000000006fcf636b <libstdc++-6.dll+0xb636b>)
+# 7 __static_initialization_and_destruction_0
+# 8 _GLOBAL__sub_I__ZN6objectD2Ev
+# 9 __do_global_ctors
+#10 __tmainCRTStartup
+#11 .l_start
+#12 ntdll.dll!RtlUserThreadStart
+Note: @0:00:03.839 in thread 87716
+
+DUPLICATE POTENTIAL ERROR COUNTS:
+
+POTENTIAL ERRORS FOUND:
+      0 unique,     0 total potential unaddressable access(es)
+      0 unique,     0 total potential uninitialized access(es)
+      0 unique,     0 total potential invalid heap argument(s)
+      0 unique,     0 total potential GDI usage error(s)
+      2 unique,     2 total potential handle leak(s)
+      0 unique,     0 total potential warning(s)
+      0 unique,     0 total,      0 byte(s) of potential leak(s)
+      0 unique,     0 total,      0 byte(s) of potential possible leak(s)
+Details: C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\drmemory\logs\DrMemory-main.exe.83280.000\potential_errors.txt

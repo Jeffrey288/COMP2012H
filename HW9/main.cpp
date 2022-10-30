@@ -246,6 +246,32 @@ int main() {
         cout << "cast back to int: " << a.cast_back<int>() << endl;
         
     } else if (test == 20) {
+
+        // Bonus cases
+        object a = 1; //Storing int
+        object b = 2; //Storing another int
+        object c = a + b; //OK!! `c` now stores an int of 3
+        std::cout << "a: " << a << ", b: " << b << " -> c: " << c << std::endl;
+
+        object d = 1; //Storing int
+        object e = 1.5; //Storing double
+        // object f = d + e; //Error thrown, as type int != double
+        // std::cout << "d: " << d << ", e: " << e << " -> f: " << f << std::endl;
+
+        object g = 1; //Storing int
+        object h = 1; //Storing another int
+        bool i = (g == h); //True, as both storing int and 1 == 1
+        std::cout << "g: " << g << ", h: " << h << " -> i: " << i << std::endl;
+
+        object j = 2; //Storing int
+        object k = 2.0; //Storing double
+        bool l = (j == k); //False, as one is double and one is int
+        std::cout << "j: " << j << ", k: " << k << " -> l: " << l << std::endl;
+
+        object m = string("123"); 
+        object n = string("mother");
+        std::cout << (m + n) + (n + m) << std::endl; //Outputs 123
+
         // Just for fun, this is not in the actual test case.
         // You can have fun with this if you have implemented Part I&II!
         Skiplist<int, object> multi_map;

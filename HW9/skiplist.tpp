@@ -63,6 +63,7 @@ Skiplist<K, V>& Skiplist<K, V>::operator=(const Skiplist<K, V>& other) {
     int height = other.head->levels;
     delete [] this->head->nexts;
     this->head->nexts = new Node*[height];
+    this->head->levels = height;
 
     // Stores the current rightmost node of each level
     Node** rightmostNodes = new Node*[height];
@@ -210,7 +211,8 @@ bool Skiplist<K,V>::remove(const K& remove_key) {
         Node* delNode = curNode;
         int i;
         for (i = 0; i < head->levels; i++) {
-            rightmostNodes[i]->nexts[i] = delNode->nexts[i]; // reroute every layer
+            if (rightmostNodes[i]->nexts[i])
+                rightmostNodes[i]->nexts[i] = delNode->nexts[i]; // reroute every layer
             if (head->nexts[i] == nullptr) break;
         }
         if (i < head->levels) {
