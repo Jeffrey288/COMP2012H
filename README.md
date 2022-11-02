@@ -17,6 +17,8 @@ C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin\drmemory.
 zip pa9.zip skiplist.tpp object.hpp object.tpp
 C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin\drmemory.exe -- C:\Users\pinkp\Documents\GitHub\COMP2012H\HW9\main.exe
 
+# PA10
+zip PA10.zip dataset.h dataset.cpp train_test.cpp
 ```
 
 ## Wall of Shame

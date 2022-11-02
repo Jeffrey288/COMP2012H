@@ -1,6 +1,7 @@
 #include <algorithm>
 #include "dataset.h"
 #include "nn.h"
+#include <numeric>
 using namespace std;
 
 void training(NN&, dataset&, const size_t&);

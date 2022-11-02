@@ -2,6 +2,7 @@
 #define nn_H
 #include <array>
 #include <vector>
+#include <fstream>
 
 using namespace std;
 
