@@ -25,7 +25,7 @@ zip PA10.zip dataset.h dataset.cpp train_test.cpp
 ### Mistakes in PA4 (-16.67 marks)
 ```C
     int num = from;
-    ...
+    ... 
     while (num < to && num >= 2) { 
         // if from = to, then the while loop will immediately exit :D
         // that's why my program won't work for 1 input
@@ -38,7 +38,7 @@ zip PA10.zip dataset.h dataset.cpp train_test.cpp
 > 
 > I don't know how I should tell this to you, your program takes only 0.01 or 0.02 (s) in the bonus test case, and if I let it factorize two numbers instead of one, it also passes the edge case. So literally you wrote the fastest program in the whole class. I am sorry that you didn't get the bonus this time. Maybe next time you can let me know in the appeal stage so that we can discuss it. I am sure you will have good performance in the remaining of the semester, for a long time, you were the only one who submitted Qt assignment, and even the designer Dzung is impressed.
 >
-> Best,
+> Best, \
 > (Censored)
 
 ### Mistakes in PA5 (-6 bonus marks)

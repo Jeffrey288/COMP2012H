@@ -158,7 +158,8 @@ array<uint8_t, PIXELS> dataset::compound_augment_image(array<uint8_t, PIXELS>& i
 		this->crop_image(img, (rand_num-ROWS)/2, (rand_num-COLS)/2, ROWS, COLS);
 	}
 	else{
-		this->padding_image(img, (ROWS-rand_num)/2, ROWS-(ROWS-rand_num)/2, (COLS-rand_num)/2, COLS-(COLS-rand_num)/2);
+		this->padding_image(img, (ROWS-rand_num)/2, ROWS-(ROWS-rand_num)/2-rand_num, (COLS-rand_num)/2, COLS-(COLS-rand_num)/2-rand_num);
+		// this->padding_image(img, (ROWS-rand_num)/2, ROWS-(ROWS-rand_num)/2, (COLS-rand_num)/2, COLS-(COLS-rand_num)/2);
 	}
 
 	array<uint8_t, PIXELS> img_ar_out = convert_image_dt(img);
@@ -169,16 +170,18 @@ array<uint8_t, PIXELS> dataset::compound_augment_image(array<uint8_t, PIXELS>& i
 
 void dataset::shift_image(img_dt& img, const enum shift_type dir, const size_t p, const uint8_t value){
 	// START OF YOUR IMPLEMENTATION
+	// cout << p << endl;
 	int rows = img.size();
 	int cols = img.at(0).size();
+	// cout << rows << " " << cols << endl;
 	switch (dir) {
 		case UP:
 			crop_image(img, p, 0, rows-p, cols);
-			padding_image(img, p, 0, 0, 0, value);
+			padding_image(img, 0, p, 0, 0, value);
 			break;
 		case DOWN:
-			crop_image(img, p, 0, rows-p, cols);
-			padding_image(img, 0, p, 0, 0, value);
+			crop_image(img, 0, 0, rows-p, cols);
+			padding_image(img, p, 0, 0, 0, value);
 			break;
 		case LEFT:
 			crop_image(img, 0, p, rows, cols-p);
@@ -217,10 +220,10 @@ void dataset::resize_image(img_dt& img, const size_t new_rows, const size_t new_
 	// START OF YOUR IMPLEMENTATION
 	int rows = img.size();
 	int cols = img.at(0).size();
-	img_dt new_img(new_rows, deque<uint8_t>(0, new_cols));
+	img_dt new_img(new_rows, deque<uint8_t>(new_cols, 0));
 	for (int r = 0; r < new_rows; r++) {
 		for (int c = 0; c < new_cols; c++) {
-			cols = img[(int) 
+			new_img[r][c] = img[(int) 
 					((float) (r + 0.5) / new_rows * rows) // get integer part
 				][ (int) 
 					((float) (c + 0.5) / new_cols * cols) 
@@ -239,8 +242,12 @@ void dataset::crop_image(img_dt& img, const size_t y0, const size_t x0, const si
 	img.erase(img.begin() + new_rows, img.end());
 	for (img_dt::iterator it = img.begin(); it != img.end(); it++) {
 		it->erase(it->begin(), it->begin() + x0);
-		it->erase(it->begin() + new_rows, it->end());
+		it->erase(it->begin() + new_cols, it->end());
+		// cout << it->size() << endl;
 	}	
+	// cout << img.size() << endl;
+	// print_image(img);
+	// getchar();
 	// END OF YOUR IMPLEMENTATION
 }
 
@@ -248,13 +255,17 @@ void dataset::crop_image(img_dt& img, const size_t y0, const size_t x0, const si
 void dataset::padding_image(img_dt& img, const size_t top, const size_t down, const size_t left, const size_t right, const uint8_t value){
 	// START OF YOUR IMPLEMENTATION
 	// first, pad the existing rows
-	int newCol = img.at(0).size() + left + right;
+	int newSize = img.at(0).size() + left + right; 
+	// cout << "newSIze: " << newSize << endl;
 	for (img_dt::iterator it = img.begin(); it != img.end(); it++) {
 		it->insert(it->begin(), left, value);
 		it->insert(it->end(), right, value);
 	}
-	img.insert(img.begin(), top, deque<uint8_t>(value, newCol));
-	img.insert(img.end(), down, deque<uint8_t>(value, newCol));
+	deque<uint8_t> temp(newSize, value);
+	// cout << temp.size() << " " << top << " " << down << endl;
+	img.insert(img.begin(), top, temp);
+	img.insert(img.end(), down, temp);
+	// for (img_dt::iterator it = img.begin(); it != img.end(); it++) cout << it->size() << endl;
 	// END OF YOUR IMPLEMENTATION
 }
 
@@ -357,6 +368,9 @@ void dataset::print_image(const img_dt& img) const {
 	for (int r = 0; r < rows; r++) {
 		if (img.at(r).size() != cols) // just for checking
 			throw runtime_error("print_image: img is not rectangular.");
+		// for (deque<uint8_t>::const_iterator it = img.at(r).begin(); it != img.at(r).end(); it++) {
+		// 	printf("%4d", *it);
+		// }
 		for (int c = 0; c < cols; c++) {
 			printf("%4d", img[r][c]);
 		}

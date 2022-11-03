@@ -3,6 +3,7 @@
 #include "nn.h"
 #include <numeric>
 using namespace std;
+#include <iostream>
 
 void training(NN&, dataset&, const size_t&);
 void testing(NN&, dataset&);
@@ -53,22 +54,25 @@ void training(NN& nn, dataset& data, const size_t& epoch){
 void testing(NN& nn, dataset& data){
 	// START OF YOUR IMPLEMENTATION
 	int data_size = data.get_data_size(TEST_LABEL);
+	int label_frequencies[10] = {0};
 	int frequency[10] = {0};
 	for (int i = 0; i < data_size; i++) {
-		vector<float> image = data.get_a_normalized_image(TEST_LABEL, i);
+		vector<float> image = data.get_a_normalized_image(TEST_IMAGE, i);
 		vector<float> probs = nn(image);
 		int max_prob = 0;
 		for (int i = 1; i <= 9; i++) {
 			if (probs[i] > probs[max_prob]) max_prob = i;
 		}
-		if (data.get_a_label(TEST_LABEL, i) == max_prob)
+		if (data.get_a_label(TEST_LABEL, i) == max_prob) {
 			frequency[max_prob]++;
+		}
+		label_frequencies[data.get_a_label(TEST_LABEL, i)]++;
 	}
 	int sum = 0;
 	for (int i = 0; i <= 9; i++) sum += frequency[i];
-	printf("Overall accuracy: %.2f%\n", (float) sum / data_size);
+	printf("Overall accuracy: %.2f%\n", (float) sum / data_size * 100);
 	for (int i = 0; i <= 9; i++) {
-		printf("Accuracy for digit %d: %.2f%\n", i, (float) frequency[i] / data_size);
+		printf("Accuracy for digit %d: %.2f%\n", i, (float) frequency[i] / label_frequencies[i] * 100);
 	}
 	// END OF YOUR IMPLEMENTATION
 }

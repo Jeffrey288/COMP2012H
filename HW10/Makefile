@@ -9,7 +9,7 @@ endif
 # Definition of variables
 SRCS = main.cpp dataset.cpp nn.cpp train_test.cpp
 OBJS = $(SRCS:.cpp=.o)
-CPPFLAGS = -std=c++11 -g -Ofast -Iincludes -Wpedantic
+CPPFLAGS = -std=c++11 -g -Ofast -Iincludes -Wpedantic -static-libstdc++ 
 
 all: $(EXE)
 
