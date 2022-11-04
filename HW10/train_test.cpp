@@ -1,9 +1,9 @@
 #include <algorithm>
+#include <numeric>
 #include "dataset.h"
 #include "nn.h"
-#include <numeric>
-using namespace std;
 #include <iostream>
+using namespace std;
 
 void training(NN&, dataset&, const size_t&);
 void testing(NN&, dataset&);
@@ -60,9 +60,13 @@ void testing(NN& nn, dataset& data){
 		vector<float> image = data.get_a_normalized_image(TEST_IMAGE, i);
 		vector<float> probs = nn(image);
 		int max_prob = 0;
+		// cout << probs[0] << " ";
 		for (int i = 1; i <= 9; i++) {
 			if (probs[i] > probs[max_prob]) max_prob = i;
+			// cout << probs[i] << " ";
 		}
+		// cout << max_prob << " " << data.get_a_label(TEST_LABEL, i) << endl;
+		
 		if (data.get_a_label(TEST_LABEL, i) == max_prob) {
 			frequency[max_prob]++;
 		}

@@ -1,8 +1,8 @@
 #ifndef nn_H
 #define nn_H
 #include <array>
-#include <vector>
 #include <fstream>
+#include <vector>
 
 using namespace std;
 

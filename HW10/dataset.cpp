@@ -159,7 +159,6 @@ array<uint8_t, PIXELS> dataset::compound_augment_image(array<uint8_t, PIXELS>& i
 	}
 	else{
 		this->padding_image(img, (ROWS-rand_num)/2, ROWS-(ROWS-rand_num)/2-rand_num, (COLS-rand_num)/2, COLS-(COLS-rand_num)/2-rand_num);
-		// this->padding_image(img, (ROWS-rand_num)/2, ROWS-(ROWS-rand_num)/2, (COLS-rand_num)/2, COLS-(COLS-rand_num)/2);
 	}
 
 	array<uint8_t, PIXELS> img_ar_out = convert_image_dt(img);
