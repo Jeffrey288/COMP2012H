@@ -9,6 +9,7 @@ g++ -o graded official_grader.cpp Deque.cpp .\Deque_Iterator.cpp; .\graded
 # PA6
 cd "c:\Users\pinkp\Documents\GitHub\COMP2012H\HW6\"; g++ -Wall -Wextra -pedantic -std=c++11 -o main main.cpp Database.cpp String.cpp Table.cpp; .\main.exe 
 C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin\drmemory.exe -- C:\Users\pinkp\Documents\GitHub\COMP2012H\HW6\main.exe
+Compare-Object (cat output1.txt) (cat output2.txt)
 
 # PA8
 C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin\drmemory.exe -- C:\Users\pinkp\Documents\GitHub\COMP2012H\HW8\main.exe

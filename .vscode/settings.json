@@ -71,7 +71,8 @@
         "list": "cpp",
         "set": "cpp",
         "unordered_set": "cpp",
-        "xhash": "cpp"
+        "xhash": "cpp",
+        "stack": "cpp"
     },
     "cmake.sourceDirectory": "${workspaceFolder}/DrMemory-Windows-2.3.0-1/drmf/samples"
 }

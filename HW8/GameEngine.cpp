@@ -199,17 +199,11 @@ void GameEngine::create_player(int x, int y, const string &name, Role role) {
 void GameEngine::activate_monster(Monster *monster) {
     if (monster->is_valid() && !monster->is_active()) {
         monster->set_active();
-        MonsterNode* newNode = new MonsterNode;
+        MonsterNode* newNode = new MonsterNode; // set up new node
         newNode->data = monster;
-        newNode->next = nullptr;
-        if (head) {
-            MonsterNode* prevNode = nullptr;
-            MonsterNode* curNode = head;
-            for (; curNode; prevNode = curNode, curNode = prevNode->next);
-            prevNode->next = newNode;     
-        } else {
-            head = newNode;
-        }
+
+        newNode->next = head;
+        head = newNode;
     }
 }
 
@@ -222,8 +216,8 @@ Activate the Monster units in the surrounding (-1 ≤ x ≤ 1, -1 ≤ y ≤ 1, w
 void GameEngine::activate_monsters() {
     int px, py;
     player->get_position(px, py);
-    for (int r = -1; r <= 1; r++) {
-        for (int c = -1; c <= 1; c++) {
+    for (int c = -1; c <= 1; c++) {
+        for (int r = -1; r <= 1; r++) {
             if (r == 0 && c == 0) continue;
             if (!((0 <= px + c && px + c < MAP_SIZE) && (0 <= py + r && py + r < MAP_SIZE)))
                 continue;
@@ -271,6 +265,7 @@ void GameEngine::player_move(Direction d) {
         || (map[dest_x][dest_y]->is_blocked())
     ) {
         player->move(d, 0);
+        map[px][py]->triggered_by(*player);
     } else {
         player->move(d, 1);
         map[dest_x][dest_y]->triggered_by(*player);
@@ -337,14 +332,16 @@ void GameEngine::player_attack() {
     for (int r = 0; r < range; r++) {
         if (!((0 <= dest_pos[r].x && dest_pos[r].x < MAP_SIZE) && (0 <= dest_pos[r].y && dest_pos[r].y < MAP_SIZE)))
                 continue;
-        if (map[dest_pos[r].x][dest_pos[r].y]->get_unit_type() != UnitType::MONSTER) continue;
-        Monster* monster = static_cast<Monster*>(map[dest_pos[r].x][dest_pos[r].y]);
-        int res = monster->attacked_by(atk);
-        if (res > 0) {
-            deactivate_monster(monster);
-            player->gain_exp(1);
-        } else if (res == 0 && !monster->is_active()) {
-            activate_monster(monster);
+        int res = map[dest_pos[r].x][dest_pos[r].y]->attacked_by(atk);
+        if (map[dest_pos[r].x][dest_pos[r].y]->get_unit_type() == UnitType::MONSTER) {
+            Monster* monster = static_cast<Monster*>(map[dest_pos[r].x][dest_pos[r].y]);
+            if (res > 0) {
+                deactivate_monster(monster);
+                player->gain_exp(1);
+            } else if (res == 0 && !monster->is_active()) {
+                activate_monster(monster);
+                monster->set_discovered();
+            }
         }
     }
     delete dest_pos;
@@ -398,14 +395,15 @@ void GameEngine::player_skill() {
     for (int r = 0; r < range; r++) {
         if (!((0 <= dest_pos[r].x && dest_pos[r].x < MAP_SIZE) && (0 <= dest_pos[r].y && dest_pos[r].y < MAP_SIZE)))
                 continue;
-        if (map[dest_pos[r].x][dest_pos[r].y]->get_unit_type() != UnitType::MONSTER) continue;
-        Monster* monster = static_cast<Monster*>(map[dest_pos[r].x][dest_pos[r].y]);
-        int res = monster->attacked_by(atk);
-        if (res > 0) {
-            deactivate_monster(monster);
-            player->gain_exp(1);
-        } else if (res == 0 && !monster->is_active()) {
-            activate_monster(monster);
+        int res = map[dest_pos[r].x][dest_pos[r].y]->attacked_by(atk);
+        if (map[dest_pos[r].x][dest_pos[r].y]->get_unit_type() == UnitType::MONSTER) {
+            Monster* monster = static_cast<Monster*>(map[dest_pos[r].x][dest_pos[r].y]);
+            if (res > 0) {
+                deactivate_monster(monster);
+                player->gain_exp(1);
+            } else if (res == 0 && !monster->is_active()) {
+                activate_monster(monster);
+            }
         }
     }
     delete dest_pos;
