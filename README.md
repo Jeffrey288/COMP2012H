@@ -55,3 +55,13 @@ Not checking clarifications before the last day of submissions resulting in wron
 Chao's mistake: forgetting to remove a line
 
 Follow-up: PA was regraded and they now accept a different print function
+
+### Mistakes in PA7 (-1.875 marks and -0.4 bonus marks)
+```C++
+// incorrect attempt
+        for (int i = 0; i < length; i++) {
+            correctLetters[guess[i].toLower().toLatin1() - 'a'] = (colors[i] == YELLOW || colors[i] == GREEN);
+        }
+// correct answer
+        correctLetters[guesses[curGuess][i]->getLetter().unicode() - 'a'] |= (colors[i] != GREY);
+```
