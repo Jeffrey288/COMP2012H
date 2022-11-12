@@ -45,6 +45,8 @@ Skiplist<K, V>::~Skiplist() {
 
 template <typename K, typename V>
 Skiplist<K, V>& Skiplist<K, V>::operator=(const Skiplist<K, V>& other) {
+    if (&other == this) return *this;
+    
     // First, delete the old skiplist except the sentinel node
     Node* prevNode = head->nexts[0];
     if (prevNode) {
@@ -210,19 +212,22 @@ bool Skiplist<K,V>::remove(const K& remove_key) {
         // rightmostNodes now store all nodes immediately LESS than curNode, and
         Node* delNode = curNode;
         int i;
-        for (i = 0; i < head->levels; i++) {
+        for (i = 0; i < delNode->levels; i++) {
             if (rightmostNodes[i]->nexts[i])
                 rightmostNodes[i]->nexts[i] = delNode->nexts[i]; // reroute every layer
-            if (head->nexts[i] == nullptr) break;
+            if (head->nexts[i] == nullptr) break; // check whether a level is empty
         }
-        if (i < head->levels) {
+        if (i == 0) { // it means the bottom level is empty
+            delete head;
+            head = new Node();
+        } else  if (i < delNode->levels) {
             Node** newNexts = new Node*[i];
-            for (int j = 0; j < i; i++) {
-                newNexts[j] = head->nexts[i];
+            for (int j = 0; j < i; j++) {
+                newNexts[j] = head->nexts[j];
             }
             delete [] head->nexts;
             head->nexts = newNexts;
-            head->levels = i + 1;
+            head->levels = i;
         }
         delete delNode;
     }

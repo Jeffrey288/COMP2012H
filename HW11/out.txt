@@ -1,0 +1,2820 @@
+Enter the following (without '): 
+'list' to obtain a list of dictionaries
+'create' to create a new dictionary
+'delete' to delete a dictionary
+'manipulate' manipulate a dictionary
+'merge' merge two dictionaries
+'filter' to filter a dictionary
+'use' to use a dictionary
+'help' to list all commands
+'end' to end program
+Enter the name for dictionary:
+Dictionary created: dict
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'phd' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'researcher' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'at' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'friedrichschiller' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'university' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'jen' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'germany' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'im' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'a' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'physicist' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'specializing' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'in' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'computational' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'material' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'science' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'i' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'write' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'efficient' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'codes' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'for' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'simulating' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'lightmatter' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Enter the name for dictionary:
+Dictionary created: dict2
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'interactions' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'at' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'atomic' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'scales' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'i' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'like' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'to' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'develop' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'physics' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'dft' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'and' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'machine' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'learning' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'related' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'apps' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'and' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'softwares' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'from' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'time' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'to' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'time' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'can' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'code' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'in' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'most' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'of' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'the' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'popular' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'languages' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'like' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'to' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'share' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'my' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'knowledge' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'in' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'physics' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'and' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'applications' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'using' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'this' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'blog' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'and' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'a' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'youtube' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'channel' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Enter the name for first dictionary:
+Enter the name for the new dictionary:
+Enter word to be filtered:
+Created dictionary newDict by filtering.
+Enter the name for first dictionary:
+Enter the name for the new dictionary:
+Enter word to be filtered:
+Created dictionary newDictNoSuchWord by filtering.
+Enter the name for first dictionary:
+Enter the name for the new dictionary:
+Dictionary already exists! Could not filter dictionary.
+Enter the name for first dictionary:
+Enter the name for the new dictionary:
+Enter word to be filtered:
+Hey f inished
+Hey not f inished
+Hey finished this la
+Created dictionary newDictEmptyString by filtering.
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+a (Type12) meaning [1]
+and (Type15) meaning [2]
+applications (Type19) meaning [3]
+apps (Type0) meaning [4]
+at (Type5) meaning [5]
+atomic (Type8) meaning [6]
+blog (Type6) meaning [7]
+can (Type9) meaning [8]
+channel (Type16) meaning [9]
+code (Type1) meaning [10]
+develop (Type13) meaning [11]
+dft (Type14) meaning [12]
+from (Type12) meaning [13]
+i (Type3) meaning [14]
+in (Type18) meaning [15]
+interactions (Type5) meaning [16]
+knowledge (Type3) meaning [17]
+languages (Type3) meaning [18]
+learning (Type6) meaning [19]
+like (Type6) meaning [20]
+machine (Type10) meaning [21]
+most (Type0) meaning [22]
+my (Type7) meaning [23]
+of (Type3) meaning [24]
+physics (Type1) meaning [25]
+popular (Type19) meaning [26]
+related (Type1) meaning [27]
+scales (Type9) meaning [28]
+share (Type0) meaning [29]
+softwares (Type11) meaning [30]
+the (Type13) meaning [31]
+this (Type17) meaning [32]
+time (Type19) meaning [33]
+to (Type10) meaning [34]
+using (Type6) meaning [35]
+youtube (Type13) meaning [36]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be removed:
+Removed all nodes starting with 'atomic'
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'atom' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'attire' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'atrocious' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be added / updated:
+Enter type of word:
+Enter meaning of word:
+Hey we did it!
+Updated the word 'attractive' to the dictionary
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+a (Type12) meaning [1]
+and (Type15) meaning [2]
+applications (Type19) meaning [3]
+apps (Type0) meaning [4]
+at (Type5) meaning [5]
+atom (1) 1 [6]
+atrocious (2) 2 [7]
+attire (2) 2 [8]
+attractive (2) 2 [9]
+blog (Type6) meaning [10]
+can (Type9) meaning [11]
+channel (Type16) meaning [12]
+code (Type1) meaning [13]
+develop (Type13) meaning [14]
+dft (Type14) meaning [15]
+from (Type12) meaning [16]
+i (Type3) meaning [17]
+in (Type18) meaning [18]
+interactions (Type5) meaning [19]
+knowledge (Type3) meaning [20]
+languages (Type3) meaning [21]
+learning (Type6) meaning [22]
+like (Type6) meaning [23]
+machine (Type10) meaning [24]
+most (Type0) meaning [25]
+my (Type7) meaning [26]
+of (Type3) meaning [27]
+physics (Type1) meaning [28]
+popular (Type19) meaning [29]
+related (Type1) meaning [30]
+scales (Type9) meaning [31]
+share (Type0) meaning [32]
+softwares (Type11) meaning [33]
+the (Type13) meaning [34]
+this (Type17) meaning [35]
+time (Type19) meaning [36]
+to (Type10) meaning [37]
+using (Type6) meaning [38]
+youtube (Type13) meaning [39]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be removed:
+Removed all nodes starting with 'atom'
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be removed:
+Removed all nodes starting with 'atrocious'
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be removed:
+Removed all nodes starting with 'attire'
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Enter word to be removed:
+Removed all nodes starting with 'attractive'
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Total number of children of dict2 (excluding root): 173
+a (Type12) meaning [1]
+an ()  [2]
+and (Type15) meaning [3]
+ap ()  [4]
+app ()  [5]
+appl ()  [6]
+appli ()  [7]
+applic ()  [8]
+applica ()  [9]
+applicat ()  [10]
+applicati ()  [11]
+applicatio ()  [12]
+application ()  [13]
+applications (Type19) meaning [14]
+apps (Type0) meaning [15]
+at (Type5) meaning [16]
+ato ()  [17]
+atr ()  [18]
+atro ()  [19]
+atroc ()  [20]
+atroci ()  [21]
+atrocio ()  [22]
+atrociou ()  [23]
+att ()  [24]
+atti ()  [25]
+attir ()  [26]
+attr ()  [27]
+attra ()  [28]
+attrac ()  [29]
+attract ()  [30]
+attracti ()  [31]
+attractiv ()  [32]
+b ()  [33]
+bl ()  [34]
+blo ()  [35]
+blog (Type6) meaning [36]
+c ()  [37]
+ca ()  [38]
+can (Type9) meaning [39]
+ch ()  [40]
+cha ()  [41]
+chan ()  [42]
+chann ()  [43]
+channe ()  [44]
+channel (Type16) meaning [45]
+co ()  [46]
+cod ()  [47]
+code (Type1) meaning [48]
+d ()  [49]
+de ()  [50]
+dev ()  [51]
+deve ()  [52]
+devel ()  [53]
+develo ()  [54]
+develop (Type13) meaning [55]
+df ()  [56]
+dft (Type14) meaning [57]
+f ()  [58]
+fr ()  [59]
+fro ()  [60]
+from (Type12) meaning [61]
+i (Type3) meaning [62]
+in (Type18) meaning [63]
+int ()  [64]
+inte ()  [65]
+inter ()  [66]
+intera ()  [67]
+interac ()  [68]
+interact ()  [69]
+interacti ()  [70]
+interactio ()  [71]
+interaction ()  [72]
+interactions (Type5) meaning [73]
+k ()  [74]
+kn ()  [75]
+kno ()  [76]
+know ()  [77]
+knowl ()  [78]
+knowle ()  [79]
+knowled ()  [80]
+knowledg ()  [81]
+knowledge (Type3) meaning [82]
+l ()  [83]
+la ()  [84]
+lan ()  [85]
+lang ()  [86]
+langu ()  [87]
+langua ()  [88]
+languag ()  [89]
+language ()  [90]
+languages (Type3) meaning [91]
+le ()  [92]
+lea ()  [93]
+lear ()  [94]
+learn ()  [95]
+learni ()  [96]
+learnin ()  [97]
+learning (Type6) meaning [98]
+li ()  [99]
+lik ()  [100]
+like (Type6) meaning [101]
+m ()  [102]
+ma ()  [103]
+mac ()  [104]
+mach ()  [105]
+machi ()  [106]
+machin ()  [107]
+machine (Type10) meaning [108]
+mo ()  [109]
+mos ()  [110]
+most (Type0) meaning [111]
+my (Type7) meaning [112]
+o ()  [113]
+of (Type3) meaning [114]
+p ()  [115]
+ph ()  [116]
+phy ()  [117]
+phys ()  [118]
+physi ()  [119]
+physic ()  [120]
+physics (Type1) meaning [121]
+po ()  [122]
+pop ()  [123]
+popu ()  [124]
+popul ()  [125]
+popula ()  [126]
+popular (Type19) meaning [127]
+r ()  [128]
+re ()  [129]
+rel ()  [130]
+rela ()  [131]
+relat ()  [132]
+relate ()  [133]
+related (Type1) meaning [134]
+s ()  [135]
+sc ()  [136]
+sca ()  [137]
+scal ()  [138]
+scale ()  [139]
+scales (Type9) meaning [140]
+sh ()  [141]
+sha ()  [142]
+shar ()  [143]
+share (Type0) meaning [144]
+so ()  [145]
+sof ()  [146]
+soft ()  [147]
+softw ()  [148]
+softwa ()  [149]
+softwar ()  [150]
+software ()  [151]
+softwares (Type11) meaning [152]
+t ()  [153]
+th ()  [154]
+the (Type13) meaning [155]
+thi ()  [156]
+this (Type17) meaning [157]
+ti ()  [158]
+tim ()  [159]
+time (Type19) meaning [160]
+to (Type10) meaning [161]
+u ()  [162]
+us ()  [163]
+usi ()  [164]
+usin ()  [165]
+using (Type6) meaning [166]
+y ()  [167]
+yo ()  [168]
+you ()  [169]
+yout ()  [170]
+youtu ()  [171]
+youtub ()  [172]
+youtube (Type13) meaning [173]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Enter the following (without '): 
+'list' to obtain a list of dictionaries
+'create' to create a new dictionary
+'delete' to delete a dictionary
+'manipulate' manipulate a dictionary
+'merge' merge two dictionaries
+'filter' to filter a dictionary
+'use' to use a dictionary
+'help' to list all commands
+'end' to end program
+Enter the name for first dictionary:
+Enter the name for the new dictionary:
+Enter word to be filtered:
+Created dictionary newDictEmptyChildren by filtering.
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+a (Type12) meaning [1]
+and (Type15) meaning [2]
+applications (Type19) meaning [3]
+apps (Type0) meaning [4]
+at (Type5) meaning [5]
+atomic (Type8) meaning [6]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Total number of children of newDictNoSuchWord (excluding root): 0
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Listing all dictionaries:
+dict dict2 newDict newDictNoSuchWord newDictEmptyString newDictEmptyChildren 
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Total number of children of newDictEmptyString (excluding root): 161
+a (Type12) meaning [1]
+an ()  [2]
+and (Type15) meaning [3]
+ap ()  [4]
+app ()  [5]
+appl ()  [6]
+appli ()  [7]
+applic ()  [8]
+applica ()  [9]
+applicat ()  [10]
+applicati ()  [11]
+applicatio ()  [12]
+application ()  [13]
+applications (Type19) meaning [14]
+apps (Type0) meaning [15]
+at (Type5) meaning [16]
+ato ()  [17]
+atom ()  [18]
+atomi ()  [19]
+atomic (Type8) meaning [20]
+b ()  [21]
+bl ()  [22]
+blo ()  [23]
+blog (Type6) meaning [24]
+c ()  [25]
+ca ()  [26]
+can (Type9) meaning [27]
+ch ()  [28]
+cha ()  [29]
+chan ()  [30]
+chann ()  [31]
+channe ()  [32]
+channel (Type16) meaning [33]
+co ()  [34]
+cod ()  [35]
+code (Type1) meaning [36]
+d ()  [37]
+de ()  [38]
+dev ()  [39]
+deve ()  [40]
+devel ()  [41]
+develo ()  [42]
+develop (Type13) meaning [43]
+df ()  [44]
+dft (Type14) meaning [45]
+f ()  [46]
+fr ()  [47]
+fro ()  [48]
+from (Type12) meaning [49]
+i (Type3) meaning [50]
+in (Type18) meaning [51]
+int ()  [52]
+inte ()  [53]
+inter ()  [54]
+intera ()  [55]
+interac ()  [56]
+interact ()  [57]
+interacti ()  [58]
+interactio ()  [59]
+interaction ()  [60]
+interactions (Type5) meaning [61]
+k ()  [62]
+kn ()  [63]
+kno ()  [64]
+know ()  [65]
+knowl ()  [66]
+knowle ()  [67]
+knowled ()  [68]
+knowledg ()  [69]
+knowledge (Type3) meaning [70]
+l ()  [71]
+la ()  [72]
+lan ()  [73]
+lang ()  [74]
+langu ()  [75]
+langua ()  [76]
+languag ()  [77]
+language ()  [78]
+languages (Type3) meaning [79]
+le ()  [80]
+lea ()  [81]
+lear ()  [82]
+learn ()  [83]
+learni ()  [84]
+learnin ()  [85]
+learning (Type6) meaning [86]
+li ()  [87]
+lik ()  [88]
+like (Type6) meaning [89]
+m ()  [90]
+ma ()  [91]
+mac ()  [92]
+mach ()  [93]
+machi ()  [94]
+machin ()  [95]
+machine (Type10) meaning [96]
+mo ()  [97]
+mos ()  [98]
+most (Type0) meaning [99]
+my (Type7) meaning [100]
+o ()  [101]
+of (Type3) meaning [102]
+p ()  [103]
+ph ()  [104]
+phy ()  [105]
+phys ()  [106]
+physi ()  [107]
+physic ()  [108]
+physics (Type1) meaning [109]
+po ()  [110]
+pop ()  [111]
+popu ()  [112]
+popul ()  [113]
+popula ()  [114]
+popular (Type19) meaning [115]
+r ()  [116]
+re ()  [117]
+rel ()  [118]
+rela ()  [119]
+relat ()  [120]
+relate ()  [121]
+related (Type1) meaning [122]
+s ()  [123]
+sc ()  [124]
+sca ()  [125]
+scal ()  [126]
+scale ()  [127]
+scales (Type9) meaning [128]
+sh ()  [129]
+sha ()  [130]
+shar ()  [131]
+share (Type0) meaning [132]
+so ()  [133]
+sof ()  [134]
+soft ()  [135]
+softw ()  [136]
+softwa ()  [137]
+softwar ()  [138]
+software ()  [139]
+softwares (Type11) meaning [140]
+t ()  [141]
+th ()  [142]
+the (Type13) meaning [143]
+thi ()  [144]
+this (Type17) meaning [145]
+ti ()  [146]
+tim ()  [147]
+time (Type19) meaning [148]
+to (Type10) meaning [149]
+u ()  [150]
+us ()  [151]
+usi ()  [152]
+usin ()  [153]
+using (Type6) meaning [154]
+y ()  [155]
+yo ()  [156]
+you ()  [157]
+yout ()  [158]
+youtu ()  [159]
+youtub ()  [160]
+youtube (Type13) meaning [161]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+a (Type12) meaning [1]
+and (Type15) meaning [2]
+applications (Type19) meaning [3]
+apps (Type0) meaning [4]
+at (Type5) meaning [5]
+atomic (Type8) meaning [6]
+blog (Type6) meaning [7]
+can (Type9) meaning [8]
+channel (Type16) meaning [9]
+code (Type1) meaning [10]
+develop (Type13) meaning [11]
+dft (Type14) meaning [12]
+from (Type12) meaning [13]
+i (Type3) meaning [14]
+in (Type18) meaning [15]
+interactions (Type5) meaning [16]
+knowledge (Type3) meaning [17]
+languages (Type3) meaning [18]
+learning (Type6) meaning [19]
+like (Type6) meaning [20]
+machine (Type10) meaning [21]
+most (Type0) meaning [22]
+my (Type7) meaning [23]
+of (Type3) meaning [24]
+physics (Type1) meaning [25]
+popular (Type19) meaning [26]
+related (Type1) meaning [27]
+scales (Type9) meaning [28]
+share (Type0) meaning [29]
+softwares (Type11) meaning [30]
+the (Type13) meaning [31]
+this (Type17) meaning [32]
+time (Type19) meaning [33]
+to (Type10) meaning [34]
+using (Type6) meaning [35]
+youtube (Type13) meaning [36]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Listing all dictionaries:
+dict dict2 newDict newDictNoSuchWord newDictEmptyString newDictEmptyChildren 
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Total number of children of newDictEmptyChildren (excluding root): 0
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Enter the following (without '): 
+'list' to obtain a list of dictionaries
+'create' to create a new dictionary
+'delete' to delete a dictionary
+'manipulate' manipulate a dictionary
+'merge' merge two dictionaries
+'filter' to filter a dictionary
+'use' to use a dictionary
+'help' to list all commands
+'end' to end program
+Listing all dictionaries:
+dict dict2 newDict newDictNoSuchWord newDictEmptyString newDictEmptyChildren 
+Enter the name for first dictionary:
+Enter the name for second dictionary:
+Enter the name for the new dictionary:
+Created dictionary mergedDict by merging.
+Enter the name for first dictionary:
+Enter the name for second dictionary:
+Enter the name for the new dictionary:
+Created dictionary mergeEmptyDict by merging.
+Enter the name for first dictionary:
+Enter the name for second dictionary:
+Enter the name for the new dictionary:
+Created dictionary mergeEmptyDictFirst by merging.
+Enter the name for first dictionary:
+Enter the name for second dictionary:
+Enter the name for the new dictionary:
+Created dictionary mergeDictToIteself by merging.
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Total number of children of mergedDict (excluding root): 272
+a (Type11) meaning [1]
+an ()  [2]
+and (Type15) meaning [3]
+ap ()  [4]
+app ()  [5]
+appl ()  [6]
+appli ()  [7]
+applic ()  [8]
+applica ()  [9]
+applicat ()  [10]
+applicati ()  [11]
+applicatio ()  [12]
+application ()  [13]
+applications (Type19) meaning [14]
+apps (Type0) meaning [15]
+at (Type18) meaning [16]
+b ()  [17]
+bl ()  [18]
+blo ()  [19]
+blog (Type6) meaning [20]
+c ()  [21]
+ca ()  [22]
+can (Type9) meaning [23]
+ch ()  [24]
+cha ()  [25]
+chan ()  [26]
+chann ()  [27]
+channe ()  [28]
+channel (Type16) meaning [29]
+co ()  [30]
+cod ()  [31]
+code (Type1) meaning [32]
+codes (Type2) meaning [33]
+com ()  [34]
+comp ()  [35]
+compu ()  [36]
+comput ()  [37]
+computa ()  [38]
+computat ()  [39]
+computati ()  [40]
+computatio ()  [41]
+computation ()  [42]
+computationa ()  [43]
+computational (Type3) meaning [44]
+d ()  [45]
+de ()  [46]
+dev ()  [47]
+deve ()  [48]
+devel ()  [49]
+develo ()  [50]
+develop (Type13) meaning [51]
+df ()  [52]
+dft (Type14) meaning [53]
+e ()  [54]
+ef ()  [55]
+eff ()  [56]
+effi ()  [57]
+effic ()  [58]
+effici ()  [59]
+efficie ()  [60]
+efficien ()  [61]
+efficient (Type13) meaning [62]
+f ()  [63]
+fo ()  [64]
+for (Type6) meaning [65]
+fr ()  [66]
+fri ()  [67]
+frie ()  [68]
+fried ()  [69]
+friedr ()  [70]
+friedri ()  [71]
+friedric ()  [72]
+friedrich ()  [73]
+friedrichs ()  [74]
+friedrichsc ()  [75]
+friedrichsch ()  [76]
+friedrichschi ()  [77]
+friedrichschil ()  [78]
+friedrichschill ()  [79]
+friedrichschille ()  [80]
+friedrichschiller (Type6) meaning [81]
+fro ()  [82]
+from (Type12) meaning [83]
+g ()  [84]
+ge ()  [85]
+ger ()  [86]
+germ ()  [87]
+germa ()  [88]
+german ()  [89]
+germany (Type9) meaning [90]
+i (Type3) meaning [91]
+im (Type18) meaning [92]
+in (Type18) meaning [93]
+int ()  [94]
+inte ()  [95]
+inter ()  [96]
+intera ()  [97]
+interac ()  [98]
+interact ()  [99]
+interacti ()  [100]
+interactio ()  [101]
+interaction ()  [102]
+interactions (Type5) meaning [103]
+j ()  [104]
+je ()  [105]
+jen (Type0) meaning [106]
+k ()  [107]
+kn ()  [108]
+kno ()  [109]
+know ()  [110]
+knowl ()  [111]
+knowle ()  [112]
+knowled ()  [113]
+knowledg ()  [114]
+knowledge (Type3) meaning [115]
+l ()  [116]
+la ()  [117]
+lan ()  [118]
+lang ()  [119]
+langu ()  [120]
+langua ()  [121]
+languag ()  [122]
+language ()  [123]
+languages (Type3) meaning [124]
+le ()  [125]
+lea ()  [126]
+lear ()  [127]
+learn ()  [128]
+learni ()  [129]
+learnin ()  [130]
+learning (Type6) meaning [131]
+li ()  [132]
+lig ()  [133]
+ligh ()  [134]
+light ()  [135]
+lightm ()  [136]
+lightma ()  [137]
+lightmat ()  [138]
+lightmatt ()  [139]
+lightmatte ()  [140]
+lightmatter (Type2) meaning [141]
+lik ()  [142]
+like (Type6) meaning [143]
+m ()  [144]
+ma ()  [145]
+mac ()  [146]
+mach ()  [147]
+machi ()  [148]
+machin ()  [149]
+machine (Type10) meaning [150]
+mat ()  [151]
+mate ()  [152]
+mater ()  [153]
+materi ()  [154]
+materia ()  [155]
+material (Type3) meaning [156]
+mo ()  [157]
+mos ()  [158]
+most (Type0) meaning [159]
+my (Type7) meaning [160]
+o ()  [161]
+of (Type3) meaning [162]
+p ()  [163]
+ph ()  [164]
+phd (Type14) meaning [165]
+phy ()  [166]
+phys ()  [167]
+physi ()  [168]
+physic ()  [169]
+physici ()  [170]
+physicis ()  [171]
+physicist (Type3) meaning [172]
+physics (Type1) meaning [173]
+po ()  [174]
+pop ()  [175]
+popu ()  [176]
+popul ()  [177]
+popula ()  [178]
+popular (Type19) meaning [179]
+r ()  [180]
+re ()  [181]
+rel ()  [182]
+rela ()  [183]
+relat ()  [184]
+relate ()  [185]
+related (Type1) meaning [186]
+res ()  [187]
+rese ()  [188]
+resea ()  [189]
+resear ()  [190]
+researc ()  [191]
+research ()  [192]
+researche ()  [193]
+researcher (Type19) meaning [194]
+s ()  [195]
+sc ()  [196]
+sca ()  [197]
+scal ()  [198]
+scale ()  [199]
+scales (Type9) meaning [200]
+sci ()  [201]
+scie ()  [202]
+scien ()  [203]
+scienc ()  [204]
+science (Type8) meaning [205]
+sh ()  [206]
+sha ()  [207]
+shar ()  [208]
+share (Type0) meaning [209]
+si ()  [210]
+sim ()  [211]
+simu ()  [212]
+simul ()  [213]
+simula ()  [214]
+simulat ()  [215]
+simulati ()  [216]
+simulatin ()  [217]
+simulating (Type15) meaning [218]
+so ()  [219]
+sof ()  [220]
+soft ()  [221]
+softw ()  [222]
+softwa ()  [223]
+softwar ()  [224]
+software ()  [225]
+softwares (Type11) meaning [226]
+sp ()  [227]
+spe ()  [228]
+spec ()  [229]
+speci ()  [230]
+specia ()  [231]
+special ()  [232]
+speciali ()  [233]
+specializ ()  [234]
+specializi ()  [235]
+specializin ()  [236]
+specializing (Type17) meaning [237]
+t ()  [238]
+th ()  [239]
+the (Type13) meaning [240]
+thi ()  [241]
+this (Type17) meaning [242]
+ti ()  [243]
+tim ()  [244]
+time (Type19) meaning [245]
+to (Type10) meaning [246]
+u ()  [247]
+un ()  [248]
+uni ()  [249]
+univ ()  [250]
+unive ()  [251]
+univer ()  [252]
+univers ()  [253]
+universi ()  [254]
+universit ()  [255]
+university (Type17) meaning [256]
+us ()  [257]
+usi ()  [258]
+usin ()  [259]
+using (Type6) meaning [260]
+w ()  [261]
+wr ()  [262]
+wri ()  [263]
+writ ()  [264]
+write (Type19) meaning [265]
+y ()  [266]
+yo ()  [267]
+you ()  [268]
+yout ()  [269]
+youtu ()  [270]
+youtub ()  [271]
+youtube (Type13) meaning [272]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+a (Type11) meaning [1]
+and (Type15) meaning [2]
+applications (Type19) meaning [3]
+apps (Type0) meaning [4]
+at (Type18) meaning [5]
+blog (Type6) meaning [6]
+can (Type9) meaning [7]
+channel (Type16) meaning [8]
+code (Type1) meaning [9]
+codes (Type2) meaning [10]
+computational (Type3) meaning [11]
+develop (Type13) meaning [12]
+dft (Type14) meaning [13]
+efficient (Type13) meaning [14]
+for (Type6) meaning [15]
+friedrichschiller (Type6) meaning [16]
+from (Type12) meaning [17]
+germany (Type9) meaning [18]
+i (Type3) meaning [19]
+im (Type18) meaning [20]
+in (Type18) meaning [21]
+interactions (Type5) meaning [22]
+jen (Type0) meaning [23]
+knowledge (Type3) meaning [24]
+languages (Type3) meaning [25]
+learning (Type6) meaning [26]
+lightmatter (Type2) meaning [27]
+like (Type6) meaning [28]
+machine (Type10) meaning [29]
+material (Type3) meaning [30]
+most (Type0) meaning [31]
+my (Type7) meaning [32]
+of (Type3) meaning [33]
+phd (Type14) meaning [34]
+physicist (Type3) meaning [35]
+physics (Type1) meaning [36]
+popular (Type19) meaning [37]
+related (Type1) meaning [38]
+researcher (Type19) meaning [39]
+scales (Type9) meaning [40]
+science (Type8) meaning [41]
+share (Type0) meaning [42]
+simulating (Type15) meaning [43]
+softwares (Type11) meaning [44]
+specializing (Type17) meaning [45]
+the (Type13) meaning [46]
+this (Type17) meaning [47]
+time (Type19) meaning [48]
+to (Type10) meaning [49]
+university (Type17) meaning [50]
+using (Type6) meaning [51]
+write (Type19) meaning [52]
+youtube (Type13) meaning [53]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Listing all dictionaries:
+dict dict2 newDict newDictNoSuchWord newDictEmptyString newDictEmptyChildren mergedDict mergeEmptyDict mergeEmptyDictFirst mergeDictToIteself 
+Enter the name for dictionary:
+Could not find dictionary with above name.
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+a (Type11) meaning [1]
+at (Type18) meaning [2]
+codes (Type2) meaning [3]
+computational (Type3) meaning [4]
+efficient (Type13) meaning [5]
+for (Type6) meaning [6]
+friedrichschiller (Type6) meaning [7]
+germany (Type9) meaning [8]
+i (Type3) meaning [9]
+im (Type18) meaning [10]
+in (Type18) meaning [11]
+jen (Type0) meaning [12]
+lightmatter (Type2) meaning [13]
+material (Type3) meaning [14]
+phd (Type14) meaning [15]
+physicist (Type3) meaning [16]
+researcher (Type19) meaning [17]
+science (Type8) meaning [18]
+simulating (Type15) meaning [19]
+specializing (Type17) meaning [20]
+university (Type17) meaning [21]
+write (Type19) meaning [22]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Enter the name for dictionary:
+Could not find dictionary with above name.
+Listing all dictionaries:
+dict dict2 newDict newDictNoSuchWord newDictEmptyString newDictEmptyChildren mergedDict mergeEmptyDict mergeEmptyDictFirst mergeDictToIteself 
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+a (Type11) meaning [1]
+at (Type18) meaning [2]
+codes (Type2) meaning [3]
+computational (Type3) meaning [4]
+efficient (Type13) meaning [5]
+for (Type6) meaning [6]
+friedrichschiller (Type6) meaning [7]
+germany (Type9) meaning [8]
+i (Type3) meaning [9]
+im (Type18) meaning [10]
+in (Type18) meaning [11]
+jen (Type0) meaning [12]
+lightmatter (Type2) meaning [13]
+material (Type3) meaning [14]
+phd (Type14) meaning [15]
+physicist (Type3) meaning [16]
+researcher (Type19) meaning [17]
+science (Type8) meaning [18]
+simulating (Type15) meaning [19]
+specializing (Type17) meaning [20]
+university (Type17) meaning [21]
+write (Type19) meaning [22]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Total number of children of mergeEmptyDictFirst (excluding root): 140
+a (Type11) meaning [1]
+at (Type18) meaning [2]
+c ()  [3]
+co ()  [4]
+cod ()  [5]
+code ()  [6]
+codes (Type2) meaning [7]
+com ()  [8]
+comp ()  [9]
+compu ()  [10]
+comput ()  [11]
+computa ()  [12]
+computat ()  [13]
+computati ()  [14]
+computatio ()  [15]
+computation ()  [16]
+computationa ()  [17]
+computational (Type3) meaning [18]
+e ()  [19]
+ef ()  [20]
+eff ()  [21]
+effi ()  [22]
+effic ()  [23]
+effici ()  [24]
+efficie ()  [25]
+efficien ()  [26]
+efficient (Type13) meaning [27]
+f ()  [28]
+fo ()  [29]
+for (Type6) meaning [30]
+fr ()  [31]
+fri ()  [32]
+frie ()  [33]
+fried ()  [34]
+friedr ()  [35]
+friedri ()  [36]
+friedric ()  [37]
+friedrich ()  [38]
+friedrichs ()  [39]
+friedrichsc ()  [40]
+friedrichsch ()  [41]
+friedrichschi ()  [42]
+friedrichschil ()  [43]
+friedrichschill ()  [44]
+friedrichschille ()  [45]
+friedrichschiller (Type6) meaning [46]
+g ()  [47]
+ge ()  [48]
+ger ()  [49]
+germ ()  [50]
+germa ()  [51]
+german ()  [52]
+germany (Type9) meaning [53]
+i (Type3) meaning [54]
+im (Type18) meaning [55]
+in (Type18) meaning [56]
+j ()  [57]
+je ()  [58]
+jen (Type0) meaning [59]
+l ()  [60]
+li ()  [61]
+lig ()  [62]
+ligh ()  [63]
+light ()  [64]
+lightm ()  [65]
+lightma ()  [66]
+lightmat ()  [67]
+lightmatt ()  [68]
+lightmatte ()  [69]
+lightmatter (Type2) meaning [70]
+m ()  [71]
+ma ()  [72]
+mat ()  [73]
+mate ()  [74]
+mater ()  [75]
+materi ()  [76]
+materia ()  [77]
+material (Type3) meaning [78]
+p ()  [79]
+ph ()  [80]
+phd (Type14) meaning [81]
+phy ()  [82]
+phys ()  [83]
+physi ()  [84]
+physic ()  [85]
+physici ()  [86]
+physicis ()  [87]
+physicist (Type3) meaning [88]
+r ()  [89]
+re ()  [90]
+res ()  [91]
+rese ()  [92]
+resea ()  [93]
+resear ()  [94]
+researc ()  [95]
+research ()  [96]
+researche ()  [97]
+researcher (Type19) meaning [98]
+s ()  [99]
+sc ()  [100]
+sci ()  [101]
+scie ()  [102]
+scien ()  [103]
+scienc ()  [104]
+science (Type8) meaning [105]
+si ()  [106]
+sim ()  [107]
+simu ()  [108]
+simul ()  [109]
+simula ()  [110]
+simulat ()  [111]
+simulati ()  [112]
+simulatin ()  [113]
+simulating (Type15) meaning [114]
+sp ()  [115]
+spe ()  [116]
+spec ()  [117]
+speci ()  [118]
+specia ()  [119]
+special ()  [120]
+speciali ()  [121]
+specializ ()  [122]
+specializi ()  [123]
+specializin ()  [124]
+specializing (Type17) meaning [125]
+u ()  [126]
+un ()  [127]
+uni ()  [128]
+univ ()  [129]
+unive ()  [130]
+univer ()  [131]
+univers ()  [132]
+universi ()  [133]
+universit ()  [134]
+university (Type17) meaning [135]
+w ()  [136]
+wr ()  [137]
+wri ()  [138]
+writ ()  [139]
+write (Type19) meaning [140]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Enter the name for dictionary:
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Total number of children of mergeDictToIteself (excluding root): 140
+a (Type11) meaning [1]
+at (Type18) meaning [2]
+c ()  [3]
+co ()  [4]
+cod ()  [5]
+code ()  [6]
+codes (Type2) meaning [7]
+com ()  [8]
+comp ()  [9]
+compu ()  [10]
+comput ()  [11]
+computa ()  [12]
+computat ()  [13]
+computati ()  [14]
+computatio ()  [15]
+computation ()  [16]
+computationa ()  [17]
+computational (Type3) meaning [18]
+e ()  [19]
+ef ()  [20]
+eff ()  [21]
+effi ()  [22]
+effic ()  [23]
+effici ()  [24]
+efficie ()  [25]
+efficien ()  [26]
+efficient (Type13) meaning [27]
+f ()  [28]
+fo ()  [29]
+for (Type6) meaning [30]
+fr ()  [31]
+fri ()  [32]
+frie ()  [33]
+fried ()  [34]
+friedr ()  [35]
+friedri ()  [36]
+friedric ()  [37]
+friedrich ()  [38]
+friedrichs ()  [39]
+friedrichsc ()  [40]
+friedrichsch ()  [41]
+friedrichschi ()  [42]
+friedrichschil ()  [43]
+friedrichschill ()  [44]
+friedrichschille ()  [45]
+friedrichschiller (Type6) meaning [46]
+g ()  [47]
+ge ()  [48]
+ger ()  [49]
+germ ()  [50]
+germa ()  [51]
+german ()  [52]
+germany (Type9) meaning [53]
+i (Type3) meaning [54]
+im (Type18) meaning [55]
+in (Type18) meaning [56]
+j ()  [57]
+je ()  [58]
+jen (Type0) meaning [59]
+l ()  [60]
+li ()  [61]
+lig ()  [62]
+ligh ()  [63]
+light ()  [64]
+lightm ()  [65]
+lightma ()  [66]
+lightmat ()  [67]
+lightmatt ()  [68]
+lightmatte ()  [69]
+lightmatter (Type2) meaning [70]
+m ()  [71]
+ma ()  [72]
+mat ()  [73]
+mate ()  [74]
+mater ()  [75]
+materi ()  [76]
+materia ()  [77]
+material (Type3) meaning [78]
+p ()  [79]
+ph ()  [80]
+phd (Type14) meaning [81]
+phy ()  [82]
+phys ()  [83]
+physi ()  [84]
+physic ()  [85]
+physici ()  [86]
+physicis ()  [87]
+physicist (Type3) meaning [88]
+r ()  [89]
+re ()  [90]
+res ()  [91]
+rese ()  [92]
+resea ()  [93]
+resear ()  [94]
+researc ()  [95]
+research ()  [96]
+researche ()  [97]
+researcher (Type19) meaning [98]
+s ()  [99]
+sc ()  [100]
+sci ()  [101]
+scie ()  [102]
+scien ()  [103]
+scienc ()  [104]
+science (Type8) meaning [105]
+si ()  [106]
+sim ()  [107]
+simu ()  [108]
+simul ()  [109]
+simula ()  [110]
+simulat ()  [111]
+simulati ()  [112]
+simulatin ()  [113]
+simulating (Type15) meaning [114]
+sp ()  [115]
+spe ()  [116]
+spec ()  [117]
+speci ()  [118]
+specia ()  [119]
+special ()  [120]
+speciali ()  [121]
+specializ ()  [122]
+specializi ()  [123]
+specializin ()  [124]
+specializing (Type17) meaning [125]
+u ()  [126]
+un ()  [127]
+uni ()  [128]
+univ ()  [129]
+unive ()  [130]
+univer ()  [131]
+univers ()  [132]
+universi ()  [133]
+universit ()  [134]
+university (Type17) meaning [135]
+w ()  [136]
+wr ()  [137]
+wri ()  [138]
+writ ()  [139]
+write (Type19) meaning [140]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+a (Type11) meaning [1]
+at (Type18) meaning [2]
+codes (Type2) meaning [3]
+computational (Type3) meaning [4]
+efficient (Type13) meaning [5]
+for (Type6) meaning [6]
+friedrichschiller (Type6) meaning [7]
+germany (Type9) meaning [8]
+i (Type3) meaning [9]
+im (Type18) meaning [10]
+in (Type18) meaning [11]
+jen (Type0) meaning [12]
+lightmatter (Type2) meaning [13]
+material (Type3) meaning [14]
+phd (Type14) meaning [15]
+physicist (Type3) meaning [16]
+researcher (Type19) meaning [17]
+science (Type8) meaning [18]
+simulating (Type15) meaning [19]
+specializing (Type17) meaning [20]
+university (Type17) meaning [21]
+write (Type19) meaning [22]
+
+
+
+
+Enter the following:
+'1' to print the tree structure of the dictionary.
+'2' to print all words of the dictionary.
+'3' to add a key to the dictionary.
+'4' to remove an entry from the dictionary.
+'5' to exit this subroutine.
+Going back to main routine:
+
+Enter the name for dictionary:
+
+
+
+
+CURRENT FILTER: 
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+Enter text for lookup:
+Word 'at' found.
+Type: Type5
+Meaning: meaning
+
+
+
+
+CURRENT FILTER: 
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+Enter text for suggestion:
+Found words:
+a (Type12) meaning [1]
+and (Type15) meaning [2]
+applications (Type19) meaning [3]
+apps (Type0) meaning [4]
+at (Type5) meaning [5]
+
+
+
+
+CURRENT FILTER: 
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+Enter text for suggestion:
+Found words:
+blog (Type6) meaning [1]
+
+
+
+
+CURRENT FILTER: 
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+Enter text for suggestion:
+Found words:
+
+
+
+
+CURRENT FILTER: 
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+Enter word type filter (directly press enter for empty filter):
+
+
+
+
+CURRENT FILTER:     
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+
+
+
+
+CURRENT FILTER:     
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+Enter text for suggestion:
+Found words:
+
+
+
+
+CURRENT FILTER:     
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+
+
+
+
+CURRENT FILTER:     
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+
+
+
+
+CURRENT FILTER:     
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+
+
+
+
+CURRENT FILTER:     
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+
+
+
+
+CURRENT FILTER:     
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+Enter text for lookup:
+No such word in dictionary!
+
+
+
+
+CURRENT FILTER:     
+The following commands are available for using dictionary:
+'lookup' to lookup for a specific word in dictionary
+'suggest' to find all words starting with the given word
+'encrypt' prints out all words encrypted by Caesar cipher with shift 5
+'setfilter' set the filter of word type
+'end' Stop searching this dictionary
+Going back to main routine:
+

@@ -44,7 +44,12 @@ const std::type_info& object::type() const {
 
 template <typename T>
 T object::cast_back() const {
-    return dynamic_cast<T_pointer<T>*>(obj_ptr)->value;
+    T_pointer<T>* temp = dynamic_cast<T_pointer<T>*>(obj_ptr);
+    if (temp == nullptr) {
+        throw std::runtime_error("Object casting failed!");
+    } else {
+        return temp->value;
+    }
 }
 
 object object::operator+(const object& other) const {

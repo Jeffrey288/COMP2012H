@@ -2,7 +2,7 @@
  COMP2012H Homework
 
 ### Commands
-```bash
+```
 # PA5
 g++ -o graded official_grader.cpp Deque.cpp .\Deque_Iterator.cpp; .\graded
 
@@ -20,6 +20,26 @@ C:\Users\pinkp\Documents\GitHub\COMP2012H\DrMemory-Windows-2.3.0-1\bin\drmemory.
 
 # PA10
 zip PA10.zip dataset.h dataset.cpp train_test.cpp
+
+# PA11
+cd "c:\Users\pinkp\Documents\GitHub\COMP2012H\HW11\" ; if ($?) { g++ main.cpp node.cpp dictionary.cpp tasks.cpp -static-libstdc++ -o main } ; if ($?) { .\main }
+
+```
+
+### For redirecting cout output, we can do this:
+Add this to main to redirect cout output to a file
+```C++
+std::ofstream out("out.txt");
+std::cout.rdbuf(out.rdbuf()); //redirect std::cout to out.txt
+```
+then read the file using
+```
+Get-Content .\out.txt -Wait -Tail 0
+```
+
+Compare files using
+```
+Compare-Object (cat output.txt) (cat output_my.txt)
 ```
 
 ## Wall of Shame
