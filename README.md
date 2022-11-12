@@ -40,6 +40,7 @@ Get-Content .\out.txt -Wait -Tail 0
 Compare files using
 ```
 Compare-Object (cat output.txt) (cat output_my.txt)
+Compare-Object (cat test_case_output_13.txt) (cat test_case_output_13_my.txt)
 ```
 
 ## Wall of Shame

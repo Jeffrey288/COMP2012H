@@ -346,22 +346,33 @@ Dictionary Dictionary::merge(const Dictionary& d2) const{
  * into a new dictionary. For words that exists in both dictionary,
  * use the word definition in the dictionary this.
 */
+void __comparisonTraversal(Node* me, Node* tar) {
+    
+    if (tar->meaning.meaning[0] != '\0') {
+        me->meaning = tar->meaning;
+    }
+
+    for (int i = 0; i < 26; i++) {
+        Node* tarChild = (*tar)[i];
+        if (tarChild) {
+            Node* meChild = (*me)[i];
+            if (meChild == nullptr) {
+                meChild = new Node;
+                meChild->get_parent() = me;
+                me->set_child(i, meChild);
+            }
+            __comparisonTraversal(meChild, tarChild);
+        }
+    }
+}
+
 Dictionary Dictionary::merge(Dictionary&& d2) const{
     // cout << "i am moving" << endl;
-    int accessed = NodeStats::get_pointers_accessed();
+    // int accessed = NodeStats::get_pointers_accessed();
     Dictionary&& newDict = move(d2);
-    this->foreach([&](Node* node, vector<int> key) {
-        // if (node->meaning.meaning[0] == '\0') return;
-        string word;
-        for (vector<int>::const_iterator it = key.cbegin() + 1; it != key.cend(); it++) {
-            word += Dictionary::index_to_character(*it);
-        }
-        Node* newNode = newDict.add_node(word.c_str());
-        if (newNode == this->root) return;
-        if (newNode->meaning.meaning[0] != '\0') return;
-        newNode->meaning = node->meaning;
-    });
-    cout << NodeStats::get_pointers_accessed() - accessed << endl;
+    // cout << NodeStats::get_pointers_accessed() - accessed << endl;
+    __comparisonTraversal(newDict.root, this->root);
+    // cout << NodeStats::get_pointers_accessed() - accessed << endl;
     newDict.set_name("");
     return move(newDict); // returns by rvalue reference, good
 
