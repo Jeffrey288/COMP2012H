@@ -242,7 +242,7 @@ Node* Dictionary::find_node(const char* key) const{
  * The lambda is not supposed to change the dictionary.
 */
 template<typename T> void __preorderTraversal(vector<int> key, Node* node, T&& lambda) {
-    if (key.size() > 1) {
+    if (key.size() > 0) {
         lambda(node, key);
     }
     for (int i = 0; i < 26; i++) {
@@ -258,7 +258,7 @@ template<typename T> void __preorderTraversal(vector<int> key, Node* node, T&& l
 template<typename T> void Dictionary::foreach(T&& lambda) const{
     
     vector<int> temp;
-    temp.push_back(0);
+    // temp.push_back(0);
     __preorderTraversal(temp, root, lambda);
 }
 
@@ -270,7 +270,7 @@ void Dictionary::print_all_elements(ostream& o) const{
     int count = 0;
     foreach([&count, &o](Node* node, vector<int> key){
         string word;
-        for (vector<int>::const_iterator it = key.cbegin() + 1; it != key.cend(); it++) {
+        for (vector<int>::const_iterator it = key.cbegin(); it != key.cend(); it++) {
             word += Dictionary::index_to_character(*it);
         }
         o << word << node << "[" << ++count << "]\n";
@@ -297,7 +297,7 @@ void Dictionary::print_elements_given_type(const char* type) const{
         }
         if (node->meaning.meaning[0] == '\0') return;
         string word;
-        for (vector<int>::const_iterator it = key.cbegin() + 1; it != key.cend(); it++) {
+        for (vector<int>::const_iterator it = key.cbegin(); it != key.cend(); it++) {
             word += Dictionary::index_to_character(*it);
         }
         cout << word << node << "[" << ++count << "]\n";
@@ -329,7 +329,7 @@ Dictionary Dictionary::merge(const Dictionary& d2) const{
     d2.foreach([&](Node* node, vector<int> key) {
         // if (node->meaning.meaning[0] == '\0') return;
         string word;
-        for (vector<int>::const_iterator it = key.cbegin() + 1; it != key.cend(); it++) {
+        for (vector<int>::const_iterator it = key.cbegin(); it != key.cend(); it++) {
             word += Dictionary::index_to_character(*it);
         }
         Node* newNode = newDict.add_node(word.c_str());
@@ -368,7 +368,7 @@ void __comparisonTraversal(Node* me, Node* tar) {
 
 Dictionary Dictionary::merge(Dictionary&& d2) const{
     // cout << "i am moving" << endl;
-    // int accessed = NodeStats::get_pointers_accessed();
+    // int accessed = NodeStats::get_pointers_accessed();1
     Dictionary&& newDict = move(d2);
     // cout << NodeStats::get_pointers_accessed() - accessed << endl;
     __comparisonTraversal(newDict.root, this->root);
