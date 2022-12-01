@@ -1,0 +1,13 @@
+Test Case 3: Task 2 testing a pretrained nn
+--------------------------------------------------
+Overall accuracy: 91.48%
+Accuracy for digit 0: 99.02%
+Accuracy for digit 1: 97.62%
+Accuracy for digit 2: 90.91%
+Accuracy for digit 3: 87.68%
+Accuracy for digit 4: 94.60%
+Accuracy for digit 5: 85.67%
+Accuracy for digit 6: 91.91%
+Accuracy for digit 7: 87.03%
+Accuracy for digit 8: 91.85%
+Accuracy for digit 9: 87.94%

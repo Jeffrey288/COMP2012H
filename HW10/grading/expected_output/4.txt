@@ -1,0 +1,12 @@
+Test Case 4: Task 3 remove_some_train_data with digit 3 and size 1300
+--------------------------------------------------
+Number of train images for digit 0: 1994
+Number of train images for digit 1: 2281
+Number of train images for digit 2: 1929
+Number of train images for digit 3: 776
+Number of train images for digit 4: 1945
+Number of train images for digit 5: 1775
+Number of train images for digit 6: 1971
+Number of train images for digit 7: 2093
+Number of train images for digit 8: 1922
+Number of train images for digit 9: 2014

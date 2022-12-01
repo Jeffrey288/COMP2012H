@@ -1,13 +1,15 @@
 {
     "configurations": [
+        
+        
         {
             "name": "C/C++: g++.exe アクティブ ファイルのビルドとデバッグ",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "program": "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW10\\grading\\grader.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${fileDirname}",
+            "cwd": "C:\\Users\\pinkp\\Documents\\GitHub\\COMP2012H\\HW10\\grading",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",

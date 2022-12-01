@@ -1,0 +1,12 @@
+Test Case 2: Task 1 print_statistic with TEST_IMAGE mode
+--------------------------------------------------
+Number of test images for digit 0: 305
+Number of test images for digit 1: 378
+Number of test images for digit 2: 352
+Number of test images for digit 3: 349
+Number of test images for digit 4: 352
+Number of test images for digit 5: 307
+Number of test images for digit 6: 309
+Number of test images for digit 7: 347
+Number of test images for digit 8: 319
+Number of test images for digit 9: 315
