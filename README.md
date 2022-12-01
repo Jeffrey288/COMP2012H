@@ -91,6 +91,8 @@ Follow-up: PA was regraded and they now accept a different print function
 ```
 
 ### PA10
+when the vakue stored in a double is an integer
+casting it back into an int will decrease its value by 1
 My implementation of nearest neighbour:
 ```C++
 	int rows = img.size();
