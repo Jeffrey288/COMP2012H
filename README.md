@@ -90,9 +90,25 @@ Follow-up: PA was regraded and they now accept a different print function
         correctLetters[guesses[curGuess][i]->getLetter().unicode() - 'a'] |= (colors[i] != GREY);
 ```
 
-### PA10
-when the vakue stored in a double is an integer
-casting it back into an int will decrease its value by 1
+### Mistakes in PA9 
+
+1. When implmeneting `operator=c(const object& other)`, remember to check \\
+if the other object is `this`:
+```C++
+object& object::operator=(const object& other) {
+//  if (this != &other) {
+		delete obj_ptr;
+		obj_ptr = other.obj_ptr->copy();
+//  }
+    return *this;
+}
+```
+
+
+### Mistakes in PA10
+When the value stored in a `double` is an integer \\
+casting it back into an `int` will decrease its value by 1
+
 My implementation of nearest neighbour:
 ```C++
 	int rows = img.size();
@@ -108,24 +124,17 @@ My implementation of nearest neighbour:
 	}
 	img = new_img;	
 ```
+
+Correct implementations:
 ```C++
-
-	int rows = img.size();
-	int cols = img.at(0).size();
-	for (int r = 0; r < new_rows; r++) {
-		for (int c = 0; c < new_cols; c++) {
-			new_img[r][c] = img[(int) 
-					((float) (r + 0.5) / new_rows * rows) // get integer part
-				][ (int) 
-					((float) (c + 0.5) / new_cols * cols) 
-				];
-		}
-	}
-
+	new_img[r][c] = img[(int) 
+			((float) (r + 0.5) / new_rows * rows) // get integer part
+		][ (int) 
+			((float) (c + 0.5) / new_cols * cols) 
+		];
 ```
-Correct solution:
+or 
 ```C++
-
 	const float ratio_row = float(img0.size())/new_rows;
 	const float ratio_col = float(img0[0].size())/new_cols;
 	for (size_t y=0; y<new_rows; ++y) {
@@ -135,5 +144,4 @@ Correct solution:
 			img[y][x] = img0[iy][ix];
     	}
   	}
-
 ```
