@@ -1,0 +1,88 @@
+1)
+(a) F 
+(b) F
+(c) F* [T]
+(d) T
+(e) T
+(f) F
+(g) f
+(h) T
+(i) F
+(j) F [T]
+
+2)
+
+void print(vector<int> v) {
+    for (vector<int>::iterator it = v.begin(); it != v.end(); it++) {
+        cout << *it;
+        if (it + 1 != v.end()) cout << ",";
+    }
+}
+
+3) ***
+== 1
+H
+SM
+2 S [2 x S]
+DP
+== 2
+H
+SM
+2 S [2 x S]
+DP
+== 3
+H
+Copy SM
+1 S [1 x S]
+Copy DP
+== 4
+DP = [H=]
+== 5
+~H
+== 6
+~DP
+~S
+~SM
+~H
+[~DP
+~S
+~SM
+~H]
+
+4)
+(a) 3
+(b)
+
+
+5)
+best 2+5+19+20=46 mod 7 = 4
+stapler 19+20+1+16+12+5+18=91 mod 7 =0
+learn 12+5+1+18+14=50 mod 7 =1
+bets 2+5+19+20=46 mod 7 = 4 , mod 5 = 1, 4
+plaster 16+12+1+19+20+5+18=91 mod 7 =0, mod 5 = 1, 4
+renal 18+5+14+1+12=50 mod 7 =1, mod 5 = 0, 5
+(a)  11
+0 stapler 1
+1 learn 1
+2 plaster 3
+3 renal 3
+4 best 1
+5 plaster 2
+6
+(b) 12 [13]
+0 stapler 1
+1 learn 1
+2 plaster 3 0->1->4->2 [4]
+3 renal 4 1->2->5->3
+4 best 1
+5 plaster 2 
+6
+(c) 13
+0 stapler 1
+1 learn 1
+2 plaster 5 0->4->1->5->2
+3 
+4 best 1
+5 bets 3 4->1->5
+6 renal 2 1->6
+

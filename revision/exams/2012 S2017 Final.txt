@@ -1,0 +1,132 @@
+1)
+(a) F
+(b) T
+(c) F
+(d) T
+(e) F
+(f) F
+(g) F
+(h) T
+(i) T
+(j) F
+
+2)
+<typename T, int N>
+
+T val;
+Ntree subtree[N];
+node() {}
+
+3)
+
+(a)
+
+for (; first != last; first++) {
+    if (p(*first)) *first = new_value;
+}
+
+(b)
+
+class LessThan {
+    private:
+    int threshold;
+    public:
+    LessThan(int t) threshold(t) {}
+    bool operator()(int val) {return (val < threshold);}
+};
+
+(c) 
+replace_if(marks.begin(), marks.end(), LessThan(0), 0);
+
+4)
+
+25
+Biscuit::num
+26
+38
+Candy::num
+39
+
+5)
+template <typename T>
+bool Set::operator==(const Set& s) const {
+    if (set.size() != s.set.size()) return false;
+    for (int i = 0; i < set.size(); i++)
+        if (set[i] != s.set[i]) return false;
+    return true;
+}
+
+template <typename T>
+Set Set::operator+(const Set& s) const {
+    Set t; t.set = set;
+    for (int i = 0; i < s.set.size(); i++) {
+        if (!t.contains(s.set[i])) t.set.push_back(s.set[i]);
+    }
+    sort(t.begin(), t.end());
+    return t;
+}
+
+template <typename T>
+Set& Set::operator+=(const Set& s) {
+    return *this = *this + s;
+}
+
+template <typename T>
+Set& Set::operator+=(const T& item) {
+    if (!contains(item)) {
+        set.push_back(item);
+        sort(set.begin(), set.end());
+    }
+    return *this;
+}
+
+template <typename T>
+bool Set::contains(const T& item) const {
+    return (find(set.begin(), set.end(), item) != set.end());
+}
+
+template <typename T>
+friend ostream& operator<<(ostream& os, const Set& s) {
+    os << "[ ";
+    vector<int>::const_iterator it = s.set.cbegin();
+    os << *it;
+    for (it++; it != s.set.cend(); it++) {
+        os << ", " << *it; 
+    }
+    os << " ]";
+    return os;
+}
+
+6)
+(c)
+template <typename T>
+int BST::height() const {
+    if (empty()) return -1;
+    return (left.height() > right.height()) ? (left.height() + 1) : (1 + right.height());
+}
+
+template <typename T>
+void print_leaves() const {
+    if (empty()) return;
+    if (left.empty() && right.empty()) cout << val << " ";
+    left.print_leaves();
+    right.print_leaves();
+}
+
+template <typename T>
+bool is_avl() {
+    if (empty()) return true;
+    if (left.height() - right.height() >= 2 || left.height() - right.height() <= -2) {
+        return false;
+    } return true;
+}
+
+template <template T>
+void inorder_print_if(bool (*f)(int)) {
+    if (empty()) return;
+    left.inorder_print_if(f);
+    if (f(val)) cout << val << " ";
+    right.inorder_print_if(f);
+}
+
+7)

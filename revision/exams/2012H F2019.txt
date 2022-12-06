@@ -1,0 +1,164 @@
+COMP 2012H Midterm Exam - Fall 2019 - HKUST
+
+1)
+(a) F
+(b) F
+(c) F
+(d) T
+(e) F?
+(f) F
+(g) T
+(h) T?
+(i) F
+(j) T
+
+2)
+(a)
+
+const Point& plus_equal(Point& a, const Point& b) {
+    a.x += b.x;
+    a.y += b.y;
+    return a;
+}
+
+(b)
+
+const Point& assign(Point& a, const Point& b) {
+    if (&a != &b) {
+        a.x = b.x;
+        a.y = b.y;
+    }
+    return a;
+}
+
+3)
+
+int& a, int& b, int*& c
+
+4)
+(a) 30
+(b) Returns the largest between
+    - the maximum contiguous sum of the array, and
+    - the maximum contiguous sum of the negative of the array plus the sum of elements within the array
+
+5)
+
+line 18: causes runtime error on line 45, since ...
+replace by
+for (int i = 0; i < arr.size; i++) {
+    pArr->p[i] = arr.p[i];
+}
+
+line 46:
+add
+delete &copy;
+
+6)
+
+(a)
+void mark(int v, int n, bool visit[], bool adj[][100]) {
+    visit[v] = true;
+    for (int i = 0; i < n; i++) {
+        if (!adj[v][i]) continue;
+        if (visit[i]) continue;
+        mark(i, n, visit, adj);
+    }
+}
+
+(b)
+int unvisited = -1;
+do {
+    unvisited = -1;
+    for (int i = 0; i < n; i++) {
+        if (!visit[i]) {
+            unvisited = i;
+            break;
+        }
+    }
+
+    if (visited == -1) return;
+
+    mark(unvisited, n, visit, adj);
+    cnt++;
+
+} while (visited != -1);
+
+CDLL create() {
+    CDLL cdll;
+    cdll.sentinel = new CDLL_Node;
+    cdll.sentinel->prev = cdll.sentinel->next = cdll.sentinel;
+    return cdll;
+}
+
+void destroy(CDLL& cdll) {
+    CDLL_Node* node = cdll.sentinel->next;
+    while (node != cdll.sentinel) {
+        node = node->next;
+        delete node->prev;
+    }
+    delete cdll.sentinel;
+}
+
+void print_forward(const CDLL& cdll) {
+    CDLL_Node* node = cdll.sentinel->next;
+    while (node != cdll.sentinel) {
+        cout << node->data << " ";
+        node = node->next;
+    }
+}
+
+void print_reverse(const CDLL& cdll) {
+    CDLL_Node* node = cdll.sentinel->prev;
+    while (node != cdll.sentinel) {
+        cout << node->data << " ";
+        node = node->prev;
+    }
+}
+
+bool is_empty(const CDLL& cdll) {
+    return cdll.sentinel->next == cdll.sentinel;
+}
+
+CDLL_Node* get_node_at_index(const CDLL& cdll, unsigned int index) {
+    CDLL_Node* node = cdll.sentinel->next;
+    while (index > 0 && node != cdll.sentinel) {
+        node = node->next;
+        index--;
+    }
+
+    if (node == cdll.sentinel) {
+        return cdll.sentinel;
+    } else {
+        return node;
+    }
+}
+
+void insert(CDLL& cdll, unsigned int index, int data) {
+    CDLL_Node* node = cdll.sentinel;
+    if (index == 0) {
+        CDLL_Node* new_node = new CDLL_Node;
+        new_node->data = data;
+        new_node->prev = cdll.sentinel;
+        new_node->next = cdll.sentinel->next;
+        cdll.sentinel->next->prev = new_node;
+        cdll.sentinel->next = new_node;
+        return;
+    }
+    while (index > 0 && node != cdll.sentinel) {
+        index--;
+        node = node->next;
+    }
+    if (cdll.sentinel == node) return;
+    CDLL_Node* new_node = new CDLL_Node;
+    new_node->data = data;
+    new_node->prev = node;
+    new_node->next = node->next;
+    node->next->prev = new_node;
+    node->next = new_node;
+}
+
+...
+
+
+
+

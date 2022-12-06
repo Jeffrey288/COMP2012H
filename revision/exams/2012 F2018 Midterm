@@ -1,0 +1,47 @@
+1)
+(a) F
+(b) F [T]
+(c) T 
+(d) F
+(e) T
+(f) T
+(g) F
+(h) T
+(i) F
+(j) F
+
+2)
+Yes
+No
+
+No
+No
+Yes
+Yes
+No
+No
+No
+No
+No [Yes]
+
+3)
+(a)
+TCCW
+R Other
+TCCW
+R Copy
+~R [not here ar[]]
+~W~C~C~T
+(b) 47
+
+4)
+[17 no default constructor]
+[23 friend does need template]
+20
+const T operator[](int i) is also needed [apprently not]
+26
+template needed for 26 [yes]
+41 
+should use os instead of cout, and should return os
+54
+== operator not defined for Person?

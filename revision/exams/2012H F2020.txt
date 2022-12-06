@@ -1,0 +1,301 @@
+COMP 2012H Final Exam - Fall 2020 - HKUST
+6:10
+
+1)
+
+(a)
+key  values
+0   80 
+1   EMPTY
+2   60
+3   12
+4   70
+5   35
+6   66
+7   89
+8   18
+9   69
+
+(b)
+= (1 + 1 + 1 + 1 + 1 + 3 + 2 + 3 + 2) / 9
+= 1.67
+
+(c)
+iii, v
+
+2)
+After the insertion of 13, 5 & 20: 13, 5, 20
+After further insertion of 9 & 8: 9 5 13 8 20
+After further insertion of 10 & 11: 9 5 13 8 10 20 11
+After further insertion of 4 & 12: 9 5 13 4 8 11 20 10 12
+After deletion of 13 in the AVL tree that
+you got from inserting all the 9 keys above: 9 5 20 4 8 11 10 12
+
+3)
+*** archer1 construction ***
+Weapon(int)
+Bow(int, int)
+Bow(const Bow&)
+Unit(char)
+Archer(char, const Bow&)
+˜Bow()
+˜Weapon()
+
+*** archer2 copy-construction ***
+Archer(const Archer&)
+Weapon(const Weapon&)
+Bow(const Bow&)
+Unit(const Unit&)
+Archer(const Archer&)
+˜Archer()
+˜Unit()
+˜Bow()
+˜Weapon()
+
+*** archer2 destruction ***
+˜Archer()
+˜Unit()
+˜Bow()
+˜Weapon()
+
+*** before main() returns ***
+˜Archer()
+˜Unit()
+˜Bow()
+˜Weapon()
+˜Archer()
+˜Unit()
+˜Bow()
+˜Weapon()
+
+4)
+
+(a)
+class LSCS { 
+private:
+    int max_so_far = 0
+    int max_ending_here = 0
+public:
+    void operator()(const int& elm) {
+        max_ending_here = max_ending_here + elm;
+        if (max_so_far < max_ending_here) max_so_far = max_ending_here;
+        if (max_ending_here < 0) max_ending_here = 0;
+    }
+
+    int get_result() {
+        return max_so_far;
+    }
+}
+
+(b)
+LSCS lcsc;
+for_each(arr.begin(), arr.end(), lscs)
+
+
+7:01
+
+5)
+(a)
+
+Online_Lesson::Online_Lesson(string content, int num_video_on) 
+    : Lesson(content), num_video_on(num_video_on) {}
+
+(b)
+
+bool Online_Lesson::add_interaction(Online_Interaction i) {
+    if (num_interactions >= MAX_NUM_INTERACTIONS) return false;
+    interactions[num_interactions++] = i;
+    return true;
+}
+
+(c)
+
+bool Online_Lesson::run() {
+    print();
+    cout << "----- Run Online Lessons -----" << endl;
+    cout << "Interactions: ";
+    for (int i = 0; i < num_interactions; i++) {
+        switch (interactions[i]) {
+            case Online_Interaction::YES_NO:
+                cout << "YES_NO";
+                break;
+            case Online_Interaction::POLL:
+                cout << "POLL";
+                break;
+            case Online_Interaction::CHAT:
+                cout << "CHAT";
+                break;
+        }
+        if (i < num_interactions - 1) {
+            cout << ", ";
+        }
+    }
+    cout << endl;
+    cout << "Number of videos turned on: " << num_video_on << endl;
+}
+
+(d)
+
+Course::Course(string code)
+    : code(code), lessons(new Lesson[MAX_LESSONS]), num_lessons(0) {}
+
+(e)
+
+Course::Course(const Course& course)
+    : Course(course.code) {
+        *this = course;
+}
+
+(f)
+
+Course::~Course() {
+    for (int i = 0; i < num_lessons; i++) {
+        delete lessons[i];
+    }
+    delete [] lessons;
+}
+
+(g) 
+
+bool Course::addLesson(Lesson* lesson) {
+    if (num_lessons >= MAX_LESSONS) return false;
+    if (typeid(lesson) == typeid(Online_Lesson)) {
+        lessons[num_lessons] = new Online_Lesson(*dynamic_cast<Online_Lesson*>(lesson));
+    } else {
+        lessons[num_lessons] = new F2F_Lesson(*dynamic_cast<F2F_Lesson*>(lesson));
+    }
+    num_lessons++;
+    return true;
+}
+
+(h)
+
+Course& Course::operator=(const Course& course) {
+    if (&course != this) {
+        for (int i = 0; i < num_lessons; i++) {
+            delete lessons[i];
+        }
+        delete [] lessons;
+        
+        code{course.code};
+        lessons{new Lesson[MAX_LESSONS]};
+        num_lessons{course.num_lessons};
+        for (int i = 0; i < course.num_lessons; i++) {
+            if (typeid(course.lessons[i]) == typeid(Online_Lesson)) {
+                lessons[i] = new Online_Lesson(*dynamic_cast<Online_Lesson*>(course.lessons[i]));
+            } else {
+                lessons[i] = new F2F_Lesson(*dynamic_cast<F2F_Lesson*>(course.lessons[i]));
+            }
+        }
+    } else {
+        return *this;
+    }
+}
+
+(i)
+
+void Course::run() const {
+    cout << "Course: " << code << endl;
+    for (int i = 0; i < course.num_lessons; i++) {
+        lessons[i]->run();
+    }
+}
+
+
+7:41
+
+6)
+
+(a)
+
+template <typename T>
+BSTNode<T>* BST::search_helper(BSTNode<T>* p, const T& query) const {
+    if (p) {
+        if (p->val > query) return search_helper(p->left, query);
+        else if (p->val < query) return search_helper(p->right, query);
+        else return p;
+    }
+    return nullptr;
+}
+
+(b)
+
+template <typename T>
+BSTNode<T>* BST::min_helper(BSTNode<T>* p) const {
+    if (p) {
+        BSTNode<T>* curPtr = p;
+        while (curPtr->left) {
+            curPtr = curPtr->left;
+        }
+        return curPtr;
+    }
+    return nullptr;
+}
+
+(c)
+
+template <typename T>
+void BST::list_helper(BSTNode<T>* p, std::ostream& os) const {
+    if (p) {
+        list_helper(p->left, os);
+        os << p->val;
+        list_helper(p->right, os);
+    }
+}
+
+(d)
+
+template <typename T>
+void BST::insert_helper(BSTNode<T>* p, const T& element) {
+    if (root) {
+        if (p) {    
+            if (p->val > element) 
+                if (p->left) insert_helper(p->left, element)
+                else {
+                    p->left = new BSTNode<T>(element);
+                    p->left->parent = p;
+                }
+            else
+                if (p->right) insert_helper(p->right, element)
+                else {
+                    p->right = new BSTNode<T>(element);
+                    p->right->parent = p;
+                }
+        }
+    } else { // if root is nullptr
+        root = new BSTNode<T>(element); // root has no parent
+    }
+}
+
+(e)
+
+template <typename T>
+void BST::remove_helper(BSTNode<T>* p) {
+    if (p->right) {
+        BSTNode<T>* min_node = min_helper(p->right);
+        p->val = min_node->val;
+        remove_helper(min_node);
+    } else {
+        BSTNode<T>*& parent;
+        if (p == root) parent = root;
+        else if (p == p->parent->left) parent = p->parent->left;
+        else if (p == p->parent->right) parent = p->parent->right;
+        parent = p->left;
+        delete p;
+    }
+}
+
+(f)
+
+template <typename T>
+T BST::successor(const T& query) const {
+    BSTNode<T>* qNode = search_helper(root, query);
+    while (qNode) {
+        if (qNode->right) {
+            BSTNode<T>* min_node = min_helper(qNode->right);
+            return min_node->val;
+        }
+        qNode = qNode->parent;
+    }
+    return query;
+}

@@ -104,6 +104,7 @@ object& object::operator=(const object& other) {
 }
 ```
 
+2. Tons of memory leak problems that I don't know where to start debugging from.
 
 ### Mistakes in PA10
 When the value stored in a `double` is an integer \\
@@ -111,37 +112,41 @@ casting it back into an `int` will decrease its value by 1
 
 My implementation of nearest neighbour:
 ```C++
-	int rows = img.size();
-	int cols = img.at(0).size();
-	for (int r = 0; r < new_rows; r++) {
-		for (int c = 0; c < new_cols; c++) {
-			new_img[r][c] = img[(int) 
-					((double) (r + 0.5) / new_rows * rows) // get integer part
-				][ (int) 
-					((double) (c + 0.5) / new_cols * cols) 
-				];
-		}
+int rows = img.size();
+int cols = img.at(0).size();
+for (int r = 0; r < new_rows; r++) {
+	for (int c = 0; c < new_cols; c++) {
+		new_img[r][c] = img[(int) 
+			((double) (r + 0.5) / new_rows * rows) // get integer part
+		][ (int) 
+			((double) (c + 0.5) / new_cols * cols) 
+		];
 	}
-	img = new_img;	
+}
+img = new_img;	
 ```
 
 Correct implementations:
 ```C++
-	new_img[r][c] = img[(int) 
-			((float) (r + 0.5) / new_rows * rows) // get integer part
-		][ (int) 
-			((float) (c + 0.5) / new_cols * cols) 
-		];
+new_img[r][c] = img[(int) 
+	((float) (r + 0.5) / new_rows * rows) // get integer part
+][ (int) 
+	((float) (c + 0.5) / new_cols * cols) 
+];
 ```
 or 
 ```C++
-	const float ratio_row = float(img0.size())/new_rows;
-	const float ratio_col = float(img0[0].size())/new_cols;
-	for (size_t y=0; y<new_rows; ++y) {
-    	for (size_t x=0; x<new_cols; ++x) {
-			iy = floor(float(ratio_row*(y+0.5)));
-			ix = floor(float(ratio_col*(x+0.5)));
-			img[y][x] = img0[iy][ix];
-    	}
-  	}
+const float ratio_row = float(img0.size())/new_rows;
+const float ratio_col = float(img0[0].size())/new_cols;
+for (size_t y=0; y<new_rows; ++y) {
+	for (size_t x=0; x<new_cols; ++x) {
+		iy = floor(float(ratio_row*(y+0.5)));
+		ix = floor(float(ratio_col*(x+0.5)));
+		img[y][x] = img0[iy][ix];
+	}
+}
 ```
+
+Final remarks
+
+I'll let you know, I let my guard down, and I was stupid. I put dirt on myself.

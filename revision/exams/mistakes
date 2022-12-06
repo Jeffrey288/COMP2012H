@@ -1,0 +1,105 @@
+
+CONSTTTTTTTTTTTTTTTTTTTTTT ARRRRRRRRRRRR
+STATICCCCCCCCCCCCCCCCCCCC ARRRRRRRRRRRR
+const use const functions, static use static functions
+
+REAL QUESTION MARK
+To define an inline member function for a class, you can define it in a different file than
+the file containing the definition. : FALSE
+C++ compiler will NOT place a function call with the body of the called recursive
+function: TRUE
+This: https://stackoverflow.com/questions/1819131/c-static-member-initialization-template-fun-inside
+
+MISTAKES:
+
+- operator= return reference to itself
+- copy constructor remember to initialize object
+- operator<< return os
+- virtual destructor
+
+[no default constructor if some other is defined!!!!!!, see where used!!!]
+[constructors with one default value]
+[friend does need template NO MATTER WHAT]
+
+- tree is avl if subtrees are avl
+- lambda mutable: modify capture by value
+
+- invalid conversion from 'int**' to 'const int**' [-fpermissive]
+    // A pointer to a pointer to a const int
+    const int** ptr1 = new int*; /* Error: Yes */
+
+- TRUE: 
+Once the destructor is declared virtual in the base class, the destructor in all directly or
+indirectly derived classes will automatically be made as virtual.
+
+- FALSE:
+A **PURE** virtual function in an Abstract Base Class can be called from the constructor in
+the same class.
+
+- TRUE:
+Friends of a base class do not become friends of its derived classes automatically.
+
+- 
+Child(const Child& c) : age(c.age) {}
+Child(superclass) will slice the object and get the age of CHILD, not the superclass.
+
+- FALSE:
+const class members must be initialized using member initialization list.
+For a const data member of a class, if it is already initialized by a default member
+initializer in the class definition, it cannot be initialized again by any constructor of the
+class
+Explanation: They can also be initialized by default member initializer inside the class
+definition
+e.g.
+struct B {
+    const int a = 1;
+    B() : a(3) {};
+};
+
+- WRONG:
+template <typename T1, typename T2>
+class Pair {
+    friend ostream& operator<<(ostream& os, const Pair<T1, T2>& p);
+... }
+CORECT: use different template names for friend
+
+- “{ }” operator can only be used for initialization.
+
+- ERROR:
+```C++
+class A {
+public:
+    int& getA() const { // add const to int&
+        // binding reference of type int& to const int discard qualifiers
+        return a;
+    }
+    int calc(int b) const {
+        return getA() + b;
+    }
+private:
+        const int a{10};
+};
+```
+
+- CONCEPT:
+if any other consturctor is present, DEFAULT CONSTRUCTOR will not be defined
+
+- 
+A(const A a) { x = a.x; }
+CAUSES invalid constructor Error
+
+-
+class A { A(int a) {} };
+class B { B(A a) {} };
+int main() { B(10); } 
+will create temporary A from conversion, then copy A to B's A, then destroy A.
+
+For find mistake questions
+- delete dynamically allocated members (memory leaks)
+- 
+
+minor:
+- TRUE: Function overriding is only possible with inheritance
+- FALSE:If an object of a user-defined type is returned by a function by value, the returned object
+cannot be further modified. In contrast, if the object is returned by reference, it can be
+further modified.

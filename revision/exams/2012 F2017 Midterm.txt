@@ -1,0 +1,65 @@
+1) 
+(a) T? (F)
+(b) F? (T)
+(c) T
+(d) F
+(e) T (F)
+(f) F (T)
+(g) T* (F)
+(h) F 
+(i) T
+(j) T
+
+2)
+(a) Y
+(b) N
+(c) N
+(d) Y
+(e) Y
+(f) N
+
+(g) N
+(h) N
+(i) N
+(j) Y
+
+3)
+
+cout << "--- Construct B object ---\n";
+B obj1(10);
+
+A's conversion constructor
+B's conversion constructor
+A's destor
+(A's destor)
+
+cout << "--- Construct D object ---\n";
+D obj2;
+
+A's conversion conversion contor
+B's default conversion contor
+B's default contor
+B's copy contor
+A's default contor
+C's default contor
+B's default contor
+B's copy contor
+B's destor
+D's default contor
+cout << "--- Before return ---\n";
+
+C's destor
+A's destor
+B's destor
+B's destor
+B's destor
+A's destor
+(B's destor)
+
+4)
+
+13 ref is assigned to a temporary object c
+25 may delete new int using []
+10 ref may be uninitialized if the A(int a, int b) consturctor is called
+32 a,b,PI,ref will all remain uninitialized if default constructor is called
+

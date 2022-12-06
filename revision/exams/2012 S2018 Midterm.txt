@@ -1,0 +1,19 @@
+10  int[]* is incompatible with int*
+
+
+35 since copy constructor is deleted, there is no matching function to call
+same with 37
+39 since Derived's destructor is not declared virtual, delete bPtr
+will only call Base's destructor but not Derived's destructor, leading
+ to memory leak
+
+Assigning d4 with d3 on line 37 may cause d3's Derived::p and Base::p to be deleted twice.
+Same with 35.
+
+MISTAKES:
+- Cannot initialize d using parenthesis notation.
+- BASE destructor needs to be declared virtual
+- default argument (n = 0), when ommited, raises amibuguity about
+which function to call
+- deleting new int with delete [] p would cause problems for
+deallocation
