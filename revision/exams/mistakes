@@ -15,7 +15,7 @@ MISTAKES:
 - operator= return reference to itself
 - copy constructor remember to initialize object
 - operator<< return os
-- virtual destructor
+- DECLAR YOUR DESTRUCTORS VIRTUAL ARRRRR
 
 [no default constructor if some other is defined!!!!!!, see where used!!!]
 [constructors with one default value]
@@ -103,3 +103,30 @@ minor:
 - FALSE:If an object of a user-defined type is returned by a function by value, the returned object
 cannot be further modified. In contrast, if the object is returned by reference, it can be
 further modified.
+
+
+quite not minor:
+https://stackoverflow.com/questions/10263017/used-without-template-parameters
+```C++
+
+template <typename A>
+class Test
+{
+public:
+  void f();
+};
+
+template<typename A>
+void Test::f() { // need Test<A>, because the Test is only a template name
+    cout << "hey";
+}
+
+int main() {
+    cout << "hey2";
+    Test<int> bay;
+    bay.f();
+    return 0;
+}
+
+
+```

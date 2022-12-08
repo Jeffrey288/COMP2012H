@@ -18,7 +18,7 @@ int main(){
   A f( A (int, double) );  // cout nothing; unnamed function ptr
 
   // A (int, int); //compilation error
-  A (*)(int, int); // function ptr is unnamed; same as A (*f)(int, int)
+  // A (*)(int, int); // function ptr is unnamed; same as A (*f)(int, int)
   A g(int, int); // function g declaration/ function prototype
 
   return 1;

@@ -1,0 +1,31 @@
+1)
+(a) F [T]
+(b) F
+(c) F
+(d) T
+(e) F [T]
+(f) F
+(g) T
+(h) T
+(i) T
+(j) F
+
+2)
+(a) 
+class Line {
+private:
+    double m;
+    double c;
+public:
+    Line(double m = 1.0, double c = 1.0)
+        : m(m), c(c) {}
+    double operator()(double x) {
+        return m * x + c;
+    }
+}
+
+(b)
+..
+
+
+3)
