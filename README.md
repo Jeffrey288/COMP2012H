@@ -1,6 +1,11 @@
 # COMP2012H
  COMP2012H Homework
 
+Assignment topics:
+
+ ![image](https://github.com/user-attachments/assets/ac96b485-4a52-4380-9e4c-b15700816791)
+
+
 ### Commands
 ```
 # PA5
