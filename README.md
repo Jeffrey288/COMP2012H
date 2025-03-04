@@ -146,7 +146,3 @@ for (size_t y=0; y<new_rows; ++y) {
 	}
 }
 ```
-
-Final remarks
-
-I'll let you know, I let my guard down, and I was stupid. I put dirt on myself.
