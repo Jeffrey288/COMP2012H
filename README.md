@@ -3,7 +3,21 @@
 
 Assignment topics:
 
- ![image](https://github.com/user-attachments/assets/ac96b485-4a52-4380-9e4c-b15700816791)
+<!-- ![image](https://github.com/user-attachments/assets/ac96b485-4a52-4380-9e4c-b15700816791) -->
+
+| Project ID | Project Name                                   | Description/Focus                   |
+|------------|------------------------------------------------|-------------------------------|
+| PA1        | Calendar                                       | Implement the `cal` command from Linux.                            |
+| PA2        | A simple text processor                        | A simple text processor.                               |
+| PA3        | Nonogram                                     | Build a Nonogram solver.                              |
+| PA4        | Factorization (Speed programming)             | Factorize large numbers as fast as possible. **I had the fastest algorithm in the class.**                              |
+| PA5        | Deque ADT: A doubly linked list               | Implement a doubly linked list using pointers in C++.                              |
+| PA6        | A mini relational database system              | Implement a class for a relational database.                              |
+| PA7        | PortaWordle, a word game                      | Build a wordle-like game with Qt.                              |
+| PA8        | "The Lord of the Rings" game                  | Build a game with different game objects and entities using polymorphism.                              |
+| PA9        | Multi-type map using skip list                | Implement a skip list with template programming.                               |
+| PA10       | AI digit recognition: Data preprocessing and network testing | Implement image preprocessing algos in C++ using STL.                        |
+| PA11       | A dictionary using trie                        | Implement a trie using tree algorithms in C++.                              |
 
 
 ### Commands
